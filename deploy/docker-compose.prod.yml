@@ -1,0 +1,48 @@
+# Prod (server dùng chung, OpenLiteSpeed giữ cổng 80/443 và proxy tới 127.0.0.1:3380).
+# Chạy độc lập (KHÔNG gộp với docker-compose.yml):
+#   docker compose -p hocde -f deploy/docker-compose.prod.yml --env-file .env up -d --build
+name: hocde
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: hocde
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: hocde
+    volumes: [pgdata:/var/lib/postgresql/data]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hocde"]
+      interval: 5s
+      retries: 10
+  migrate:
+    image: migrate/migrate
+    volumes: [../apps/api/db/migrations:/migrations:ro]
+    command: ["-path=/migrations", "-database=postgres://hocde:${POSTGRES_PASSWORD}@db:5432/hocde?sslmode=disable", "up"]
+    depends_on:
+      db: { condition: service_healthy }
+  api:
+    build: ../apps/api
+    restart: unless-stopped
+    environment:
+      APP_ENV: production
+      HTTP_PORT: "8080"
+      DATABASE_URL: postgres://hocde:${POSTGRES_PASSWORD}@db:5432/hocde?sslmode=disable
+      JWT_SECRET: ${JWT_SECRET:?set JWT_SECRET}
+      CORS_ORIGINS: https://hocde.vn
+      PUBLIC_URL: https://hocde.vn
+      GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+    depends_on:
+      migrate: { condition: service_completed_successfully }
+  web:
+    build:
+      context: ../apps/web
+      args: { API_INTERNAL_URL: http://api:8080 }
+    restart: unless-stopped
+    environment:
+      API_INTERNAL_URL: http://api:8080
+    ports: ["127.0.0.1:3380:3000"]
+    depends_on: [api]
+volumes:
+  pgdata: {}
