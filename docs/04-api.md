@@ -79,8 +79,23 @@ Mã lỗi: `UNAUTHORIZED`, `FORBIDDEN`, `NOT_FOUND`, `VALIDATION_FAILED`, `CONFL
 | GET | `/cms/lessons/:id/preview` | Xem trước |
 | POST | `/cms/media` | Upload ảnh/audio (presigned URL) |
 
-### Admin
-`GET /admin/users`, `PATCH /admin/users/:id`, `GET /admin/stats`.
+### Admin (đã triển khai: `apps/api/internal/admin`)
+Mọi route `/admin/*` kiểm tra lại vai trò **trong CSDL** ở mỗi request (đổi quyền / khoá tài khoản có hiệu lực ngay, không chờ access token hết hạn). `editor` chỉ dùng nhóm nội dung; còn lại chỉ `admin`.
+
+| Nhóm | Endpoint | Quyền |
+|---|---|---|
+| Thống kê | `GET /admin/stats` | admin |
+| Người dùng | `GET /admin/users?q=&role=&status=&page=` · `GET/PATCH/DELETE /admin/users/:id` · `POST /admin/users/:id/revoke-sessions` | admin |
+| Học sinh | `GET /admin/profiles?q=&grade=` (chỉ đọc) | admin |
+| Nhật ký | `GET /admin/audit?action=user.` | admin |
+| Môn học | `GET/POST /admin/subjects` · `PATCH /admin/subjects/:id` · `DELETE` (admin) | editor+ |
+| Khoá học | `GET/POST /admin/courses` · `GET/PATCH /admin/courses/:id` · `DELETE` (admin) | editor+ |
+| Chương | `POST /admin/courses/:id/units` · `POST …/units/reorder` · `PATCH /admin/units/:id` · `DELETE` (admin) | editor+ |
+| Bài học | `POST /admin/units/:id/lessons` · `POST …/lessons/reorder` · `GET/PATCH /admin/lessons/:id` · `PUT …/content` · `POST …/status` · `POST …/duplicate` · `DELETE` (admin) | editor+ |
+
+Quy tắc: không tự hạ quyền/khoá/xoá chính mình; luôn còn ≥ 1 admin hoạt động; xoá người dùng là xoá vĩnh viễn (cả hồ sơ con, tiến độ). Lưu nội dung (`PUT …/content`) nhận `version` để chống ghi đè, luôn lưu được bản nháp (trả về `problems`), nhưng bài `published` và thao tác xuất bản phải qua `content.Lesson.Validate()` (cùng bộ kiểm tra với `make content-validate`). Mọi thao tác ghi đều vào `audit_logs`.
+
+**Tạo admin đầu tiên:** đặt `ADMIN_EMAILS=email1@..,email2@..` trong `.env`; người dùng có email đó được nâng thành `admin` khi đăng nhập Google. Sau đó quản lý vai trò ngay trong `/admin/nguoi-dung`.
 
 ## 3. Ví dụ
 

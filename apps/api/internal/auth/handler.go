@@ -153,7 +153,12 @@ func (h *Handler) GoogleCallback(c *fiber.Ctx) error {
 		return h.fail(c, "signup", "no_account")
 	case errors.Is(err, ErrConflict):
 		return h.fail(c, st.Mode, "conflict")
+	case errors.Is(err, ErrDisabled):
+		return h.fail(c, st.Mode, "disabled")
 	case err != nil:
+		return h.fail(c, st.Mode, "server")
+	}
+	if user, err = h.svc.EnsureAdmin(ctx, user, h.cfg.AdminEmails); err != nil {
 		return h.fail(c, st.Mode, "server")
 	}
 	refresh, err := h.svc.NewSession(ctx, user.ID, c.Get("User-Agent"))

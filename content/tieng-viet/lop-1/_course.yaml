@@ -1,0 +1,52 @@
+# Tiếng Việt lớp 1 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# LƯU Ý: thứ tự chữ/vần và tên bài dưới đây là KHUNG DỰ KIẾN, cần đối chiếu với
+# sách giáo khoa (SGK) bản hiện hành trước khi publish. Nội dung bài học là soạn mới,
+# không sao chép nguyên văn SGK (bản quyền).
+subject: tieng-viet
+grade: 1
+slug: tieng-viet-lop-1
+title: Tiếng Việt 1
+summary: Làm quen chữ cái, ghép vần, tập đọc và tập viết cho bé lớp 1.
+status: published
+
+units:
+  - slug: chuong-01-lam-quen
+    title: Làm quen với tiếng Việt
+    summary: Tư thế ngồi viết, cầm bút, các nét cơ bản.
+    lessons: []            # TODO: bài tư thế ngồi/cầm bút, nét cơ bản (draw_trace)
+
+  - slug: chuong-02-chu-cai-dau
+    title: Chữ cái và âm đầu
+    summary: Nhận biết, đọc và viết các chữ cái đầu tiên; ghép tiếng đơn giản.
+    lessons:
+      - bai-01-a
+      - bai-02-b
+      - bai-03-c
+      - bai-04-o
+      - bai-05-o-mu
+      - bai-06-o-rau
+      - bai-07-d
+      - bai-08-d-gach
+      - bai-09-e
+      - bai-10-e-mu
+      # TODO: các chữ tiếp theo (sắp theo SGK)
+
+  - slug: chuong-03-van
+    title: Học vần
+    summary: Vần có âm cuối (an, ăn, ân, am, ...), vần có âm đôi, ghép tiếng – từ.
+    lessons: []            # TODO
+
+  - slug: chuong-04-tap-doc-cau-ngan
+    title: Tập đọc câu ngắn
+    summary: Đọc câu, đoạn ngắn; tô sáng theo giọng đọc.
+    lessons: []            # TODO
+
+  - slug: chuong-05-tap-viet-chinh-ta
+    title: Tập viết và chính tả
+    summary: Viết chữ, từ, câu; nghe – viết đơn giản.
+    lessons: []            # TODO
+
+  - slug: chuong-06-tap-2-chu-de
+    title: Tập 2 – Đọc hiểu theo chủ đề
+    summary: Bài đọc ngắn theo chủ đề (gia đình, nhà trường, thiên nhiên, ...).
+    lessons: []            # TODO

@@ -19,7 +19,12 @@ export default async function ParentArea(props: PageProps<"/phu-huynh">) {
     <main className="mx-auto min-h-dvh max-w-3xl px-4 py-8">
       <header className="flex items-center justify-between gap-4">
         <Link href="/" aria-label="Về trang chủ"><Image src="/brand/logo.png" alt="hocde.vn" width={150} height={58} className="h-10 w-auto" /></Link>
-        {!gated && <LockButton />}
+        <div className="flex items-center gap-2">
+          {(user.role === "admin" || user.role === "editor") && (
+            <Link href="/admin" className="inline-flex min-h-11 items-center rounded-xl bg-brand px-4 font-bold text-white hover:bg-brand-dark">Trang quản trị</Link>
+          )}
+          {!gated && <LockButton />}
+        </div>
       </header>
 
       <div className="mt-8">

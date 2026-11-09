@@ -18,6 +18,7 @@ var (
 	ErrConsentRequired = errors.New("consent required")
 	ErrInvalidSession  = errors.New("invalid session")
 	ErrConflict        = errors.New("account conflict")
+	ErrDisabled        = errors.New("account disabled")
 )
 
 type User struct {
@@ -48,7 +49,7 @@ func scanUser(row pgx.Row) (User, error) {
 
 func (s *Service) GetUser(ctx context.Context, id string) (User, error) {
 	return scanUser(s.db.QueryRow(ctx,
-		`SELECT `+userCols+` FROM users WHERE id=$1 AND deleted_at IS NULL`, id))
+		`SELECT `+userCols+` FROM users WHERE id=$1 AND deleted_at IS NULL AND disabled_at IS NULL`, id))
 }
 
 // UpsertGoogleUser đăng nhập (hoặc tạo mới nếu consent=true) tài khoản phụ huynh theo Google.
@@ -59,6 +60,14 @@ func (s *Service) UpsertGoogleUser(ctx context.Context, sub, email, name, pictur
 		avatar = &picture
 	}
 	email = strings.ToLower(strings.TrimSpace(email))
+
+	var disabled bool
+	_ = s.db.QueryRow(ctx,
+		`SELECT EXISTS (SELECT 1 FROM users WHERE (google_sub=$1 OR email=$2) AND deleted_at IS NULL AND disabled_at IS NOT NULL)`,
+		sub, email).Scan(&disabled)
+	if disabled {
+		return User{}, ErrDisabled
+	}
 
 	// 1) đã liên kết Google
 	u, err := scanUser(s.db.QueryRow(ctx,
@@ -100,6 +109,26 @@ func (s *Service) UpsertGoogleUser(ctx context.Context, sub, email, name, pictur
 		return User{}, ErrConflict
 	}
 	return u, err
+}
+
+// EnsureAdmin nâng quyền admin cho email nằm trong ADMIN_EMAILS (email đã được Google xác minh).
+func (s *Service) EnsureAdmin(ctx context.Context, u User, adminEmails []string) (User, error) {
+	if u.Role == "admin" {
+		return u, nil
+	}
+	email := strings.ToLower(u.Email)
+	for _, a := range adminEmails {
+		if a == email {
+			if _, err := s.db.Exec(ctx, `UPDATE users SET role='admin' WHERE id=$1`, u.ID); err != nil {
+				return u, err
+			}
+			_, _ = s.db.Exec(ctx, `INSERT INTO audit_logs (actor_id, action, entity, entity_id, meta)
+				VALUES ($1,'user.bootstrap_admin','user',$1::text,'{"via":"ADMIN_EMAILS"}')`, u.ID)
+			u.Role = "admin"
+			return u, nil
+		}
+	}
+	return u, nil
 }
 
 // NewSession tạo refresh token mới (trả về giá trị thô để đặt vào cookie).
@@ -165,7 +194,7 @@ func (s *Service) Rotate(ctx context.Context, refresh, ua string) (User, string,
 		return User{}, "", err
 	}
 	u, err := scanUser(tx.QueryRow(ctx,
-		`SELECT `+userCols+` FROM users WHERE id=$1 AND deleted_at IS NULL`, userID))
+		`SELECT `+userCols+` FROM users WHERE id=$1 AND deleted_at IS NULL AND disabled_at IS NULL`, userID))
 	if errors.Is(err, pgx.ErrNoRows) {
 		return User{}, "", ErrInvalidSession
 	}

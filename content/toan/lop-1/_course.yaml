@@ -1,0 +1,38 @@
+# Toán lớp 1 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống" (đến hết học kỳ 1)
+# LƯU Ý: tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu SGK bản hiện hành trước khi publish.
+# Nội dung bài là soạn mới, không sao chép nguyên văn SGK (bản quyền).
+subject: toan
+grade: 1
+slug: toan-lop-1
+title: Toán 1
+summary: "Đếm, nhận biết số, so sánh và làm quen phép cộng cho bé lớp 1."
+status: draft
+
+units:
+  - slug: chuong-01-cac-so-den-10
+    title: Các số đến 10
+    summary: "Đếm, đọc và nhận biết các số từ 1 đến 10."
+    lessons:
+      - bai-01-dem-den-5
+      - bai-02-cac-so-6-den-10
+
+  - slug: chuong-02-so-sanh
+    title: So sánh số
+    summary: "Nhiều hơn, ít hơn, bằng nhau; lớn hơn, bé hơn."
+    lessons: []            # TODO
+
+  - slug: chuong-03-phep-cong
+    title: Phép cộng
+    summary: "Làm quen phép cộng trong phạm vi 5, rồi 10."
+    lessons:
+      - bai-01-phep-cong-pham-vi-5
+
+  - slug: chuong-04-hinh-hoc
+    title: Làm quen với một số hình
+    summary: "Hình vuông, hình tròn, hình tam giác, hình chữ nhật."
+    lessons: []            # TODO
+
+  - slug: chuong-05-cong-tru-pham-vi-10
+    title: Cộng, trừ trong phạm vi 10
+    summary: "Phép cộng, phép trừ trong phạm vi 10."
+    lessons: []            # TODO

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ButtonLink } from "@/components/ui/Button";
+import { AuthButton } from "@/components/auth/AuthButton";
 
 export function CtaBand() {
   return (
@@ -15,7 +15,7 @@ export function CtaBand() {
           Chỉ 5 phút mỗi ngày, con sẽ thấy việc học thú vị hơn nhiều.
         </p>
         <div className="mt-8">
-          <ButtonLink href="/dang-ky" tone="white" size="lg">Đăng ký miễn phí</ButtonLink>
+          <AuthButton href="/dang-ky" tone="white" size="lg">Đăng ký miễn phí</AuthButton>
         </div>
       </div>
     </section>

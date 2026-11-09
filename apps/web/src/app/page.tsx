@@ -1,3 +1,4 @@
+import { SessionProvider } from "@/components/auth/SessionProvider";
 import { Header } from "@/components/landing/Header";
 import { Hero } from "@/components/landing/Hero";
 import { Subjects } from "@/components/landing/Subjects";
@@ -58,6 +59,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
+      <SessionProvider>
       <Header />
       <main>
         <Hero />
@@ -71,6 +73,7 @@ export default function Home() {
         <CtaBand />
       </main>
       <Footer />
+      </SessionProvider>
     </>
   );
 }

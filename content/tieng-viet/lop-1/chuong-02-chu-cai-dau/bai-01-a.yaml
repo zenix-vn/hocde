@@ -1,0 +1,69 @@
+schema: 1
+slug: tv1-bai-01-a
+title: "Chữ A a"
+summary: Làm quen chữ cái A, a; nhận biết âm "a" trong tiếng.
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Chào bạn! Hôm nay mình cùng làm quen với chữ cái đầu tiên nhé: chữ A!"
+
+  - id: b2
+    type: text
+    markdown: |
+      Chữ **A** có hai dạng:
+      - **A** in hoa
+      - **a** in thường
+
+      Âm **a** đọc là "a", miệng mở rộng.
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Tiếng **ba**, **cá**, **nhà** đều có âm **a**."
+
+  - id: b4
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nhan-biet-chu-a
+    prompt: "Đâu là chữ **a** in thường?"
+    options:
+      - { id: a, text: "a" }
+      - { id: b, text: "A" }
+      - { id: c, text: "o" }
+    answer: { correct: [a] }
+    hint: "Chữ a in thường có một vòng tròn và một nét sổ bên phải."
+    explanation: "Chữ a in thường là \"a\". Chữ \"A\" là chữ in hoa."
+
+  - id: b5
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: tim-tieng-co-am-a
+    prompt: "Tiếng nào có âm **a**?"
+    options:
+      - { id: a, text: "ba" }
+      - { id: b, text: "bo" }
+      - { id: c, text: "bu" }
+    answer: { correct: [a] }
+    hint: "Đọc to từng tiếng và nghe xem có âm \"a\" không."
+    explanation: "Tiếng \"ba\" có âm \"a\"."
+
+  - id: b6
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: dien-chu-a
+    prompt: "Điền chữ còn thiếu: c_"
+    answer: { accept: ["a"] }
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "c + a = ca."
+
+  - id: b7
+    type: summary
+    markdown: "Hôm nay bé biết chữ **A a** và âm **a**. Giỏi quá!"

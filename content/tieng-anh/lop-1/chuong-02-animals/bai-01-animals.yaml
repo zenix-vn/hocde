@@ -1,0 +1,79 @@
+schema: 1
+slug: anh1-animals
+title: "Animals"
+summary: "Học tên ba con vật bằng tiếng Anh: cat, dog, fish."
+est_minutes: 7
+xp_reward: 20
+status: draft
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Hôm nay mình học tên các con vật bằng tiếng Anh nhé!"
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe tên con vật."
+      cards:
+        - { word: "cat", emoji: "🐱", meaning: "con mèo" }
+        - { word: "dog", emoji: "🐶", meaning: "con chó" }
+        - { word: "fish", emoji: "🐟", meaning: "con cá" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe tên con vật nhé.", l: vi }
+
+  - id: b3
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-cat
+    prompt: "Nghe và chọn con vật bé nghe được."
+    listen: { text: "cat", lang: en }
+    options:
+      - { id: a, text: "🐱", say: "cat", lang: en }
+      - { id: b, text: "🐶", say: "dog", lang: en }
+      - { id: c, text: "🐟", say: "fish", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là cat, con mèo."
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-dog
+    prompt: "Nghe và chọn con vật bé nghe được."
+    listen: { text: "dog", lang: en }
+    options:
+      - { id: a, text: "🐟", say: "fish", lang: en }
+      - { id: b, text: "🐶", say: "dog", lang: en }
+      - { id: c, text: "🐱", say: "cat", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là dog, con chó."
+
+  - id: b5
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: ten-con-ca
+    prompt: "Con cá tiếng Anh là gì?"
+    option_lang: en
+    options:
+      - { id: a, text: "cat" }
+      - { id: b, text: "dog" }
+      - { id: c, text: "fish" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ con cá ở trên để nghe lại."
+    explanation: "Con cá tiếng Anh là fish."
+
+  - id: b6
+    type: summary
+    markdown: "Bé đã biết **cat**, **dog** và **fish**. Giỏi quá!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "cat, dog, fish.", l: en }
+      - { t: "Giỏi quá!", l: vi }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Menu } from "lucide-react";
-import { ButtonLink } from "@/components/ui/Button";
+import { AuthButton, LoginLink } from "@/components/auth/AuthButton";
 
 const nav = [
   { href: "#mon-hoc", label: "Môn học" },
@@ -28,12 +28,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/dang-nhap" className="hidden rounded-xl px-3 py-2 font-bold text-ink/80 transition hover:bg-brand/10 hover:text-brand sm:block">
-            Đăng nhập
-          </Link>
-          <ButtonLink href="/dang-ky" className="!min-h-11 !px-5 !py-2 !text-base">
+          <LoginLink className="hidden rounded-xl px-3 py-2 font-bold text-ink/80 transition hover:bg-brand/10 hover:text-brand sm:block" />
+          <AuthButton href="/dang-ky" signedInLabel="Vào học" className="!min-h-11 !px-5 !py-2 !text-base">
             Đăng ký
-          </ButtonLink>
+          </AuthButton>
           <details className="relative md:hidden">
             <summary aria-label="Mở menu" className="grid size-11 cursor-pointer list-none place-items-center rounded-xl bg-white text-brand ring-2 ring-brand/15">
               <Menu aria-hidden size={22} />
@@ -44,9 +42,7 @@ export function Header() {
                   {n.label}
                 </a>
               ))}
-              <Link href="/dang-nhap" className="block rounded-xl px-4 py-3 font-bold text-brand hover:bg-cloud">
-                Đăng nhập
-              </Link>
+              <LoginLink className="block rounded-xl px-4 py-3 font-bold text-brand hover:bg-cloud" />
             </div>
           </details>
         </div>

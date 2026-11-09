@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hocde.vn/schema/lesson.v1.schema.json",
+  "title": "Bài học HocDe (YAML/JSON, schema v1)",
+  "type": "object",
+  "required": ["schema", "slug", "title", "blocks"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": { "const": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "title": { "type": "string", "minLength": 1 },
+    "summary": { "type": "string" },
+    "est_minutes": { "type": "integer", "minimum": 0, "maximum": 30 },
+    "xp_reward": { "type": "integer", "minimum": 0 },
+    "status": { "enum": ["draft", "review", "published", "archived"] },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/block" }
+    }
+  },
+  "$defs": {
+    "block": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": {
+          "enum": ["mascot_say", "text", "image", "gallery", "video", "audio", "callout",
+                   "steps", "interactive", "code_demo", "exercise", "summary"]
+        }
+      },
+      "allOf": [
+        { "if": { "properties": { "type": { "const": "mascot_say" } } },
+          "then": { "required": ["text"] } },
+        { "if": { "properties": { "type": { "enum": ["text", "callout", "summary"] } } },
+          "then": { "required": ["markdown"] } },
+        { "if": { "properties": { "type": { "const": "interactive" } } },
+          "then": { "required": ["kind", "config"] } },
+        { "if": { "properties": { "type": { "const": "exercise" } } },
+          "then": { "required": ["kind", "prompt", "points", "answer"],
+                    "properties": { "points": { "type": "integer", "minimum": 1 } } } }
+      ]
+    }
+  }
+}

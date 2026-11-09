@@ -1,0 +1,78 @@
+schema: 1
+slug: tv1-bai-02-b
+title: "Chữ B b và ghép tiếng ba"
+summary: Làm quen chữ B, b; ghép b + a thành tiếng "ba" và thêm thanh điệu.
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình đã biết chữ a rồi. Giờ học chữ b để ghép thành tiếng mới nhé!"
+
+  - id: b2
+    type: text
+    markdown: |
+      Chữ **B** có hai dạng: **B** in hoa, **b** in thường.
+      Âm **b** đọc là "bờ", hai môi mím lại rồi bật ra.
+
+  - id: b3
+    type: interactive
+    kind: syllable_builder
+    config:
+      onset: "b"
+      rhyme: "a"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + a rồi thử đổi dấu thanh để nghe: ba, bà, bá, bả, bã, bạ."
+
+  - id: b4
+    type: callout
+    variant: remember
+    markdown: "**b** + **a** = **ba**. Thêm dấu huyền: **bà**. Thêm dấu sắc: **bá**."
+
+  - id: b5
+    type: exercise
+    kind: order
+    points: 10
+    skill: ghep-tieng-ba
+    prompt: "Sắp xếp để tạo thành tiếng **ba**:"
+    options:
+      - { id: x1, text: "a" }
+      - { id: x2, text: "b" }
+    answer: { sequence: [x2, x1] }
+    hint: "Âm đầu đứng trước, âm a đứng sau."
+    explanation: "b + a = ba."
+
+  - id: b6
+    type: exercise
+    kind: match
+    points: 10
+    skill: thanh-dieu
+    prompt: "Nối tiếng với dấu thanh của nó:"
+    pairs:
+      - { left: "bà", right: "dấu huyền" }
+      - { left: "bá", right: "dấu sắc" }
+      - { left: "bạ", right: "dấu nặng" }
+    answer: { pairs: [["bà","dấu huyền"],["bá","dấu sắc"],["bạ","dấu nặng"]] }
+    hint: "Nhìn dấu nằm trên hoặc dưới chữ a."
+    explanation: "Huyền (\\), sắc (/), nặng (.) là ba dấu thanh bé vừa gặp."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: doc-tieng
+    prompt: "Tiếng nào đọc là **bà**?"
+    options:
+      - { id: a, text: "ba" }
+      - { id: b, text: "bà" }
+      - { id: c, text: "bá" }
+    answer: { correct: [b] }
+    hint: "Tìm tiếng có dấu huyền."
+    explanation: "\"bà\" có dấu huyền."
+
+  - id: b8
+    type: summary
+    markdown: "Bé đã biết chữ **B b** và ghép được **ba, bà, bá, bạ**. Tuyệt vời!"

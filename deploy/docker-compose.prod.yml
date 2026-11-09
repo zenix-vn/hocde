@@ -33,6 +33,7 @@ services:
       PUBLIC_URL: https://hocde.vn
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
       GOOGLE_CLIENT_SECRET: ${GOOGLE_CLIENT_SECRET:-}
+      ADMIN_EMAILS: ${ADMIN_EMAILS:-}
     depends_on:
       migrate: { condition: service_completed_successfully }
   web:

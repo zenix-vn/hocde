@@ -15,6 +15,7 @@ type Config struct {
 	PublicURL          string // URL công khai của web, VD https://hocde.vn
 	GoogleClientID     string
 	GoogleClientSecret string
+	AdminEmails        []string // email được tự động cấp quyền admin khi đăng nhập
 	AccessTTL          time.Duration
 	RefreshTTL         time.Duration
 }
@@ -29,6 +30,7 @@ func Load() Config {
 		PublicURL:          strings.TrimRight(get("PUBLIC_URL", "http://localhost:3000"), "/"),
 		GoogleClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
 		GoogleClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
+		AdminEmails:        splitList(os.Getenv("ADMIN_EMAILS")),
 		AccessTTL:          15 * time.Minute,
 		RefreshTTL:         30 * 24 * time.Hour,
 	}
@@ -43,4 +45,14 @@ func get(k, def string) string {
 		return v
 	}
 	return def
+}
+
+func splitList(v string) []string {
+	var out []string
+	for _, p := range strings.Split(v, ",") {
+		if p = strings.ToLower(strings.TrimSpace(p)); p != "" {
+			out = append(out, p)
+		}
+	}
+	return out
 }

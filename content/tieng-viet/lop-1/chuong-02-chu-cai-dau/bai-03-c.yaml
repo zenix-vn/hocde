@@ -1,0 +1,69 @@
+schema: 1
+slug: tv1-bai-03-c
+title: "Chữ C c"
+summary: Làm quen chữ C, c; ghép c + a thành "ca", "cá", "cà".
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Chữ tiếp theo là chữ c. Bé đã sẵn sàng chưa?"
+
+  - id: b2
+    type: text
+    markdown: |
+      Chữ **C** có hai dạng: **C** in hoa, **c** in thường.
+      Âm **c** đọc là "cờ".
+
+  - id: b3
+    type: interactive
+    kind: syllable_builder
+    config:
+      onset: "c"
+      rhyme: "a"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + a và thử các dấu thanh: ca, cà, cá, cả, cã, cạ."
+
+  - id: b4
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: doc-tieng-ca
+    prompt: "Con vật sống dưới nước là:"
+    options:
+      - { id: a, text: "cá" }
+      - { id: b, text: "cà" }
+      - { id: c, text: "ca" }
+    answer: { correct: [a] }
+    hint: "Cá bơi trong ao, hồ, sông, biển."
+    explanation: "\"cá\" (dấu sắc) là con vật sống dưới nước."
+
+  - id: b5
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: dien-chu-c
+    prompt: "Điền chữ còn thiếu: _á"
+    answer: { accept: ["c"] }
+    hint: "Đọc \"cờ\" rồi ghép với \"á\"."
+    explanation: "c + á = cá."
+
+  - id: b6
+    type: exercise
+    kind: order
+    points: 10
+    skill: sap-xep-tu
+    prompt: "Sắp xếp thành từ có nghĩa:"
+    options:
+      - { id: x1, text: "cá" }
+      - { id: x2, text: "ba" }
+    answer: { sequence: [x2, x1] }
+    hint: "Ba là người sinh ra con, còn cá là con vật."
+    explanation: "\"ba cá\" – bé có thể đặt câu: \"Ba có cá.\""
+
+  - id: b7
+    type: summary
+    markdown: "Bé đã biết **C c** và ghép được **ca, cà, cá**. Bé giỏi lắm!"

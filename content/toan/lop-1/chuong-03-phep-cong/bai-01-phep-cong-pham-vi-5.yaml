@@ -1,0 +1,79 @@
+schema: 1
+slug: toan1-phep-cong-pham-vi-5
+title: "Phép cộng trong phạm vi 5"
+summary: "Làm quen phép cộng: gộp hai nhóm vật lại với nhau."
+est_minutes: 8
+xp_reward: 25
+status: draft
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Hôm nay mình học gộp các vật lại với nhau. Đó gọi là phép cộng!"
+
+  - id: b2
+    type: text
+    markdown: |
+      🍎🍎 và 🍎 gộp lại được 🍎🍎🍎
+
+      2 + 1 = 3
+    say: "Hai quả táo, thêm một quả táo, là ba quả táo. Hai cộng một bằng ba."
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Dấu **+** đọc là **cộng**. Dấu **=** đọc là **bằng**."
+    say: "Dấu cộng, đọc là cộng. Dấu bằng, đọc là bằng."
+
+  - id: b4
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: cong-pham-vi-5
+    prompt: "2 + 1 = ?"
+    options:
+      - { id: a, text: "2" }
+      - { id: b, text: "3" }
+      - { id: c, text: "4" }
+    answer: { correct: [b] }
+    hint: "Có hai, thêm một. Bé đếm tiếp: hai, ba."
+    explanation: "Hai cộng một bằng ba."
+
+  - id: b5
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: cong-pham-vi-5
+    prompt: "1 + 3 = ?"
+    options:
+      - { id: a, text: "3" }
+      - { id: b, text: "4" }
+      - { id: c, text: "5" }
+    answer: { correct: [b] }
+    hint: "Có một, thêm ba. Bé đếm tiếp: hai, ba, bốn."
+    explanation: "Một cộng ba bằng bốn."
+
+  - id: b6
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: cong-pham-vi-5
+    prompt: "3 + 2 = _"
+    answer: { accept: ["5"] }
+    hint: "Có ba, thêm hai. Bé đếm tiếp: bốn, năm."
+    explanation: "Ba cộng hai bằng năm."
+
+  - id: b7
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: cong-pham-vi-5
+    prompt: "2 + _ = 4"
+    answer: { accept: ["2"] }
+    hint: "Từ hai, cần thêm mấy để đến bốn?"
+    explanation: "Hai cộng hai bằng bốn."
+
+  - id: b8
+    type: summary
+    markdown: "Bé đã biết phép cộng trong phạm vi 5. Giỏi lắm!"

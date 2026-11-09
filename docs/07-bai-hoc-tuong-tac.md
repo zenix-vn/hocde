@@ -40,6 +40,23 @@ Bài học = danh sách **block** có thứ tự, lưu trong `lessons.content` (
 | `exercise` | Bài tập (mục 3) |
 | `summary` | Tổng kết bài |
 
+## 2b. Phát âm cho lớp 1–2 (bé chưa đọc được chữ)
+Trình phát **tự động đọc** từng màn (giọng của trình duyệt, tuỳ chọn Bật/Tắt trên thiết bị), mỗi khối có nút loa để nghe lại; chạm đáp án cũng nghe được. Tác giả không cần làm gì thêm cho phần lớn nội dung, vì:
+- chữ cái in đậm `**b**`, hoặc sau "chữ/âm", hoặc đứng cạnh `+`, `_` được đọc theo **âm** ("bờ"), không phải tên chữ ("bê");
+- phép tính được đọc thành lời (`7 + 5 = ?` → "7 cộng 5 bằng mấy", `_` → "chỗ trống"); emoji bị bỏ qua.
+
+Trường tuỳ chọn trên block:
+| Trường | Ý nghĩa |
+|---|---|
+| `lang: vi\|en` | Ngôn ngữ của block (mặc định `vi`) |
+| `say` | Thay lời đọc tự động: chuỗi, hoặc danh sách đoạn `[{t: "Con mèo là", l: vi}, {t: "cat", l: en}]` (dùng cho bài song ngữ) |
+| `option_lang` | Ngôn ngữ của các đáp án (VD `en` khi đáp án là từ tiếng Anh) |
+| `options[].say` / `options[].lang` | Lời đọc riêng cho một đáp án (VD đáp án là emoji 🐱 → `say: cat`, `lang: en`) |
+| `listen: {text, lang}` | Với `listen_choose`: từ cần nghe (đọc sau câu hỏi) |
+
+Mô phỏng mới: `counters` (chạm từng vật để đếm, máy đọc số) và `flashcards` (chạm thẻ để nghe từ + nghĩa).
+Kiểm thử quy tắc đọc: `pnpm test` trong `apps/web`. Nếu thiết bị không có giọng tiếng Việt, trình phát hiện thông báo cho phụ huynh.
+
 ## 3. Dạng bài tập (exercise.kind)
 | kind | Ví dụ | Đáp án lưu |
 |---|---|---|

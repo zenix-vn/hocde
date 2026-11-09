@@ -1,0 +1,85 @@
+schema: 1
+slug: toan1-bai-02-cac-so-6-den-10
+title: "Các số 6, 7, 8, 9, 10"
+summary: "Đếm đến 10 và nhận biết các số 6, 7, 8, 9, 10."
+est_minutes: 7
+xp_reward: 25
+status: draft
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé đã đếm được đến năm rồi. Giờ mình đếm đến mười nhé!"
+
+  - id: b2
+    type: interactive
+    kind: counters
+    config:
+      count: 10
+      emoji: "🍓"
+      caption: "Bé chạm vào từng quả dâu để đếm đến mười."
+
+  - id: b3
+    type: text
+    markdown: |
+      Sau số 5 là các số: **6**, **7**, **8**, **9**, **10**.
+    say: "Sau số năm là các số: sáu, bảy, tám, chín, mười."
+
+  - id: b4
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: dem-den-10
+    prompt: "Có bao nhiêu ngôi sao? ⭐⭐⭐⭐⭐⭐⭐"
+    options:
+      - { id: a, text: "6" }
+      - { id: b, text: "7" }
+      - { id: c, text: "8" }
+    answer: { correct: [b] }
+    hint: "Chạm vào từng ngôi sao ở trên rồi đếm."
+    explanation: "Có bảy ngôi sao."
+
+  - id: b5
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: dien-so-thieu-10
+    prompt: "Điền số còn thiếu: 6, 7, _, 9, 10"
+    answer: { accept: ["8"] }
+    hint: "Sau bảy là số nào?"
+    explanation: "Số còn thiếu là tám."
+
+  - id: b6
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: so-lon-nhat
+    prompt: "Số nào lớn nhất?"
+    options:
+      - { id: a, text: "6" }
+      - { id: b, text: "10" }
+      - { id: c, text: "8" }
+    answer: { correct: [b] }
+    hint: "Số nào đứng cuối cùng khi đếm?"
+    explanation: "Mười là số lớn nhất."
+
+  - id: b7
+    type: exercise
+    kind: order
+    points: 10
+    skill: sap-xep-so-10
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: x9, text: "9" }
+      - { id: x7, text: "7" }
+      - { id: x10, text: "10" }
+      - { id: x8, text: "8" }
+    answer: { sequence: [x7, x8, x9, x10] }
+    hint: "Bắt đầu từ số bé nhất: bảy."
+    explanation: "Bảy, tám, chín, mười."
+
+  - id: b8
+    type: summary
+    markdown: "Bé đã biết đếm đến 10! Các số **6, 7, 8, 9, 10** bé nhớ rồi nhé."
+    say: "Bé đã biết đếm đến mười rồi. Giỏi lắm!"

@@ -1,0 +1,106 @@
+schema: 1
+slug: anh1-hello
+title: "Hello!"
+summary: "Học chào hỏi và tạm biệt bằng tiếng Anh."
+est_minutes: 6
+xp_reward: 20
+status: draft
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Xin chào bé! Hôm nay mình học chào hỏi bằng tiếng Anh nhé."
+    say:
+      - { t: "Xin chào bé! Hôm nay mình học chào hỏi bằng tiếng Anh nhé. Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe."
+      cards:
+        - { word: "hello", emoji: "👋", meaning: "xin chào" }
+        - { word: "hi", emoji: "🙂", meaning: "chào" }
+        - { word: "goodbye", emoji: "🖐️", meaning: "tạm biệt" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "**hello** hoặc **hi** là lời chào. **goodbye** là lời tạm biệt."
+    say:
+      - { t: "hello", l: en }
+      - { t: "hoặc", l: vi }
+      - { t: "hi", l: en }
+      - { t: "là lời chào.", l: vi }
+      - { t: "goodbye", l: en }
+      - { t: "là lời tạm biệt.", l: vi }
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-hello
+    prompt: "Nghe và chọn từ bé nghe được."
+    listen: { text: "hello", lang: en }
+    option_lang: en
+    options:
+      - { id: a, text: "hello" }
+      - { id: b, text: "goodbye" }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là từ hello."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-goodbye
+    prompt: "Nghe và chọn từ bé nghe được."
+    listen: { text: "goodbye", lang: en }
+    option_lang: en
+    options:
+      - { id: a, text: "hi" }
+      - { id: b, text: "goodbye" }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là từ goodbye."
+
+  - id: b6
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: khi-gap-ban
+    prompt: "Khi gặp bạn, bé nói từ nào?"
+    option_lang: en
+    options:
+      - { id: a, text: "hello" }
+      - { id: b, text: "goodbye" }
+    answer: { correct: [a] }
+    hint: "Khi gặp bạn, mình chào bạn."
+    explanation: "Khi gặp bạn, mình nói hello."
+
+  - id: b7
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "hello", right: "xin chào" }
+      - { left: "goodbye", right: "tạm biệt" }
+    answer: { pairs: [["hello", "xin chào"], ["goodbye", "tạm biệt"]] }
+    hint: "Hello là lời chào khi gặp nhau."
+    explanation: "Hello là xin chào. Goodbye là tạm biệt."
+
+  - id: b8
+    type: summary
+    markdown: "Bé đã biết nói **hello**, **hi** và **goodbye**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết nói", l: vi }
+      - { t: "hello, hi, goodbye.", l: en }
+      - { t: "Giỏi lắm!", l: vi }

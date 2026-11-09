@@ -15,6 +15,7 @@ import (
 	"github.com/jackc/pgx/v5/pgxpool"
 
 	"github.com/hocde/api/internal/account"
+	"github.com/hocde/api/internal/admin"
 	"github.com/hocde/api/internal/auth"
 	"github.com/hocde/api/internal/catalog"
 	"github.com/hocde/api/internal/config"
@@ -48,7 +49,8 @@ func New(cfg config.Config, db *pgxpool.Pool) *fiber.App {
 	api.Use("/auth", limiter.New(limiter.Config{Max: 30, Expiration: time.Minute}))
 	auth.NewHandler(cfg, auth.NewService(db, cfg.RefreshTTL), tok).Register(api)
 	account.NewHandler(cfg, db, tok).Register(api)
-	catalog.Register(api, db)
+	catalog.Register(api, db, !cfg.IsProd())
+	admin.Register(api, db, tok)
 	// TODO: auth, account, lesson, exercise, progress, cms (xem docs/04-api.md)
 	return app
 }

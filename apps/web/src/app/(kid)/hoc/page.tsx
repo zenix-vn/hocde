@@ -70,15 +70,15 @@ export default async function LearnHome(props: PageProps<"/hoc">) {
           {subjects.map((s) => {
             const l = look[s.slug] ?? look.toan;
             return (
-              <li key={s.slug} className={`relative flex min-h-44 flex-col items-center justify-center gap-3 rounded-blob p-4 text-center text-white shadow-soft ${l.bg}`}>
-                <l.icon aria-hidden size={44} strokeWidth={2.2} />
-                <span className="font-display text-xl font-extrabold">{s.name}</span>
-                <span className="rounded-full bg-white/25 px-3 py-0.5 text-xs font-extrabold">Sắp có bài học</span>
+              <li key={s.slug}>
+                <Link href={`/hoc/${s.slug}`} className={`relative flex min-h-44 flex-col items-center justify-center gap-3 rounded-blob p-4 text-center text-white shadow-soft transition hover:-translate-y-1 ${l.bg}`}>
+                  <l.icon aria-hidden size={44} strokeWidth={2.2} />
+                  <span className="font-display text-xl font-extrabold">{s.name}</span>
+                </Link>
               </li>
             );
           })}
         </ul>
-        <p className="mt-6 text-center text-ink/60">Bài học đầu tiên đang được chuẩn bị. Bé quay lại sớm nhé! 🎉</p>
       </section>
     </main>
   );

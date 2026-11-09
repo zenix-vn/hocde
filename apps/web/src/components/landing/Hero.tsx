@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Flame, Star, CheckCircle2, Sparkles, ShieldCheck, Clock, Gamepad2 } from "lucide-react";
 import { ButtonLink } from "@/components/ui/Button";
+import { AuthButton } from "@/components/auth/AuthButton";
 
 const perks = [
   { icon: Clock, text: "Bài học 5–10 phút" },
@@ -40,7 +41,7 @@ export function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4">
-            <ButtonLink href="/dang-ky" size="lg">Bắt đầu miễn phí</ButtonLink>
+            <AuthButton href="/dang-ky" size="lg">Bắt đầu miễn phí</AuthButton>
             <ButtonLink href="#hoc-thu" tone="ghost" size="lg">Học thử ngay</ButtonLink>
           </div>
 

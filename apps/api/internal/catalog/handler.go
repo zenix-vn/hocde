@@ -7,11 +7,17 @@ import (
 	"github.com/hocde/api/internal/httpx"
 )
 
-type Handler struct{ db *pgxpool.Pool }
+type Handler struct {
+	db           *pgxpool.Pool
+	includeDraft bool // dev: hiện cả bản nháp
+}
 
-func Register(r fiber.Router, db *pgxpool.Pool) {
-	h := &Handler{db: db}
+func Register(r fiber.Router, db *pgxpool.Pool, includeDraft bool) {
+	h := &Handler{db: db, includeDraft: includeDraft}
 	r.Get("/subjects", h.ListSubjects)
+	r.Get("/courses/:subject/:grade", h.GetCourse)
+	r.Get("/lessons/:slug", h.GetLesson)
+	r.Post("/lessons/:slug/check", h.CheckAnswer)
 }
 
 type Subject struct {

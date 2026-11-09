@@ -1,0 +1,75 @@
+schema: 1
+slug: tv1-bai-09-e
+title: "Chữ E e"
+summary: "Làm quen chữ E, e; nhận biết âm e trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Hôm nay mình học chữ mới: chữ e. Bé nghe và đọc theo mình nhé!"
+
+  - id: b2
+    type: text
+    markdown: |
+      Chữ **E** có hai dạng: **E** in hoa, **e** in thường.
+      Âm **e** đọc là "e" (miệng mở hẹp, môi dẹt).
+
+  - id: b3
+    type: interactive
+    kind: syllable_builder
+    config:
+      onset: "b"
+      rhyme: "e"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + e rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: b4
+    type: callout
+    variant: remember
+    markdown: "Tiếng **bé**, **bè**, **đe** đều có âm **e**."
+
+  - id: b5
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nhan-biet-chu-e
+    prompt: "Đâu là chữ **e** in thường?"
+    options:
+      - { id: a, text: "e" }
+      - { id: b, text: "ê" }
+      - { id: c, text: "a" }
+    answer: { correct: [a] }
+    hint: "Nhìn kỹ hình dạng của chữ cần tìm."
+    explanation: "Chữ e in thường là \"e\"."
+
+  - id: b6
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: tim-tieng-co-am-e
+    prompt: "Tiếng nào có âm **e**?"
+    options:
+      - { id: a, text: "bé" }
+      - { id: b, text: "bó" }
+      - { id: c, text: "bá" }
+    answer: { correct: [a] }
+    hint: "Đọc to từng tiếng và nghe xem có âm \"e\" không."
+    explanation: "Tiếng \"bé\" có âm \"e\"."
+
+  - id: b7
+    type: exercise
+    kind: fill_blank
+    points: 10
+    skill: dien-chu-e
+    prompt: "Điền phần còn thiếu để được tiếng **bé**: b_"
+    answer: { accept: ["é", "e"] }
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "b + é = bé."
+
+  - id: b8
+    type: summary
+    markdown: "Hôm nay bé biết chữ **E e** và đọc được: bé, bè, đe. Giỏi quá!"

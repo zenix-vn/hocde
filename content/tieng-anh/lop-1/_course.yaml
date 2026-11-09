@@ -1,0 +1,31 @@
+# Tiếng Anh lớp 1 (đến hết học kỳ 1) – bé nghe và nhắc lại, chưa cần đọc chữ.
+# LƯU Ý: chủ đề và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu chương trình/SGK đang dùng trước khi publish.
+subject: tieng-anh
+grade: 1
+slug: tieng-anh-lop-1
+title: Tiếng Anh 1
+summary: "Nghe và nói những từ tiếng Anh đầu tiên: chào hỏi, con vật, số đếm."
+status: draft
+
+units:
+  - slug: chuong-01-hello
+    title: Hello! – Chào hỏi
+    summary: "Chào hỏi và tạm biệt bằng tiếng Anh."
+    lessons:
+      - bai-01-hello
+
+  - slug: chuong-02-animals
+    title: Animals – Con vật
+    summary: "Gọi tên các con vật quen thuộc."
+    lessons:
+      - bai-01-animals
+
+  - slug: chuong-03-numbers
+    title: Numbers – Số đếm
+    summary: "Đếm từ one đến ten."
+    lessons: []            # TODO
+
+  - slug: chuong-04-colors
+    title: Colors – Màu sắc
+    summary: "Gọi tên các màu cơ bản."
+    lessons: []            # TODO
