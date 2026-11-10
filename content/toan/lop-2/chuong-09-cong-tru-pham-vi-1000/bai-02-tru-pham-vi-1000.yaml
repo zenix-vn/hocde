@@ -1,0 +1,86 @@
+schema: 1
+slug: toan2-tru-pham-vi-1000
+title: "Phép trừ trong phạm vi 1000"
+summary: "Trừ các số có ba chữ số."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trừ cũng đi từ phải sang trái. Cần thì mượn nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **568 − 234 = ?**
+
+      Đơn vị: 8 − 4 = 4. Chục: 6 − 3 = 3. Trăm: 5 − 2 = 3.
+
+      Vậy 568 − 234 = **334**.
+    say: "Năm trăm sáu mươi tám trừ hai trăm ba mươi tư bằng ba trăm ba mươi tư."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-1000"
+    prompt: "785 − 321 = ?"
+    options:
+      - { id: "a", text: "465" }
+      - { id: "b", text: "464" }
+      - { id: "c", text: "454" }
+    answer: { correct: ["b"] }
+    hint: "Tính 785 − 321."
+    explanation: "785 − 321 = 464."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-1000"
+    prompt: "900 − 400 = ?"
+    options:
+      - { id: "a", text: "500" }
+      - { id: "b", text: "501" }
+      - { id: "c", text: "490" }
+    answer: { correct: ["a"] }
+    hint: "Tính 900 − 400."
+    explanation: "900 − 400 = 500."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-1000"
+    prompt: "654 − 123 = _"
+    answer: { accept: ["531"] }
+    hint: "Tính 654 − 123."
+    explanation: "654 − 123 = 531."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-1000"
+    prompt: "540 − 36 = _"
+    answer: { accept: ["504"] }
+    hint: "Tính 540 − 36."
+    explanation: "540 − 36 = 504."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-1000"
+    prompt: "1000 − 1 = _"
+    answer: { accept: ["999"] }
+    hint: "Tính 1000 − 1."
+    explanation: "1000 − 1 = 999."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **trừ trong phạm vi 1000**."
+    say: "Bé đã biết trừ trong phạm vi 1000."

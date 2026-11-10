@@ -1,0 +1,72 @@
+schema: 1
+slug: toan2-bai-toan-pham-vi-1000
+title: "Bài toán trong phạm vi 1000"
+summary: "Giải bài toán có lời văn với số đến 1000."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Số lớn hơn nhưng cách giải vẫn y như cũ. Bé đọc kỹ đề nhé!"
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Trường có 245 học sinh nam và 253 học sinh nữ. Trường có tất cả _ học sinh."
+    answer: { accept: ["498"] }
+    hint: "Tất cả thì cộng."
+    explanation: "245 + 253 = 498."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Một cửa hàng có 600 kg gạo, đã bán 250 kg. Còn lại _ kg gạo."
+    answer: { accept: ["350"] }
+    hint: "Đã bán thì trừ."
+    explanation: "600 − 250 = 350."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Thùng A có 320 quả cam, thùng B ít hơn thùng A 120 quả. Thùng B có _ quả."
+    answer: { accept: ["200"] }
+    hint: "Ít hơn thì trừ."
+    explanation: "320 − 120 = 200."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chon-phep-tinh"
+    prompt: "Bao thứ nhất nặng 450 kg, bao thứ hai nặng 300 kg. Cả hai bao nặng bao nhiêu?"
+    options:
+      - { id: "a", text: "750 kg" }
+      - { id: "b", text: "150 kg" }
+      - { id: "c", text: "650 kg" }
+    answer: { correct: ["a"] }
+    hint: "Gộp thì cộng."
+    explanation: "450 + 300 = 750."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Quãng đường dài 800 m, bé đã đi 350 m. Còn _ m nữa."
+    answer: { accept: ["450"] }
+    hint: "800 − 350."
+    explanation: "800 − 350 = 450."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết giải **bài toán** trong phạm vi 1000."
+    say: "Bé đã biết giải bài toán trong phạm vi 1000."

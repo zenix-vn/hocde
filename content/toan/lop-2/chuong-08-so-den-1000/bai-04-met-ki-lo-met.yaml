@@ -1,0 +1,88 @@
+schema: 1
+slug: toan2-met-ki-lo-met
+title: "Mét, ki-lô-mét, mi-li-mét"
+summary: "Làm quen các đơn vị đo độ dài: m, km, mm."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Đi học xa gần đo bằng ki-lô-mét. Cái bàn dài đo bằng mét!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **1 m = 100 cm**
+
+      **1 km = 1000 m**
+
+      **1 cm = 10 mm**
+
+      Chiều dài cái bàn khoảng 1 m. Đường từ nhà đến trường có thể dài 2 km.
+    say: "Một mét bằng một trăm xăng ti mét. Một ki lô mét bằng một nghìn mét. Một xăng ti mét bằng mười mi li mét."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "don-vi-do"
+    prompt: "1 m = _ cm"
+    answer: { accept: ["100"] }
+    hint: "Một mét dài hơn một đề-xi-mét rất nhiều."
+    explanation: "1 m = 100 cm."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "don-vi-do"
+    prompt: "1 km = _ m"
+    answer: { accept: ["1000"] }
+    hint: "Ki-lô nghĩa là một nghìn."
+    explanation: "1 km = 1000 m."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "don-vi-do"
+    prompt: "Đo quãng đường Hà Nội – Hải Phòng nên dùng đơn vị:"
+    options:
+      - { id: "a", text: "km" }
+      - { id: "b", text: "cm" }
+      - { id: "c", text: "mm" }
+    answer: { correct: ["a"] }
+    hint: "Đường dài thì dùng đơn vị lớn."
+    explanation: "Dùng km."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "don-vi-do"
+    prompt: "Đo độ dày quyển vở nên dùng đơn vị:"
+    options:
+      - { id: "a", text: "mm" }
+      - { id: "b", text: "km" }
+      - { id: "c", text: "m" }
+    answer: { correct: ["a"] }
+    hint: "Rất mỏng."
+    explanation: "Dùng mm."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-do-dai"
+    prompt: "Mảnh vải dài 4 m, mảnh khác dài 5 m. Cả hai dài _ m."
+    answer: { accept: ["9"] }
+    hint: "4 + 5."
+    explanation: "4 + 5 = 9 (m)."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **mét, ki-lô-mét, mi-li-mét**."
+    say: "Bé đã biết mét, ki-lô-mét, mi-li-mét."

@@ -1,0 +1,86 @@
+schema: 1
+slug: toan2-doc-viet-so-den-1000
+title: "Đọc, viết các số đến 1000"
+summary: "Số có ba chữ số gồm trăm, chục, đơn vị."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Số có ba chữ số: hàng trăm, hàng chục, hàng đơn vị."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **345** gồm **3 trăm, 4 chục, 5 đơn vị**.
+
+      345 = 300 + 40 + 5. Đọc là: **ba trăm bốn mươi lăm**.
+
+      **806** đọc là: tám trăm linh sáu.
+    say: "Ba trăm bốn mươi lăm gồm ba trăm, bốn chục, năm đơn vị. Tám trăm linh sáu."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-3-chu-so"
+    prompt: "Số 527 có chữ số hàng trăm là _"
+    answer: { accept: ["5"] }
+    hint: "Chữ số đầu tiên."
+    explanation: "Chữ số hàng trăm là 5."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-3-chu-so"
+    prompt: "6 trăm 2 chục 9 đơn vị là số _"
+    answer: { accept: ["629"] }
+    hint: "Viết trăm, chục, đơn vị."
+    explanation: "629."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-3-chu-so"
+    prompt: "Số 408 bằng:"
+    options:
+      - { id: "a", text: "400 + 8" }
+      - { id: "b", text: "40 + 8" }
+      - { id: "c", text: "400 + 80" }
+    answer: { correct: ["a"] }
+    hint: "Hàng chục là 0."
+    explanation: "408 = 400 + 8."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phan-tich-so"
+    prompt: "275 = 200 + 70 + _"
+    answer: { accept: ["5"] }
+    hint: "Chữ số hàng đơn vị."
+    explanation: "275 = 200 + 70 + 5."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-so"
+    prompt: "Số 500 + 30 + 7 là:"
+    options:
+      - { id: "a", text: "537" }
+      - { id: "b", text: "573" }
+      - { id: "c", text: "507" }
+    answer: { correct: ["a"] }
+    hint: "Trăm, chục, đơn vị."
+    explanation: "537."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **đọc, viết số đến 1000**."
+    say: "Bé đã biết đọc, viết số đến 1000."

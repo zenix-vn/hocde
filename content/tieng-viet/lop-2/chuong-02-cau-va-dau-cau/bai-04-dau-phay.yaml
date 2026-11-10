@@ -1,0 +1,79 @@
+schema: 1
+slug: tv2-dau-phay
+title: "Dấu phẩy"
+summary: "Dùng dấu phẩy ngăn cách các từ cùng loại."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có một dấu nhỏ giúp câu nghe êm tai, đó là dấu phẩy."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Dấu phẩy (,)** đặt giữa các từ cùng loại để ngăn cách.
+
+      Sân trường có cây bàng**,** cây phượng **và** cây xoài.
+
+      Trước từ **và**, thường không đặt dấu phẩy.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-phay"
+    prompt: "Câu nào đặt dấu phẩy đúng?"
+    options:
+      - { id: "a", text: "Mẹ mua cam, táo và nho." }
+      - { id: "b", text: "Mẹ mua, cam táo và nho." }
+      - { id: "c", text: "Mẹ mua cam táo, và nho." }
+    answer: { correct: ["a"] }
+    hint: "Ngăn cách các tên quả."
+    explanation: "Mẹ mua cam, táo và nho."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dau-phay"
+    prompt: "Đặt dấu vào chỗ trống: Em thích chó _ mèo và thỏ."
+    answer: { accept: [",", "phẩy", "dấu phẩy"] }
+    hint: "Giữa hai từ cùng loại."
+    explanation: "Em thích chó, mèo và thỏ."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-phay"
+    prompt: "Dấu phẩy trong \"Trên bàn có sách, vở, bút\" ngăn cách:"
+    options:
+      - { id: "a", text: "các đồ vật" }
+      - { id: "b", text: "các con vật" }
+      - { id: "c", text: "các việc làm" }
+    answer: { correct: ["a"] }
+    hint: "Sách, vở, bút là gì?"
+    explanation: "Ngăn cách các đồ vật."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-phay"
+    prompt: "Dấu phẩy viết như thế nào?"
+    options:
+      - { id: "a", text: "," }
+      - { id: "b", text: "." }
+      - { id: "c", text: "?" }
+    answer: { correct: ["a"] }
+    hint: "Chấm có đuôi."
+    explanation: "Dấu phẩy là (,)."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết dùng **dấu phẩy**."
+    say: "Bé đã biết dùng dấu phẩy."

@@ -1,0 +1,89 @@
+schema: 1
+slug: toan2-ki-lo-gam
+title: "Ki-lô-gam"
+summary: "Làm quen đơn vị đo khối lượng ki-lô-gam (kg)."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Quả dưa nặng hay quả táo nặng? Cái cân sẽ cho bé biết!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đơn vị đo khối lượng là **ki-lô-gam**, viết tắt là **kg**.
+
+      Bao gạo cân nặng **5 kg**. Quả dưa cân nặng **2 kg**.
+
+      5 kg lớn hơn 2 kg nên bao gạo **nặng hơn** quả dưa.
+    say: "Đơn vị đo khối lượng là ki lô gam, viết tắt là ca gờ. Bao gạo nặng năm ki lô gam. Quả dưa nặng hai ki lô gam. Bao gạo nặng hơn quả dưa."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kg"
+    prompt: "Ki-lô-gam viết tắt là:"
+    options:
+      - { id: "a", text: "kg" }
+      - { id: "b", text: "cm" }
+      - { id: "c", text: "l" }
+    answer: { correct: ["a"] }
+    hint: "Hai chữ cái k và g."
+    explanation: "Ki-lô-gam viết tắt là kg."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nang-nhe"
+    prompt: "Túi gạo nặng 3 kg, túi đường nặng 1 kg. Túi nào nhẹ hơn?"
+    options:
+      - { id: "a", text: "Túi gạo" }
+      - { id: "b", text: "Túi đường" }
+    answer: { correct: ["b"] }
+    hint: "Số kg nhỏ hơn thì nhẹ hơn."
+    explanation: "Túi đường nhẹ hơn."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-kg"
+    prompt: "Một túi gạo nặng 2 kg, túi khác nặng 3 kg. Cả hai túi nặng _ kg."
+    answer: { accept: ["5"] }
+    hint: "Gộp thì cộng."
+    explanation: "2 + 3 = 5 (kg)."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-kg"
+    prompt: "Có 10 kg gạo, dùng hết 4 kg. Còn _ kg gạo."
+    answer: { accept: ["6"] }
+    hint: "Dùng hết thì trừ."
+    explanation: "10 − 4 = 6 (kg)."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "do-kg"
+    prompt: "Dụng cụ nào dùng để cân?"
+    options:
+      - { id: "a", text: "Cái cân" }
+      - { id: "b", text: "Thước kẻ" }
+      - { id: "c", text: "Đồng hồ" }
+    answer: { correct: ["a"] }
+    hint: "Cân giúp biết nặng bao nhiêu."
+    explanation: "Dùng cái cân."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết đơn vị **ki-lô-gam (kg)**."
+    say: "Bé đã biết đơn vị ki-lô-gam (kg)."

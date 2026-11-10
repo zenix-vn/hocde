@@ -1,0 +1,88 @@
+schema: 1
+slug: toan2-cong-pham-vi-1000
+title: "Phép cộng trong phạm vi 1000"
+summary: "Cộng các số có ba chữ số."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cộng số lớn cũng như cộng số nhỏ: từ phải sang trái!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **243 + 125 = ?**
+
+      Đơn vị: 3 + 5 = 8. Chục: 4 + 2 = 6. Trăm: 2 + 1 = 3.
+
+      Vậy 243 + 125 = **368**.
+
+      Có nhớ: **157 + 36**: 7 + 6 = 13 viết 3 nhớ 1; 5 + 3 + 1 = 9; trăm 1. Kết quả **193**.
+    say: "Hai trăm bốn mươi ba cộng một trăm hai mươi lăm bằng ba trăm sáu mươi tám."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-1000"
+    prompt: "300 + 400 = ?"
+    options:
+      - { id: "a", text: "701" }
+      - { id: "b", text: "700" }
+      - { id: "c", text: "690" }
+    answer: { correct: ["b"] }
+    hint: "Tính 300 + 400."
+    explanation: "300 + 400 = 700."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-1000"
+    prompt: "245 + 132 = ?"
+    options:
+      - { id: "a", text: "377" }
+      - { id: "b", text: "378" }
+      - { id: "c", text: "367" }
+    answer: { correct: ["a"] }
+    hint: "Tính 245 + 132."
+    explanation: "245 + 132 = 377."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-1000"
+    prompt: "236 + 53 = _"
+    answer: { accept: ["289"] }
+    hint: "Tính 236 + 53."
+    explanation: "236 + 53 = 289."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-1000"
+    prompt: "157 + 36 = _"
+    answer: { accept: ["193"] }
+    hint: "Tính 157 + 36."
+    explanation: "157 + 36 = 193."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-1000"
+    prompt: "400 + 275 = _"
+    answer: { accept: ["675"] }
+    hint: "Tính 400 + 275."
+    explanation: "400 + 275 = 675."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **cộng trong phạm vi 1000**."
+    say: "Bé đã biết cộng trong phạm vi 1000."

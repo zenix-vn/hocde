@@ -1,0 +1,80 @@
+schema: 1
+slug: toan2-gio-phut
+title: "Giờ, phút"
+summary: "Đọc giờ, phút trên đồng hồ."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Đồng hồ có kim giờ ngắn và kim phút dài. Mình học đọc cả giờ lẫn phút!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Kim dài chỉ số **12** là giờ đúng: 3 giờ.
+
+      Kim dài chỉ số **3** là **15 phút**. Kim dài chỉ số **6** là **30 phút** (rưỡi).
+
+      **1 giờ = 60 phút**.
+    say: "Kim dài chỉ số mười hai là giờ đúng. Kim dài chỉ số ba là mười lăm phút. Kim dài chỉ số sáu là ba mươi phút. Một giờ bằng sáu mươi phút."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gio-phut"
+    prompt: "Kim dài chỉ số 6, kim ngắn chỉ số 4. Đó là:"
+    options:
+      - { id: "a", text: "4 giờ 30 phút" }
+      - { id: "b", text: "6 giờ 4 phút" }
+      - { id: "c", text: "4 giờ" }
+    answer: { correct: ["a"] }
+    hint: "Số 6 là 30 phút."
+    explanation: "4 giờ 30 phút."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gio-phut"
+    prompt: "Kim dài chỉ số 3, kim ngắn chỉ số 8. Đó là:"
+    options:
+      - { id: "a", text: "3 giờ 8 phút" }
+      - { id: "b", text: "8 giờ 15 phút" }
+      - { id: "c", text: "8 giờ 30 phút" }
+    answer: { correct: ["b"] }
+    hint: "Số 3 là 15 phút."
+    explanation: "8 giờ 15 phút."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "gio-phut"
+    prompt: "1 giờ = _ phút"
+    answer: { accept: ["60"] }
+    hint: "Một vòng kim phút."
+    explanation: "1 giờ = 60 phút."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gio-phut"
+    prompt: "Bé đi ngủ lúc 9 giờ tối. Kim dài chỉ số mấy?"
+    options:
+      - { id: "a", text: "12" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["a"] }
+    hint: "Giờ đúng."
+    explanation: "Kim dài chỉ số 12."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết xem **giờ, phút** trên đồng hồ."
+    say: "Bé đã biết xem giờ, phút trên đồng hồ."

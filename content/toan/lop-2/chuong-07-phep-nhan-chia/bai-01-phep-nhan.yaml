@@ -1,0 +1,82 @@
+schema: 1
+slug: toan2-phep-nhan
+title: "Phép nhân"
+summary: "Làm quen phép nhân: cộng các số bằng nhau."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "3 đĩa, mỗi đĩa 2 quả cam. Có tất cả bao nhiêu quả? Bé sắp học phép nhân!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🍊🍊 🍊🍊 🍊🍊
+
+      2 + 2 + 2 = 6. Ta viết: **2 × 3 = 6**.
+
+      Đọc là: hai **nhân** ba bằng sáu.
+    say: "Hai cộng hai cộng hai bằng sáu. Ta viết hai nhân ba bằng sáu."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Dấu **×** đọc là **nhân**. 2 × 3 là 3 lần số 2."
+    say: "Dấu nhân đọc là nhân. Hai nhân ba là ba lần số hai."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phep-nhan"
+    prompt: "2 + 2 + 2 + 2 = 8. Viết phép nhân: 2 × _ = 8"
+    answer: { accept: ["4"] }
+    hint: "Có 4 số 2."
+    explanation: "2 × 4 = 8."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phep-nhan"
+    prompt: "5 + 5 + 5 = 15. Viết phép nhân: 5 × _ = 15"
+    answer: { accept: ["3"] }
+    hint: "Có 3 số 5."
+    explanation: "5 × 3 = 15."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phep-nhan"
+    prompt: "Phép nhân nào cho 3 + 3 + 3 + 3?"
+    options:
+      - { id: "a", text: "3 × 4" }
+      - { id: "b", text: "4 × 4" }
+      - { id: "c", text: "3 × 3" }
+    answer: { correct: ["a"] }
+    hint: "Có 4 số 3."
+    explanation: "3 × 4 = 12."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phep-nhan"
+    prompt: "2 × 5 = ?"
+    options:
+      - { id: "a", text: "7" }
+      - { id: "b", text: "10" }
+      - { id: "c", text: "12" }
+    answer: { correct: ["b"] }
+    hint: "5 lần số 2."
+    explanation: "2 × 5 = 10."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **phép nhân** là cộng các số bằng nhau."
+    say: "Bé đã biết phép nhân là cộng các số bằng nhau."

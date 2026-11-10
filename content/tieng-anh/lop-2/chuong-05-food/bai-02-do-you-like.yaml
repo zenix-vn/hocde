@@ -1,0 +1,134 @@
+schema: 1
+slug: anh2-do-you-like
+title: "Do you like…?"
+summary: "Hỏi và trả lời: Do you like milk? Yes, I do. / No, I don't."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé hỏi bạn có thích món nào không nhé! Trả lời bằng yes hoặc no."
+    say: [{"t":"Bé hỏi bạn có thích món nào không nhé! Trả lời bằng yes hoặc no.","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "yes", emoji: "✅", meaning: "có, vâng" }, { word: "no", emoji: "❌", meaning: "không" }, { word: "juice", emoji: "🧃", meaning: "nước ép" }, { word: "cake", emoji: "🍰", meaning: "bánh ngọt" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Do you like cake?** – Bạn có thích bánh không?
+
+      **Yes, I do.** – Có, mình thích.
+
+      **No, I don't.** – Không, mình không thích.
+    say: [{"t":"Do you like cake?","l":"en"},{"t":"Bạn có thích bánh không?","l":"vi"},{"t":"Yes, I do.","l":"en"},{"t":"Có, mình thích.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-juice"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "juice", lang: "en" }
+    options:
+      - { id: "a", text: "🧃", say: "juice", lang: "en" }
+      - { id: "b", text: "🍰", say: "cake", lang: "en" }
+      - { id: "c", text: "🥛", say: "milk", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là juice."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-cake"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "cake", lang: "en" }
+    options:
+      - { id: "a", text: "🧃", say: "juice", lang: "en" }
+      - { id: "b", text: "🍰", say: "cake", lang: "en" }
+      - { id: "c", text: "🍞", say: "bread", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là cake."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bé rất thích bánh ngọt 🍰. Bé trả lời:
+
+      **Do you like cake?**
+    options:
+      - { id: "a", text: "Yes, I do." }
+      - { id: "b", text: "No, I don't." }
+      - { id: "c", text: "I'm fine." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "Thích thì trả lời Yes, I do."
+    option_lang: "en"
+    say: [{"t":"Bé rất thích bánh ngọt 🍰. Bé trả lời:","l":"vi"},{"t":"Do you like cake?","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bé không thích nước ép 🧃. Bé trả lời:
+
+      **Do you like juice?**
+    options:
+      - { id: "a", text: "Yes, I do." }
+      - { id: "b", text: "No, I don't." }
+      - { id: "c", text: "My name's Nam." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "Không thích thì trả lời No, I don't."
+    option_lang: "en"
+    say: [{"t":"Bé không thích nước ép 🧃. Bé trả lời:","l":"vi"},{"t":"Do you like juice?","l":"en"}]
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-don-t"
+    prompt: |
+      Điền từ: Không, mình không thích.
+
+      **No, I _ .**
+    answer: { accept: ["don't", "do not"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "No, I don't."
+    say: [{"t":"Điền từ: Không, mình không thích.","l":"vi"},{"t":"No, I blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlike", text: "like" }
+      - { id: "xyou", text: "you" }
+      - { id: "xDo", text: "Do" }
+      - { id: "xmilk", text: "milk" }
+    answer: { sequence: ["xDo", "xyou", "xlike", "xmilk"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "Do you like milk?"
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết hỏi và trả lời **Do you like…?**"
+    say: "Bé đã biết hỏi và trả lời Do you like? Yes, I do. No, I don't."

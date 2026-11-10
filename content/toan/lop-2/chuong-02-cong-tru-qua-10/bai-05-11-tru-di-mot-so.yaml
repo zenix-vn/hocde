@@ -1,0 +1,96 @@
+schema: 1
+slug: toan2-tru-qua-10
+title: "Trừ qua 10 trong phạm vi 20"
+summary: "Trừ có nhớ: 11, 12, 13... trừ đi một số."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trừ qua mười hơi khó, nhưng bé có mẹo tách số đây!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **13 − 5 = ?**
+
+      Tách 13 = 10 + 3. Lấy 10 − 5 = 5. Rồi 5 + 3 = **8**.
+
+      Hoặc: 13 − 3 = 10, rồi 10 − 2 = **8**.
+    say: "Mười ba trừ năm. Tách mười ba bằng mười cộng ba. Mười trừ năm bằng năm, năm cộng ba bằng tám."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: "Kiểm tra bằng phép cộng: nếu 13 − 5 = 8 thì 8 + 5 = 13."
+    say: "Kiểm tra bằng phép cộng. Nếu mười ba trừ năm bằng tám thì tám cộng năm bằng mười ba."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-qua-10"
+    prompt: "11 − 3 = ?"
+    options:
+      - { id: "a", text: "9" }
+      - { id: "b", text: "8" }
+      - { id: "c", text: "19" }
+    answer: { correct: ["b"] }
+    hint: "Tính 11 − 3."
+    explanation: "11 − 3 = 8."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-qua-10"
+    prompt: "14 − 6 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "19" }
+    answer: { correct: ["a"] }
+    hint: "Tính 14 − 6."
+    explanation: "14 − 6 = 8."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-qua-10"
+    prompt: "16 − 9 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "18" }
+      - { id: "c", text: "7" }
+    answer: { correct: ["c"] }
+    hint: "Tính 16 − 9."
+    explanation: "16 − 9 = 7."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-qua-10"
+    prompt: "12 − 8 = _"
+    answer: { accept: ["4"] }
+    hint: "Tính 12 − 8."
+    explanation: "12 − 8 = 4."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-qua-10"
+    prompt: "15 − 7 = _"
+    answer: { accept: ["8"] }
+    hint: "Tính 15 − 7."
+    explanation: "15 − 7 = 8."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **trừ qua 10** trong phạm vi 20."
+    say: "Bé đã biết trừ qua 10 trong phạm vi 20."

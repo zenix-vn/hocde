@@ -1,0 +1,79 @@
+schema: 1
+slug: tv2-cau-ai-la-gi
+title: "Câu giới thiệu: Ai là gì?"
+summary: "Đặt và trả lời câu hỏi Ai (cái gì, con gì) là gì?"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi giới thiệu ai đó, bé dùng câu \"... là ...\"."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Câu giới thiệu: **Ai (cái gì, con gì)** + **là** + **gì?**
+
+      - Bạn Lan **là** học sinh lớp 2.
+      - Con mèo **là** bạn của em.
+      - Mẹ em **là** cô giáo.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-la-gi"
+    prompt: "Câu nào là câu giới thiệu?"
+    options:
+      - { id: "a", text: "Mẹ em là bác sĩ." }
+      - { id: "b", text: "Mẹ em đang nấu cơm." }
+      - { id: "c", text: "Mẹ em rất hiền." }
+    answer: { correct: ["a"] }
+    hint: "Có từ \"là\"."
+    explanation: "Mẹ em là bác sĩ."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ai-la-gi"
+    prompt: "Điền từ: Bố em _ kĩ sư."
+    answer: { accept: ["là"] }
+    hint: "Từ để giới thiệu."
+    explanation: "Bố em là kĩ sư."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ai-la-gi"
+    prompt: "Sắp xếp thành câu."
+    options:
+      - { id: "xla", text: "là" }
+      - { id: "xEm", text: "Em" }
+      - { id: "xhocsinh", text: "học sinh" }
+    answer: { sequence: ["xEm", "xla", "xhocsinh"] }
+    hint: "Ai là gì?"
+    explanation: "Em là học sinh."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-la-gi"
+    prompt: "Trả lời câu hỏi \"Cô Hoa là ai?\":"
+    options:
+      - { id: "a", text: "Cô Hoa là cô giáo của em." }
+      - { id: "b", text: "Cô Hoa đi chợ." }
+      - { id: "c", text: "Cô Hoa rất đẹp." }
+    answer: { correct: ["a"] }
+    hint: "Giới thiệu cô Hoa."
+    explanation: "Cô Hoa là cô giáo của em."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết đặt câu **Ai là gì?**."
+    say: "Bé đã biết đặt câu Ai là gì?."

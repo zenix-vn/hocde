@@ -1,0 +1,84 @@
+schema: 1
+slug: toan2-chac-chan-co-the-khong-the
+title: "Chắc chắn, có thể, không thể"
+summary: "Nhận biết khả năng xảy ra của một sự kiện."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có việc chắc chắn xảy ra, có việc không thể xảy ra. Bé phân biệt nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Chắc chắn:** Mặt trời mọc ở hướng Đông.
+
+      **Có thể:** Ngày mai trời mưa.
+
+      **Không thể:** Con mèo biết bay.
+    say: "Chắc chắn là việc nhất định xảy ra. Có thể là việc có thể xảy ra hoặc không. Không thể là việc không bao giờ xảy ra."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kha-nang"
+    prompt: "Một năm có 12 tháng. Điều này:"
+    options:
+      - { id: "a", text: "chắc chắn" }
+      - { id: "b", text: "có thể" }
+      - { id: "c", text: "không thể" }
+    answer: { correct: ["a"] }
+    hint: "Luôn luôn đúng."
+    explanation: "Chắc chắn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kha-nang"
+    prompt: "Hôm nay bé sẽ gặp một chú voi trong lớp. Điều này:"
+    options:
+      - { id: "a", text: "chắc chắn" }
+      - { id: "b", text: "có thể" }
+      - { id: "c", text: "không thể" }
+    answer: { correct: ["c"] }
+    hint: "Voi quá to để vào lớp."
+    explanation: "Không thể."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kha-nang"
+    prompt: "Chiều nay bé được ăn kem. Điều này:"
+    options:
+      - { id: "a", text: "chắc chắn" }
+      - { id: "b", text: "có thể" }
+      - { id: "c", text: "không thể" }
+    answer: { correct: ["b"] }
+    hint: "Có thể có, có thể không."
+    explanation: "Có thể."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kha-nang"
+    prompt: "Hộp chỉ có bi đỏ. Bé lấy ra một viên bi xanh. Điều này:"
+    options:
+      - { id: "a", text: "chắc chắn" }
+      - { id: "b", text: "có thể" }
+      - { id: "c", text: "không thể" }
+    answer: { correct: ["c"] }
+    hint: "Trong hộp không có bi xanh."
+    explanation: "Không thể."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **chắc chắn, có thể, không thể**. Bé hoàn thành Toán lớp 2!"
+    say: "Bé đã biết chắc chắn, có thể, không thể. Bé hoàn thành Toán lớp 2!"

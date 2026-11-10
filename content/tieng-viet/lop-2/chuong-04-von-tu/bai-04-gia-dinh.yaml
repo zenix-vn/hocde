@@ -1,0 +1,93 @@
+schema: 1
+slug: tv2-tu-ngu-ve-gia-dinh
+title: "Từ ngữ về gia đình"
+summary: "Mở rộng vốn từ chỉ người trong gia đình."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Gia đình là nơi bé thấy bình yên nhất."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Người trong gia đình: **ông, bà, bố (ba), mẹ (má), anh, chị, em**.
+
+      Họ hàng của bố: **bác** (anh, chị của bố), **chú** (em trai của bố), **cô** (em gái của bố).
+
+      Họ hàng của mẹ: **cậu** (anh, em trai của mẹ), **dì** (chị, em gái của mẹ).
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gia-dinh"
+    prompt: "Em trai của bố, em gọi là:"
+    options:
+      - { id: "a", text: "chú" }
+      - { id: "b", text: "bác" }
+      - { id: "c", text: "cậu" }
+    answer: { correct: ["a"] }
+    hint: "Bên bố, nhỏ tuổi hơn."
+    explanation: "Em trai của bố là chú."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gia-dinh"
+    prompt: "Em gái của bố, em gọi là:"
+    options:
+      - { id: "a", text: "dì" }
+      - { id: "b", text: "cô" }
+      - { id: "c", text: "bác" }
+    answer: { correct: ["b"] }
+    hint: "Bên bố."
+    explanation: "Em gái của bố là cô."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gia-dinh"
+    prompt: "Anh trai của mẹ, em gọi là:"
+    options:
+      - { id: "a", text: "bác" }
+      - { id: "b", text: "chú" }
+      - { id: "c", text: "cậu" }
+    answer: { correct: ["c"] }
+    hint: "Bên mẹ."
+    explanation: "Anh trai của mẹ là cậu."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "gia-dinh"
+    prompt: "Nối từ với ý nghĩa."
+    pairs:
+      - { left: "ông", right: "bố của bố hoặc mẹ" }
+      - { left: "bà", right: "mẹ của bố hoặc mẹ" }
+      - { left: "anh", right: "con trai lớn hơn em trong nhà" }
+    answer: { pairs: [["ông", "bố của bố hoặc mẹ"], ["bà", "mẹ của bố hoặc mẹ"], ["anh", "con trai lớn hơn em trong nhà"]] }
+    hint: "Nghĩ đến người thân."
+    explanation: "Ông, bà, anh."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "gia-dinh"
+    prompt: "Mẹ của mẹ em gọi là: _ ngoại"
+    answer: { accept: ["bà"] }
+    hint: "Bà ngoại."
+    explanation: "bà ngoại."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết gọi tên **người thân trong gia đình**."
+    say: "Bé đã biết gọi tên người thân trong gia đình."

@@ -1,0 +1,72 @@
+schema: 1
+slug: toan2-doan-thang-do-dai
+title: "Đoạn thẳng, độ dài: dm, cm"
+summary: "Làm quen đoạn thẳng và đơn vị đề-xi-mét (dm)."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Đoạn thẳng là một phần của đường thẳng, có hai đầu."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đoạn thẳng **AB** có hai điểm đầu là A và B.
+
+      Đơn vị đo độ dài: **cm** và **đề-xi-mét (dm)**.
+
+      **1 dm = 10 cm**.
+    say: "Đoạn thẳng có hai đầu. Đơn vị đo độ dài là xăng ti mét và đề xi mét. Một đề xi mét bằng mười xăng ti mét."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-dm"
+    prompt: "2 dm = _ cm"
+    answer: { accept: ["20"] }
+    hint: "1 dm = 10 cm."
+    explanation: "2 dm = 20 cm."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-dm"
+    prompt: "30 cm = _ dm"
+    answer: { accept: ["3"] }
+    hint: "10 cm = 1 dm."
+    explanation: "30 cm = 3 dm."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-do-dai"
+    prompt: "Chọn dấu đúng: 5 dm _ 40 cm"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "5 dm = 50 cm."
+    explanation: "5 dm = 50 cm, lớn hơn 40 cm."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-do-dai"
+    prompt: "Đoạn AB dài 3 dm, đoạn BC dài 4 dm. Cả hai đoạn dài _ dm."
+    answer: { accept: ["7"] }
+    hint: "3 + 4."
+    explanation: "3 + 4 = 7 (dm)."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **đoạn thẳng** và **1 dm = 10 cm**."
+    say: "Bé đã biết đoạn thẳng và 1 dm = 10 cm."

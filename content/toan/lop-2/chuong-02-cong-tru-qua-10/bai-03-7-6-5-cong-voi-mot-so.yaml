@@ -1,0 +1,102 @@
+schema: 1
+slug: toan2-cong-qua-10-7-6-5
+title: "7, 6, 5 cộng với một số"
+summary: "Cộng có nhớ với 7, 6, 5."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình dùng cách gộp cho đủ 10 với các số 7, 6, 5 nữa nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **7 + 5 = ?** Lấy 3 từ số 5 cho đủ 10: 7 + 3 = 10, còn 2. 10 + 2 = **12**.
+
+      **6 + 7 = ?** Lấy 4 từ số 7: 6 + 4 = 10, còn 3. 10 + 3 = **13**.
+    say: "Bảy cộng năm. Bảy cộng ba bằng mười, còn hai, mười cộng hai bằng mười hai. Sáu cộng bảy. Sáu cộng bốn bằng mười, còn ba, mười cộng ba bằng mười ba."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "7 + 6 = ?"
+    options:
+      - { id: "a", text: "14" }
+      - { id: "b", text: "13" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["b"] }
+    hint: "Tính 7 + 6."
+    explanation: "7 + 6 = 13."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "6 + 8 = ?"
+    options:
+      - { id: "a", text: "14" }
+      - { id: "b", text: "15" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["a"] }
+    hint: "Tính 6 + 8."
+    explanation: "6 + 8 = 14."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "5 + 9 = ?"
+    options:
+      - { id: "a", text: "15" }
+      - { id: "b", text: "4" }
+      - { id: "c", text: "14" }
+    answer: { correct: ["c"] }
+    hint: "Tính 5 + 9."
+    explanation: "5 + 9 = 14."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "7 + 7 = _"
+    answer: { accept: ["14"] }
+    hint: "Tính 7 + 7."
+    explanation: "7 + 7 = 14."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "6 + 6 = _"
+    answer: { accept: ["12"] }
+    hint: "Tính 6 + 6."
+    explanation: "6 + 6 = 12."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-qua-10"
+    prompt: "Phép tính nào có kết quả bằng 14?"
+    options:
+      - { id: "a", text: "7 + 6" }
+      - { id: "b", text: "8 + 6" }
+      - { id: "c", text: "9 + 6" }
+    answer: { correct: ["b"] }
+    hint: "Tính từng phép."
+    explanation: "8 + 6 = 14."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **cộng qua 10** trong phạm vi 20."
+    say: "Bé đã biết cộng qua 10 trong phạm vi 20."

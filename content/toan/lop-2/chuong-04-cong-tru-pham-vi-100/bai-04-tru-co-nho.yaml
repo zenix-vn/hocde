@@ -1,0 +1,94 @@
+schema: 1
+slug: toan2-tru-co-nho-100
+title: "Trừ có nhớ trong phạm vi 100"
+summary: "Trừ số có hai chữ số, có nhớ."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi đơn vị không đủ trừ, bé mượn 1 chục nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **52 − 27 = ?**
+
+      Đơn vị: 2 không trừ được 7, lấy 12 − 7 = **5**, nhớ **1**.
+
+      Chục: 5 − (2 + 1) = 2.
+
+      Vậy 52 − 27 = **25**.
+    say: "Năm mươi hai trừ hai mươi bảy. Hai không trừ được bảy, lấy mười hai trừ bảy bằng năm, nhớ một. Chục: năm trừ ba bằng hai. Vậy bằng hai mươi lăm."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: "Kiểm tra bằng phép cộng: 25 + 27 = 52 ✓"
+    say: "Kiểm tra bằng phép cộng: hai mươi lăm cộng hai mươi bảy bằng năm mươi hai."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-co-nho"
+    prompt: "41 − 18 = ?"
+    options:
+      - { id: "a", text: "24" }
+      - { id: "b", text: "23" }
+      - { id: "c", text: "13" }
+    answer: { correct: ["b"] }
+    hint: "Tính 41 − 18."
+    explanation: "41 − 18 = 23."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-co-nho"
+    prompt: "73 − 29 = ?"
+    options:
+      - { id: "a", text: "45" }
+      - { id: "b", text: "34" }
+      - { id: "c", text: "44" }
+    answer: { correct: ["c"] }
+    hint: "Tính 73 − 29."
+    explanation: "73 − 29 = 44."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-co-nho"
+    prompt: "60 − 36 = _"
+    answer: { accept: ["24"] }
+    hint: "Tính 60 − 36."
+    explanation: "60 − 36 = 24."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-co-nho"
+    prompt: "84 − 47 = _"
+    answer: { accept: ["37"] }
+    hint: "Tính 84 − 47."
+    explanation: "84 − 47 = 37."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Bác Hòa có 62 quả cam, bán 38 quả. Còn lại _ quả."
+    answer: { accept: ["24"] }
+    hint: "Bán đi thì trừ."
+    explanation: "62 − 38 = 24."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **trừ có nhớ** trong phạm vi 100."
+    say: "Bé đã biết trừ có nhớ trong phạm vi 100."

@@ -1,0 +1,78 @@
+schema: 1
+slug: tv2-sap-xep-cau-thanh-doan
+title: "Sắp xếp câu thành đoạn"
+summary: "Sắp xếp các câu thành đoạn văn hợp lí."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Các câu xếp đúng thứ tự sẽ kể được một câu chuyện nhỏ."
+
+  - id: b2
+    type: "text"
+    markdown: "Khi kể một việc, bé kể theo thứ tự: **mở đầu → diễn biến → kết thúc**."
+
+  - id: b3
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Xếp các câu thành đoạn văn."
+    options:
+      - { id: "xEmdanhrangroidingu", text: "Em đánh răng rồi đi ngủ." }
+      - { id: "xToidenemancomcungcanha", text: "Tối đến, em ăn cơm cùng cả nhà." }
+      - { id: "xSaubuacomemhocbai", text: "Sau bữa cơm, em học bài." }
+    answer: { sequence: ["xToidenemancomcungcanha", "xSaubuacomemhocbai", "xEmdanhrangroidingu"] }
+    hint: "Việc nào làm trước, việc nào làm sau?"
+    explanation: "Ăn cơm, học bài, đánh răng đi ngủ."
+
+  - id: b4
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Xếp các câu thành đoạn văn."
+    options:
+      - { id: "xSangrahoanoro", text: "Sáng ra, hoa nở rộ." }
+      - { id: "xEmtuoinuocchocayhoa", text: "Em tưới nước cho cây hoa." }
+      - { id: "xHomquaemtrongmotcayhoa", text: "Hôm qua, em trồng một cây hoa." }
+    answer: { sequence: ["xHomquaemtrongmotcayhoa", "xEmtuoinuocchocayhoa", "xSangrahoanoro"] }
+    hint: "Trồng, tưới, hoa nở."
+    explanation: "Trồng hoa, tưới nước, hoa nở."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Câu nào nên đứng đầu đoạn kể về buổi đi chơi?"
+    options:
+      - { id: "a", text: "Chủ nhật, cả nhà em đi công viên." }
+      - { id: "b", text: "Em về nhà." }
+      - { id: "c", text: "Em rất vui." }
+    answer: { correct: ["a"] }
+    hint: "Mở đầu là thời gian và nơi chốn."
+    explanation: "Câu đầu giới thiệu việc."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Câu nào nên đứng cuối đoạn?"
+    options:
+      - { id: "a", text: "Em rất vui vì được đi chơi." }
+      - { id: "b", text: "Chủ nhật, nhà em đi chơi." }
+      - { id: "c", text: "Em chơi cầu trượt." }
+    answer: { correct: ["a"] }
+    hint: "Kết thúc bằng cảm xúc."
+    explanation: "Câu cuối nói cảm xúc."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **sắp xếp câu** thành đoạn. Bé hoàn thành Tiếng Việt lớp 2!"
+    say: "Bé đã biết sắp xếp câu thành đoạn. Bé hoàn thành Tiếng Việt lớp 2!"

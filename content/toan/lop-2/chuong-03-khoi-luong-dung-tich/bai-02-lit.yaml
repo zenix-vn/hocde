@@ -1,0 +1,87 @@
+schema: 1
+slug: toan2-lit
+title: "Lít"
+summary: "Làm quen đơn vị đo dung tích lít (l)."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Chai nước này chứa được bao nhiêu nước nhỉ? Bé học đơn vị lít nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đơn vị đo lượng nước là **lít**, viết tắt là **l**.
+
+      Cái xô chứa **10 l** nước. Chai nhỏ chứa **1 l** nước.
+    say: "Đơn vị đo lượng nước là lít, viết tắt là lờ. Cái xô chứa mười lít nước. Chai nhỏ chứa một lít nước."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "lit"
+    prompt: "Lít viết tắt là:"
+    options:
+      - { id: "a", text: "l" }
+      - { id: "b", text: "kg" }
+      - { id: "c", text: "m" }
+    answer: { correct: ["a"] }
+    hint: "Chữ l."
+    explanation: "Lít viết tắt là l."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-lit"
+    prompt: "Can thứ nhất có 4 l dầu, can thứ hai có 5 l dầu. Cả hai can có _ l dầu."
+    answer: { accept: ["9"] }
+    hint: "Gộp thì cộng."
+    explanation: "4 + 5 = 9 (l)."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-lit"
+    prompt: "Bình có 12 l nước, rót đi 5 l. Còn _ l nước."
+    answer: { accept: ["7"] }
+    hint: "Rót đi thì trừ."
+    explanation: "12 − 5 = 7 (l)."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-lit"
+    prompt: "Thùng A chứa 8 l, thùng B chứa 6 l. Thùng nào chứa nhiều nước hơn?"
+    options:
+      - { id: "a", text: "Thùng A" }
+      - { id: "b", text: "Thùng B" }
+    answer: { correct: ["a"] }
+    hint: "8 lớn hơn 6."
+    explanation: "Thùng A chứa nhiều hơn."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "don-vi"
+    prompt: "Dùng đơn vị nào để đo lượng nước trong chai?"
+    options:
+      - { id: "a", text: "Lít" }
+      - { id: "b", text: "Ki-lô-gam" }
+      - { id: "c", text: "Xăng-ti-mét" }
+    answer: { correct: ["a"] }
+    hint: "Nước thì đo bằng lít."
+    explanation: "Đo nước bằng lít."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết đơn vị **lít (l)**."
+    say: "Bé đã biết đơn vị lít (l)."

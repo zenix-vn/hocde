@@ -1,0 +1,100 @@
+schema: 1
+slug: toan2-bang-nhan-5
+title: "Bảng nhân 5"
+summary: "Học thuộc bảng nhân 5."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bảng nhân 5 dễ nhớ lắm: các số tận cùng là 5 hoặc 0!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      5 × 1 = 5
+
+      5 × 2 = 10
+
+      5 × 3 = 15
+
+      5 × 4 = 20
+
+      5 × 5 = 25
+
+      5 × 6 = 30
+
+      5 × 7 = 35
+
+      5 × 8 = 40
+
+      5 × 9 = 45
+
+      5 × 10 = 50
+    say: "Năm nhân một bằng năm. Năm nhân hai bằng mười. Năm nhân ba bằng mười lăm. Năm nhân bốn bằng hai mươi. Năm nhân năm bằng hai mươi lăm."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-nhan-5"
+    prompt: "5 × 4 = ?"
+    options:
+      - { id: "a", text: "15" }
+      - { id: "b", text: "20" }
+      - { id: "c", text: "25" }
+    answer: { correct: ["b"] }
+    hint: "Đếm cách 5."
+    explanation: "5 × 4 = 20."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-nhan-5"
+    prompt: "5 × 7 = ?"
+    options:
+      - { id: "a", text: "30" }
+      - { id: "b", text: "35" }
+      - { id: "c", text: "40" }
+    answer: { correct: ["b"] }
+    hint: "Đếm cách 5 bảy lần."
+    explanation: "5 × 7 = 35."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-nhan-5"
+    prompt: "5 × 9 = _"
+    answer: { accept: ["45"] }
+    hint: "5 × 10 = 50, bớt 5."
+    explanation: "5 × 9 = 45."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-nhan-5"
+    prompt: "5 × 6 = _"
+    answer: { accept: ["30"] }
+    hint: "5, 10, 15, 20, 25, 30."
+    explanation: "5 × 6 = 30."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Một bàn tay có 5 ngón. 3 bàn tay có _ ngón."
+    answer: { accept: ["15"] }
+    hint: "5 × 3."
+    explanation: "5 × 3 = 15."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã thuộc **bảng nhân 5**."
+    say: "Bé đã thuộc bảng nhân 5."

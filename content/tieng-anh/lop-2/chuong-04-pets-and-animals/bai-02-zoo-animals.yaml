@@ -1,0 +1,125 @@
+schema: 1
+slug: anh2-zoo-animals
+title: "At the zoo"
+summary: "Gọi tên con vật ở sở thú và nói chúng làm được gì."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình đi sở thú nhé! Bé xem có những con vật nào."
+    say: [{"t":"Mình đi sở thú nhé! Bé xem có những con vật nào.","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "elephant", emoji: "🐘", meaning: "con voi" }, { word: "monkey", emoji: "🐵", meaning: "con khỉ" }, { word: "lion", emoji: "🦁", meaning: "sư tử" }, { word: "tiger", emoji: "🐯", meaning: "con hổ" }, { word: "giraffe", emoji: "🦒", meaning: "hươu cao cổ" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **It's an elephant.** – Đó là một con voi.
+
+      **It can run.** – Nó chạy được.
+
+      **Can it swim?** – Nó bơi được không?
+    say: [{"t":"It's an elephant.","l":"en"},{"t":"Đó là một con voi.","l":"vi"},{"t":"It can run.","l":"en"},{"t":"Nó chạy được.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-lion"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "lion", lang: "en" }
+    options:
+      - { id: "a", text: "🦁", say: "lion", lang: "en" }
+      - { id: "b", text: "🐯", say: "tiger", lang: "en" }
+      - { id: "c", text: "🐘", say: "elephant", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là lion."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-monkey"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "monkey", lang: "en" }
+    options:
+      - { id: "a", text: "🦒", say: "giraffe", lang: "en" }
+      - { id: "b", text: "🐘", say: "elephant", lang: "en" }
+      - { id: "c", text: "🐵", say: "monkey", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là monkey."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-elephant"
+    prompt: "Con voi 🐘 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "lion" }
+      - { id: "b", text: "elephant" }
+      - { id: "c", text: "tiger" }
+    answer: { correct: ["b"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Con voi tiếng Anh là elephant."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối từ với nghĩa."
+    pairs:
+      - { left: "tiger", right: "con hổ" }
+      - { left: "giraffe", right: "hươu cao cổ" }
+      - { left: "monkey", right: "con khỉ" }
+    answer: { pairs: [["tiger", "con hổ"], ["giraffe", "hươu cao cổ"], ["monkey", "con khỉ"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "tiger là hổ, giraffe là hươu cao cổ, monkey là khỉ."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-climb"
+    prompt: |
+      Điền từ: Con khỉ 🐵 leo cây được.
+
+      **It can _ .**
+    answer: { accept: ["climb"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "It can climb."
+    say: [{"t":"Điền từ: Con khỉ 🐵 leo cây được.","l":"vi"},{"t":"It can blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlion", text: "lion" }
+      - { id: "xIts", text: "It's" }
+      - { id: "xa", text: "a" }
+    answer: { sequence: ["xIts", "xa", "xlion"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "It's a lion."
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết gọi tên **con vật ở sở thú**."
+    say: "Bé đã biết gọi tên con vật ở sở thú. It's an elephant."

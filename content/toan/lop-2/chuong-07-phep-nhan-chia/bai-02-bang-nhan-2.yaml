@@ -1,0 +1,100 @@
+schema: 1
+slug: toan2-bang-nhan-2
+title: "Bảng nhân 2"
+summary: "Học thuộc bảng nhân 2."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bảng nhân 2: mỗi lần thêm 2. Bé đọc theo mình nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      2 × 1 = 2
+
+      2 × 2 = 4
+
+      2 × 3 = 6
+
+      2 × 4 = 8
+
+      2 × 5 = 10
+
+      2 × 6 = 12
+
+      2 × 7 = 14
+
+      2 × 8 = 16
+
+      2 × 9 = 18
+
+      2 × 10 = 20
+    say: "Hai nhân một bằng hai. Hai nhân hai bằng bốn. Hai nhân ba bằng sáu. Hai nhân bốn bằng tám. Hai nhân năm bằng mười."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-nhan-2"
+    prompt: "2 × 6 = ?"
+    options:
+      - { id: "a", text: "10" }
+      - { id: "b", text: "12" }
+      - { id: "c", text: "14" }
+    answer: { correct: ["b"] }
+    hint: "Đếm cách 2: 2, 4, 6, 8, 10, 12."
+    explanation: "2 × 6 = 12."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-nhan-2"
+    prompt: "2 × 9 = ?"
+    options:
+      - { id: "a", text: "16" }
+      - { id: "b", text: "18" }
+      - { id: "c", text: "20" }
+    answer: { correct: ["b"] }
+    hint: "Đếm cách 2 chín lần."
+    explanation: "2 × 9 = 18."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-nhan-2"
+    prompt: "2 × 7 = _"
+    answer: { accept: ["14"] }
+    hint: "Đếm cách 2."
+    explanation: "2 × 7 = 14."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-nhan-2"
+    prompt: "2 × 4 = _"
+    answer: { accept: ["8"] }
+    hint: "2, 4, 6, 8."
+    explanation: "2 × 4 = 8."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Mỗi bạn có 2 quả bóng. 5 bạn có _ quả bóng."
+    answer: { accept: ["10"] }
+    hint: "2 × 5."
+    explanation: "2 × 5 = 10."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã thuộc **bảng nhân 2**."
+    say: "Bé đã thuộc bảng nhân 2."

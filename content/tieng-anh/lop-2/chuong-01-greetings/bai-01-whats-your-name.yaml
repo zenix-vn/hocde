@@ -1,0 +1,115 @@
+schema: 1
+slug: anh2-whats-your-name
+title: "What's your name?"
+summary: "Hỏi và nói tên: What's your name? My name's ..."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Chào bé! Mình cùng học cách hỏi tên và giới thiệu tên nhé!"
+    say: [{"t":"Chào bé! Mình cùng học cách hỏi tên và giới thiệu tên nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "hello", emoji: "👋", meaning: "xin chào" }, { word: "name", emoji: "🏷️", meaning: "tên" }, { word: "nice to meet you", emoji: "🤝", meaning: "rất vui được gặp bạn" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **What's your name?** – Bạn tên là gì?
+
+      **My name's Lan.** – Tên mình là Lan.
+
+      **Nice to meet you.** – Rất vui được gặp bạn.
+    say: [{"t":"What's your name?","l":"en"},{"t":"Bạn tên là gì?","l":"vi"},{"t":"My name's Lan.","l":"en"},{"t":"Tên mình là Lan.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-hello"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "hello", lang: "en" }
+    options:
+      - { id: "a", text: "👋", say: "hello", lang: "en" }
+      - { id: "b", text: "🏷️", say: "name", lang: "en" }
+      - { id: "c", text: "🤝", say: "nice to meet you", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là hello."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-name"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "name", lang: "en" }
+    options:
+      - { id: "a", text: "👋", say: "hello", lang: "en" }
+      - { id: "b", text: "🏷️", say: "name", lang: "en" }
+      - { id: "c", text: "🤝", say: "nice to meet you", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là name."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn hỏi tên em. Em trả lời thế nào?
+
+      **What's your name?**
+    options:
+      - { id: "a", text: "My name's Nam." }
+      - { id: "b", text: "I'm fine." }
+      - { id: "c", text: "Nice to meet you." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "My name's Nam. nghĩa là tên mình là Nam."
+    option_lang: "en"
+    say: [{"t":"Bạn hỏi tên em. Em trả lời thế nào?","l":"vi"},{"t":"What's your name?","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-name"
+    prompt: |
+      Điền từ còn thiếu để giới thiệu tên.
+
+      **My _ is Mai.**
+    answer: { accept: ["name"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "My name is Mai."
+    say: [{"t":"Điền từ còn thiếu để giới thiệu tên.","l":"vi"},{"t":"My blank is Mai.","l":"en"}]
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xname", text: "name" }
+      - { id: "xMy", text: "My" }
+      - { id: "xLan", text: "Lan" }
+      - { id: "xis", text: "is" }
+    answer: { sequence: ["xMy", "xname", "xis", "xLan"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "My name is Lan."
+    option_lang: "en"
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết hỏi và nói **tên** bằng tiếng Anh."
+    say: "Bé đã biết hỏi và nói tên bằng tiếng Anh. What's your name?"

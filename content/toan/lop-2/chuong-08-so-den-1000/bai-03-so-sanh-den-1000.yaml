@@ -1,0 +1,93 @@
+schema: 1
+slug: toan2-so-sanh-den-1000
+title: "So sánh các số đến 1000"
+summary: "So sánh các số có ba chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "So số có ba chữ số: so trăm trước, rồi chục, rồi đơn vị."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **456** và **432**: trăm bằng nhau (4), chục: 5 > 3. Nên **456 > 432**.
+
+      **289** và **301**: 2 trăm < 3 trăm. Nên **289 < 301**.
+    say: "Bốn trăm năm mươi sáu lớn hơn bốn trăm ba mươi hai. Hai trăm tám mươi chín bé hơn ba trăm linh một."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-1000"
+    prompt: "Chọn dấu đúng: 567 _ 576"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["b"] }
+    hint: "Trăm bằng nhau. So chục: 6 và 7."
+    explanation: "567 < 576."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-1000"
+    prompt: "Chọn dấu đúng: 810 _ 799"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "So trăm: 8 và 7."
+    explanation: "810 > 799."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-1000"
+    prompt: "Số lớn nhất: 345, 354, 435?"
+    options:
+      - { id: "a", text: "345" }
+      - { id: "b", text: "354" }
+      - { id: "c", text: "435" }
+    answer: { correct: ["c"] }
+    hint: "So chữ số hàng trăm."
+    explanation: "435."
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-1000"
+    prompt: "Xếp từ bé đến lớn."
+    options:
+      - { id: "x621", text: "621" }
+      - { id: "x261", text: "261" }
+      - { id: "x612", text: "612" }
+      - { id: "x216", text: "216" }
+    answer: { sequence: ["x216", "x261", "x612", "x621"] }
+    hint: "So trăm, rồi chục."
+    explanation: "216, 261, 612, 621."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-sanh-1000"
+    prompt: "Số lớn nhất có ba chữ số là _"
+    answer: { accept: ["999"] }
+    hint: "Ba chữ số 9."
+    explanation: "999."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **so sánh** các số đến 1000."
+    say: "Bé đã biết so sánh các số đến 1000."

@@ -1,0 +1,79 @@
+schema: 1
+slug: tv2-cau-ai-the-nao
+title: "Câu tả: Ai thế nào?"
+summary: "Đặt và trả lời câu hỏi Ai (cái gì) thế nào?"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Câu \"Ai thế nào?\" cho biết đặc điểm của người, vật."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Câu tả: **Ai (cái gì)** + **thế nào?**
+
+      - Hoa hồng **thơm ngát**.
+      - Bạn Nam **rất chăm chỉ**.
+      - Bầu trời **xanh thẳm**.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-the-nao"
+    prompt: "Câu nào là câu \"Ai thế nào?\""
+    options:
+      - { id: "a", text: "Lan rất ngoan." }
+      - { id: "b", text: "Lan đi học." }
+      - { id: "c", text: "Lan là học sinh." }
+    answer: { correct: ["a"] }
+    hint: "Có từ chỉ đặc điểm."
+    explanation: "Lan rất ngoan."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ai-the-nao"
+    prompt: "Điền từ chỉ đặc điểm: Con voi rất _ (to / chạy)"
+    answer: { accept: ["to"] }
+    hint: "Voi như thế nào?"
+    explanation: "Con voi rất to."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ai-the-nao"
+    prompt: "Sắp xếp thành câu."
+    options:
+      - { id: "xthom", text: "thơm" }
+      - { id: "xHoa", text: "Hoa" }
+      - { id: "xngat", text: "ngát" }
+    answer: { sequence: ["xHoa", "xthom", "xngat"] }
+    hint: "Ai thế nào?"
+    explanation: "Hoa thơm ngát."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-the-nao"
+    prompt: "Trả lời câu hỏi \"Bầu trời thế nào?\":"
+    options:
+      - { id: "a", text: "Bầu trời xanh thẳm." }
+      - { id: "b", text: "Bầu trời đi chơi." }
+      - { id: "c", text: "Bầu trời là bầu trời." }
+    answer: { correct: ["a"] }
+    hint: "Thế nào thì trả lời bằng đặc điểm."
+    explanation: "Bầu trời xanh thẳm."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết đặt câu **Ai thế nào?**."
+    say: "Bé đã biết đặt câu Ai thế nào?."

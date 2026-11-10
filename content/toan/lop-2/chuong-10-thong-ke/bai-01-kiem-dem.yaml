@@ -1,0 +1,80 @@
+schema: 1
+slug: toan2-kiem-dem-so-lieu
+title: "Thu thập, kiểm đếm số liệu"
+summary: "Kiểm đếm và đọc bảng số liệu đơn giản."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Lớp mình thích quả gì nhất? Bé cùng kiểm đếm để biết nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Bảng kiểm đếm:
+
+      🍎 Táo: 5 bạn
+
+      🍌 Chuối: 3 bạn
+
+      🍊 Cam: 7 bạn
+
+      Quả được nhiều bạn thích nhất là **cam**.
+    say: "Táo năm bạn, chuối ba bạn, cam bảy bạn. Quả được nhiều bạn thích nhất là cam."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-bang"
+    prompt: "Quả nào được ít bạn thích nhất (theo bảng trên)?"
+    options:
+      - { id: "a", text: "Táo" }
+      - { id: "b", text: "Chuối" }
+      - { id: "c", text: "Cam" }
+    answer: { correct: ["b"] }
+    hint: "Tìm số bé nhất: 3."
+    explanation: "Chuối (3 bạn)."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doc-bang"
+    prompt: "Số bạn thích táo nhiều hơn số bạn thích chuối _ bạn."
+    answer: { accept: ["2"] }
+    hint: "5 − 3."
+    explanation: "5 − 3 = 2."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doc-bang"
+    prompt: "Tổng số bạn được hỏi là _"
+    answer: { accept: ["15"] }
+    hint: "5 + 3 + 7."
+    explanation: "5 + 3 + 7 = 15."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-bang"
+    prompt: "Quả nào được nhiều bạn thích nhất?"
+    options:
+      - { id: "a", text: "Táo" }
+      - { id: "b", text: "Chuối" }
+      - { id: "c", text: "Cam" }
+    answer: { correct: ["c"] }
+    hint: "Tìm số lớn nhất: 7."
+    explanation: "Cam (7 bạn)."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **kiểm đếm** và đọc **bảng số liệu**."
+    say: "Bé đã biết kiểm đếm và đọc bảng số liệu."

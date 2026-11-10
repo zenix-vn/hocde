@@ -1,0 +1,79 @@
+schema: 1
+slug: tv2-tu-ngu-ve-truong-hoc
+title: "Từ ngữ về trường học"
+summary: "Mở rộng vốn từ về trường học."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trường học là ngôi nhà thứ hai của bé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Người ở trường: **thầy giáo, cô giáo, bạn bè, bác bảo vệ**.
+
+      Đồ dùng: **bảng, phấn, bút, thước kẻ, cặp sách**.
+
+      Hoạt động: **học bài, ra chơi, xếp hàng, chào cờ**.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "truong-hoc"
+    prompt: "Từ nào chỉ đồ dùng học tập?"
+    options:
+      - { id: "a", text: "thước kẻ" }
+      - { id: "b", text: "chào cờ" }
+      - { id: "c", text: "cô giáo" }
+    answer: { correct: ["a"] }
+    hint: "Dùng để kẻ đường thẳng."
+    explanation: "thước kẻ."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "truong-hoc"
+    prompt: "Từ nào chỉ hoạt động ở trường?"
+    options:
+      - { id: "a", text: "chào cờ" }
+      - { id: "b", text: "bảng" }
+      - { id: "c", text: "phấn" }
+    answer: { correct: ["a"] }
+    hint: "Cả trường đứng chào lá cờ."
+    explanation: "chào cờ."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "truong-hoc"
+    prompt: "Từ nào KHÔNG thuộc chủ đề trường học?"
+    options:
+      - { id: "a", text: "phấn" }
+      - { id: "b", text: "bảng" }
+      - { id: "c", text: "bếp ga" }
+    answer: { correct: ["c"] }
+    hint: "Ở nhà."
+    explanation: "bếp ga."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "truong-hoc"
+    prompt: "Cô giáo viết lên _ bằng phấn."
+    answer: { accept: ["bảng"] }
+    hint: "Tấm bảng đen hoặc xanh."
+    explanation: "bảng."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết thêm nhiều **từ về trường học**."
+    say: "Bé đã biết thêm nhiều từ về trường học."

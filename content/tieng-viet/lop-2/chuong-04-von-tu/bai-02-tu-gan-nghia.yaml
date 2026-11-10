@@ -1,0 +1,77 @@
+schema: 1
+slug: tv2-tu-gan-nghia
+title: "Từ cùng nghĩa"
+summary: "Tìm từ có nghĩa giống nhau hoặc gần giống nhau."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có nhiều từ cùng nói một ý. Bé thử tìm nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Từ **cùng nghĩa** (gần nghĩa) là những từ có nghĩa giống nhau.
+
+      **đẹp** – **xinh**, **to** – **lớn**, **chăm chỉ** – **siêng năng**, **mẹ** – **má**
+
+  - id: b3
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "gan-nghia"
+    prompt: "Nối cặp từ cùng nghĩa."
+    pairs:
+      - { left: "đẹp", right: "xinh" }
+      - { left: "to", right: "lớn" }
+      - { left: "bố", right: "ba" }
+    answer: { pairs: [["đẹp", "xinh"], ["to", "lớn"], ["bố", "ba"]] }
+    hint: "Hai từ cùng chỉ một thứ."
+    explanation: "đẹp – xinh, to – lớn, bố – ba."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gan-nghia"
+    prompt: "Từ cùng nghĩa với \"chăm chỉ\" là:"
+    options:
+      - { id: "a", text: "siêng năng" }
+      - { id: "b", text: "lười" }
+      - { id: "c", text: "buồn" }
+    answer: { correct: ["a"] }
+    hint: "Làm việc đều đặn."
+    explanation: "chăm chỉ – siêng năng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gan-nghia"
+    prompt: "Từ nào KHÔNG cùng nghĩa với \"xinh\"?"
+    options:
+      - { id: "a", text: "đẹp" }
+      - { id: "b", text: "xấu" }
+      - { id: "c", text: "dễ thương" }
+    answer: { correct: ["b"] }
+    hint: "Ngược nghĩa với xinh."
+    explanation: "\"xấu\" trái nghĩa với xinh."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "gan-nghia"
+    prompt: "Cùng nghĩa với \"nhà\" là \"ngôi _\" (nhà / ...)"
+    answer: { accept: ["nhà"] }
+    hint: "Ngôi nhà."
+    explanation: "ngôi nhà."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **từ cùng nghĩa**."
+    say: "Bé đã biết từ cùng nghĩa."

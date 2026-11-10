@@ -1,0 +1,123 @@
+schema: 1
+slug: anh2-i-like
+title: "I like…"
+summary: "Nói món bé thích: I like apples."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé thích ăn gì nhất? Mình học cách nói món ăn bé thích nhé!"
+    say: [{"t":"Bé thích ăn gì nhất? Mình học cách nói món ăn bé thích nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "apple", emoji: "🍎", meaning: "quả táo" }, { word: "banana", emoji: "🍌", meaning: "quả chuối" }, { word: "bread", emoji: "🍞", meaning: "bánh mì" }, { word: "milk", emoji: "🥛", meaning: "sữa" }, { word: "rice", emoji: "🍚", meaning: "cơm" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I like bananas.** – Mình thích chuối.
+
+      **I don't like milk.** – Mình không thích sữa.
+    say: [{"t":"I like bananas.","l":"en"},{"t":"Mình thích chuối.","l":"vi"},{"t":"I don't like milk.","l":"en"},{"t":"Mình không thích sữa.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-banana"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "banana", lang: "en" }
+    options:
+      - { id: "a", text: "🍌", say: "banana", lang: "en" }
+      - { id: "b", text: "🍎", say: "apple", lang: "en" }
+      - { id: "c", text: "🍞", say: "bread", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là banana."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-milk"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "milk", lang: "en" }
+    options:
+      - { id: "a", text: "🍚", say: "rice", lang: "en" }
+      - { id: "b", text: "🥛", say: "milk", lang: "en" }
+      - { id: "c", text: "🍞", say: "bread", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là milk."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-rice"
+    prompt: "Cơm 🍚 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "rice" }
+      - { id: "b", text: "bread" }
+      - { id: "c", text: "milk" }
+    answer: { correct: ["a"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Cơm tiếng Anh là rice."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối từ với nghĩa."
+    pairs:
+      - { left: "apple", right: "quả táo" }
+      - { left: "bread", right: "bánh mì" }
+      - { left: "milk", right: "sữa" }
+    answer: { pairs: [["apple", "quả táo"], ["bread", "bánh mì"], ["milk", "sữa"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "apple là táo, bread là bánh mì, milk là sữa."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-bananas"
+    prompt: |
+      Điền từ: Mình thích chuối 🍌
+
+      **I like _ .**
+    answer: { accept: ["bananas"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "I like bananas."
+    say: [{"t":"Điền từ: Mình thích chuối 🍌","l":"vi"},{"t":"I like blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlike", text: "like" }
+      - { id: "xI", text: "I" }
+      - { id: "xapples", text: "apples" }
+    answer: { sequence: ["xI", "xlike", "xapples"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "I like apples."
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết nói **món ăn bé thích**."
+    say: "Bé đã biết nói món ăn bé thích. I like apples."

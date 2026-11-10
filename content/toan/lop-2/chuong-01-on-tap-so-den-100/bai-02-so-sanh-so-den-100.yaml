@@ -1,0 +1,93 @@
+schema: 1
+slug: toan2-so-sanh-so-den-100
+title: "So sánh các số đến 100"
+summary: "So sánh và xếp thứ tự các số có hai chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "So sánh hai số: bé nhớ so chục trước, rồi mới so đơn vị nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **64** và **59**: 6 chục lớn hơn 5 chục, nên **64 > 59**.
+
+      **72** và **78**: chục bằng nhau, 2 < 8 nên **72 < 78**.
+    say: "Sáu mươi tư lớn hơn năm mươi chín. Bảy mươi hai bé hơn bảy mươi tám."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Chọn dấu đúng: 46 _ 64"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["b"] }
+    hint: "So chục: 4 và 6."
+    explanation: "46 < 64."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Chọn dấu đúng: 83 _ 79"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "So chục: 8 và 7."
+    explanation: "83 > 79."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Số nào lớn nhất: 47, 74, 70?"
+    options:
+      - { id: "a", text: "47" }
+      - { id: "b", text: "74" }
+      - { id: "c", text: "70" }
+    answer: { correct: ["b"] }
+    hint: "So số chục trước, rồi đơn vị."
+    explanation: "74 là số lớn nhất."
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep"
+    prompt: "Xếp theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x58", text: "58" }
+      - { id: "x85", text: "85" }
+      - { id: "x55", text: "55" }
+      - { id: "x80", text: "80" }
+    answer: { sequence: ["x55", "x58", "x80", "x85"] }
+    hint: "So chục trước."
+    explanation: "55, 58, 80, 85."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Số lớn nhất có hai chữ số là _"
+    answer: { accept: ["99"] }
+    hint: "Chục lớn nhất là 9, đơn vị lớn nhất là 9."
+    explanation: "Số lớn nhất có hai chữ số là 99."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **so sánh** và **xếp thứ tự** các số đến 100."
+    say: "Bé đã biết so sánh và xếp thứ tự các số đến 100."

@@ -1,0 +1,81 @@
+schema: 1
+slug: toan2-bai-toan-them-bot
+title: "Bài toán thêm, bớt"
+summary: "Giải bài toán có lời văn với phép cộng, trừ trong phạm vi 20."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Đọc kỹ đề bài, rồi chọn phép tính đúng nhé!"
+
+  - id: b2
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Thêm, nhiều hơn, tất cả** → phép **cộng**.
+
+      **Bớt, ít hơn, còn lại** → phép **trừ**.
+    say: "Thêm, nhiều hơn, tất cả: phép cộng. Bớt, ít hơn, còn lại: phép trừ."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Lan có 9 bông hoa. Mai có nhiều hơn Lan 5 bông. Mai có _ bông hoa."
+    answer: { accept: ["14"] }
+    hint: "Nhiều hơn thì cộng: 9 + 5."
+    explanation: "9 + 5 = 14."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Nam có 15 viên bi, cho bạn 7 viên. Nam còn _ viên bi."
+    answer: { accept: ["8"] }
+    hint: "Cho đi thì trừ: 15 − 7."
+    explanation: "15 − 7 = 8."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chon-phep-tinh"
+    prompt: "Có 8 con gà, mua thêm 6 con. Phép tính đúng là:"
+    options:
+      - { id: "a", text: "8 + 6" }
+      - { id: "b", text: "8 − 6" }
+      - { id: "c", text: "6 − 8" }
+    answer: { correct: ["a"] }
+    hint: "Mua thêm là nhiều lên."
+    explanation: "8 + 6 = 14."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Hà gấp được 12 con hạc, Bình gấp ít hơn Hà 4 con. Bình gấp _ con."
+    answer: { accept: ["8"] }
+    hint: "Ít hơn thì trừ: 12 − 4."
+    explanation: "12 − 4 = 8."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Lớp có 8 bạn nam và 9 bạn nữ. Lớp có tất cả _ bạn."
+    answer: { accept: ["17"] }
+    hint: "Tất cả thì cộng."
+    explanation: "8 + 9 = 17."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết giải **bài toán thêm, bớt** trong phạm vi 20."
+    say: "Bé đã biết giải bài toán thêm, bớt trong phạm vi 20."

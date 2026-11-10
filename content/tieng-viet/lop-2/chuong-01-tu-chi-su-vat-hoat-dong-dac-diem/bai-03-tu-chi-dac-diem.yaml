@@ -1,0 +1,93 @@
+schema: 1
+slug: tv2-tu-chi-dac-diem
+title: "Từ chỉ đặc điểm"
+summary: "Nhận biết từ chỉ đặc điểm: màu sắc, hình dáng, tính nết."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có từ cho biết người, vật trông như thế nào hoặc tính nết ra sao."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Từ chỉ **đặc điểm** cho biết màu sắc, hình dáng, tính nết...
+
+      - Chiếc lá **xanh**.
+      - Con voi **to**.
+      - Bạn Lan **chăm chỉ**.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-dac-diem"
+    prompt: "Từ nào chỉ đặc điểm?"
+    options:
+      - { id: "a", text: "ngoan" }
+      - { id: "b", text: "chạy" }
+      - { id: "c", text: "cặp" }
+    answer: { correct: ["a"] }
+    hint: "Hỏi: như thế nào?"
+    explanation: "\"ngoan\" chỉ đặc điểm."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-dac-diem"
+    prompt: "Từ chỉ màu sắc là:"
+    options:
+      - { id: "a", text: "đỏ" }
+      - { id: "b", text: "ăn" }
+      - { id: "c", text: "ghế" }
+    answer: { correct: ["a"] }
+    hint: "Màu của quả cà chua."
+    explanation: "\"đỏ\" chỉ màu sắc."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tu-dac-diem"
+    prompt: "Trong câu \"Mặt trời đỏ rực.\", từ chỉ đặc điểm là: _"
+    answer: { accept: ["đỏ rực", "đỏ"] }
+    hint: "Mặt trời như thế nào?"
+    explanation: "\"đỏ rực\" chỉ đặc điểm."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "tu-dac-diem"
+    prompt: "Nối sự vật với đặc điểm hợp lý."
+    pairs:
+      - { left: "đường", right: "dài" }
+      - { left: "tuyết", right: "trắng" }
+      - { left: "đá", right: "cứng" }
+    answer: { pairs: [["đường", "dài"], ["tuyết", "trắng"], ["đá", "cứng"]] }
+    hint: "Nghĩ xem đặc điểm nào đúng."
+    explanation: "Đường dài, tuyết trắng, đá cứng."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "\"Cao\" là từ chỉ:"
+    options:
+      - { id: "a", text: "sự vật" }
+      - { id: "b", text: "hoạt động" }
+      - { id: "c", text: "đặc điểm" }
+    answer: { correct: ["c"] }
+    hint: "Cao cho biết vật như thế nào."
+    explanation: "\"cao\" chỉ đặc điểm."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **từ chỉ đặc điểm**."
+    say: "Bé đã biết từ chỉ đặc điểm."

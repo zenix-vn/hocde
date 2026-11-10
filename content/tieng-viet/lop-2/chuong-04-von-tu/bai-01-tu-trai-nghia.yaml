@@ -1,0 +1,87 @@
+schema: 1
+slug: tv2-tu-trai-nghia
+title: "Từ trái nghĩa"
+summary: "Tìm từ có nghĩa trái ngược nhau."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có những cặp từ nghĩa ngược nhau, như nóng và lạnh."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Từ **trái nghĩa** là từ có nghĩa ngược nhau.
+
+      **cao** ↔ **thấp**, **to** ↔ **nhỏ**, **nóng** ↔ **lạnh**, **vui** ↔ **buồn**, **sáng** ↔ **tối**
+
+  - id: b3
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "trai-nghia"
+    prompt: "Nối cặp từ trái nghĩa."
+    pairs:
+      - { left: "cao", right: "thấp" }
+      - { left: "nóng", right: "lạnh" }
+      - { left: "vui", right: "buồn" }
+    answer: { pairs: [["cao", "thấp"], ["nóng", "lạnh"], ["vui", "buồn"]] }
+    hint: "Tìm từ ngược nghĩa."
+    explanation: "cao – thấp, nóng – lạnh, vui – buồn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "trai-nghia"
+    prompt: "Từ trái nghĩa với \"sáng\" là:"
+    options:
+      - { id: "a", text: "tối" }
+      - { id: "b", text: "trắng" }
+      - { id: "c", text: "đẹp" }
+    answer: { correct: ["a"] }
+    hint: "Ban đêm thì sao?"
+    explanation: "sáng – tối."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "trai-nghia"
+    prompt: "Từ trái nghĩa với \"chăm chỉ\" là:"
+    options:
+      - { id: "a", text: "lười biếng" }
+      - { id: "b", text: "ngoan" }
+      - { id: "c", text: "giỏi" }
+    answer: { correct: ["a"] }
+    hint: "Không muốn làm việc."
+    explanation: "chăm chỉ – lười biếng."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "trai-nghia"
+    prompt: "Trái nghĩa với \"to\" là: _"
+    answer: { accept: ["nhỏ", "bé"] }
+    hint: "Voi to, kiến..."
+    explanation: "to – nhỏ."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "trai-nghia"
+    prompt: "Trái nghĩa với \"dài\" là: _"
+    answer: { accept: ["ngắn"] }
+    hint: "Dây dài, dây..."
+    explanation: "dài – ngắn."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **từ trái nghĩa**."
+    say: "Bé đã biết từ trái nghĩa."

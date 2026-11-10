@@ -1,0 +1,80 @@
+schema: 1
+slug: toan2-duong-thang-duong-cong
+title: "Đường thẳng, đường cong, ba điểm thẳng hàng"
+summary: "Phân biệt đường thẳng và đường cong; ba điểm thẳng hàng."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé hãy lấy thước kẻ vạch một đường. Đó là đường thẳng!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đường **thẳng** không bị cong: ➖
+
+      Đường **cong** uốn lượn: 〰️
+
+      Ba điểm **thẳng hàng** là ba điểm cùng nằm trên **một đường thẳng**.
+    say: "Đường thẳng không bị cong. Đường cong uốn lượn. Ba điểm thẳng hàng là ba điểm cùng nằm trên một đường thẳng."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "duong"
+    prompt: "Đường nào là đường cong?"
+    options:
+      - { id: "a", text: "Đường lượn sóng" }
+      - { id: "b", text: "Cạnh thước kẻ" }
+    answer: { correct: ["a"] }
+    hint: "Đường cong uốn lượn."
+    explanation: "Đường lượn sóng là đường cong."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "duong"
+    prompt: "Cạnh của quyển vở là đường:"
+    options:
+      - { id: "a", text: "thẳng" }
+      - { id: "b", text: "cong" }
+    answer: { correct: ["a"] }
+    hint: "Dùng thước kiểm tra."
+    explanation: "Cạnh vở là đường thẳng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "thang-hang"
+    prompt: "Ba điểm A, B, C cùng nằm trên một đường thẳng. Ta nói chúng:"
+    options:
+      - { id: "a", text: "thẳng hàng" }
+      - { id: "b", text: "không thẳng hàng" }
+    answer: { correct: ["a"] }
+    hint: "Cùng một đường thẳng."
+    explanation: "Ba điểm thẳng hàng."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "thang-hang"
+    prompt: "Ba cột đèn đứng cùng một hàng ngay ngắn trên phố. Ba cột đèn:"
+    options:
+      - { id: "a", text: "thẳng hàng" }
+      - { id: "b", text: "không thẳng hàng" }
+    answer: { correct: ["a"] }
+    hint: "Đứng trên một đường thẳng."
+    explanation: "Chúng thẳng hàng."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **đường thẳng, đường cong** và **ba điểm thẳng hàng**."
+    say: "Bé đã biết đường thẳng, đường cong và ba điểm thẳng hàng."

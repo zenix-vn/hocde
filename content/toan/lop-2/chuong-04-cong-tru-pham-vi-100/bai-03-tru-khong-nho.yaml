@@ -1,0 +1,88 @@
+schema: 1
+slug: toan2-tru-khong-nho-100
+title: "Trừ không nhớ trong phạm vi 100"
+summary: "Đặt tính rồi tính: trừ các số có hai chữ số, không nhớ."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trừ cũng làm từ đơn vị trước, rồi đến chục."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **68 − 25 = ?**
+
+      Đơn vị: 8 − 5 = 3
+
+      Chục: 6 − 2 = 4
+
+      Vậy 68 − 25 = **43**.
+    say: "Sáu mươi tám trừ hai mươi lăm. Đơn vị: tám trừ năm bằng ba. Chục: sáu trừ hai bằng bốn. Vậy bằng bốn mươi ba."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-100"
+    prompt: "79 − 34 = ?"
+    options:
+      - { id: "a", text: "46" }
+      - { id: "b", text: "45" }
+      - { id: "c", text: "35" }
+    answer: { correct: ["b"] }
+    hint: "Tính 79 − 34."
+    explanation: "79 − 34 = 45."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-100"
+    prompt: "56 − 21 = ?"
+    options:
+      - { id: "a", text: "35" }
+      - { id: "b", text: "36" }
+      - { id: "c", text: "25" }
+    answer: { correct: ["a"] }
+    hint: "Tính 56 − 21."
+    explanation: "56 − 21 = 35."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-100"
+    prompt: "87 − 53 = _"
+    answer: { accept: ["34"] }
+    hint: "Tính 87 − 53."
+    explanation: "87 − 53 = 34."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-100"
+    prompt: "95 − 40 = _"
+    answer: { accept: ["55"] }
+    hint: "Tính 95 − 40."
+    explanation: "95 − 40 = 55."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Cửa hàng có 48 quyển vở, bán đi 25 quyển. Còn lại _ quyển."
+    answer: { accept: ["23"] }
+    hint: "Bán đi thì trừ."
+    explanation: "48 − 25 = 23."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **trừ không nhớ** trong phạm vi 100."
+    say: "Bé đã biết trừ không nhớ trong phạm vi 100."

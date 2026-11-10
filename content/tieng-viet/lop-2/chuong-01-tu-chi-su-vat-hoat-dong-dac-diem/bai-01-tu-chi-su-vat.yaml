@@ -1,0 +1,94 @@
+schema: 1
+slug: tv2-tu-chi-su-vat
+title: "Từ chỉ sự vật"
+summary: "Nhận biết từ chỉ người, con vật, cây cối, đồ vật."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Chào bé lớp Hai! Hôm nay mình tìm những từ gọi tên người, vật xung quanh nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Từ chỉ **sự vật** là từ gọi tên người, con vật, cây cối, đồ vật...
+
+      - Người: **bạn, cô giáo, mẹ**
+      - Con vật: **mèo, gà, cá**
+      - Cây cối: **hoa hồng, cây bàng**
+      - Đồ vật: **cặp sách, bút, bàn**
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-su-vat"
+    prompt: "Từ nào chỉ con vật?"
+    options:
+      - { id: "a", text: "bàn" }
+      - { id: "b", text: "gà" }
+      - { id: "c", text: "chạy" }
+    answer: { correct: ["b"] }
+    hint: "Con vật thì sống, có thể kêu hoặc bay, chạy."
+    explanation: "\"gà\" là từ chỉ con vật."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-su-vat"
+    prompt: "Từ nào chỉ đồ vật?"
+    options:
+      - { id: "a", text: "cặp sách" }
+      - { id: "b", text: "vui" }
+      - { id: "c", text: "đọc" }
+    answer: { correct: ["a"] }
+    hint: "Đồ vật là thứ bé dùng được."
+    explanation: "\"cặp sách\" là từ chỉ đồ vật."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-su-vat"
+    prompt: "Từ nào chỉ cây cối?"
+    options:
+      - { id: "a", text: "hoa hồng" }
+      - { id: "b", text: "nhảy" }
+      - { id: "c", text: "đẹp" }
+    answer: { correct: ["a"] }
+    hint: "Cây cối mọc trong vườn."
+    explanation: "\"hoa hồng\" là từ chỉ cây cối."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "tu-su-vat"
+    prompt: "Nối từ với nhóm của nó."
+    pairs:
+      - { left: "cô giáo", right: "người" }
+      - { left: "mèo", right: "con vật" }
+      - { left: "bút", right: "đồ vật" }
+    answer: { pairs: [["cô giáo", "người"], ["mèo", "con vật"], ["bút", "đồ vật"]] }
+    hint: "Nghĩ xem đó là gì."
+    explanation: "Cô giáo là người, mèo là con vật, bút là đồ vật."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tu-su-vat"
+    prompt: "Trong câu \"Mẹ nấu cơm.\", từ chỉ người là: _"
+    answer: { accept: ["mẹ", "Mẹ"] }
+    hint: "Ai nấu cơm?"
+    explanation: "\"Mẹ\" chỉ người."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **từ chỉ sự vật**."
+    say: "Bé đã biết từ chỉ sự vật."

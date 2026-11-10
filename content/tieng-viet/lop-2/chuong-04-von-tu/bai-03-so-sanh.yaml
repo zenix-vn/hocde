@@ -1,0 +1,81 @@
+schema: 1
+slug: tv2-so-sanh
+title: "So sánh"
+summary: "Nhận biết hình ảnh so sánh với từ \"như\"."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi nói \"đôi mắt như hạt nhãn\", bé đang dùng cách so sánh!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      So sánh là đặt hai sự vật cạnh nhau để thấy chúng giống nhau.
+
+      - Trăng tròn **như** quả bóng.
+      - Tóc bà trắng **như** bông.
+      - Má bé hồng **như** quả đào.
+
+      Từ so sánh thường dùng: **như, là**.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Câu nào có hình ảnh so sánh?"
+    options:
+      - { id: "a", text: "Mặt trời đỏ như quả cà chua chín." }
+      - { id: "b", text: "Mặt trời mọc hướng Đông." }
+      - { id: "c", text: "Mặt trời lên rồi." }
+    answer: { correct: ["a"] }
+    hint: "Có từ \"như\"."
+    explanation: "Câu đầu so sánh mặt trời với quả cà chua."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Quả bóng tròn _ mặt trăng."
+    answer: { accept: ["như"] }
+    hint: "Từ nối hai sự vật giống nhau."
+    explanation: "tròn như mặt trăng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Tóc bà trắng như _"
+    options:
+      - { id: "a", text: "bông" }
+      - { id: "b", text: "chạy" }
+      - { id: "c", text: "to" }
+    answer: { correct: ["a"] }
+    hint: "Thứ mềm, trắng."
+    explanation: "Tóc bà trắng như bông."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Trong câu \"Em bé xinh như búp bê\", hai sự vật được so sánh là:"
+    options:
+      - { id: "a", text: "em bé và búp bê" }
+      - { id: "b", text: "em bé và xinh" }
+      - { id: "c", text: "búp bê và xinh" }
+    answer: { correct: ["a"] }
+    hint: "Cái gì được so với cái gì?"
+    explanation: "em bé và búp bê."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **so sánh** với từ \"như\"."
+    say: "Bé đã biết so sánh với từ \"như\"."

@@ -1,0 +1,78 @@
+schema: 1
+slug: tv2-cau-cam
+title: "Câu cảm và dấu chấm than"
+summary: "Nhận biết câu cảm; dùng dấu chấm than."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi bé vui, ngạc nhiên hay khen, bé dùng câu cảm!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Câu cảm** bày tỏ cảm xúc: vui, buồn, ngạc nhiên, khen... Cuối câu có **dấu chấm than (!)**.
+
+      - Ôi, bông hoa đẹp quá!
+      - Chà, bạn vẽ giỏi thật!
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-cam"
+    prompt: "Câu nào là câu cảm?"
+    options:
+      - { id: "a", text: "Trời đẹp quá!" }
+      - { id: "b", text: "Trời hôm nay thế nào?" }
+      - { id: "c", text: "Trời nắng." }
+    answer: { correct: ["a"] }
+    hint: "Thể hiện cảm xúc khen."
+    explanation: "\"Trời đẹp quá!\" là câu cảm."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cau-cam"
+    prompt: "Cuối câu cảm, ta đặt dấu _"
+    answer: { accept: ["!", "chấm than", "dấu chấm than"] }
+    hint: "Dấu có một vạch dọc và một chấm."
+    explanation: "Dấu chấm than (!)."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-cam"
+    prompt: "Điền dấu: Chà, con mèo dễ thương quá_"
+    options:
+      - { id: "a", text: "!" }
+      - { id: "b", text: "?" }
+      - { id: "c", text: "," }
+    answer: { correct: ["a"] }
+    hint: "Câu khen."
+    explanation: "Chà, con mèo dễ thương quá!"
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "cac-loai-cau"
+    prompt: "Nối câu với dấu cuối câu."
+    pairs:
+      - { left: "Mẹ đang nấu cơm", right: "." }
+      - { left: "Bạn đi đâu đấy", right: "?" }
+      - { left: "Đẹp quá", right: "!" }
+    answer: { pairs: [["Mẹ đang nấu cơm", "."], ["Bạn đi đâu đấy", "?"], ["Đẹp quá", "!"]] }
+    hint: "Câu kể, hỏi, cảm."
+    explanation: "Chấm, chấm hỏi, chấm than."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **câu cảm** và dấu **chấm than**."
+    say: "Bé đã biết câu cảm và dấu chấm than."

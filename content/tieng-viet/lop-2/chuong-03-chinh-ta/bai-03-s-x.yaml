@@ -1,0 +1,83 @@
+schema: 1
+slug: tv2-chinh-ta-s-x
+title: "Chính tả: s/x"
+summary: "Phân biệt s và x."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "S hay x? Mình thử với các từ quen thuộc nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **s:** sách, sao, sông, sân trường
+
+      **x:** xe đạp, xanh, xôi, xinh đẹp
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "s-x"
+    prompt: "Điền s hay x: _ách vở"
+    answer: { accept: ["s"] }
+    hint: "Đọc để học."
+    explanation: "sách vở."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "s-x"
+    prompt: "Điền s hay x: _e đạp"
+    answer: { accept: ["x"] }
+    hint: "Đạp chân cho bánh lăn."
+    explanation: "xe đạp."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "s-x"
+    prompt: "Điền s hay x: _ông nước"
+    answer: { accept: ["s"] }
+    hint: "Nơi nước chảy."
+    explanation: "sông nước."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "s-x"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "sanh" }
+      - { id: "b", text: "xanh" }
+      - { id: "c", text: "xang" }
+    answer: { correct: ["b"] }
+    hint: "Màu của lá cây."
+    explanation: "xanh."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "s-x"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "xân trường" }
+      - { id: "b", text: "sân trường" }
+      - { id: "c", text: "sân chường" }
+    answer: { correct: ["b"] }
+    hint: "Nơi bé chơi ở trường."
+    explanation: "sân trường."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết phân biệt **s/x**."
+    say: "Bé đã biết phân biệt s/x."

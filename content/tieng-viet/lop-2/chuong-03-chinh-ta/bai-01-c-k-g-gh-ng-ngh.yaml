@@ -1,0 +1,89 @@
+schema: 1
+slug: tv2-chinh-ta-c-k-g-gh-ng-ngh
+title: "Chính tả: c/k, g/gh, ng/ngh"
+summary: "Quy tắc viết c, k; g, gh; ng, ngh."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé nhớ: khi đứng trước i, e, ê thì viết k, gh, ngh nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **k, gh, ngh** đứng trước **i, e, ê**:
+
+      kể chuyện, kì lạ · ghế, ghi nhớ · nghỉ, nghề, nghe
+
+      **c, g, ng** đứng trước các chữ còn lại:
+
+      con cá, cô giáo · gà, gấu · ngày, ngủ
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "c-k"
+    prompt: "Điền c hay k: _ể chuyện"
+    answer: { accept: ["k"] }
+    hint: "Đứng trước ê."
+    explanation: "kể chuyện."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "c-k"
+    prompt: "Điền c hay k: con _á"
+    answer: { accept: ["c"] }
+    hint: "Đứng trước á."
+    explanation: "con cá."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "g-gh"
+    prompt: "Điền g hay gh: _ế gỗ"
+    answer: { accept: ["gh"] }
+    hint: "Đứng trước ê."
+    explanation: "ghế gỗ."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "g-gh"
+    prompt: "Điền g hay gh: con _à"
+    answer: { accept: ["g"] }
+    hint: "Đứng trước à."
+    explanation: "con gà."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ng-ngh"
+    prompt: "Điền ng hay ngh: _ỉ ngơi"
+    answer: { accept: ["ngh"] }
+    hint: "Đứng trước ỉ."
+    explanation: "nghỉ ngơi."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ng-ngh"
+    prompt: "Điền ng hay ngh: _ày hội"
+    answer: { accept: ["ng"] }
+    hint: "Đứng trước à."
+    explanation: "ngày hội."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết quy tắc **c/k, g/gh, ng/ngh**."
+    say: "Bé đã biết quy tắc c/k, g/gh, ng/ngh."

@@ -1,0 +1,91 @@
+schema: 1
+slug: toan2-so-hang-tong-hieu
+title: "Số hạng, tổng, số bị trừ, hiệu"
+summary: "Gọi tên các thành phần của phép cộng và phép trừ."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Các số trong phép tính đều có tên riêng. Bé làm quen nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **23 + 15 = 38**
+
+      23 và 15 là **số hạng**. 38 là **tổng**.
+
+      **50 − 20 = 30**
+
+      50 là **số bị trừ**, 20 là **số trừ**, 30 là **hiệu**.
+    say: "Hai mươi ba và mười lăm là số hạng. Ba mươi tám là tổng. Năm mươi là số bị trừ, hai mươi là số trừ, ba mươi là hiệu."
+
+  - id: b3
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "thanh-phan"
+    prompt: "Nối: 14 + 25 = 39"
+    pairs:
+      - { left: "14", right: "số hạng" }
+      - { left: "39", right: "tổng" }
+    answer: { pairs: [["14", "số hạng"], ["39", "tổng"]] }
+    hint: "Kết quả của phép cộng là tổng."
+    explanation: "14 là số hạng, 39 là tổng."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tong"
+    prompt: "Tổng của 30 và 40 là:"
+    options:
+      - { id: "a", text: "10" }
+      - { id: "b", text: "70" }
+      - { id: "c", text: "34" }
+    answer: { correct: ["b"] }
+    hint: "Tổng là kết quả phép cộng."
+    explanation: "30 + 40 = 70."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hieu"
+    prompt: "Hiệu của 60 và 20 là:"
+    options:
+      - { id: "a", text: "80" }
+      - { id: "b", text: "40" }
+      - { id: "c", text: "30" }
+    answer: { correct: ["b"] }
+    hint: "Hiệu là kết quả phép trừ."
+    explanation: "60 − 20 = 40."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "hieu"
+    prompt: "Số bị trừ là 90, số trừ là 50. Hiệu là _"
+    answer: { accept: ["40"] }
+    hint: "Lấy 90 − 50."
+    explanation: "90 − 50 = 40."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tong"
+    prompt: "Các số hạng là 25 và 4. Tổng là _"
+    answer: { accept: ["29"] }
+    hint: "Lấy 25 + 4."
+    explanation: "25 + 4 = 29."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **số hạng, tổng, số bị trừ, số trừ, hiệu**."
+    say: "Bé đã biết số hạng, tổng, số bị trừ, số trừ, hiệu."

@@ -1,0 +1,99 @@
+schema: 1
+slug: toan2-cong-qua-10-9
+title: "9 cộng với một số"
+summary: "Cộng có nhớ: gộp cho đủ 10 rồi cộng tiếp."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mẹo hay đây: muốn cộng 9, bé cho đủ 10 trước!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **9 + 4 = ?**
+
+      Lấy 1 từ số 4 sang số 9 cho đủ 10: 9 + 1 = 10. Còn lại 3.
+
+      10 + 3 = **13**. Vậy 9 + 4 = 13.
+    say: "Chín cộng bốn. Lấy một từ số bốn sang số chín cho đủ mười. Còn lại ba. Mười cộng ba bằng mười ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **9 + một số** = 10 + (số đó − 1)
+
+      9 + 5 = 14, 9 + 6 = 15, 9 + 7 = 16.
+    say: "Chín cộng một số bằng mười cộng số đó bớt một."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-9"
+    prompt: "9 + 3 = ?"
+    options:
+      - { id: "a", text: "13" }
+      - { id: "b", text: "12" }
+      - { id: "c", text: "2" }
+    answer: { correct: ["b"] }
+    hint: "Tính 9 + 3."
+    explanation: "9 + 3 = 12."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-9"
+    prompt: "9 + 6 = ?"
+    options:
+      - { id: "a", text: "15" }
+      - { id: "b", text: "16" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["a"] }
+    hint: "Tính 9 + 6."
+    explanation: "9 + 6 = 15."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-9"
+    prompt: "9 + 8 = ?"
+    options:
+      - { id: "a", text: "18" }
+      - { id: "b", text: "7" }
+      - { id: "c", text: "17" }
+    answer: { correct: ["c"] }
+    hint: "Tính 9 + 8."
+    explanation: "9 + 8 = 17."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-9"
+    prompt: "9 + 5 = _"
+    answer: { accept: ["14"] }
+    hint: "Tính 9 + 5."
+    explanation: "9 + 5 = 14."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-9"
+    prompt: "7 + 9 = _"
+    answer: { accept: ["16"] }
+    hint: "Tính 7 + 9."
+    explanation: "7 + 9 = 16."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết cách tính **9 cộng với một số**."
+    say: "Bé đã biết cách tính 9 cộng với một số."

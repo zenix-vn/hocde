@@ -1,0 +1,96 @@
+schema: 1
+slug: toan2-cong-qua-10-8
+title: "8 cộng với một số"
+summary: "Cộng có nhớ với 8: gộp cho đủ 10."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Với số 8, bé lấy 2 cho đủ 10."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **8 + 5 = ?**
+
+      Lấy 2 từ số 5 sang số 8: 8 + 2 = 10. Còn lại 3.
+
+      10 + 3 = **13**. Vậy 8 + 5 = 13.
+    say: "Tám cộng năm. Lấy hai từ số năm sang số tám cho đủ mười. Còn lại ba. Mười cộng ba bằng mười ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "8 + 3 = 11, 8 + 4 = 12, 8 + 5 = 13, 8 + 6 = 14, 8 + 7 = 15, 8 + 8 = 16, 8 + 9 = 17."
+    say: "Bé nhớ bảng tám cộng với một số nhé."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-8"
+    prompt: "8 + 4 = ?"
+    options:
+      - { id: "a", text: "12" }
+      - { id: "b", text: "13" }
+      - { id: "c", text: "2" }
+    answer: { correct: ["a"] }
+    hint: "Tính 8 + 4."
+    explanation: "8 + 4 = 12."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-8"
+    prompt: "8 + 7 = ?"
+    options:
+      - { id: "a", text: "16" }
+      - { id: "b", text: "15" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "Tính 8 + 7."
+    explanation: "8 + 7 = 15."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-8"
+    prompt: "8 + 9 = ?"
+    options:
+      - { id: "a", text: "18" }
+      - { id: "b", text: "7" }
+      - { id: "c", text: "17" }
+    answer: { correct: ["c"] }
+    hint: "Tính 8 + 9."
+    explanation: "8 + 9 = 17."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-8"
+    prompt: "8 + 6 = _"
+    answer: { accept: ["14"] }
+    hint: "Tính 8 + 6."
+    explanation: "8 + 6 = 14."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-8"
+    prompt: "5 + 8 = _"
+    answer: { accept: ["13"] }
+    hint: "Tính 5 + 8."
+    explanation: "5 + 8 = 13."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết cách tính **8 cộng với một số**."
+    say: "Bé đã biết cách tính 8 cộng với một số."

@@ -1,0 +1,68 @@
+# Tiếng Anh lớp 2 – nối tiếp Tiếng Anh lớp 1 (nghe, nói, bắt đầu đọc từ và câu ngắn).
+# LƯU Ý: bộ sách "Kết nối tri thức với cuộc sống" không có sách Tiếng Anh riêng; nội dung bám các chủ đề phổ biến của
+# chương trình Tiếng Anh tiểu học lớp 2 (chào hỏi, trường lớp, gia đình, con vật, đồ ăn, đồ chơi, quần áo, thời tiết, số và màu).
+# Cần đối chiếu sách đang dùng ở lớp nếu muốn bám sát từng bài. Nội dung soạn mới, không sao chép sách.
+subject: tieng-anh
+grade: 2
+slug: tieng-anh-lop-2
+title: Tiếng Anh 2
+summary: "Hỏi tên, tuổi; đồ dùng học tập; gia đình; con vật; món ăn; đồ chơi; quần áo; thời tiết; số và màu sắc."
+status: published
+
+units:
+  - slug: chuong-01-greetings
+    title: "Greetings – Chào hỏi"
+    summary: "Hỏi tên, hỏi tuổi."
+    lessons:
+      - bai-01-whats-your-name
+      - bai-02-how-old-are-you
+
+  - slug: chuong-02-school
+    title: "School – Trường học"
+    summary: "Đồ dùng học tập và lời cô giáo trong lớp."
+    lessons:
+      - bai-01-classroom-objects
+      - bai-02-classroom-commands
+
+  - slug: chuong-03-family
+    title: "Family – Gia đình"
+    summary: "Người thân; he, she."
+    lessons:
+      - bai-01-this-is-my-family
+      - bai-02-he-she
+
+  - slug: chuong-04-pets-and-animals
+    title: "Pets and Animals – Con vật"
+    summary: "Thú cưng và con vật ở sở thú."
+    lessons:
+      - bai-01-pets
+      - bai-02-zoo-animals
+
+  - slug: chuong-05-food
+    title: "Food – Đồ ăn"
+    summary: "I like…; Do you like…?"
+    lessons:
+      - bai-01-i-like
+      - bai-02-do-you-like
+
+  - slug: chuong-06-toys-and-places
+    title: "Toys and Places – Đồ chơi và vị trí"
+    summary: "Đồ chơi; in, on, under."
+    lessons:
+      - bai-01-my-toys
+      - bai-02-where-is-the-ball
+
+  - slug: chuong-07-clothes-and-weather
+    title: "Clothes and Weather – Quần áo và thời tiết"
+    summary: "Quần áo; thời tiết."
+    lessons:
+      - bai-01-clothes
+      - bai-02-weather
+
+  - slug: chuong-08-numbers-and-colors
+    title: "Numbers and Colors – Số và màu sắc"
+    summary: "Số 11–20, hỏi màu sắc."
+    lessons:
+      - bai-01-numbers-11-20
+      - bai-02-colors-review
+

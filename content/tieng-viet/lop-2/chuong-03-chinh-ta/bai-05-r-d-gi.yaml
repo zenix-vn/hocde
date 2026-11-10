@@ -1,0 +1,85 @@
+schema: 1
+slug: tv2-chinh-ta-r-d-gi
+title: "Chính tả: r/d/gi"
+summary: "Phân biệt r, d và gi."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Ba chữ r, d, gi đọc gần giống nhau. Bé nhớ mặt chữ nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **r:** rừng, rau, ra chơi
+
+      **d:** dạy học, da, dép
+
+      **gi:** giúp đỡ, gia đình, giờ
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: _úp đỡ"
+    answer: { accept: ["gi"] }
+    hint: "Làm việc tốt cho bạn."
+    explanation: "giúp đỡ."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: _ừng cây"
+    answer: { accept: ["r"] }
+    hint: "Nơi có nhiều cây to."
+    explanation: "rừng cây."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: cô _áo"
+    answer: { accept: ["gi"] }
+    hint: "Người dạy học."
+    explanation: "cô giáo."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "gia đình" }
+      - { id: "b", text: "da đình" }
+      - { id: "c", text: "ra đình" }
+    answer: { correct: ["a"] }
+    hint: "Bố mẹ và con cái."
+    explanation: "gia đình."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "giép" }
+      - { id: "b", text: "dép" }
+      - { id: "c", text: "rép" }
+    answer: { correct: ["b"] }
+    hint: "Mang ở chân."
+    explanation: "dép."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết phân biệt **r/d/gi**."
+    say: "Bé đã biết phân biệt r/d/gi."

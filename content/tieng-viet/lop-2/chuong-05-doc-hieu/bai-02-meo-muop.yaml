@@ -1,0 +1,91 @@
+schema: 1
+slug: tv2-doc-hieu-meo-muop
+title: "Đọc hiểu: Chú mèo Mướp"
+summary: "Đọc đoạn văn ngắn và trả lời câu hỏi."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đọc về một chú mèo rất đáng yêu."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Chú mèo Mướp**
+
+      Nhà em nuôi một chú mèo tên là Mướp. Bộ lông của Mướp vằn vện như con hổ nhỏ. Đôi mắt Mướp sáng long lanh. Ban ngày, Mướp nằm phơi nắng ngoài hiên. Ban đêm, Mướp rình bắt chuột. Cả nhà ai cũng quý Mướp.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Chú mèo tên là gì?"
+    options:
+      - { id: "a", text: "Mướp" }
+      - { id: "b", text: "Vằn" }
+      - { id: "c", text: "Miu" }
+    answer: { correct: ["a"] }
+    hint: "Câu đầu."
+    explanation: "Mướp."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bộ lông của Mướp như thế nào?"
+    options:
+      - { id: "a", text: "vằn vện" }
+      - { id: "b", text: "trắng muốt" }
+      - { id: "c", text: "đen tuyền" }
+    answer: { correct: ["a"] }
+    hint: "Giống con hổ nhỏ."
+    explanation: "vằn vện."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Ban đêm, Mướp làm gì?"
+    options:
+      - { id: "a", text: "Rình bắt chuột" }
+      - { id: "b", text: "Phơi nắng" }
+      - { id: "c", text: "Đi học" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu thứ năm."
+    explanation: "Rình bắt chuột."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Ban ngày Mướp nằm phơi _ ngoài hiên."
+    answer: { accept: ["nắng"] }
+    hint: "Ấm áp và vàng."
+    explanation: "phơi nắng."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Trong bài có hình ảnh so sánh nào?"
+    options:
+      - { id: "a", text: "Lông vằn vện như con hổ nhỏ" }
+      - { id: "b", text: "Mắt sáng long lanh" }
+      - { id: "c", text: "Nhà em nuôi mèo" }
+    answer: { correct: ["a"] }
+    hint: "Tìm từ \"như\"."
+    explanation: "Lông vằn như con hổ nhỏ."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã đọc hiểu bài **Chú mèo Mướp**."
+    say: "Bé đã đọc hiểu bài Chú mèo Mướp."

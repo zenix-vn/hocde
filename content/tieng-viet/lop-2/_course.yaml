@@ -1,0 +1,65 @@
+# Tiếng Việt lớp 2 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống".
+# LƯU Ý: tên chương và thứ tự bài là KHUNG DỰ KIẾN theo chủ đề kiến thức (từ ngữ, câu, chính tả, đọc hiểu),
+# cần đối chiếu SGK bản hiện hành. Bài đọc và ví dụ đều soạn mới, không sao chép SGK.
+subject: tieng-viet
+grade: 2
+slug: tieng-viet-lop-2
+title: Tiếng Việt 2
+summary: "Từ ngữ, câu và dấu câu, chính tả, mở rộng vốn từ, đọc hiểu và đặt câu cho bé lớp 2."
+status: published
+
+units:
+  - slug: chuong-01-tu-chi-su-vat-hoat-dong-dac-diem
+    title: "Từ chỉ sự vật, hoạt động, đặc điểm"
+    summary: "Nhận biết ba loại từ cơ bản."
+    lessons:
+      - bai-01-tu-chi-su-vat
+      - bai-02-tu-chi-hoat-dong
+      - bai-03-tu-chi-dac-diem
+
+  - slug: chuong-02-cau-va-dau-cau
+    title: "Câu và dấu câu"
+    summary: "Câu kể, câu hỏi, câu cảm, dấu phẩy."
+    lessons:
+      - bai-01-cau-ke
+      - bai-02-cau-hoi
+      - bai-03-cau-cam
+      - bai-04-dau-phay
+
+  - slug: chuong-03-chinh-ta
+    title: "Chính tả"
+    summary: "c/k, g/gh, ng/ngh, ch/tr, s/x, l/n, r/d/gi."
+    lessons:
+      - bai-01-c-k-g-gh-ng-ngh
+      - bai-02-ch-tr
+      - bai-03-s-x
+      - bai-04-l-n
+      - bai-05-r-d-gi
+
+  - slug: chuong-04-von-tu
+    title: "Mở rộng vốn từ"
+    summary: "Từ trái nghĩa, cùng nghĩa, so sánh; gia đình, trường học."
+    lessons:
+      - bai-01-tu-trai-nghia
+      - bai-02-tu-gan-nghia
+      - bai-03-so-sanh
+      - bai-04-gia-dinh
+      - bai-05-truong-hoc
+
+  - slug: chuong-05-doc-hieu
+    title: "Đọc hiểu"
+    summary: "Đọc đoạn văn ngắn và trả lời câu hỏi."
+    lessons:
+      - bai-01-ban-moi
+      - bai-02-meo-muop
+      - bai-03-buoi-sang-o-que
+
+  - slug: chuong-06-dat-cau
+    title: "Luyện đặt câu"
+    summary: "Ai là gì? Ai làm gì? Ai thế nào? Sắp xếp câu."
+    lessons:
+      - bai-01-ai-la-gi
+      - bai-02-ai-lam-gi
+      - bai-03-ai-the-nao
+      - bai-04-sap-xep-cau
+

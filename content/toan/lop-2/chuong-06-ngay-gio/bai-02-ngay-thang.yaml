@@ -1,0 +1,74 @@
+schema: 1
+slug: toan2-ngay-thang
+title: "Ngày, tháng"
+summary: "Xem lịch: ngày, tháng, tuần."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Quyển lịch cho bé biết hôm nay là ngày mấy, tháng mấy."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Một năm có **12 tháng**. Một tuần có **7 ngày**.
+
+      Các tháng có 30 ngày: 4, 6, 9, 11. Các tháng có 31 ngày: 1, 3, 5, 7, 8, 10, 12. Tháng 2 có 28 hoặc 29 ngày.
+    say: "Một năm có mười hai tháng. Một tuần có bảy ngày."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ngay-thang"
+    prompt: "Một năm có _ tháng."
+    answer: { accept: ["12"] }
+    hint: "Đếm các tờ lịch."
+    explanation: "Một năm có 12 tháng."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ngay-thang"
+    prompt: "Một tuần có _ ngày."
+    answer: { accept: ["7"] }
+    hint: "Thứ hai đến chủ nhật."
+    explanation: "Một tuần có 7 ngày."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ngay-thang"
+    prompt: "Tháng nào có 30 ngày?"
+    options:
+      - { id: "a", text: "Tháng 4" }
+      - { id: "b", text: "Tháng 5" }
+      - { id: "c", text: "Tháng 7" }
+    answer: { correct: ["a"] }
+    hint: "Nhớ các tháng 4, 6, 9, 11."
+    explanation: "Tháng 4 có 30 ngày."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ngay-thang"
+    prompt: "Ngày 5 là thứ ba. Ngày 12 là thứ mấy?"
+    options:
+      - { id: "a", text: "Thứ hai" }
+      - { id: "b", text: "Thứ ba" }
+      - { id: "c", text: "Thứ tư" }
+    answer: { correct: ["b"] }
+    hint: "Sau 7 ngày là cùng thứ."
+    explanation: "Ngày 12 cũng là thứ ba."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết xem **ngày, tháng** trên lịch."
+    say: "Bé đã biết xem ngày, tháng trên lịch."

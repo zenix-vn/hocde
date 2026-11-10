@@ -1,0 +1,82 @@
+schema: 1
+slug: toan2-phep-chia
+title: "Phép chia"
+summary: "Làm quen phép chia: chia đều thành các phần."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có 6 cái kẹo chia đều cho 2 bạn. Mỗi bạn được mấy cái? Đó là phép chia!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🍬🍬🍬🍬🍬🍬 chia đều cho 2 bạn, mỗi bạn được 3 cái.
+
+      Ta viết: **6 : 2 = 3**.
+
+      Đọc là: sáu **chia** hai bằng ba.
+    say: "Sáu cái kẹo chia đều cho hai bạn, mỗi bạn được ba cái. Sáu chia hai bằng ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Từ phép nhân **2 × 3 = 6**, ta có phép chia **6 : 2 = 3** và **6 : 3 = 2**."
+    say: "Từ phép nhân hai nhân ba bằng sáu, ta có phép chia sáu chia hai bằng ba, và sáu chia ba bằng hai."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phep-chia"
+    prompt: "8 cái bánh chia đều cho 2 bạn. Mỗi bạn được _ cái."
+    answer: { accept: ["4"] }
+    hint: "8 : 2."
+    explanation: "8 : 2 = 4."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phep-chia"
+    prompt: "10 : 5 = _"
+    answer: { accept: ["2"] }
+    hint: "5 × 2 = 10."
+    explanation: "10 : 5 = 2."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phep-chia"
+    prompt: "Từ 2 × 5 = 10, phép chia nào đúng?"
+    options:
+      - { id: "a", text: "10 : 2 = 5" }
+      - { id: "b", text: "10 : 5 = 5" }
+      - { id: "c", text: "5 : 2 = 10" }
+    answer: { correct: ["a"] }
+    hint: "Lấy tích chia cho một thừa số."
+    explanation: "10 : 2 = 5."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phep-chia"
+    prompt: "12 : 2 = ?"
+    options:
+      - { id: "a", text: "5" }
+      - { id: "b", text: "6" }
+      - { id: "c", text: "7" }
+    answer: { correct: ["b"] }
+    hint: "2 × 6 = 12."
+    explanation: "12 : 2 = 6."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **phép chia**: chia đều thành các phần."
+    say: "Bé đã biết phép chia: chia đều thành các phần."

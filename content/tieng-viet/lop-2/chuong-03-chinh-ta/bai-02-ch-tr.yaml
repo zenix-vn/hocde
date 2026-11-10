@@ -1,0 +1,83 @@
+schema: 1
+slug: tv2-chinh-ta-ch-tr
+title: "Chính tả: ch/tr"
+summary: "Phân biệt ch và tr."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Ch hay tr? Bé đọc to thật rõ và nhớ mặt chữ nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **ch:** chăm chỉ, chợ, chú chó, chia sẻ
+
+      **tr:** trường học, trời, con trâu, cây tre
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Điền ch hay tr: _ường học"
+    answer: { accept: ["tr"] }
+    hint: "Nơi bé đi học."
+    explanation: "trường học."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Điền ch hay tr: _ú chó"
+    answer: { accept: ["ch"] }
+    hint: "Bạn của người."
+    explanation: "chú chó."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Điền ch hay tr: cây _e"
+    answer: { accept: ["tr"] }
+    hint: "Cây có thân rỗng, mọc thành bụi."
+    explanation: "cây tre."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "trăm chỉ" }
+      - { id: "b", text: "chăm chỉ" }
+      - { id: "c", text: "chăm trỉ" }
+    answer: { correct: ["b"] }
+    hint: "Bé luôn làm việc đều đặn."
+    explanation: "chăm chỉ."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "con châu" }
+      - { id: "b", text: "con trâu" }
+      - { id: "c", text: "con trau" }
+    answer: { correct: ["b"] }
+    hint: "Con vật cày ruộng."
+    explanation: "con trâu."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết phân biệt **ch/tr**."
+    say: "Bé đã biết phân biệt ch/tr."

@@ -1,0 +1,90 @@
+schema: 1
+slug: toan2-so-co-hai-chu-so
+title: "Số có hai chữ số"
+summary: "Đọc, viết số có hai chữ số; chục và đơn vị."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Chào bé lớp Hai! Mình cùng ôn lại các số có hai chữ số nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Số **57** gồm **5 chục** và **7 đơn vị**: 57 = 50 + 7.
+
+      Đọc là: **năm mươi bảy**.
+    say: "Số năm mươi bảy gồm năm chục và bảy đơn vị. Năm mươi bảy bằng năm mươi cộng bảy."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Số có hai chữ số: chữ số bên trái là **chục**, chữ số bên phải là **đơn vị**."
+    say: "Chữ số bên trái là chục, chữ số bên phải là đơn vị."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số 74 gồm _ chục và 4 đơn vị."
+    answer: { accept: ["7"] }
+    hint: "Chữ số bên trái là chục."
+    explanation: "74 gồm 7 chục và 4 đơn vị."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "viet-so"
+    prompt: "6 chục và 9 đơn vị là số _"
+    answer: { accept: ["69"] }
+    hint: "Viết số chục trước."
+    explanation: "6 chục 9 đơn vị là 69."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-tich-so"
+    prompt: "Số 38 bằng:"
+    options:
+      - { id: "a", text: "30 + 8" }
+      - { id: "b", text: "3 + 80" }
+      - { id: "c", text: "38 + 0" }
+    answer: { correct: ["a"] }
+    hint: "3 chục là 30."
+    explanation: "38 = 30 + 8."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phan-tich-so"
+    prompt: "45 = 40 + _"
+    answer: { accept: ["5"] }
+    hint: "45 gồm 4 chục và 5 đơn vị."
+    explanation: "45 = 40 + 5."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-so"
+    prompt: "Số 91 đọc là:"
+    options:
+      - { id: "a", text: "chín mươi mốt" }
+      - { id: "b", text: "chín mươi một" }
+      - { id: "c", text: "mười chín" }
+    answer: { correct: ["a"] }
+    hint: "Số có hàng đơn vị là 1 (trên 20) đọc là \"mốt\"."
+    explanation: "91 đọc là chín mươi mốt."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã nhớ cách đọc, viết **số có hai chữ số**."
+    say: "Bé đã nhớ cách đọc, viết số có hai chữ số."

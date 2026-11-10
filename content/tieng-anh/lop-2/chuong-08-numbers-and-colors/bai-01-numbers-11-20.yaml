@@ -1,0 +1,127 @@
+schema: 1
+slug: anh2-numbers-11-20
+title: "Numbers 11–20"
+summary: "Đếm từ eleven đến twenty; How many?"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đã đếm đến mười. Giờ mình đếm tới hai mươi bằng tiếng Anh nhé!"
+    say: [{"t":"Bé đã đếm đến mười. Giờ mình đếm tới hai mươi bằng tiếng Anh nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "eleven", emoji: "1️⃣1️⃣", meaning: "mười một" }, { word: "twelve", emoji: "1️⃣2️⃣", meaning: "mười hai" }, { word: "fifteen", emoji: "1️⃣5️⃣", meaning: "mười lăm" }, { word: "eighteen", emoji: "1️⃣8️⃣", meaning: "mười tám" }, { word: "twenty", emoji: "2️⃣0️⃣", meaning: "hai mươi" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **How many apples?** – Có bao nhiêu quả táo?
+
+      **Twelve apples.** – Mười hai quả táo.
+    say: [{"t":"How many apples?","l":"en"},{"t":"Có bao nhiêu quả táo?","l":"vi"},{"t":"Twelve apples.","l":"en"},{"t":"Mười hai quả táo.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-twelve"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "twelve", lang: "en" }
+    options:
+      - { id: "a", text: "1️⃣1️⃣", say: "eleven", lang: "en" }
+      - { id: "b", text: "1️⃣2️⃣", say: "twelve", lang: "en" }
+      - { id: "c", text: "1️⃣5️⃣", say: "fifteen", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là twelve."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-twenty"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "twenty", lang: "en" }
+    options:
+      - { id: "a", text: "2️⃣0️⃣", say: "twenty", lang: "en" }
+      - { id: "b", text: "1️⃣8️⃣", say: "eighteen", lang: "en" }
+      - { id: "c", text: "1️⃣1️⃣", say: "eleven", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là twenty."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-fifteen"
+    prompt: "Số 15 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "fifteen" }
+      - { id: "b", text: "eleven" }
+      - { id: "c", text: "twelve" }
+    answer: { correct: ["a"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "15 là fifteen."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối số với từ tiếng Anh."
+    pairs:
+      - { left: "11", right: "eleven" }
+      - { left: "18", right: "eighteen" }
+      - { left: "20", right: "twenty" }
+    answer: { pairs: [["11", "eleven"], ["18", "eighteen"], ["20", "twenty"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "11 là eleven, 18 là eighteen, 20 là twenty."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-12"
+    prompt: |
+      Điền từ: Mười hai.
+
+      **Twelve is the number _ .**
+    answer: { accept: ["12"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "Twelve là số 12."
+    say: [{"t":"Điền từ: Mười hai.","l":"vi"},{"t":"Twelve is the number blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Có 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 (12 quả táo). Bé trả lời:
+
+      **How many apples?**
+    options:
+      - { id: "a", text: "Twelve apples." }
+      - { id: "b", text: "Fifteen apples." }
+      - { id: "c", text: "Twenty apples." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "Đếm đủ 12 quả."
+    option_lang: "en"
+    say: [{"t":"Có 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎 (12 quả táo). Bé trả lời:","l":"vi"},{"t":"How many apples?","l":"en"}]
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết đếm **11 đến 20** bằng tiếng Anh."
+    say: "Bé đã biết đếm từ mười một đến hai mươi bằng tiếng Anh."

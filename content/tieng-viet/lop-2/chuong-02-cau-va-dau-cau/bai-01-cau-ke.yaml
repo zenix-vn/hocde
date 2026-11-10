@@ -1,0 +1,94 @@
+schema: 1
+slug: tv2-cau-ke
+title: "Câu kể và dấu chấm"
+summary: "Viết hoa đầu câu, cuối câu kể có dấu chấm."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Một câu hoàn chỉnh cần viết hoa chữ đầu và có dấu ở cuối."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Câu kể** dùng để kể, tả, giới thiệu.
+
+      - Chữ cái đầu câu phải **viết hoa**.
+      - Cuối câu có **dấu chấm (.)**.
+
+      Ví dụ: Em đi học.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ke"
+    prompt: "Câu nào viết đúng?"
+    options:
+      - { id: "a", text: "em đi học." }
+      - { id: "b", text: "Em đi học." }
+      - { id: "c", text: "Em đi học" }
+    answer: { correct: ["b"] }
+    hint: "Viết hoa chữ đầu và có dấu chấm."
+    explanation: "Câu \"Em đi học.\" đúng."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ke"
+    prompt: "Câu nào là câu kể?"
+    options:
+      - { id: "a", text: "Mẹ em là cô giáo." }
+      - { id: "b", text: "Bạn tên là gì?" }
+      - { id: "c", text: "Ôi, đẹp quá!" }
+    answer: { correct: ["a"] }
+    hint: "Câu kể dùng để giới thiệu, kể."
+    explanation: "\"Mẹ em là cô giáo.\" là câu kể."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cau-ke"
+    prompt: "Cuối câu kể, ta đặt dấu _ (chấm / phẩy / hỏi)"
+    answer: { accept: ["chấm", "dấu chấm", "."] }
+    hint: "Dấu nhỏ như một chấm tròn."
+    explanation: "Cuối câu kể đặt dấu chấm."
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "cau-ke"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xhoc", text: "học" }
+      - { id: "xEm", text: "Em" }
+      - { id: "xdi", text: "đi" }
+    answer: { sequence: ["xEm", "xdi", "xhoc"] }
+    hint: "Ai làm gì?"
+    explanation: "Em đi học."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-hoa"
+    prompt: "Điền chữ phù hợp: … hôm nay trời đẹp."
+    options:
+      - { id: "a", text: "Hôm" }
+      - { id: "b", text: "hôm" }
+      - { id: "c", text: "HÔM" }
+    answer: { correct: ["a"] }
+    hint: "Chữ đầu câu phải viết hoa."
+    explanation: "\"Hôm nay trời đẹp.\""
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **câu kể**: viết hoa chữ đầu, cuối câu có dấu chấm."
+    say: "Bé đã biết câu kể: viết hoa chữ đầu, cuối câu có dấu chấm."

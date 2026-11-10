@@ -1,0 +1,86 @@
+schema: 1
+slug: toan2-tia-so-lien-truoc-lien-sau
+title: "Tia số, số liền trước, số liền sau"
+summary: "Dùng tia số; tìm số liền trước, liền sau."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Tia số giống như cái thước, các số xếp hàng từ bé đến lớn."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      0 — 10 — 20 — 30 — 40 — 50
+
+      Nhảy từng **10** là cộng thêm 10. Trên tia số, số bên phải **lớn hơn** số bên trái.
+
+      Số liền sau của 39 là **40**. Số liền trước của 40 là **39**.
+    say: "Trên tia số, số bên phải lớn hơn số bên trái. Số liền sau của ba mươi chín là bốn mươi. Số liền trước của bốn mươi là ba mươi chín."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lien-sau"
+    prompt: "Số liền sau của 59 là _"
+    answer: { accept: ["60"] }
+    hint: "Thêm 1."
+    explanation: "59 + 1 = 60."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lien-truoc"
+    prompt: "Số liền trước của 80 là _"
+    answer: { accept: ["79"] }
+    hint: "Bớt 1."
+    explanation: "80 − 1 = 79."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tia-so"
+    prompt: "Trên tia số: 10, 20, 30, _, 50. Số còn thiếu là:"
+    options:
+      - { id: "a", text: "35" }
+      - { id: "b", text: "40" }
+      - { id: "c", text: "45" }
+    answer: { correct: ["b"] }
+    hint: "Mỗi lần nhảy thêm 10."
+    explanation: "30 + 10 = 40."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tia-so"
+    prompt: "Nhảy từng 5: 5, 10, 15, _, 25. Số còn thiếu là _"
+    answer: { accept: ["20"] }
+    hint: "Mỗi lần nhảy thêm 5."
+    explanation: "15 + 5 = 20."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "lien-sau"
+    prompt: "Số nào là số liền sau của 99?"
+    options:
+      - { id: "a", text: "98" }
+      - { id: "b", text: "100" }
+      - { id: "c", text: "90" }
+    answer: { correct: ["b"] }
+    hint: "Sau chín mươi chín."
+    explanation: "Số liền sau của 99 là 100."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết dùng **tia số** và tìm số liền trước, liền sau."
+    say: "Bé đã biết dùng tia số và tìm số liền trước, liền sau."

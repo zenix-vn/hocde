@@ -1,0 +1,79 @@
+schema: 1
+slug: tv2-cau-ai-lam-gi
+title: "Câu hoạt động: Ai làm gì?"
+summary: "Đặt và trả lời câu hỏi Ai (con gì) làm gì?"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Câu \"Ai làm gì?\" cho biết người hay vật đang làm việc gì."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Câu hoạt động: **Ai (con gì)** + **làm gì?**
+
+      - Bố **đọc báo**.
+      - Chim **hót trên cành**.
+      - Em **giúp mẹ quét nhà**.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-lam-gi"
+    prompt: "Câu nào là câu \"Ai làm gì?\""
+    options:
+      - { id: "a", text: "Bé tưới hoa." }
+      - { id: "b", text: "Bé rất ngoan." }
+      - { id: "c", text: "Bé là học sinh." }
+    answer: { correct: ["a"] }
+    hint: "Có từ chỉ hoạt động."
+    explanation: "Bé tưới hoa."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ai-lam-gi"
+    prompt: "Điền từ chỉ hoạt động: Mẹ _ cơm. (nấu / xanh)"
+    answer: { accept: ["nấu"] }
+    hint: "Mẹ làm gì với cơm?"
+    explanation: "Mẹ nấu cơm."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ai-lam-gi"
+    prompt: "Sắp xếp thành câu."
+    options:
+      - { id: "xdoc", text: "đọc" }
+      - { id: "xBo", text: "Bố" }
+      - { id: "xbao", text: "báo" }
+    answer: { sequence: ["xBo", "xdoc", "xbao"] }
+    hint: "Ai làm gì?"
+    explanation: "Bố đọc báo."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ai-lam-gi"
+    prompt: "Trả lời câu hỏi \"Chim làm gì?\":"
+    options:
+      - { id: "a", text: "Chim hót líu lo." }
+      - { id: "b", text: "Chim rất đẹp." }
+      - { id: "c", text: "Chim là con vật." }
+    answer: { correct: ["a"] }
+    hint: "Làm gì thì trả lời bằng hoạt động."
+    explanation: "Chim hót líu lo."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết đặt câu **Ai làm gì?**."
+    say: "Bé đã biết đặt câu Ai làm gì?."

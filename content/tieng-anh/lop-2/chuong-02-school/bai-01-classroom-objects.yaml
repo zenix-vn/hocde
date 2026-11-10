@@ -1,0 +1,123 @@
+schema: 1
+slug: anh2-classroom-objects
+title: "My school things"
+summary: "Gọi tên đồ dùng học tập: What's this? It's a ..."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cặp sách của bé có những gì nhỉ? Mình cùng gọi tên đồ dùng học tập nhé!"
+    say: [{"t":"Cặp sách của bé có những gì nhỉ? Mình cùng gọi tên đồ dùng học tập nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "book", emoji: "📖", meaning: "quyển sách" }, { word: "pencil", emoji: "✏️", meaning: "bút chì" }, { word: "ruler", emoji: "📏", meaning: "thước kẻ" }, { word: "school bag", emoji: "🎒", meaning: "cặp sách" }, { word: "eraser", emoji: "🧽", meaning: "cục tẩy" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **What's this?** – Đây là cái gì?
+
+      **It's a pencil.** – Đó là một cái bút chì.
+    say: [{"t":"What's this?","l":"en"},{"t":"Đây là cái gì?","l":"vi"},{"t":"It's a pencil.","l":"en"},{"t":"Đó là một cái bút chì.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-ruler"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "ruler", lang: "en" }
+    options:
+      - { id: "a", text: "✏️", say: "pencil", lang: "en" }
+      - { id: "b", text: "📏", say: "ruler", lang: "en" }
+      - { id: "c", text: "🎒", say: "school bag", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là ruler."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-school-bag"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "school bag", lang: "en" }
+    options:
+      - { id: "a", text: "🎒", say: "school bag", lang: "en" }
+      - { id: "b", text: "📖", say: "book", lang: "en" }
+      - { id: "c", text: "🧽", say: "eraser", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là school bag."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-pencil"
+    prompt: "Cái bút chì ✏️ tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "ruler" }
+      - { id: "b", text: "pencil" }
+      - { id: "c", text: "book" }
+    answer: { correct: ["b"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Bút chì tiếng Anh là pencil."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    pairs:
+      - { left: "book", right: "quyển sách" }
+      - { left: "ruler", right: "thước kẻ" }
+      - { left: "eraser", right: "cục tẩy" }
+    answer: { pairs: [["book", "quyển sách"], ["ruler", "thước kẻ"], ["eraser", "cục tẩy"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "book là sách, ruler là thước kẻ, eraser là cục tẩy."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-ruler"
+    prompt: |
+      Trả lời: Đây là cái thước kẻ 📏
+
+      **It's a _ .**
+    answer: { accept: ["ruler"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "It's a ruler."
+    say: [{"t":"Trả lời: Đây là cái thước kẻ 📏","l":"vi"},{"t":"It's a blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xa", text: "a" }
+      - { id: "xIts", text: "It's" }
+      - { id: "xbook", text: "book" }
+    answer: { sequence: ["xIts", "xa", "xbook"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "It's a book."
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết gọi tên **đồ dùng học tập** bằng tiếng Anh."
+    say: "Bé đã biết gọi tên đồ dùng học tập. What's this? It's a pencil."

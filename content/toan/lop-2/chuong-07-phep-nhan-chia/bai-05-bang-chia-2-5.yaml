@@ -1,0 +1,84 @@
+schema: 1
+slug: toan2-bang-chia-2-5
+title: "Bảng chia 2, bảng chia 5"
+summary: "Dùng bảng nhân để chia cho 2 và 5."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Muốn chia, bé nhớ lại bảng nhân là được!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Chia 2:** 4 : 2 = 2, 6 : 2 = 3, 8 : 2 = 4, 10 : 2 = 5, 20 : 2 = 10.
+
+      **Chia 5:** 10 : 5 = 2, 15 : 5 = 3, 20 : 5 = 4, 25 : 5 = 5, 50 : 5 = 10.
+    say: "Bảng chia hai và bảng chia năm."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-chia"
+    prompt: "14 : 2 = _"
+    answer: { accept: ["7"] }
+    hint: "2 × 7 = 14."
+    explanation: "14 : 2 = 7."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bang-chia"
+    prompt: "35 : 5 = _"
+    answer: { accept: ["7"] }
+    hint: "5 × 7 = 35."
+    explanation: "35 : 5 = 7."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-chia"
+    prompt: "18 : 2 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "10" }
+    answer: { correct: ["b"] }
+    hint: "2 × 9 = 18."
+    explanation: "18 : 2 = 9."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-chia"
+    prompt: "40 : 5 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "7" }
+    answer: { correct: ["a"] }
+    hint: "5 × 8 = 40."
+    explanation: "40 : 5 = 8."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Có 15 cái kẹo chia đều cho 5 bạn. Mỗi bạn được _ cái."
+    answer: { accept: ["3"] }
+    hint: "15 : 5."
+    explanation: "15 : 5 = 3."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **bảng chia 2 và 5**."
+    say: "Bé đã biết bảng chia 2 và 5."

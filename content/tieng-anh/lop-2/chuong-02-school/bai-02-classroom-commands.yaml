@@ -1,0 +1,112 @@
+schema: 1
+slug: anh2-classroom-commands
+title: "In the classroom"
+summary: "Hiểu lời cô giáo: Stand up! Sit down! Open your book!"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trong lớp học, cô giáo hay nói những câu này. Bé nghe và làm theo nhé!"
+    say: [{"t":"Trong lớp học, cô giáo hay nói những câu này. Bé nghe và làm theo nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và làm theo.", cards: [{ word: "stand up", emoji: "🧍", meaning: "đứng lên" }, { word: "sit down", emoji: "🪑", meaning: "ngồi xuống" }, { word: "open your book", emoji: "📖", meaning: "mở sách ra" }, { word: "close your book", emoji: "📕", meaning: "đóng sách lại" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và làm theo.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Stand up!** Đứng lên!
+
+      **Sit down!** Ngồi xuống!
+
+      **Open your book.** Mở sách ra.
+
+      **Close your book.** Đóng sách lại.
+    say: [{"t":"Stand up!","l":"en"},{"t":"Đứng lên!","l":"vi"},{"t":"Sit down!","l":"en"},{"t":"Ngồi xuống!","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-stand-up"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "stand up", lang: "en" }
+    options:
+      - { id: "a", text: "🧍", say: "stand up", lang: "en" }
+      - { id: "b", text: "🪑", say: "sit down", lang: "en" }
+      - { id: "c", text: "📖", say: "open your book", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là stand up."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-sit-down"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "sit down", lang: "en" }
+    options:
+      - { id: "a", text: "📕", say: "close your book", lang: "en" }
+      - { id: "b", text: "🪑", say: "sit down", lang: "en" }
+      - { id: "c", text: "🧍", say: "stand up", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sit down."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-m-s-ch-ra"
+    prompt: "Cô nói \"Open your book.\" Bé làm gì?"
+    options:
+      - { id: "a", text: "mở sách ra" }
+      - { id: "b", text: "đóng sách lại" }
+      - { id: "c", text: "đứng lên" }
+    answer: { correct: ["a"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Open your book nghĩa là mở sách ra."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối câu lệnh với nghĩa."
+    pairs:
+      - { left: "stand up", right: "đứng lên" }
+      - { left: "sit down", right: "ngồi xuống" }
+      - { left: "close your book", right: "đóng sách lại" }
+    answer: { pairs: [["stand up", "đứng lên"], ["sit down", "ngồi xuống"], ["close your book", "đóng sách lại"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "Nhớ lại các thẻ ở trên."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xdown", text: "down" }
+      - { id: "xSit", text: "Sit" }
+    answer: { sequence: ["xSit", "xdown"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "Sit down."
+    option_lang: "en"
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã hiểu các **lời cô giáo** trong lớp bằng tiếng Anh."
+    say: "Bé đã hiểu lời cô giáo trong lớp. Stand up! Sit down!"

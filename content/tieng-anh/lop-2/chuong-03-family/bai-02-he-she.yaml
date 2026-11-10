@@ -1,0 +1,123 @@
+schema: 1
+slug: anh2-he-she-is-my
+title: "He is… She is…"
+summary: "Nói về người khác: He is my father. She is my mother."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi nói về một bạn nam hoặc một bạn nữ, bé dùng he hoặc she."
+    say: [{"t":"Khi nói về một bạn nam hoặc một bạn nữ, bé dùng he hoặc she.","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "he", emoji: "👨", meaning: "anh ấy, ông ấy" }, { word: "she", emoji: "👩", meaning: "chị ấy, bà ấy" }, { word: "friend", emoji: "🧑‍🤝‍🧑", meaning: "bạn" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **He** – dùng cho nam: He is my father.
+
+      **She** – dùng cho nữ: She is my mother.
+    say: [{"t":"He is my father.","l":"en"},{"t":"Ông ấy là bố của mình.","l":"vi"},{"t":"She is my mother.","l":"en"},{"t":"Bà ấy là mẹ của mình.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-he"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "he", lang: "en" }
+    options:
+      - { id: "a", text: "👩", say: "she", lang: "en" }
+      - { id: "b", text: "👨", say: "he", lang: "en" }
+      - { id: "c", text: "🧑‍🤝‍🧑", say: "friend", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là he."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-she"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "she", lang: "en" }
+    options:
+      - { id: "a", text: "👩", say: "she", lang: "en" }
+      - { id: "b", text: "👨", say: "he", lang: "en" }
+      - { id: "c", text: "🧑‍🤝‍🧑", say: "friend", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là she."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-he"
+    prompt: "Nói về bố 👨, bé dùng từ nào?"
+    options:
+      - { id: "a", text: "she" }
+      - { id: "b", text: "he" }
+      - { id: "c", text: "name" }
+    answer: { correct: ["b"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Với nam, bé dùng he."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-she"
+    prompt: |
+      Điền he hoặc she: 👩 (mẹ)
+
+      **_ is my mother.**
+    answer: { accept: ["she", "She"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "She is my mother."
+    say: [{"t":"Điền he hoặc she: 👩 (mẹ)","l":"vi"},{"t":"blank is my mother.","l":"en"}]
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-he"
+    prompt: |
+      Điền he hoặc she: 👨 (bố)
+
+      **_ is my father.**
+    answer: { accept: ["he", "He"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "He is my father."
+    say: [{"t":"Điền he hoặc she: 👨 (bố)","l":"vi"},{"t":"blank is my father.","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xShe", text: "She" }
+      - { id: "xgrandmother", text: "grandmother" }
+      - { id: "xmy", text: "my" }
+    answer: { sequence: ["xShe", "xis", "xmy", "xgrandmother"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "She is my grandmother."
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết dùng **he** và **she**."
+    say: "Bé đã biết dùng he và she. He is my father. She is my mother."

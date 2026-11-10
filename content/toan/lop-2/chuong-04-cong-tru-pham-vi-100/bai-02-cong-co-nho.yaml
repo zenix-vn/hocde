@@ -1,0 +1,94 @@
+schema: 1
+slug: toan2-cong-co-nho-100
+title: "Cộng có nhớ trong phạm vi 100"
+summary: "Cộng hai số có hai chữ số, có nhớ sang hàng chục."
+est_minutes: 10
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi đơn vị cộng lại được 10 trở lên, bé nhớ 1 sang hàng chục!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **38 + 27 = ?**
+
+      Đơn vị: 8 + 7 = 15, viết **5**, nhớ **1**.
+
+      Chục: 3 + 2 = 5, thêm 1 là 6.
+
+      Vậy 38 + 27 = **65**.
+    say: "Ba mươi tám cộng hai mươi bảy. Đơn vị: tám cộng bảy bằng mười lăm, viết năm nhớ một. Chục: ba cộng hai bằng năm, thêm một là sáu. Vậy bằng sáu mươi lăm."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Đơn vị cộng được **10 trở lên** thì viết chữ số hàng đơn vị, **nhớ 1** sang hàng chục."
+    say: "Đơn vị cộng được mười trở lên thì viết chữ số hàng đơn vị, nhớ một sang hàng chục."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-co-nho"
+    prompt: "26 + 17 = ?"
+    options:
+      - { id: "a", text: "44" }
+      - { id: "b", text: "43" }
+      - { id: "c", text: "33" }
+    answer: { correct: ["b"] }
+    hint: "Tính 26 + 17."
+    explanation: "26 + 17 = 43."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-co-nho"
+    prompt: "49 + 35 = ?"
+    options:
+      - { id: "a", text: "85" }
+      - { id: "b", text: "74" }
+      - { id: "c", text: "84" }
+    answer: { correct: ["c"] }
+    hint: "Tính 49 + 35."
+    explanation: "49 + 35 = 84."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-co-nho"
+    prompt: "58 + 14 = _"
+    answer: { accept: ["72"] }
+    hint: "Tính 58 + 14."
+    explanation: "58 + 14 = 72."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-co-nho"
+    prompt: "67 + 25 = _"
+    answer: { accept: ["92"] }
+    hint: "Tính 67 + 25."
+    explanation: "67 + 25 = 92."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-co-nho"
+    prompt: "19 + 19 = _"
+    answer: { accept: ["38"] }
+    hint: "Tính 19 + 19."
+    explanation: "19 + 19 = 38."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **cộng có nhớ** trong phạm vi 100."
+    say: "Bé đã biết cộng có nhớ trong phạm vi 100."

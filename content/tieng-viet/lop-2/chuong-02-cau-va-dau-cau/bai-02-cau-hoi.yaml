@@ -1,0 +1,96 @@
+schema: 1
+slug: tv2-cau-hoi
+title: "Câu hỏi và dấu chấm hỏi"
+summary: "Nhận biết câu hỏi; dùng dấu chấm hỏi."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi muốn biết điều gì, bé đặt câu hỏi."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Câu hỏi** dùng để hỏi. Cuối câu có **dấu chấm hỏi (?)**.
+
+      Hay dùng các từ: **ai, gì, nào, đâu, sao, không**.
+
+      - Bạn tên là gì?
+      - Em học lớp nào?
+      - Hôm nay con có đi chơi không?
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-hoi"
+    prompt: "Câu nào là câu hỏi?"
+    options:
+      - { id: "a", text: "Bạn tên là gì?" }
+      - { id: "b", text: "Bạn tên là Lan." }
+      - { id: "c", text: "Ôi, bạn giỏi quá!" }
+    answer: { correct: ["a"] }
+    hint: "Có từ \"gì\" và hỏi."
+    explanation: "\"Bạn tên là gì?\" là câu hỏi."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cau-hoi"
+    prompt: "Cuối câu hỏi, ta đặt dấu _"
+    answer: { accept: ["?", "chấm hỏi", "dấu chấm hỏi"] }
+    hint: "Dấu có hình móc câu và chấm."
+    explanation: "Dấu chấm hỏi (?)."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-hoi"
+    prompt: "Điền dấu: Nhà bạn ở đâu_"
+    options:
+      - { id: "a", text: "?" }
+      - { id: "b", text: "." }
+      - { id: "c", text: "!" }
+    answer: { correct: ["a"] }
+    hint: "Đây là câu hỏi."
+    explanation: "Nhà bạn ở đâu?"
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "cau-hoi"
+    prompt: "Sắp xếp thành câu hỏi."
+    options:
+      - { id: "xten", text: "tên" }
+      - { id: "xgi", text: "gì" }
+      - { id: "xBan", text: "Bạn" }
+      - { id: "xla", text: "là" }
+    answer: { sequence: ["xBan", "xten", "xla", "xgi"] }
+    hint: "Bắt đầu từ \"Bạn\"."
+    explanation: "Bạn tên là gì?"
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-hoi"
+    prompt: "Từ để hỏi trong câu \"Ai đang đọc sách?\" là:"
+    options:
+      - { id: "a", text: "Ai" }
+      - { id: "b", text: "đang" }
+      - { id: "c", text: "sách" }
+    answer: { correct: ["a"] }
+    hint: "Từ hỏi về người."
+    explanation: "\"Ai\" là từ để hỏi."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **câu hỏi** và dấu **chấm hỏi**."
+    say: "Bé đã biết câu hỏi và dấu chấm hỏi."

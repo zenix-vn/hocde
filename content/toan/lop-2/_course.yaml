@@ -1,0 +1,94 @@
+# Toán lớp 2 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống".
+# LƯU Ý: tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu SGK bản hiện hành. Nội dung bài soạn mới, không sao chép SGK.
+subject: toan
+grade: 2
+slug: toan-lop-2
+title: Toán 2
+summary: "Cộng, trừ có nhớ, phép nhân, phép chia, số đến 1000, hình học và đo lường cho bé lớp 2."
+status: published
+
+units:
+  - slug: chuong-01-on-tap-so-den-100
+    title: "Ôn tập và bổ sung"
+    summary: "Số có hai chữ số, so sánh, tia số, tổng và hiệu."
+    lessons:
+      - bai-01-so-co-hai-chu-so
+      - bai-02-so-sanh-so-den-100
+      - bai-03-tia-so
+      - bai-04-so-hang-tong
+
+  - slug: chuong-02-cong-tru-qua-10
+    title: "Phép cộng, phép trừ qua 10 trong phạm vi 20"
+    summary: "Cộng, trừ có nhớ và bài toán thêm, bớt."
+    lessons:
+      - bai-01-9-cong-voi-mot-so
+      - bai-02-8-cong-voi-mot-so
+      - bai-03-7-6-5-cong-voi-mot-so
+      - bai-04-bai-toan-nhieu-hon-it-hon
+      - bai-05-11-tru-di-mot-so
+
+  - slug: chuong-03-khoi-luong-dung-tich
+    title: "Làm quen với khối lượng, dung tích"
+    summary: "Ki-lô-gam và lít."
+    lessons:
+      - bai-01-ki-lo-gam
+      - bai-02-lit
+
+  - slug: chuong-04-cong-tru-pham-vi-100
+    title: "Phép cộng, phép trừ trong phạm vi 100"
+    summary: "Cộng, trừ có nhớ và không nhớ các số có hai chữ số."
+    lessons:
+      - bai-01-cong-khong-nho
+      - bai-02-cong-co-nho
+      - bai-03-tru-khong-nho
+      - bai-04-tru-co-nho
+
+  - slug: chuong-05-hinh-hoc
+    title: "Làm quen với hình phẳng"
+    summary: "Đường thẳng, đường cong, đoạn thẳng, đường gấp khúc, tứ giác."
+    lessons:
+      - bai-01-duong-thang-duong-cong
+      - bai-02-doan-thang-do-dai
+      - bai-03-duong-gap-khuc
+
+  - slug: chuong-06-ngay-gio
+    title: "Ngày, giờ, tháng"
+    summary: "Xem đồng hồ giờ và phút, xem lịch."
+    lessons:
+      - bai-01-gio-phut
+      - bai-02-ngay-thang
+
+  - slug: chuong-07-phep-nhan-chia
+    title: "Phép nhân, phép chia"
+    summary: "Phép nhân, bảng nhân 2 và 5, phép chia."
+    lessons:
+      - bai-01-phep-nhan
+      - bai-02-bang-nhan-2
+      - bai-03-bang-nhan-5
+      - bai-04-phep-chia
+      - bai-05-bang-chia-2-5
+
+  - slug: chuong-08-so-den-1000
+    title: "Các số đến 1000"
+    summary: "Hàng trăm, đọc viết, so sánh số; mét, ki-lô-mét."
+    lessons:
+      - bai-01-don-vi-chuc-tram-nghin
+      - bai-02-doc-viet-so-den-1000
+      - bai-03-so-sanh-den-1000
+      - bai-04-met-ki-lo-met
+
+  - slug: chuong-09-cong-tru-pham-vi-1000
+    title: "Phép cộng, phép trừ trong phạm vi 1000"
+    summary: "Cộng, trừ số có ba chữ số và bài toán."
+    lessons:
+      - bai-01-cong-pham-vi-1000
+      - bai-02-tru-pham-vi-1000
+      - bai-03-bai-toan-1000
+
+  - slug: chuong-10-thong-ke
+    title: "Một số yếu tố thống kê và xác suất"
+    summary: "Kiểm đếm số liệu; chắc chắn, có thể, không thể."
+    lessons:
+      - bai-01-kiem-dem
+      - bai-02-co-the-chac-chan
+

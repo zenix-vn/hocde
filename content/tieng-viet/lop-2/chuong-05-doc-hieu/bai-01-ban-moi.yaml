@@ -1,0 +1,91 @@
+schema: 1
+slug: tv2-doc-hieu-ban-moi
+title: "Đọc hiểu: Bạn mới"
+summary: "Đọc đoạn văn ngắn và trả lời câu hỏi."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đọc kỹ đoạn văn rồi trả lời câu hỏi nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Bạn mới**
+
+      Sáng nay, lớp em có thêm một bạn mới tên là Nam. Nam có đôi mắt tròn và nụ cười tươi. Cô giáo cho Nam ngồi cạnh em. Giờ ra chơi, em chỉ cho Nam chỗ uống nước và nhà vệ sinh. Nam cảm ơn em. Em rất vui vì đã có thêm một người bạn.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bạn mới của lớp tên là gì?"
+    options:
+      - { id: "a", text: "Nam" }
+      - { id: "b", text: "Lan" }
+      - { id: "c", text: "Minh" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu đầu."
+    explanation: "Bạn mới tên là Nam."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Nam ngồi cạnh ai?"
+    options:
+      - { id: "a", text: "Cô giáo" }
+      - { id: "b", text: "Bạn kể chuyện (em)" }
+      - { id: "c", text: "Bác bảo vệ" }
+    answer: { correct: ["b"] }
+    hint: "Cô giáo cho Nam ngồi cạnh em."
+    explanation: "Nam ngồi cạnh bạn nhỏ kể chuyện."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Giờ ra chơi, bạn nhỏ đã làm gì?"
+    options:
+      - { id: "a", text: "Chỉ chỗ uống nước cho Nam" }
+      - { id: "b", text: "Đi về nhà" }
+      - { id: "c", text: "Vẽ tranh" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu thứ tư."
+    explanation: "Bạn chỉ chỗ uống nước cho Nam."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Nam có nụ cười _ (tươi / buồn)"
+    answer: { accept: ["tươi"] }
+    hint: "Đọc câu thứ hai."
+    explanation: "Nụ cười tươi."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Cuối bài, bạn nhỏ cảm thấy thế nào?"
+    options:
+      - { id: "a", text: "Rất vui" }
+      - { id: "b", text: "Rất buồn" }
+      - { id: "c", text: "Rất sợ" }
+    answer: { correct: ["a"] }
+    hint: "Câu cuối."
+    explanation: "Bạn rất vui."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã đọc hiểu bài **Bạn mới**."
+    say: "Bé đã đọc hiểu bài Bạn mới."

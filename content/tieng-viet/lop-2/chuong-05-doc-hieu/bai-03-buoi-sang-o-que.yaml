@@ -1,0 +1,91 @@
+schema: 1
+slug: tv2-doc-hieu-buoi-sang-o-que
+title: "Đọc hiểu: Buổi sáng ở quê"
+summary: "Đọc đoạn văn tả cảnh và trả lời câu hỏi."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình về quê một buổi sáng nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Buổi sáng ở quê**
+
+      Trời vừa sáng, tiếng gà gáy vang khắp xóm. Sương trắng giăng mỏng trên cánh đồng lúa xanh. Ông em vác cuốc ra thăm ruộng. Bà em ngồi nhóm bếp nấu cơm. Mùi khói bếp thơm lừng bay khắp sân. Buổi sáng ở quê thật yên bình.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Buổi sáng, tiếng gì vang khắp xóm?"
+    options:
+      - { id: "a", text: "Tiếng gà gáy" }
+      - { id: "b", text: "Tiếng còi xe" }
+      - { id: "c", text: "Tiếng chuông" }
+    answer: { correct: ["a"] }
+    hint: "Câu đầu."
+    explanation: "Tiếng gà gáy."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Ông làm gì vào buổi sáng?"
+    options:
+      - { id: "a", text: "Vác cuốc ra thăm ruộng" }
+      - { id: "b", text: "Nấu cơm" }
+      - { id: "c", text: "Đi học" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu thứ ba."
+    explanation: "Ông vác cuốc ra thăm ruộng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bà làm gì?"
+    options:
+      - { id: "a", text: "Ngồi nhóm bếp nấu cơm" }
+      - { id: "b", text: "Gặt lúa" }
+      - { id: "c", text: "Chăn trâu" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu thứ tư."
+    explanation: "Bà nhóm bếp nấu cơm."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Cánh đồng lúa có màu _"
+    answer: { accept: ["xanh"] }
+    hint: "Lúa non có màu gì?"
+    explanation: "Lúa xanh."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Câu cuối bài cho thấy buổi sáng ở quê:"
+    options:
+      - { id: "a", text: "yên bình" }
+      - { id: "b", text: "ồn ào" }
+      - { id: "c", text: "lạnh lẽo" }
+    answer: { correct: ["a"] }
+    hint: "Đọc câu cuối."
+    explanation: "yên bình."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã đọc hiểu bài **Buổi sáng ở quê**."
+    say: "Bé đã đọc hiểu bài Buổi sáng ở quê."

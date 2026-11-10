@@ -1,0 +1,78 @@
+schema: 1
+slug: toan2-duong-gap-khuc-tu-giac
+title: "Đường gấp khúc, hình tứ giác"
+summary: "Đường gấp khúc, độ dài đường gấp khúc, hình tứ giác."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Nhiều đoạn thẳng nối đuôi nhau tạo thành đường gấp khúc."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đường gấp khúc **ABC** gồm hai đoạn thẳng AB và BC.
+
+      Độ dài đường gấp khúc là **tổng độ dài** các đoạn thẳng.
+
+      Ví dụ AB = 3 cm, BC = 2 cm thì ABC dài 3 + 2 = **5 cm**.
+
+      Hình có **4 cạnh** gọi là **hình tứ giác**.
+    say: "Đường gấp khúc gồm các đoạn thẳng nối đuôi nhau. Độ dài đường gấp khúc là tổng độ dài các đoạn thẳng. Hình có bốn cạnh gọi là hình tứ giác."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "duong-gap-khuc"
+    prompt: "Đường gấp khúc có đoạn dài 4 cm và đoạn dài 5 cm. Cả đường dài _ cm."
+    answer: { accept: ["9"] }
+    hint: "Cộng độ dài các đoạn."
+    explanation: "4 + 5 = 9 (cm)."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "duong-gap-khuc"
+    prompt: "Đường gấp khúc gồm các đoạn 2 cm, 3 cm, 4 cm. Dài _ cm."
+    answer: { accept: ["9"] }
+    hint: "2 + 3 + 4."
+    explanation: "2 + 3 + 4 = 9 (cm)."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-giac"
+    prompt: "Hình tứ giác có mấy cạnh?"
+    options:
+      - { id: "a", text: "3" }
+      - { id: "b", text: "4" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "Tứ nghĩa là bốn."
+    explanation: "Hình tứ giác có 4 cạnh."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-giac"
+    prompt: "Hình nào là hình tứ giác?"
+    options:
+      - { id: "a", text: "Hình vuông" }
+      - { id: "b", text: "Hình tam giác" }
+      - { id: "c", text: "Hình tròn" }
+    answer: { correct: ["a"] }
+    hint: "Đếm cạnh."
+    explanation: "Hình vuông có 4 cạnh."
+
+  - id: b7
+    type: "summary"
+    markdown: "Bé đã biết **đường gấp khúc** và **hình tứ giác**."
+    say: "Bé đã biết đường gấp khúc và hình tứ giác."

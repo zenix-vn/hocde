@@ -1,0 +1,83 @@
+schema: 1
+slug: tv2-chinh-ta-l-n
+title: "Chính tả: l/n"
+summary: "Phân biệt l và n."
+est_minutes: 7
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "L hay n? Bé nhớ cách đặt lưỡi khi đọc nhé."
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **l:** lá, lúa, lớp học, lạnh
+
+      **n:** nón, nước, nắng, nấu cơm
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "l-n"
+    prompt: "Điền l hay n: _ớp học"
+    answer: { accept: ["l"] }
+    hint: "Nơi bé học cùng các bạn."
+    explanation: "lớp học."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "l-n"
+    prompt: "Điền l hay n: _ón lá"
+    answer: { accept: ["n"] }
+    hint: "Đội trên đầu."
+    explanation: "nón lá."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "l-n"
+    prompt: "Điền l hay n: _ắng vàng"
+    answer: { accept: ["n"] }
+    hint: "Ánh sáng mặt trời."
+    explanation: "nắng vàng."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "l-n"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "nạnh" }
+      - { id: "b", text: "lạnh" }
+      - { id: "c", text: "nanh" }
+    answer: { correct: ["b"] }
+    hint: "Ngược nghĩa với nóng."
+    explanation: "lạnh."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "l-n"
+    prompt: "Từ viết đúng chính tả là:"
+    options:
+      - { id: "a", text: "nước" }
+      - { id: "b", text: "lước" }
+      - { id: "c", text: "nứơc" }
+    answer: { correct: ["a"] }
+    hint: "Uống mỗi ngày."
+    explanation: "nước."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết phân biệt **l/n**."
+    say: "Bé đã biết phân biệt l/n."

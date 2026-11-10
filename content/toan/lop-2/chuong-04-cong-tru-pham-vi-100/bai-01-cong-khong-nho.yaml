@@ -1,0 +1,94 @@
+schema: 1
+slug: toan2-cong-khong-nho-100
+title: "Cộng không nhớ trong phạm vi 100"
+summary: "Đặt tính rồi tính: cộng các số có hai chữ số, không nhớ."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé cộng đơn vị với đơn vị, chục với chục nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **35 + 24 = ?**
+
+      Đơn vị: 5 + 4 = 9
+
+      Chục: 3 + 2 = 5
+
+      Vậy 35 + 24 = **59**.
+    say: "Ba mươi lăm cộng hai mươi tư. Đơn vị: năm cộng bốn bằng chín. Chục: ba cộng hai bằng năm. Vậy bằng năm mươi chín."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: "Cộng **hàng đơn vị** trước, rồi cộng **hàng chục**. Viết thẳng cột."
+    say: "Cộng hàng đơn vị trước, rồi cộng hàng chục."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-100"
+    prompt: "42 + 15 = ?"
+    options:
+      - { id: "a", text: "58" }
+      - { id: "b", text: "57" }
+      - { id: "c", text: "47" }
+    answer: { correct: ["b"] }
+    hint: "Tính 42 + 15."
+    explanation: "42 + 15 = 57."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-100"
+    prompt: "31 + 46 = ?"
+    options:
+      - { id: "a", text: "77" }
+      - { id: "b", text: "78" }
+      - { id: "c", text: "67" }
+    answer: { correct: ["a"] }
+    hint: "Tính 31 + 46."
+    explanation: "31 + 46 = 77."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-100"
+    prompt: "53 + 24 = _"
+    answer: { accept: ["77"] }
+    hint: "Tính 53 + 24."
+    explanation: "53 + 24 = 77."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-100"
+    prompt: "60 + 28 = _"
+    answer: { accept: ["88"] }
+    hint: "Tính 60 + 28."
+    explanation: "60 + 28 = 88."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Lớp 2A có 21 bạn nữ và 14 bạn nam. Lớp có tất cả _ bạn."
+    answer: { accept: ["35"] }
+    hint: "Tất cả thì cộng."
+    explanation: "21 + 14 = 35."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **cộng không nhớ** trong phạm vi 100."
+    say: "Bé đã biết cộng không nhớ trong phạm vi 100."

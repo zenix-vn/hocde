@@ -1,0 +1,89 @@
+schema: 1
+slug: toan2-don-vi-chuc-tram-nghin
+title: "Đơn vị, chục, trăm, nghìn"
+summary: "Hiểu hàng trăm và số tròn trăm."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "10 chục là một trăm. Bé thấy số của mình lớn dần rồi đó!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **10 đơn vị = 1 chục**
+
+      **10 chục = 1 trăm** (100)
+
+      **10 trăm = 1 nghìn** (1000)
+
+      Số tròn trăm: 100, 200, 300, ..., 900.
+    say: "Mười đơn vị là một chục. Mười chục là một trăm. Mười trăm là một nghìn."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tram"
+    prompt: "10 chục = _ trăm"
+    answer: { accept: ["1"] }
+    hint: "10 chục là 100."
+    explanation: "10 chục = 1 trăm."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tram"
+    prompt: "3 trăm là số _"
+    answer: { accept: ["300"] }
+    hint: "Thêm hai chữ số 0."
+    explanation: "3 trăm là 300."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tram"
+    prompt: "10 trăm = 1 _ (viết bằng chữ)"
+    answer: { accept: ["nghìn", "nghin"] }
+    hint: "Sau 900 là 1000."
+    explanation: "10 trăm = 1 nghìn."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tram"
+    prompt: "Số liền sau của 900 là:"
+    options:
+      - { id: "a", text: "901" }
+      - { id: "b", text: "1000" }
+      - { id: "c", text: "910" }
+    answer: { correct: ["a"] }
+    hint: "Thêm 1."
+    explanation: "Số liền sau của 900 là 901."
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-tron-tram"
+    prompt: "Xếp các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x500", text: "500" }
+      - { id: "x200", text: "200" }
+      - { id: "x800", text: "800" }
+      - { id: "x100", text: "100" }
+    answer: { sequence: ["x100", "x200", "x500", "x800"] }
+    hint: "So chữ số hàng trăm."
+    explanation: "100, 200, 500, 800."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **hàng trăm** và **số tròn trăm**."
+    say: "Bé đã biết hàng trăm và số tròn trăm."

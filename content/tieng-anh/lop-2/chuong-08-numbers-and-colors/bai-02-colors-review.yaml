@@ -1,0 +1,132 @@
+schema: 1
+slug: anh2-colors-and-things
+title: "What color is it?"
+summary: "Hỏi và nói màu: What color is it? It's red."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Màu sắc quanh bé thật đẹp! Mình hỏi và nói màu nhé."
+    say: [{"t":"Màu sắc quanh bé thật đẹp! Mình hỏi và nói màu nhé.","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "red", emoji: "🔴", meaning: "màu đỏ" }, { word: "blue", emoji: "🔵", meaning: "màu xanh dương" }, { word: "green", emoji: "🟢", meaning: "màu xanh lá" }, { word: "yellow", emoji: "🟡", meaning: "màu vàng" }, { word: "purple", emoji: "🟣", meaning: "màu tím" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **What color is it?** – Nó màu gì?
+
+      **It's red.** – Nó màu đỏ.
+    say: [{"t":"What color is it?","l":"en"},{"t":"Nó màu gì?","l":"vi"},{"t":"It's red.","l":"en"},{"t":"Nó màu đỏ.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-green"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "green", lang: "en" }
+    options:
+      - { id: "a", text: "🟢", say: "green", lang: "en" }
+      - { id: "b", text: "🔵", say: "blue", lang: "en" }
+      - { id: "c", text: "🟣", say: "purple", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là green."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-purple"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "purple", lang: "en" }
+    options:
+      - { id: "a", text: "🟡", say: "yellow", lang: "en" }
+      - { id: "b", text: "🟣", say: "purple", lang: "en" }
+      - { id: "c", text: "🔴", say: "red", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là purple."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Quả táo đỏ 🍎. Bé trả lời:
+
+      **What color is it?**
+    options:
+      - { id: "a", text: "It's red." }
+      - { id: "b", text: "It's blue." }
+      - { id: "c", text: "It's green." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "Quả táo màu đỏ."
+    option_lang: "en"
+    say: [{"t":"Quả táo đỏ 🍎. Bé trả lời:","l":"vi"},{"t":"What color is it?","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Lá cây xanh 🍃. Bé trả lời:
+
+      **What color is it?**
+    options:
+      - { id: "a", text: "It's yellow." }
+      - { id: "b", text: "It's green." }
+      - { id: "c", text: "It's purple." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ câu hỏi, rồi chọn câu trả lời phù hợp."
+    explanation: "Lá cây màu xanh lá."
+    option_lang: "en"
+    say: [{"t":"Lá cây xanh 🍃. Bé trả lời:","l":"vi"},{"t":"What color is it?","l":"en"}]
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-yellow"
+    prompt: |
+      Điền từ: Nó màu vàng 🟡
+
+      **It's _ .**
+    answer: { accept: ["yellow"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "It's yellow."
+    say: [{"t":"Điền từ: Nó màu vàng 🟡","l":"vi"},{"t":"It's blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xcolor", text: "color" }
+      - { id: "xWhat", text: "What" }
+      - { id: "xit", text: "it" }
+    answer: { sequence: ["xWhat", "xcolor", "xis", "xit"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "What color is it?"
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết hỏi và nói **màu sắc**. Bé hoàn thành Tiếng Anh lớp 2!"
+    say: "Bé đã biết hỏi và nói màu sắc. Bé hoàn thành Tiếng Anh lớp hai!"

@@ -1,0 +1,124 @@
+schema: 1
+slug: anh2-my-toys
+title: "My toys"
+summary: "Gọi tên đồ chơi: I have a ball."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé thích chơi đồ chơi nào nhất? Mình cùng gọi tên đồ chơi nhé!"
+    say: [{"t":"Bé thích chơi đồ chơi nào nhất? Mình cùng gọi tên đồ chơi nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Bé chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "ball", emoji: "⚽", meaning: "quả bóng" }, { word: "doll", emoji: "🪆", meaning: "búp bê" }, { word: "robot", emoji: "🤖", meaning: "người máy" }, { word: "kite", emoji: "🪁", meaning: "con diều" }, { word: "car", emoji: "🚗", meaning: "xe ô tô" }] }
+    say: [{"t":"Bé chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I have a ball.** – Mình có một quả bóng.
+
+      **This is my robot.** – Đây là người máy của mình.
+    say: [{"t":"I have a ball.","l":"en"},{"t":"Mình có một quả bóng.","l":"vi"},{"t":"This is my robot.","l":"en"},{"t":"Đây là người máy của mình.","l":"vi"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-kite"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "kite", lang: "en" }
+    options:
+      - { id: "a", text: "🪁", say: "kite", lang: "en" }
+      - { id: "b", text: "⚽", say: "ball", lang: "en" }
+      - { id: "c", text: "🚗", say: "car", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là kite."
+
+  - id: b5
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-robot"
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "robot", lang: "en" }
+    options:
+      - { id: "a", text: "🪆", say: "doll", lang: "en" }
+      - { id: "b", text: "🤖", say: "robot", lang: "en" }
+      - { id: "c", text: "🚗", say: "car", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là robot."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-doll"
+    prompt: "Búp bê 🪆 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "doll" }
+      - { id: "b", text: "ball" }
+      - { id: "c", text: "car" }
+    answer: { correct: ["a"] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Búp bê tiếng Anh là doll."
+    option_lang: "en"
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối từ với nghĩa."
+    pairs:
+      - { left: "ball", right: "quả bóng" }
+      - { left: "kite", right: "con diều" }
+      - { left: "car", right: "xe ô tô" }
+    answer: { pairs: [["ball", "quả bóng"], ["kite", "con diều"], ["car", "xe ô tô"]] }
+    hint: "Bé nghe lại từng từ ở thẻ trên."
+    explanation: "ball là bóng, kite là diều, car là xe ô tô."
+    option_lang: "en"
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-car"
+    prompt: |
+      Điền từ: Mình có một xe ô tô 🚗
+
+      **I have a _ .**
+    answer: { accept: ["car"] }
+    hint: "Nhìn lại ví dụ ở trên nhé."
+    explanation: "I have a car."
+    say: [{"t":"Điền từ: Mình có một xe ô tô 🚗","l":"vi"},{"t":"I have a blank .","l":"en"}]
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xmy", text: "my" }
+      - { id: "xThis", text: "This" }
+      - { id: "xrobot", text: "robot" }
+    answer: { sequence: ["xThis", "xis", "xmy", "xrobot"] }
+    hint: "Chữ cái đầu câu viết hoa."
+    explanation: "This is my robot."
+    option_lang: "en"
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết gọi tên **đồ chơi** bằng tiếng Anh."
+    say: "Bé đã biết gọi tên đồ chơi bằng tiếng Anh. I have a ball."

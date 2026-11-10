@@ -1,0 +1,93 @@
+schema: 1
+slug: tv2-tu-chi-hoat-dong
+title: "Từ chỉ hoạt động"
+summary: "Nhận biết từ chỉ hoạt động."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có những từ cho biết người, vật đang làm gì. Bé cùng tìm nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Từ chỉ **hoạt động** cho biết người, con vật **làm gì**.
+
+      - Em **đọc** sách.
+      - Chim **hót** líu lo.
+      - Cá **bơi** dưới nước.
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-hoat-dong"
+    prompt: "Từ nào chỉ hoạt động?"
+    options:
+      - { id: "a", text: "hoa" }
+      - { id: "b", text: "viết" }
+      - { id: "c", text: "xanh" }
+    answer: { correct: ["b"] }
+    hint: "Hỏi: làm gì?"
+    explanation: "\"viết\" chỉ hoạt động."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-hoat-dong"
+    prompt: "Từ nào KHÔNG chỉ hoạt động?"
+    options:
+      - { id: "a", text: "nhảy" }
+      - { id: "b", text: "hát" }
+      - { id: "c", text: "bàn" }
+    answer: { correct: ["c"] }
+    hint: "\"bàn\" là đồ vật."
+    explanation: "\"bàn\" chỉ sự vật."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tu-hoat-dong"
+    prompt: "Trong câu \"Chim hót líu lo.\", từ chỉ hoạt động là: _"
+    answer: { accept: ["hót"] }
+    hint: "Chim làm gì?"
+    explanation: "\"hót\" chỉ hoạt động."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "tu-hoat-dong"
+    prompt: "Nối con vật với hoạt động của nó."
+    pairs:
+      - { left: "chim", right: "bay" }
+      - { left: "cá", right: "bơi" }
+      - { left: "chó", right: "sủa" }
+    answer: { pairs: [["chim", "bay"], ["cá", "bơi"], ["chó", "sủa"]] }
+    hint: "Mỗi con vật có cách di chuyển, tiếng kêu riêng."
+    explanation: "Chim bay, cá bơi, chó sủa."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-hoat-dong"
+    prompt: "Điền từ chỉ hoạt động: Bé … cơm."
+    options:
+      - { id: "a", text: "ăn" }
+      - { id: "b", text: "đẹp" }
+      - { id: "c", text: "bàn" }
+    answer: { correct: ["a"] }
+    hint: "Bé làm gì với cơm?"
+    explanation: "Bé ăn cơm."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết **từ chỉ hoạt động**."
+    say: "Bé đã biết từ chỉ hoạt động."
