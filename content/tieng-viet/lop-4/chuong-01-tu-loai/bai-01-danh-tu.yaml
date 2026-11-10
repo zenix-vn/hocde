@@ -1,0 +1,74 @@
+schema: 1
+slug: tv4-danh-tu
+title: "Danh từ"
+summary: "Danh từ chỉ người, vật, hiện tượng, đơn vị."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Danh từ** là từ chỉ người, vật, hiện tượng, khái niệm, đơn vị.
+
+      - Người: **học sinh, bác sĩ**
+      - Vật: **bàn, núi**
+      - Hiện tượng: **mưa, gió**
+      - Đơn vị: **con, cái, chiếc, bó**
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "danh-tu"
+    prompt: "Từ nào là danh từ?"
+    options:
+      - { id: "a", text: "chạy" }
+      - { id: "b", text: "sông" }
+      - { id: "c", text: "chăm chỉ" }
+    answer: { correct: ["b"] }
+    hint: "Chỉ vật."
+    explanation: "\"sông\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "danh-tu"
+    prompt: "Danh từ chỉ hiện tượng tự nhiên:"
+    options:
+      - { id: "a", text: "xinh đẹp" }
+      - { id: "b", text: "hát" }
+      - { id: "c", text: "cầu vồng" }
+    answer: { correct: ["c"] }
+    hint: "Có sau mưa."
+    explanation: "\"cầu vồng\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "danh-tu"
+    prompt: "Trong câu \"Mẹ đọc báo.\", danh từ chỉ người là: _"
+    answer: { accept: ["mẹ", "Mẹ"] }
+    hint: "Ai đọc?"
+    explanation: "\"Mẹ\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "danh-tu"
+    prompt: "Danh từ chỉ đơn vị:"
+    options:
+      - { id: "a", text: "đỏ" }
+      - { id: "b", text: "ăn" }
+      - { id: "c", text: "con" }
+    answer: { correct: ["c"] }
+    hint: "Một _ mèo."
+    explanation: "\"con\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Danh từ**."
+    say: "Em đã học xong bài Danh từ."

@@ -1,0 +1,64 @@
+schema: 1
+slug: tv3-chinh-ta-van-de-lan
+title: "Chính tả: vần dễ lẫn"
+summary: "Phân biệt các vần ươn/ương, ân/âng, iêc/iêt..."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "**ươn/ương:** vườn, thương · **ân/âng:** sân, tầng · **iêc/iêt:** việc, biết · **at/ac:** hát, nhạc"
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "van"
+    prompt: "Điền ươn hay ương: v_ cây"
+    answer: { accept: ["ươn"] }
+    hint: "Nơi trồng rau."
+    explanation: "vườn cây."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "van"
+    prompt: "Điền iêc hay iêt: l_ làm"
+    answer: { accept: ["iêc"] }
+    hint: "Công việc."
+    explanation: "việc làm."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "van"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "thưong yêu" }
+      - { id: "b", text: "thương yêu" }
+      - { id: "c", text: "thươn yêu" }
+    answer: { correct: ["b"] }
+    hint: "Có g cuối."
+    explanation: "thương yêu."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "van"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "hát cát" }
+      - { id: "b", text: "hát ca" }
+      - { id: "c", text: "hác ca" }
+    answer: { correct: ["b"] }
+    hint: "Cất tiếng."
+    explanation: "hát ca."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Chính tả: vần dễ lẫn**."
+    say: "Em đã học xong bài Chính tả: vần dễ lẫn."

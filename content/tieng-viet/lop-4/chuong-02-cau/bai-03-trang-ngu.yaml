@@ -1,0 +1,72 @@
+schema: 1
+slug: tv4-trang-ngu
+title: "Trạng ngữ"
+summary: "Trạng ngữ chỉ thời gian, nơi chốn."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Trạng ngữ** bổ sung thông tin về thời gian, nơi chốn, nguyên nhân... cho câu. Thường đứng đầu câu, sau có dấu phẩy.
+
+      - **Sáng nay**, em đi học sớm. (thời gian)
+      - **Trong vườn**, hoa nở rộ. (nơi chốn)
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "trang-ngu"
+    prompt: "Trạng ngữ của câu \"Mỗi chiều, bà ra sân tưới hoa.\" là:"
+    options:
+      - { id: "a", text: "tưới hoa" }
+      - { id: "b", text: "Mỗi chiều" }
+      - { id: "c", text: "bà" }
+    answer: { correct: ["b"] }
+    hint: "Khi nào?"
+    explanation: "\"Mỗi chiều\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "trang-ngu"
+    prompt: "\"Ở góc sân, một cây ổi đang ra hoa.\" Trạng ngữ chỉ:"
+    options:
+      - { id: "a", text: "thời gian" }
+      - { id: "b", text: "nguyên nhân" }
+      - { id: "c", text: "nơi chốn" }
+    answer: { correct: ["c"] }
+    hint: "Ở đâu?"
+    explanation: "Nơi chốn."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "trang-ngu"
+    prompt: "Thêm trạng ngữ chỉ thời gian: _, em làm bài tập. (VD: Tối nay)"
+    answer: { accept: ["Tối nay", "Sáng nay", "Chiều nay", "Hôm qua"] }
+    hint: "Khi nào?"
+    explanation: "Ví dụ \"Tối nay\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "trang-ngu"
+    prompt: "Sau trạng ngữ đứng đầu câu thường có dấu:"
+    options:
+      - { id: "a", text: "phẩy" }
+      - { id: "b", text: "hỏi" }
+      - { id: "c", text: "than" }
+    answer: { correct: ["a"] }
+    hint: "Ngăn cách."
+    explanation: "Dấu phẩy."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Trạng ngữ**."
+    say: "Em đã học xong bài Trạng ngữ."

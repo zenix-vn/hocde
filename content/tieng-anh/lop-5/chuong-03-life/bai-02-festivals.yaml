@@ -1,0 +1,94 @@
+schema: 1
+slug: anh5-festivals
+title: "Festivals"
+summary: "Lễ hội: Tet, Mid-Autumn Festival."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Việt Nam có nhiều lễ hội đẹp. Bé kể về lễ hội nhé!"
+    say: [{"t":"Việt Nam có nhiều lễ hội đẹp. Bé kể về lễ hội nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "Tet", emoji: "🧧", meaning: "Tết Nguyên đán" }, { word: "Mid-Autumn Festival", emoji: "🏮", meaning: "Tết Trung thu" }, { word: "lantern", emoji: "🏮", meaning: "đèn lồng" }, { word: "firework", emoji: "🎆", meaning: "pháo hoa" }, { word: "family reunion", emoji: "👨‍👩‍👧", meaning: "sum họp gia đình" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**What do you do at Tet? We clean the house and visit our relatives.**"
+    say: [{"t":"What do you do at Tet?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-lantern"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "lantern", lang: "en" }
+    options:
+      - { id: "a", text: "🏮", say: "lantern", lang: "en" }
+      - { id: "b", text: "🎆", say: "firework", lang: "en" }
+      - { id: "c", text: "🧧", say: "Tet", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là lantern."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Vào Trung thu bạn làm gì?
+
+      **What do you do at Mid-Autumn Festival?**
+    options:
+      - { id: "a", text: "We carry lanterns." }
+      - { id: "b", text: "We swim in winter." }
+      - { id: "c", text: "We go to bed at noon." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Rước đèn."
+    option_lang: "en"
+    say: [{"t":"Vào Trung thu bạn làm gì?","l":"vi"},{"t":"What do you do at Mid-Autumn Festival?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-relatives"
+    prompt: |
+      Điền: Tết, chúng mình thăm họ hàng.
+
+      **At Tet, we visit our _ . (relatives)**
+    answer: { accept: ["relatives"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "relatives."
+    say: [{"t":"Điền: Tết, chúng mình thăm họ hàng.","l":"vi"},{"t":"At Tet, we visit our blank . (relatives)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlanterns", text: "lanterns" }
+      - { id: "xcarry", text: "carry" }
+      - { id: "xWe", text: "We" }
+    answer: { sequence: ["xWe", "xcarry", "xlanterns"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "We carry lanterns."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Festivals**."
+    say: "Em đã học xong bài Festivals."

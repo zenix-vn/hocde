@@ -1,0 +1,79 @@
+schema: 1
+slug: toan5-ti-so-phan-tram
+title: "Tỉ số phần trăm"
+summary: "Khái niệm và cách tìm tỉ số phần trăm."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **25%** đọc là hai mươi lăm phần trăm, nghĩa là 25/100.
+
+      **Tỉ số phần trăm của a và b** = (a : b) × 100%.
+
+      Ví dụ: 3 trên 12 là (3 : 12) × 100% = **25%**.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phan-tram"
+    prompt: "50% = _/100"
+    answer: { accept: ["50"] }
+    hint: "Phần trăm là trên 100."
+    explanation: "50/100."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-tram"
+    prompt: "Phân số 1/4 bằng bao nhiêu phần trăm?"
+    options:
+      - { id: "a", text: "14%" }
+      - { id: "b", text: "25%" }
+      - { id: "c", text: "40%" }
+    answer: { correct: ["b"] }
+    hint: "1/4 = 25/100."
+    explanation: "25%."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ti-so"
+    prompt: "Lớp có 40 học sinh, 10 bạn đạt giỏi. Tỉ số phần trăm số học sinh giỏi là _ %."
+    answer: { accept: ["25"] }
+    hint: "(10 : 40) × 100."
+    explanation: "25%."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ti-so"
+    prompt: "Trong 20 quả có 5 quả hỏng. Tỉ số phần trăm quả hỏng là _ %."
+    answer: { accept: ["25"] }
+    hint: "(5 : 20) × 100."
+    explanation: "25%."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-tram"
+    prompt: "100% của một số là:"
+    options:
+      - { id: "a", text: "nửa số đó" }
+      - { id: "b", text: "chính số đó" }
+      - { id: "c", text: "gấp đôi số đó" }
+    answer: { correct: ["b"] }
+    hint: "Toàn bộ."
+    explanation: "Chính số đó."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Tỉ số phần trăm**."
+    say: "Em đã học xong bài Tỉ số phần trăm."

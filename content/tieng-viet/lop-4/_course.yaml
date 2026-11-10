@@ -1,0 +1,47 @@
+# Tiếng Việt 4 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-viet
+grade: 4
+slug: tieng-viet-lop-4
+title: Tiếng Việt 4
+summary: "Danh từ, động từ, tính từ, các kiểu câu, chủ ngữ – vị ngữ, trạng ngữ, từ ghép – từ láy, thành ngữ và đọc hiểu."
+status: published
+
+units:
+  - slug: chuong-01-tu-loai
+    title: "Danh từ, động từ, tính từ"
+    summary: "Nhận biết ba từ loại chính."
+    lessons:
+      - bai-01-danh-tu
+      - bai-02-dong-tu
+      - bai-03-tinh-tu
+
+  - slug: chuong-02-cau
+    title: "Câu"
+    summary: "Các kiểu câu, chủ ngữ – vị ngữ, trạng ngữ."
+    lessons:
+      - bai-01-cac-kieu-cau
+      - bai-02-chu-ngu-vi-ngu
+      - bai-03-trang-ngu
+
+  - slug: chuong-03-tu-va-nghia
+    title: "Từ và nghĩa của từ"
+    summary: "Từ đơn, từ phức, từ ghép, từ láy, thành ngữ, tục ngữ."
+    lessons:
+      - bai-01-tu-don-tu-phuc
+      - bai-02-tu-ghep-tu-lay
+      - bai-03-thanh-ngu-tuc-ngu
+
+  - slug: chuong-04-doc-hieu
+    title: "Đọc hiểu"
+    summary: "Đọc văn bản và trả lời câu hỏi."
+    lessons:
+      - bai-01-mua-thu
+      - bai-02-nguoi-ban-tot
+
+  - slug: chuong-05-chinh-ta
+    title: "Chính tả và dấu câu"
+    summary: "Dấu hỏi/dấu ngã và các dấu câu."
+    lessons:
+      - bai-01-dau-hoi-dau-nga
+

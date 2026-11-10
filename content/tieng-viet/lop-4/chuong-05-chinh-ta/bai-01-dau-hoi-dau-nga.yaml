@@ -1,0 +1,68 @@
+schema: 1
+slug: tv4-dau-hoi-dau-nga
+title: "Dấu hỏi hay dấu ngã?"
+summary: "Quy tắc viết dấu hỏi, dấu ngã."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "Mẹo: từ láy có tiếng đầu **dấu ngã** thì tiếng sau thường **dấu ngã** (*mãi mãi, rõ ràng*) hoặc ngược lại. Với từ Hán Việt: âm đầu **m, n, nh, l, v, d, ng** thường đi với **dấu ngã** (*mỹ, vĩ đại, nghĩa*)."
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-hoi-nga"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "cảm ởn" }
+      - { id: "b", text: "cảm ơn" }
+      - { id: "c", text: "cãm ơn" }
+    answer: { correct: ["b"] }
+    hint: "Biết ơn."
+    explanation: "cảm ơn."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-hoi-nga"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "vĩ đãi" }
+      - { id: "b", text: "vĩ đại" }
+      - { id: "c", text: "vỉ đại" }
+    answer: { correct: ["b"] }
+    hint: "To lớn."
+    explanation: "vĩ đại."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-hoi-nga"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "nghị ngợi" }
+      - { id: "b", text: "nghĩ ngợi" }
+      - { id: "c", text: "nghỉ ngợi" }
+    answer: { correct: ["b"] }
+    hint: "Suy nghĩ."
+    explanation: "nghĩ ngợi."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dau-hoi-nga"
+    prompt: "Điền dấu: khoẻ mạnh hay khoẽ mạnh? Viết từ đúng: _"
+    answer: { accept: ["khỏe mạnh", "khoẻ mạnh"] }
+    hint: "Dấu hỏi."
+    explanation: "khỏe mạnh."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Dấu hỏi hay dấu ngã?**."
+    say: "Em đã học xong bài Dấu hỏi hay dấu ngã?."

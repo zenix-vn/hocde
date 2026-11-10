@@ -1,0 +1,75 @@
+schema: 1
+slug: tv3-ba-kieu-cau-ke
+title: "Ba kiểu câu: Ai là gì? Ai làm gì? Ai thế nào?"
+summary: "Nhận biết ba kiểu câu kể."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      - **Ai là gì?** Bố em **là bác sĩ**.
+      - **Ai làm gì?** Mẹ em **nấu cơm**.
+      - **Ai thế nào?** Bé Na **rất ngoan**.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Thu là học sinh lớp 3.\" thuộc kiểu câu:"
+    options:
+      - { id: "a", text: "Ai làm gì?" }
+      - { id: "b", text: "Ai thế nào?" }
+      - { id: "c", text: "Ai là gì?" }
+    answer: { correct: ["c"] }
+    hint: "Có từ \"là\"."
+    explanation: "Ai là gì?"
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Bạn Hoa đang tưới cây.\" thuộc kiểu câu:"
+    options:
+      - { id: "a", text: "Ai thế nào?" }
+      - { id: "b", text: "Ai là gì?" }
+      - { id: "c", text: "Ai làm gì?" }
+    answer: { correct: ["c"] }
+    hint: "\"tưới cây\" là hoạt động."
+    explanation: "Ai làm gì?"
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Cánh đồng rộng mênh mông.\" thuộc kiểu câu:"
+    options:
+      - { id: "a", text: "Ai làm gì?" }
+      - { id: "b", text: "Ai thế nào?" }
+      - { id: "c", text: "Ai là gì?" }
+    answer: { correct: ["b"] }
+    hint: "Tả đặc điểm."
+    explanation: "Ai thế nào?"
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "dat-cau"
+    prompt: "Sắp xếp thành câu \"Ai làm gì?\""
+    options:
+      - { id: "xtuoi", text: "tưới" }
+      - { id: "xMe", text: "Mẹ" }
+      - { id: "xrau", text: "rau" }
+    answer: { sequence: ["xMe", "xtuoi", "xrau"] }
+    hint: "Ai làm gì?"
+    explanation: "Mẹ tưới rau."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Ba kiểu câu: Ai là gì? Ai làm gì? Ai thế nào?**."
+    say: "Em đã học xong bài Ba kiểu câu: Ai là gì? Ai làm gì? Ai thế nào?."

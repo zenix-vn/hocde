@@ -1,0 +1,93 @@
+schema: 1
+slug: anh5-how-often
+title: "How often…?"
+summary: "Tần suất: always, usually, sometimes, never."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé làm việc đó thường xuyên không?"
+    say: [{"t":"Bé làm việc đó thường xuyên không?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "always", emoji: "💯", meaning: "luôn luôn" }, { word: "usually", emoji: "🔁", meaning: "thường" }, { word: "sometimes", emoji: "🔂", meaning: "thỉnh thoảng" }, { word: "never", emoji: "🚫", meaning: "không bao giờ" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**How often do you play football? I sometimes play football.** Trạng từ đứng trước động từ thường."
+    say: [{"t":"How often do you play football?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-sometimes"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "sometimes", lang: "en" }
+    options:
+      - { id: "a", text: "always", say: "always", lang: "en" }
+      - { id: "b", text: "sometimes", say: "sometimes", lang: "en" }
+      - { id: "c", text: "never", say: "never", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sometimes."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: "Bạn không bao giờ ăn kẹo:"
+    options:
+      - { id: "a", text: "I never eat sweets." }
+      - { id: "b", text: "I eat never sweets." }
+      - { id: "c", text: "Never I eat sweets." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "never đứng trước động từ."
+    option_lang: "en"
+    say: [{"t":"Bạn không bao giờ ăn kẹo:","l":"vi"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-always"
+    prompt: |
+      Điền: Mình luôn đánh răng.
+
+      **I _ brush my teeth. (always)**
+    answer: { accept: ["always"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "always."
+    say: [{"t":"Điền: Mình luôn đánh răng.","l":"vi"},{"t":"I blank brush my teeth. (always)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xusually", text: "usually" }
+      - { id: "xI", text: "I" }
+      - { id: "xup", text: "up" }
+      - { id: "xget", text: "get" }
+      - { id: "xearly", text: "early" }
+    answer: { sequence: ["xI", "xusually", "xget", "xup", "xearly"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I usually get up early."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **How often…?**."
+    say: "Em đã học xong bài How often…?."

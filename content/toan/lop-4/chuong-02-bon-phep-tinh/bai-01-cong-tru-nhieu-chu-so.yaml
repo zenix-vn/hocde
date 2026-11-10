@@ -1,0 +1,77 @@
+schema: 1
+slug: toan4-cong-tru-nhieu-chu-so
+title: "Cộng, trừ các số nhiều chữ số"
+summary: "Cộng, trừ số có nhiều chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Đặt tính thẳng cột, tính từ phải sang trái.
+
+      **Kiểm tra** phép trừ bằng phép cộng: nếu 8 000 − 3 456 = 4 544 thì 4 544 + 3 456 = 8 000.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong"
+    prompt: "52 408 + 36 795 = ?"
+    options:
+      - { id: "a", text: "89303" }
+      - { id: "b", text: "88203" }
+      - { id: "c", text: "89203" }
+    answer: { correct: ["c"] }
+    hint: "Nhớ khi cộng đủ 10."
+    explanation: "52408 + 36795 = 89203."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru"
+    prompt: "700 000 − 245 000 = ?"
+    options:
+      - { id: "a", text: "455000" }
+      - { id: "b", text: "465000" }
+      - { id: "c", text: "355000" }
+    answer: { correct: ["a"] }
+    hint: "700 − 245 = 455 nghìn."
+    explanation: "455 000."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong"
+    prompt: "123 456 + 100 000 = _"
+    answer: { accept: ["223456"] }
+    hint: "Chỉ hàng trăm nghìn đổi."
+    explanation: "223 456."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru"
+    prompt: "90 000 − 12 345 = _"
+    answer: { accept: ["77655"] }
+    hint: "Mượn nhiều lần."
+    explanation: "90000 − 12345 = 77655."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Tháng trước cửa hàng bán 15 280 kg gạo, tháng này bán 12 745 kg. Cả hai tháng bán _ kg."
+    answer: { accept: ["28025"] }
+    hint: "15280 + 12745."
+    explanation: "28 025."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Cộng, trừ các số nhiều chữ số**."
+    say: "Em đã học xong bài Cộng, trừ các số nhiều chữ số."

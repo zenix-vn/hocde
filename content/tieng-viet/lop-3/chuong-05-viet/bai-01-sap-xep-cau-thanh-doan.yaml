@@ -1,0 +1,58 @@
+schema: 1
+slug: tv3-sap-xep-cau-thanh-doan
+title: "Sắp xếp câu thành đoạn văn"
+summary: "Sắp xếp câu hợp lí."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "Đoạn văn hay thường có: **câu mở đầu** giới thiệu, **các câu triển khai**, **câu kết**."
+
+  - id: b2
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Xếp các câu thành đoạn."
+    options:
+      - { id: "xEmratyeucaybangay", text: "Em rất yêu cây bàng ấy." }
+      - { id: "xSantruongemcomotcaybangcothu", text: "Sân trường em có một cây bàng cổ thụ." }
+      - { id: "xMuahetanlaxanhchematcasan", text: "Mùa hè, tán lá xanh che mát cả sân." }
+    answer: { sequence: ["xSantruongemcomotcaybangcothu", "xMuahetanlaxanhchematcasan", "xEmratyeucaybangay"] }
+    hint: "Giới thiệu → miêu tả → cảm xúc."
+    explanation: "Đoạn văn hoàn chỉnh."
+
+  - id: b3
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Xếp các câu thành đoạn."
+    options:
+      - { id: "xRoiemdanhrangruamat", text: "Rồi em đánh răng, rửa mặt." }
+      - { id: "xSangnaoemcungdaylucsaugio", text: "Sáng nào em cũng dậy lúc sáu giờ." }
+      - { id: "xCuoicungemansangvadentruong", text: "Cuối cùng em ăn sáng và đến trường." }
+    answer: { sequence: ["xSangnaoemcungdaylucsaugio", "xRoiemdanhrangruamat", "xCuoicungemansangvadentruong"] }
+    hint: "Theo trình tự thời gian."
+    explanation: "Đúng trình tự."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-doan"
+    prompt: "Câu nào thích hợp làm câu mở đầu đoạn tả con mèo?"
+    options:
+      - { id: "a", text: "Nó thích ăn cá." }
+      - { id: "b", text: "Nhà em nuôi một chú mèo tên là Mướp." }
+      - { id: "c", text: "Vì vậy em rất yêu nó." }
+    answer: { correct: ["b"] }
+    hint: "Giới thiệu đối tượng."
+    explanation: "Câu giới thiệu."
+
+  - id: b5
+    type: "summary"
+    markdown: "Em đã học xong bài **Sắp xếp câu thành đoạn văn**."
+    say: "Em đã học xong bài Sắp xếp câu thành đoạn văn."

@@ -1,0 +1,75 @@
+schema: 1
+slug: toan4-nhan-chia-phan-so
+title: "Nhân, chia phân số"
+summary: "Nhân, chia hai phân số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Nhân:** tử nhân tử, mẫu nhân mẫu. 2/3 × 4/5 = 8/15.
+
+      **Chia:** nhân với phân số đảo ngược. 2/3 : 4/5 = 2/3 × 5/4 = 10/12 = 5/6.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-ps"
+    prompt: "1/2 × 3/4 = ?"
+    options:
+      - { id: "a", text: "4/6" }
+      - { id: "b", text: "3/8" }
+      - { id: "c", text: "3/4" }
+    answer: { correct: ["b"] }
+    hint: "Tử × tử, mẫu × mẫu."
+    explanation: "3/8."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-ps"
+    prompt: "2/5 × 5/7 = ?"
+    options:
+      - { id: "a", text: "10/35" }
+      - { id: "b", text: "7/12" }
+      - { id: "c", text: "2/7" }
+    answer: { correct: ["a"] }
+    hint: "2 × 5 = 10, 5 × 7 = 35."
+    explanation: "10/35 = 2/7."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia-ps"
+    prompt: "3/4 : 3/8 = ?"
+    options:
+      - { id: "a", text: "9/32" }
+      - { id: "b", text: "1/2" }
+      - { id: "c", text: "2" }
+    answer: { correct: ["c"] }
+    hint: "3/4 × 8/3."
+    explanation: "24/12 = 2."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia-ps"
+    prompt: "1/2 : 1/4 = ?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "1/8" }
+      - { id: "c", text: "1/2" }
+    answer: { correct: ["a"] }
+    hint: "1/2 × 4/1 = 4/2."
+    explanation: "2."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Nhân, chia phân số**."
+    say: "Em đã học xong bài Nhân, chia phân số."

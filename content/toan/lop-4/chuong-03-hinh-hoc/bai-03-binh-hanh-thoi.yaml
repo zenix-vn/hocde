@@ -1,0 +1,67 @@
+schema: 1
+slug: toan4-hinh-binh-hanh-hinh-thoi
+title: "Hình bình hành, hình thoi"
+summary: "Đặc điểm và diện tích hình bình hành, hình thoi."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Hình bình hành:** hai cặp cạnh đối diện song song và bằng nhau.
+
+      **Hình thoi:** 4 cạnh bằng nhau.
+
+      **Diện tích hình bình hành** = đáy × chiều cao.
+
+      **Diện tích hình thoi** = (đường chéo 1 × đường chéo 2) : 2.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-binh-hanh"
+    prompt: "Hình bình hành đáy 8 cm, chiều cao 5 cm. Diện tích là _ cm²."
+    answer: { accept: ["40"] }
+    hint: "8 × 5."
+    explanation: "40."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-thoi"
+    prompt: "Hình thoi có hai đường chéo 6 cm và 10 cm. Diện tích là _ cm²."
+    answer: { accept: ["30"] }
+    hint: "(6 × 10) : 2."
+    explanation: "30."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hinh-thoi"
+    prompt: "Hình thoi có mấy cạnh bằng nhau?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["c"] }
+    hint: "Cả bốn cạnh."
+    explanation: "4."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-binh-hanh"
+    prompt: "Hình bình hành có đáy 12 dm, chiều cao 7 dm. Diện tích là _ dm²."
+    answer: { accept: ["84"] }
+    hint: "12 × 7."
+    explanation: "84."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Hình bình hành, hình thoi**."
+    say: "Em đã học xong bài Hình bình hành, hình thoi."

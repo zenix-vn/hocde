@@ -1,0 +1,92 @@
+schema: 1
+slug: anh5-protect-the-environment
+title: "Protect the environment"
+summary: "Bảo vệ môi trường: reduce, reuse, recycle."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé có thể làm gì để bảo vệ môi trường?"
+    say: [{"t":"Bé có thể làm gì để bảo vệ môi trường?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "reduce", emoji: "➖", meaning: "giảm bớt" }, { word: "reuse", emoji: "🔁", meaning: "tái sử dụng" }, { word: "recycle", emoji: "♻️", meaning: "tái chế" }, { word: "plant trees", emoji: "🌳", meaning: "trồng cây" }, { word: "rubbish", emoji: "🗑️", meaning: "rác" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**We should recycle paper. We shouldn't throw rubbish on the street.**"
+    say: [{"t":"We should recycle paper.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-recycle"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "recycle", lang: "en" }
+    options:
+      - { id: "a", text: "♻️", say: "recycle", lang: "en" }
+      - { id: "b", text: "🗑️", say: "rubbish", lang: "en" }
+      - { id: "c", text: "🌳", say: "plant trees", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là recycle."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: "Chọn câu đúng:"
+    options:
+      - { id: "a", text: "We shouldn't recycle paper." }
+      - { id: "b", text: "We should plant more trees." }
+      - { id: "c", text: "We should throw rubbish on the street." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Hành động tốt cho môi trường."
+    option_lang: "en"
+    say: [{"t":"Chọn câu đúng:","l":"vi"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-recycle"
+    prompt: |
+      Điền: Chúng ta nên tái chế giấy.
+
+      **We should _ paper.**
+    answer: { accept: ["recycle"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "recycle."
+    say: [{"t":"Điền: Chúng ta nên tái chế giấy.","l":"vi"},{"t":"We should blank paper.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xrubbish", text: "rubbish" }
+      - { id: "xthrow", text: "throw" }
+      - { id: "xshouldnt", text: "shouldn't" }
+      - { id: "xWe", text: "We" }
+    answer: { sequence: ["xWe", "xshouldnt", "xthrow", "xrubbish"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "We shouldn't throw rubbish."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Protect the environment**."
+    say: "Em đã học xong bài Protect the environment."

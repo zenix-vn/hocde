@@ -1,0 +1,83 @@
+schema: 1
+slug: toan3-bieu-thuc-so
+title: "Biểu thức số"
+summary: "Thứ tự thực hiện phép tính; biểu thức có dấu ngoặc."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Quy tắc:**
+
+      - Có nhân, chia và cộng, trừ: tính **nhân, chia trước**, cộng, trừ sau.
+
+      - Có dấu ngoặc ( ): tính **trong ngoặc trước**.
+
+      5 + 3 × 4 = 5 + 12 = 17
+
+      (5 + 3) × 4 = 8 × 4 = 32
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bieu-thuc"
+    prompt: "6 + 4 × 5 = ?"
+    options:
+      - { id: "a", text: "30" }
+      - { id: "b", text: "26" }
+      - { id: "c", text: "16" }
+    answer: { correct: ["b"] }
+    hint: "Nhân trước: 4 × 5 = 20."
+    explanation: "6 + 20 = 26."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bieu-thuc"
+    prompt: "(6 + 4) × 5 = ?"
+    options:
+      - { id: "a", text: "50" }
+      - { id: "b", text: "60" }
+      - { id: "c", text: "30" }
+    answer: { correct: ["a"] }
+    hint: "Ngoặc trước: 6 + 4 = 10."
+    explanation: "10 × 5 = 50."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc"
+    prompt: "36 : 4 + 7 = _"
+    answer: { accept: ["16"] }
+    hint: "Chia trước: 36 : 4 = 9."
+    explanation: "9 + 7 = 16."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc"
+    prompt: "50 − 3 × 6 = _"
+    answer: { accept: ["32"] }
+    hint: "Nhân trước: 3 × 6 = 18."
+    explanation: "50 − 18 = 32."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc"
+    prompt: "(20 − 8) : 4 = _"
+    answer: { accept: ["3"] }
+    hint: "Ngoặc trước: 12."
+    explanation: "12 : 4 = 3."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Biểu thức số**."
+    say: "Em đã học xong bài Biểu thức số."

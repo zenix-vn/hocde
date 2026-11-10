@@ -1,0 +1,95 @@
+schema: 1
+slug: anh4-subjects-today
+title: "Subjects today"
+summary: "What subjects do you have today?"
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay bé có những môn gì?"
+    say: [{"t":"Hôm nay bé có những môn gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "Science", emoji: "🔬", meaning: "Khoa học" }, { word: "Maths", emoji: "➗", meaning: "Toán" }, { word: "Vietnamese", emoji: "📖", meaning: "Tiếng Việt" }, { word: "IT", emoji: "💻", meaning: "Tin học" }, { word: "History", emoji: "🏺", meaning: "Lịch sử" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**What subjects do you have today? I have Maths and Science.**"
+    say: [{"t":"What subjects do you have today?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-science"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "Science", lang: "en" }
+    options:
+      - { id: "a", text: "IT", say: "IT", lang: "en" }
+      - { id: "b", text: "Science", say: "Science", lang: "en" }
+      - { id: "c", text: "History", say: "History", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là Science."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn có Toán và Tin học. Trả lời:
+
+      **What subjects do you have today?**
+    options:
+      - { id: "a", text: "I has Maths." }
+      - { id: "b", text: "I have Maths and IT." }
+      - { id: "c", text: "I am Maths and IT." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "I have ..."
+    option_lang: "en"
+    say: [{"t":"Bạn có Toán và Tin học. Trả lời:","l":"vi"},{"t":"What subjects do you have today?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-have"
+    prompt: |
+      Điền: Mình có môn Tiếng Việt.
+
+      **I _ Vietnamese today.**
+    answer: { accept: ["have"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "have."
+    say: [{"t":"Điền: Mình có môn Tiếng Việt.","l":"vi"},{"t":"I blank Vietnamese today.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xhave", text: "have" }
+      - { id: "xI", text: "I" }
+      - { id: "xScience", text: "Science" }
+      - { id: "xtoday", text: "today" }
+    answer: { sequence: ["xI", "xhave", "xScience", "xtoday"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I have Science today."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Subjects today**."
+    say: "Em đã học xong bài Subjects today."

@@ -1,0 +1,75 @@
+schema: 1
+slug: tv4-doc-hieu-nguoi-ban-tot
+title: "Đọc hiểu: Người bạn tốt"
+summary: "Đọc câu chuyện ngắn về tình bạn."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Người bạn tốt**
+
+      Giờ ra chơi, Minh làm rơi quyển vở xuống vũng nước. Nhìn trang vở lem nhem, Minh suýt khóc. Lan thấy vậy liền lấy giấy lau, rồi chép lại cho bạn mấy dòng bị mờ. Minh xúc động nói: "Cảm ơn bạn, bạn thật tốt!". Lan mỉm cười: "Bạn bè phải giúp nhau mà."
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Vì sao Minh suýt khóc?"
+    options:
+      - { id: "a", text: "Bị điểm kém" }
+      - { id: "b", text: "Mất bút" }
+      - { id: "c", text: "Vở bị lem nhem" }
+    answer: { correct: ["c"] }
+    hint: "Câu thứ hai."
+    explanation: "Vở bị lem."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Lan đã làm gì?"
+    options:
+      - { id: "a", text: "Lau giấy và chép lại giúp bạn" }
+      - { id: "b", text: "Mắng Minh" }
+      - { id: "c", text: "Bỏ đi chơi" }
+    answer: { correct: ["a"] }
+    hint: "Câu thứ ba."
+    explanation: "Giúp Minh."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Câu \"Bạn bè phải giúp nhau mà.\" cho thấy Lan là người:"
+    options:
+      - { id: "a", text: "tốt bụng" }
+      - { id: "b", text: "nóng tính" }
+      - { id: "c", text: "lười biếng" }
+    answer: { correct: ["a"] }
+    hint: "Tính cách."
+    explanation: "Tốt bụng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Dấu ngoặc kép trong bài dùng để:"
+    options:
+      - { id: "a", text: "liệt kê" }
+      - { id: "b", text: "đánh dấu lời nói trực tiếp" }
+      - { id: "c", text: "đánh dấu tên bài" }
+    answer: { correct: ["b"] }
+    hint: "Lời nhân vật."
+    explanation: "Lời nói trực tiếp."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Người bạn tốt**."
+    say: "Em đã học xong bài Đọc hiểu: Người bạn tốt."

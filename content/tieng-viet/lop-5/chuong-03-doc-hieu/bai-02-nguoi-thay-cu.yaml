@@ -1,0 +1,75 @@
+schema: 1
+slug: tv5-doc-hieu-nguoi-thay-cu
+title: "Đọc hiểu: Người thầy cũ"
+summary: "Đọc câu chuyện về tình thầy trò."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Người thầy cũ**
+
+      Trước cổng trường, bác Hải chống gậy đứng lặng, mắt hướng về ngôi trường xưa. Một cựu học sinh nhận ra, chạy lại: "Thầy ơi, thầy có nhớ em không?". Thầy mỉm cười, nhắc đúng tên và cả kỉ niệm ngày em còn nghịch ngợm. Người học trò xúc động siết chặt tay thầy. Hóa ra, thầy nhớ từng học trò, như nhớ chính những năm tháng của mình.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Người đứng trước cổng trường là ai?"
+    options:
+      - { id: "a", text: "Bác bảo vệ" }
+      - { id: "b", text: "Phụ huynh" }
+      - { id: "c", text: "Thầy giáo cũ" }
+    answer: { correct: ["c"] }
+    hint: "Cuối đoạn."
+    explanation: "Thầy giáo cũ."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Thầy nhớ học trò thế nào?"
+    options:
+      - { id: "a", text: "Nhớ cả tên và kỉ niệm" }
+      - { id: "b", text: "Quên hết" }
+      - { id: "c", text: "Chỉ nhớ gương mặt" }
+    answer: { correct: ["a"] }
+    hint: "Câu thứ ba."
+    explanation: "Nhớ tên và kỉ niệm."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Qua câu chuyện, ta thấy tình thầy trò:"
+    options:
+      - { id: "a", text: "phai nhạt" }
+      - { id: "b", text: "xa cách" }
+      - { id: "c", text: "sâu nặng, bền lâu" }
+    answer: { correct: ["c"] }
+    hint: "Tình cảm."
+    explanation: "Sâu nặng, bền lâu."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Dấu ngoặc kép trong bài đánh dấu:"
+    options:
+      - { id: "a", text: "lời nói trực tiếp" }
+      - { id: "b", text: "tên riêng" }
+      - { id: "c", text: "chú thích" }
+    answer: { correct: ["a"] }
+    hint: "Lời cựu học sinh."
+    explanation: "Lời nói trực tiếp."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Người thầy cũ**."
+    say: "Em đã học xong bài Đọc hiểu: Người thầy cũ."

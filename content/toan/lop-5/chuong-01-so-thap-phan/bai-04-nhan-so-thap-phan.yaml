@@ -1,0 +1,69 @@
+schema: 1
+slug: toan5-nhan-so-thap-phan
+title: "Nhân số thập phân"
+summary: "Nhân số thập phân với số tự nhiên, với số thập phân, với 10, 100, 1000."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Nhân với 10, 100, 1000:** chuyển dấu phẩy sang phải 1, 2, 3 chữ số. 3,45 × 10 = 34,5
+
+      **Nhân hai số thập phân:** nhân như số tự nhiên, rồi tách ở tích bấy nhiêu chữ số thập phân. 1,2 × 0,3 = 0,36
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-10"
+    prompt: "3,45 × 100 = _"
+    answer: { accept: ["345", "345"] }
+    hint: "Dời dấu phẩy 2 chữ số sang phải."
+    explanation: "345."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-td"
+    prompt: "2,5 × 4 = _"
+    answer: { accept: ["10", "10"] }
+    hint: "25 × 4 = 100."
+    explanation: "10."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-td"
+    prompt: "1,2 × 0,3 = _"
+    answer: { accept: ["0,36", "0.36"] }
+    hint: "12 × 3 = 36, hai chữ số thập phân."
+    explanation: "0,36."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-td"
+    prompt: "0,5 × 0,5 = _"
+    answer: { accept: ["0,25", "0.25"] }
+    hint: "5 × 5 = 25."
+    explanation: "0,25."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Mỗi mét vải giá 45 000 đồng. 2,5 m vải giá _ đồng."
+    answer: { accept: ["112500", "112500"] }
+    hint: "45 000 × 2,5."
+    explanation: "112 500 đồng."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Nhân số thập phân**."
+    say: "Em đã học xong bài Nhân số thập phân."

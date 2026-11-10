@@ -1,0 +1,75 @@
+schema: 1
+slug: tv4-doc-hieu-mua-thu
+title: "Đọc hiểu: Mùa thu"
+summary: "Đọc đoạn văn tả mùa thu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Mùa thu**
+
+      Mùa thu đến, bầu trời xanh trong như được rửa sạch. Gió se lạnh thổi nhẹ qua những hàng cây. Lá vàng rơi lả tả, phủ kín lối đi. Trong vườn, hoa cúc nở vàng rực. Tiếng trống trường vang lên báo hiệu năm học mới bắt đầu.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bầu trời mùa thu như thế nào?"
+    options:
+      - { id: "a", text: "Đỏ rực" }
+      - { id: "b", text: "Xanh trong" }
+      - { id: "c", text: "Xám xịt" }
+    answer: { correct: ["b"] }
+    hint: "Câu đầu."
+    explanation: "Xanh trong."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Loài hoa nào nở vàng rực?"
+    options:
+      - { id: "a", text: "Hoa hồng" }
+      - { id: "b", text: "Hoa sen" }
+      - { id: "c", text: "Hoa cúc" }
+    answer: { correct: ["c"] }
+    hint: "Câu thứ tư."
+    explanation: "Hoa cúc."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Tiếng trống trường báo hiệu điều gì?"
+    options:
+      - { id: "a", text: "Giờ ra chơi" }
+      - { id: "b", text: "Mùa đông đến" }
+      - { id: "c", text: "Năm học mới bắt đầu" }
+    answer: { correct: ["c"] }
+    hint: "Câu cuối."
+    explanation: "Năm học mới."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Biện pháp nghệ thuật \"như được rửa sạch\" là:"
+    options:
+      - { id: "a", text: "liệt kê" }
+      - { id: "b", text: "so sánh" }
+      - { id: "c", text: "nhân hóa" }
+    answer: { correct: ["b"] }
+    hint: "Có từ \"như\"."
+    explanation: "So sánh."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Mùa thu**."
+    say: "Em đã học xong bài Đọc hiểu: Mùa thu."

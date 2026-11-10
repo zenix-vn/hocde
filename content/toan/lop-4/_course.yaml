@@ -1,0 +1,46 @@
+# Toán 4 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: toan
+grade: 4
+slug: toan-lop-4
+title: Toán 4
+summary: "Số tự nhiên đến lớp triệu, bốn phép tính, trung bình cộng, hình học và phân số."
+status: published
+
+units:
+  - slug: chuong-01-so-tu-nhien
+    title: "Số tự nhiên"
+    summary: "Các số đến lớp triệu, so sánh, làm tròn, đơn vị đo."
+    lessons:
+      - bai-01-so-den-lop-trieu
+      - bai-02-so-sanh-lam-tron
+      - bai-03-yen-ta-tan
+
+  - slug: chuong-02-bon-phep-tinh
+    title: "Bốn phép tính"
+    summary: "Cộng, trừ, nhân, chia số nhiều chữ số; trung bình cộng; biểu thức chữ."
+    lessons:
+      - bai-01-cong-tru-nhieu-chu-so
+      - bai-02-nhan-nhieu-chu-so
+      - bai-03-chia-nhieu-chu-so
+      - bai-04-trung-binh-cong
+      - bai-05-bieu-thuc-chua-chu
+
+  - slug: chuong-03-hinh-hoc
+    title: "Hình học"
+    summary: "Góc, hai đường thẳng vuông góc và song song, hình bình hành, hình thoi."
+    lessons:
+      - bai-01-goc
+      - bai-02-vuong-goc-song-song
+      - bai-03-binh-hanh-thoi
+
+  - slug: chuong-04-phan-so
+    title: "Phân số"
+    summary: "Khái niệm, rút gọn, quy đồng, so sánh và bốn phép tính với phân số."
+    lessons:
+      - bai-01-khai-niem-phan-so
+      - bai-02-rut-gon-quy-dong
+      - bai-03-so-sanh-phan-so
+      - bai-04-cong-tru-phan-so
+      - bai-05-nhan-chia-phan-so
+

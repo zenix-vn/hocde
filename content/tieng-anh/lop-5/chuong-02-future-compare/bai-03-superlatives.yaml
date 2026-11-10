@@ -1,0 +1,102 @@
+schema: 1
+slug: anh5-superlatives
+title: "Superlatives"
+summary: "So sánh nhất: the tallest, the most beautiful."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Ai cao nhất lớp? Mình học so sánh nhất nhé!"
+    say: [{"t":"Ai cao nhất lớp? Mình học so sánh nhất nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "tallest", emoji: "📏", meaning: "cao nhất" }, { word: "biggest", emoji: "🐘", meaning: "to nhất" }, { word: "fastest", emoji: "🏃", meaning: "nhanh nhất" }, { word: "most beautiful", emoji: "🌸", meaning: "đẹp nhất" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Tính từ ngắn: **the + tính từ + -est**. *Nam is the tallest in my class.*
+
+      Tính từ dài: **the most + tính từ**. *She is the most beautiful girl.*
+    say: [{"t":"Nam is the tallest in my class.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Chọn dạng đúng:
+
+      **Mount Everest is … mountain in the world.**
+    options:
+      - { id: "a", text: "higher" }
+      - { id: "b", text: "more high" }
+      - { id: "c", text: "the highest" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "the + -est."
+    option_lang: "en"
+    say: [{"t":"Chọn dạng đúng:","l":"vi"},{"t":"Mount Everest is … mountain in the world.","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Chọn dạng đúng:
+
+      **This is … film I've seen.**
+    options:
+      - { id: "a", text: "more interesting" }
+      - { id: "b", text: "interestinger" }
+      - { id: "c", text: "the most interesting" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "the most + adj."
+    option_lang: "en"
+    say: [{"t":"Chọn dạng đúng:","l":"vi"},{"t":"This is … film I've seen.","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-biggest"
+    prompt: |
+      Điền: Con voi to nhất.
+
+      **The elephant is the _ animal. (big)**
+    answer: { accept: ["biggest"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "biggest."
+    say: [{"t":"Điền: Con voi to nhất.","l":"vi"},{"t":"The elephant is the blank animal. (big)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xthe", text: "the" }
+      - { id: "xis", text: "is" }
+      - { id: "xtallest", text: "tallest" }
+      - { id: "xNam", text: "Nam" }
+    answer: { sequence: ["xNam", "xis", "xthe", "xtallest"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "Nam is the tallest."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Superlatives**."
+    say: "Em đã học xong bài Superlatives."

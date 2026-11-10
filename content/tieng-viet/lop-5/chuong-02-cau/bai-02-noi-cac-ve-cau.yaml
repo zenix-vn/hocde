@@ -1,0 +1,79 @@
+schema: 1
+slug: tv5-noi-cac-ve-cau-ghep
+title: "Cách nối các vế câu ghép"
+summary: "Nối vế câu bằng quan hệ từ, dấu phẩy."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Các vế câu ghép được nối bằng:
+
+      1. **Quan hệ từ** (hoặc cặp quan hệ từ): *vì … nên, tuy … nhưng, nếu … thì*
+      2. **Dấu phẩy**, dấu hai chấm…
+
+      Ví dụ: **Vì trời mưa to nên** chúng em nghỉ đá bóng.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "noi-ve"
+    prompt: "Điền cặp từ: … trời mưa … đường lầy."
+    options:
+      - { id: "a", text: "Vì / nên" }
+      - { id: "b", text: "Tuy / nhưng" }
+      - { id: "c", text: "Nếu / thì" }
+    answer: { correct: ["a"] }
+    hint: "Nguyên nhân – kết quả."
+    explanation: "Vì trời mưa nên đường lầy."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "noi-ve"
+    prompt: "Điền cặp từ: … nhà nghèo … bạn ấy học rất giỏi."
+    options:
+      - { id: "a", text: "Vì / nên" }
+      - { id: "b", text: "Nếu / thì" }
+      - { id: "c", text: "Tuy / nhưng" }
+    answer: { correct: ["c"] }
+    hint: "Tương phản."
+    explanation: "Tuy nhà nghèo nhưng bạn học giỏi."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "noi-ve"
+    prompt: "Điền cặp từ: … em chăm chỉ … em sẽ tiến bộ."
+    options:
+      - { id: "a", text: "Tuy / nhưng" }
+      - { id: "b", text: "Nếu / thì" }
+      - { id: "c", text: "Vì / nên" }
+    answer: { correct: ["b"] }
+    hint: "Điều kiện."
+    explanation: "Nếu em chăm chỉ thì em sẽ tiến bộ."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "noi-ve"
+    prompt: "Sắp xếp thành câu ghép."
+    options:
+      - { id: "xthi", text: "thì" }
+      - { id: "xNeu", text: "Nếu" }
+      - { id: "xtroinang", text: "trời nắng" }
+      - { id: "xtadichoi", text: "ta đi chơi" }
+    answer: { sequence: ["xNeu", "xtroinang", "xthi", "xtadichoi"] }
+    hint: "Nếu … thì …"
+    explanation: "Nếu trời nắng thì ta đi chơi."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Cách nối các vế câu ghép**."
+    say: "Em đã học xong bài Cách nối các vế câu ghép."

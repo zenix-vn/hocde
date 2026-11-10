@@ -1,0 +1,44 @@
+# Toán 5 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: toan
+grade: 5
+slug: toan-lop-5
+title: Toán 5
+summary: "Số thập phân, tỉ số phần trăm, diện tích và thể tích hình, chuyển động đều."
+status: published
+
+units:
+  - slug: chuong-01-so-thap-phan
+    title: "Số thập phân"
+    summary: "Khái niệm, so sánh và bốn phép tính với số thập phân."
+    lessons:
+      - bai-01-khai-niem-so-thap-phan
+      - bai-02-so-sanh-so-thap-phan
+      - bai-03-cong-tru-so-thap-phan
+      - bai-04-nhan-so-thap-phan
+      - bai-05-chia-so-thap-phan
+
+  - slug: chuong-02-ti-so-phan-tram
+    title: "Tỉ số phần trăm"
+    summary: "Tỉ số phần trăm và bài toán về phần trăm."
+    lessons:
+      - bai-01-ti-so-phan-tram
+      - bai-02-giai-toan-phan-tram
+
+  - slug: chuong-03-hinh-hoc
+    title: "Hình học"
+    summary: "Diện tích tam giác, hình thang, hình tròn; thể tích hình hộp."
+    lessons:
+      - bai-01-dien-tich-tam-giac
+      - bai-02-dien-tich-hinh-thang
+      - bai-03-hinh-tron
+      - bai-04-the-tich
+
+  - slug: chuong-04-do-luong-chuyen-dong
+    title: "Đo lường và chuyển động đều"
+    summary: "Đổi đơn vị, vận tốc – quãng đường – thời gian, số đo thời gian."
+    lessons:
+      - bai-01-doi-don-vi
+      - bai-02-van-toc
+      - bai-03-so-do-thoi-gian
+

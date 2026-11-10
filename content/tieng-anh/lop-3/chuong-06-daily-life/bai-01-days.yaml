@@ -1,0 +1,92 @@
+schema: 1
+slug: anh3-days-of-the-week
+title: "Days of the week"
+summary: "Các thứ trong tuần."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Một tuần có bảy ngày. Bé gọi tên từng ngày bằng tiếng Anh nhé!"
+    say: [{"t":"Một tuần có bảy ngày. Bé gọi tên từng ngày bằng tiếng Anh nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "Monday", emoji: "1️⃣", meaning: "thứ hai" }, { word: "Tuesday", emoji: "2️⃣", meaning: "thứ ba" }, { word: "Wednesday", emoji: "3️⃣", meaning: "thứ tư" }, { word: "Thursday", emoji: "4️⃣", meaning: "thứ năm" }, { word: "Friday", emoji: "5️⃣", meaning: "thứ sáu" }, { word: "Saturday", emoji: "6️⃣", meaning: "thứ bảy" }, { word: "Sunday", emoji: "7️⃣", meaning: "chủ nhật" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**What day is it today? It's Monday.**"
+    say: [{"t":"What day is it today?","l":"en"},{"t":"It's Monday.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-friday"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "Friday", lang: "en" }
+    options:
+      - { id: "a", text: "Sunday", say: "Sunday", lang: "en" }
+      - { id: "b", text: "Monday", say: "Monday", lang: "en" }
+      - { id: "c", text: "Friday", say: "Friday", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là Friday."
+
+  - id: b5
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nghia-tu"
+    prompt: "Nối ngày với nghĩa."
+    pairs:
+      - { left: "Monday", right: "thứ hai" }
+      - { left: "Wednesday", right: "thứ tư" }
+      - { left: "Sunday", right: "chủ nhật" }
+    answer: { pairs: [["Monday", "thứ hai"], ["Wednesday", "thứ tư"], ["Sunday", "chủ nhật"]] }
+    hint: "Nhớ lại các thẻ từ."
+    explanation: "Monday là thứ hai..."
+    option_lang: "en"
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-tuesday"
+    prompt: |
+      Điền: Hôm nay là thứ ba.
+
+      **It's _ .**
+    answer: { accept: ["Tuesday"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "It's Tuesday."
+    say: [{"t":"Điền: Hôm nay là thứ ba.","l":"vi"},{"t":"It's blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xWhat", text: "What" }
+      - { id: "xit", text: "it" }
+      - { id: "xday", text: "day" }
+      - { id: "xtoday", text: "today" }
+    answer: { sequence: ["xWhat", "xday", "xis", "xit", "xtoday"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "What day is it today?"
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Days of the week**."
+    say: "Em đã học xong bài Days of the week."

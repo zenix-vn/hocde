@@ -1,0 +1,80 @@
+schema: 1
+slug: anh3-my-friends
+title: "My friends"
+summary: "Giới thiệu bạn bè: This is my friend."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bạn thân của bé là ai nhỉ? Mình giới thiệu nhé!"
+    say: [{"t":"Bạn thân của bé là ai nhỉ? Mình giới thiệu nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "friend", emoji: "🧑‍🤝‍🧑", meaning: "bạn" }, { word: "boy", emoji: "👦", meaning: "cậu bé" }, { word: "girl", emoji: "👧", meaning: "cô bé" }, { word: "classmate", emoji: "🏫", meaning: "bạn cùng lớp" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**This is my friend, Mai. She is a girl. She is nine.**"
+    say: [{"t":"This is my friend, Mai. She is a girl. She is nine.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Giới thiệu bạn nam Nam.
+
+      **This is my friend Nam. … is a boy.**
+    options:
+      - { id: "a", text: "She" }
+      - { id: "b", text: "It" }
+      - { id: "c", text: "He" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Bạn nam dùng He."
+    option_lang: "en"
+    say: [{"t":"Giới thiệu bạn nam Nam.","l":"vi"},{"t":"This is my friend Nam. … is a boy.","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-girl"
+    prompt: |
+      Điền từ: Mai là bạn gái.
+
+      **Mai is a _ .**
+    answer: { accept: ["girl"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "Mai is a girl."
+    say: [{"t":"Điền từ: Mai là bạn gái.","l":"vi"},{"t":"Mai is a blank .","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xfriend", text: "friend" }
+      - { id: "xmy", text: "my" }
+      - { id: "xThis", text: "This" }
+      - { id: "xis", text: "is" }
+    answer: { sequence: ["xThis", "xis", "xmy", "xfriend"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "This is my friend."
+    option_lang: "en"
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **My friends**."
+    say: "Em đã học xong bài My friends."

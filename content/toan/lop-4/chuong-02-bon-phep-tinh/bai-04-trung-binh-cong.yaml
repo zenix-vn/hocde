@@ -1,0 +1,63 @@
+schema: 1
+slug: toan4-trung-binh-cong
+title: "Trung bình cộng"
+summary: "Tìm số trung bình cộng của nhiều số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Số trung bình cộng** của nhiều số bằng **tổng các số chia cho số các số hạng**.
+
+      Trung bình cộng của 6, 8, 10 là: (6 + 8 + 10) : 3 = 24 : 3 = **8**.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tbc"
+    prompt: "Trung bình cộng của 12 và 18 là _"
+    answer: { accept: ["15"] }
+    hint: "(12 + 18) : 2."
+    explanation: "15."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tbc"
+    prompt: "Trung bình cộng của 5, 7, 9, 11 là _"
+    answer: { accept: ["8"] }
+    hint: "(5 + 7 + 9 + 11) : 4."
+    explanation: "32 : 4 = 8."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tbc"
+    prompt: "Ba bạn cao 130 cm, 134 cm, 138 cm. Trung bình mỗi bạn cao _ cm."
+    answer: { accept: ["134"] }
+    hint: "(130 + 134 + 138) : 3."
+    explanation: "402 : 3 = 134."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tbc"
+    prompt: "Trung bình cộng của 20, 30, 40 là:"
+    options:
+      - { id: "a", text: "35" }
+      - { id: "b", text: "30" }
+      - { id: "c", text: "20" }
+    answer: { correct: ["b"] }
+    hint: "Tổng chia 3."
+    explanation: "30."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Trung bình cộng**."
+    say: "Em đã học xong bài Trung bình cộng."

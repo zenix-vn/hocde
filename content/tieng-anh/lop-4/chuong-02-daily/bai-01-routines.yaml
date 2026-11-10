@@ -1,0 +1,98 @@
+schema: 1
+slug: anh4-daily-routines
+title: "Daily routines"
+summary: "I get up at six o'clock."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Một ngày của bé bắt đầu thế nào?"
+    say: [{"t":"Một ngày của bé bắt đầu thế nào?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "get up", emoji: "⏰", meaning: "thức dậy" }, { word: "have breakfast", emoji: "🥣", meaning: "ăn sáng" }, { word: "go to school", emoji: "🏫", meaning: "đi học" }, { word: "do homework", emoji: "📚", meaning: "làm bài tập" }, { word: "go to bed", emoji: "🛏️", meaning: "đi ngủ" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I get up at six.** Mình thức dậy lúc sáu giờ.
+
+      **What time do you go to school? I go to school at seven.**
+    say: [{"t":"What time do you go to school?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-have-breakfast"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "have breakfast", lang: "en" }
+    options:
+      - { id: "a", text: "🛏️", say: "go to bed", lang: "en" }
+      - { id: "b", text: "⏰", say: "get up", lang: "en" }
+      - { id: "c", text: "🥣", say: "have breakfast", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là have breakfast."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn đi học lúc 7 giờ. Trả lời:
+
+      **What time do you go to school?**
+    options:
+      - { id: "a", text: "I go to school seven." }
+      - { id: "b", text: "I at go seven." }
+      - { id: "c", text: "I go to school at seven." }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "at + giờ."
+    option_lang: "en"
+    say: [{"t":"Bạn đi học lúc 7 giờ. Trả lời:","l":"vi"},{"t":"What time do you go to school?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-at"
+    prompt: |
+      Điền: Mình thức dậy lúc 6 giờ.
+
+      **I get up _ six.**
+    answer: { accept: ["at"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "at six."
+    say: [{"t":"Điền: Mình thức dậy lúc 6 giờ.","l":"vi"},{"t":"I get up blank six.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xhomework", text: "homework" }
+      - { id: "xI", text: "I" }
+      - { id: "xdo", text: "do" }
+      - { id: "xeveryday", text: "every day" }
+    answer: { sequence: ["xI", "xdo", "xhomework", "xeveryday"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I do homework every day."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Daily routines**."
+    say: "Em đã học xong bài Daily routines."

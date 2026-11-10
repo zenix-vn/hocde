@@ -1,0 +1,75 @@
+schema: 1
+slug: tv5-tu-dong-am-tu-nhieu-nghia
+title: "Từ đồng âm, từ nhiều nghĩa"
+summary: "Phân biệt từ đồng âm và từ nhiều nghĩa."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Từ đồng âm:** phát âm giống nhau nhưng nghĩa **khác hẳn**. *đường* (ăn) / *đường* (đi), *bàn* (cái bàn) / *bàn* (bàn bạc).
+
+      **Từ nhiều nghĩa:** một từ có nhiều nghĩa **liên quan** nhau. *chân* (người), *chân* (bàn), *chân* (núi).
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dong-am"
+    prompt: "Hai từ \"đá\" trong \"ném hòn đá\" và \"đá bóng\" là:"
+    options:
+      - { id: "a", text: "trái nghĩa" }
+      - { id: "b", text: "đồng âm" }
+      - { id: "c", text: "nhiều nghĩa" }
+    answer: { correct: ["b"] }
+    hint: "Nghĩa khác hẳn."
+    explanation: "Đồng âm."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhieu-nghia"
+    prompt: "Từ \"chân\" trong \"chân bàn\", \"chân người\" là từ:"
+    options:
+      - { id: "a", text: "đồng âm" }
+      - { id: "b", text: "từ láy" }
+      - { id: "c", text: "nhiều nghĩa" }
+    answer: { correct: ["c"] }
+    hint: "Nghĩa liên quan."
+    explanation: "Nhiều nghĩa."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhieu-nghia"
+    prompt: "Từ \"mắt\" trong câu nào dùng nghĩa gốc?"
+    options:
+      - { id: "a", text: "Mắt na đã mở." }
+      - { id: "b", text: "Mắt dứa to." }
+      - { id: "c", text: "Mắt bé tròn xoe." }
+    answer: { correct: ["c"] }
+    hint: "Bộ phận cơ thể."
+    explanation: "Câu đầu."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dong-am"
+    prompt: "Từ đồng âm với \"cờ\" (lá cờ) là:"
+    options:
+      - { id: "a", text: "cờ (chơi cờ)" }
+      - { id: "b", text: "chiếc cờ" }
+      - { id: "c", text: "ngọn cờ" }
+    answer: { correct: ["a"] }
+    hint: "Nghĩa khác."
+    explanation: "\"cờ\" (chơi cờ)."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Từ đồng âm, từ nhiều nghĩa**."
+    say: "Em đã học xong bài Từ đồng âm, từ nhiều nghĩa."

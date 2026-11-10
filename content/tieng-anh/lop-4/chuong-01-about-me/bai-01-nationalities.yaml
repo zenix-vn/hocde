@@ -1,0 +1,101 @@
+schema: 1
+slug: anh4-nationalities
+title: "Countries and nationalities"
+summary: "I'm from Vietnam. I'm Vietnamese."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bạn đến từ nước nào? Quốc tịch của bạn là gì?"
+    say: [{"t":"Bạn đến từ nước nào? Quốc tịch của bạn là gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "Vietnam", emoji: "🇻🇳", meaning: "Việt Nam" }, { word: "Vietnamese", emoji: "🇻🇳", meaning: "người Việt" }, { word: "Japan", emoji: "🇯🇵", meaning: "Nhật Bản" }, { word: "Japanese", emoji: "🇯🇵", meaning: "người Nhật" }, { word: "America", emoji: "🇺🇸", meaning: "Mỹ" }, { word: "American", emoji: "🇺🇸", meaning: "người Mỹ" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Where are you from? I'm from Vietnam.**
+
+      **What's your nationality? I'm Vietnamese.**
+    say: [{"t":"Where are you from?","l":"en"},{"t":"What's your nationality?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn đến từ Nhật Bản. Trả lời:
+
+      **Where are you from?**
+    options:
+      - { id: "a", text: "I'm Japanese from." }
+      - { id: "b", text: "I'm Japan." }
+      - { id: "c", text: "I'm from Japan." }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "from + tên nước."
+    option_lang: "en"
+    say: [{"t":"Bạn đến từ Nhật Bản. Trả lời:","l":"vi"},{"t":"Where are you from?","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Quốc tịch của bạn:
+
+      **What's your nationality?**
+    options:
+      - { id: "a", text: "I'm from Vietnamese." }
+      - { id: "b", text: "I Vietnam." }
+      - { id: "c", text: "I'm Vietnamese." }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Dùng tính từ quốc tịch."
+    option_lang: "en"
+    say: [{"t":"Quốc tịch của bạn:","l":"vi"},{"t":"What's your nationality?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-japanese"
+    prompt: |
+      Điền: Bạn ấy là người Nhật.
+
+      **She is _ .**
+    answer: { accept: ["Japanese"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "Japanese."
+    say: [{"t":"Điền: Bạn ấy là người Nhật.","l":"vi"},{"t":"She is blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xfrom", text: "from" }
+      - { id: "xIm", text: "I'm" }
+      - { id: "xAmerica", text: "America" }
+    answer: { sequence: ["xIm", "xfrom", "xAmerica"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I'm from America."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Countries and nationalities**."
+    say: "Em đã học xong bài Countries and nationalities."

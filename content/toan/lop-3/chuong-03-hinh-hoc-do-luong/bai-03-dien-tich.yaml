@@ -1,0 +1,74 @@
+schema: 1
+slug: toan3-dien-tich-cm2
+title: "Xăng-ti-mét vuông và diện tích"
+summary: "Diện tích hình chữ nhật, hình vuông (cm²)."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Diện tích** cho biết hình rộng bao nhiêu. Đơn vị: **xăng-ti-mét vuông (cm²)**.
+
+      **Hình chữ nhật:** dài × rộng
+
+      **Hình vuông:** cạnh × cạnh
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tich"
+    prompt: "Hình chữ nhật dài 6 cm, rộng 4 cm. Diện tích là _ cm²."
+    answer: { accept: ["24"] }
+    hint: "6 × 4."
+    explanation: "6 × 4 = 24."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tich"
+    prompt: "Hình vuông cạnh 5 cm. Diện tích là _ cm²."
+    answer: { accept: ["25"] }
+    hint: "5 × 5."
+    explanation: "5 × 5 = 25."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tich"
+    prompt: "Hình chữ nhật dài 9 cm, rộng 3 cm. Diện tích là _ cm²."
+    answer: { accept: ["27"] }
+    hint: "9 × 3."
+    explanation: "9 × 3 = 27."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tich"
+    prompt: "Hình vuông có diện tích 36 cm². Cạnh dài _ cm."
+    answer: { accept: ["6"] }
+    hint: "6 × 6 = 36."
+    explanation: "Cạnh là 6 cm."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dien-tich-chu-vi"
+    prompt: "Chu vi hay diện tích đo độ \"rộng\" của hình?"
+    options:
+      - { id: "a", text: "Diện tích" }
+      - { id: "b", text: "Chu vi" }
+    answer: { correct: ["a"] }
+    hint: "Đơn vị cm²."
+    explanation: "Diện tích."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Xăng-ti-mét vuông và diện tích**."
+    say: "Em đã học xong bài Xăng-ti-mét vuông và diện tích."

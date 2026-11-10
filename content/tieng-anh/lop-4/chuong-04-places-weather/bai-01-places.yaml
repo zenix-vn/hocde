@@ -1,0 +1,95 @@
+schema: 1
+slug: anh4-places-in-town
+title: "Places in town"
+summary: "Where is the library? It's next to the school."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Trong thành phố có những nơi nào?"
+    say: [{"t":"Trong thành phố có những nơi nào?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "library", emoji: "📚", meaning: "thư viện" }, { word: "cinema", emoji: "🎬", meaning: "rạp chiếu phim" }, { word: "park", emoji: "🌳", meaning: "công viên" }, { word: "hospital", emoji: "🏥", meaning: "bệnh viện" }, { word: "supermarket", emoji: "🛒", meaning: "siêu thị" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**Where is the library? It's next to the park.**"
+    say: [{"t":"Where is the library?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-hospital"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "hospital", lang: "en" }
+    options:
+      - { id: "a", text: "🎬", say: "cinema", lang: "en" }
+      - { id: "b", text: "🌳", say: "park", lang: "en" }
+      - { id: "c", text: "🏥", say: "hospital", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là hospital."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Thư viện ở cạnh công viên. Trả lời:
+
+      **Where is the library?**
+    options:
+      - { id: "a", text: "It's next to the park." }
+      - { id: "b", text: "It's at seven." }
+      - { id: "c", text: "It's a library." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "next to = bên cạnh."
+    option_lang: "en"
+    say: [{"t":"Thư viện ở cạnh công viên. Trả lời:","l":"vi"},{"t":"Where is the library?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-opposite"
+    prompt: |
+      Điền: Bệnh viện ở đối diện trường.
+
+      **The hospital is _ the school. (opposite)**
+    answer: { accept: ["opposite"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "opposite = đối diện."
+    say: [{"t":"Điền: Bệnh viện ở đối diện trường.","l":"vi"},{"t":"The hospital is blank the school. (opposite)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xWhere", text: "Where" }
+      - { id: "xthe", text: "the" }
+      - { id: "xpark", text: "park" }
+    answer: { sequence: ["xWhere", "xis", "xthe", "xpark"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "Where is the park?"
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Places in town**."
+    say: "Em đã học xong bài Places in town."

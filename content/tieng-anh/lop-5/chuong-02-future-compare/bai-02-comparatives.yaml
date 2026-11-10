@@ -1,0 +1,103 @@
+schema: 1
+slug: anh5-comparatives
+title: "Comparatives"
+summary: "So sánh hơn: taller, bigger, more beautiful."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Ai cao hơn? Cái nào đẹp hơn? Mình học cách so sánh nhé!"
+    say: [{"t":"Ai cao hơn? Cái nào đẹp hơn? Mình học cách so sánh nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "tall – taller", emoji: "📏", meaning: "cao – cao hơn" }, { word: "big – bigger", emoji: "🐘", meaning: "to – to hơn" }, { word: "fast – faster", emoji: "🏃", meaning: "nhanh – nhanh hơn" }, { word: "beautiful – more beautiful", emoji: "🌸", meaning: "đẹp – đẹp hơn" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Tính từ ngắn: thêm **-er** + **than**. *Nam is taller than Lan.*
+
+      Tính từ dài: **more** + tính từ + **than**. *This flower is more beautiful than that one.*
+    say: [{"t":"Nam is taller than Lan.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Chọn dạng đúng:
+
+      **An elephant is … than a dog.**
+    options:
+      - { id: "a", text: "more big" }
+      - { id: "b", text: "biggest" }
+      - { id: "c", text: "bigger" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "big → bigger."
+    option_lang: "en"
+    say: [{"t":"Chọn dạng đúng:","l":"vi"},{"t":"An elephant is … than a dog.","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Chọn dạng đúng:
+
+      **This book is … than that one.**
+    options:
+      - { id: "a", text: "more interesting" }
+      - { id: "b", text: "interestinger" }
+      - { id: "c", text: "most interesting" }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Tính từ dài dùng more."
+    option_lang: "en"
+    say: [{"t":"Chọn dạng đúng:","l":"vi"},{"t":"This book is … than that one.","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-taller"
+    prompt: |
+      Điền: Chị cao hơn em.
+
+      **My sister is _ than me. (tall)**
+    answer: { accept: ["taller"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "taller."
+    say: [{"t":"Điền: Chị cao hơn em.","l":"vi"},{"t":"My sister is blank than me. (tall)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xthan", text: "than" }
+      - { id: "xfaster", text: "faster" }
+      - { id: "xis", text: "is" }
+      - { id: "xAcheetah", text: "A cheetah" }
+      - { id: "xahorse", text: "a horse" }
+    answer: { sequence: ["xAcheetah", "xis", "xfaster", "xthan", "xahorse"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "A cheetah is faster than a horse."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Comparatives**."
+    say: "Em đã học xong bài Comparatives."

@@ -1,0 +1,74 @@
+schema: 1
+slug: tv3-bien-phap-so-sanh
+title: "Biện pháp so sánh"
+summary: "Nhận biết và đặt câu có hình ảnh so sánh."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **So sánh** là đối chiếu hai sự vật có nét giống nhau để làm câu văn sinh động.
+
+      Từ so sánh: **như, là, tựa như, bằng**.
+
+      - Mặt trời đỏ **như** quả cầu lửa.
+      - Cô giáo **là** người mẹ thứ hai.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Câu nào có hình ảnh so sánh?"
+    options:
+      - { id: "a", text: "Trăng sáng như gương." }
+      - { id: "b", text: "Trăng lên cao." }
+      - { id: "c", text: "Đêm nay có trăng." }
+    answer: { correct: ["a"] }
+    hint: "Tìm từ \"như\"."
+    explanation: "Trăng được so sánh với gương."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Trong câu \"Đôi mắt bé tròn như hai hạt nhãn\", hai sự vật được so sánh là:"
+    options:
+      - { id: "a", text: "đôi mắt – hạt nhãn" }
+      - { id: "b", text: "bé – hạt nhãn" }
+      - { id: "c", text: "đôi mắt – bé" }
+    answer: { correct: ["a"] }
+    hint: "Cái gì như cái gì?"
+    explanation: "Đôi mắt – hạt nhãn."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Từ so sánh trong câu \"Dòng sông như dải lụa.\" là: _"
+    answer: { accept: ["như"] }
+    hint: "Từ nối hai sự vật."
+    explanation: "\"như\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Điền từ cho đúng: Tiếng suối chảy _ tiếng đàn."
+    options:
+      - { id: "a", text: "như" }
+      - { id: "b", text: "mà" }
+      - { id: "c", text: "rồi" }
+    answer: { correct: ["a"] }
+    hint: "Từ so sánh."
+    explanation: "\"như\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Biện pháp so sánh**."
+    say: "Em đã học xong bài Biện pháp so sánh."

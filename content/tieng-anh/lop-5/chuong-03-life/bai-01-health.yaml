@@ -1,0 +1,98 @@
+schema: 1
+slug: anh5-health-problems
+title: "What's the matter?"
+summary: "Hỏi và nói về vấn đề sức khỏe."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Khi bé bị ốm, bé nói thế nào bằng tiếng Anh?"
+    say: [{"t":"Khi bé bị ốm, bé nói thế nào bằng tiếng Anh?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "headache", emoji: "🤕", meaning: "đau đầu" }, { word: "toothache", emoji: "🦷", meaning: "đau răng" }, { word: "stomachache", emoji: "🤢", meaning: "đau bụng" }, { word: "fever", emoji: "🌡️", meaning: "sốt" }, { word: "cough", emoji: "😷", meaning: "ho" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **What's the matter? I have a headache.** Bạn bị làm sao? Mình bị đau đầu.
+
+      **You should see a doctor.** Bạn nên đi khám bác sĩ.
+    say: [{"t":"What's the matter?","l":"en"},{"t":"I have a headache.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-toothache"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "toothache", lang: "en" }
+    options:
+      - { id: "a", text: "🦷", say: "toothache", lang: "en" }
+      - { id: "b", text: "🤕", say: "headache", lang: "en" }
+      - { id: "c", text: "🌡️", say: "fever", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là toothache."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn bị đau bụng. Trả lời:
+
+      **What's the matter?**
+    options:
+      - { id: "a", text: "I have a stomachache." }
+      - { id: "b", text: "I'm have a stomachache." }
+      - { id: "c", text: "I has stomachache." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "have + bệnh."
+    option_lang: "en"
+    say: [{"t":"Bạn bị đau bụng. Trả lời:","l":"vi"},{"t":"What's the matter?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-should"
+    prompt: |
+      Điền: Bạn nên đi khám bác sĩ.
+
+      **You _ see a doctor.**
+    answer: { accept: ["should"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "should."
+    say: [{"t":"Điền: Bạn nên đi khám bác sĩ.","l":"vi"},{"t":"You blank see a doctor.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xa", text: "a" }
+      - { id: "xhave", text: "have" }
+      - { id: "xI", text: "I" }
+      - { id: "xfever", text: "fever" }
+    answer: { sequence: ["xI", "xhave", "xa", "xfever"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I have a fever."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **What's the matter?**."
+    say: "Em đã học xong bài What's the matter?."

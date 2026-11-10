@@ -1,0 +1,82 @@
+schema: 1
+slug: anh3-introduce-yourself
+title: "Introduce yourself"
+summary: "Giới thiệu tên, tuổi, quê hương."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng học cách giới thiệu bản thân bằng tiếng Anh nhé!"
+    say: [{"t":"Mình cùng học cách giới thiệu bản thân bằng tiếng Anh nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "name", emoji: "🏷️", meaning: "tên" }, { word: "old", emoji: "🎂", meaning: "tuổi" }, { word: "from", emoji: "🌏", meaning: "đến từ" }, { word: "Vietnam", emoji: "🇻🇳", meaning: "Việt Nam" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I'm Nam. I'm eight. I'm from Vietnam.**
+
+      Mình là Nam. Mình tám tuổi. Mình đến từ Việt Nam.
+    say: [{"t":"I'm Nam. I'm eight. I'm from Vietnam.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn hỏi nơi bạn đến từ. Trả lời:
+
+      **Where are you from?**
+    options:
+      - { id: "a", text: "I'm from Vietnam." }
+      - { id: "b", text: "I'm eight." }
+      - { id: "c", text: "My name's Lan." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "from = đến từ."
+    option_lang: "en"
+    say: [{"t":"Bạn hỏi nơi bạn đến từ. Trả lời:","l":"vi"},{"t":"Where are you from?","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-from"
+    prompt: |
+      Điền từ: Mình đến từ Việt Nam.
+
+      **I'm _ Vietnam.**
+    answer: { accept: ["from"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I'm from Vietnam."
+    say: [{"t":"Điền từ: Mình đến từ Việt Nam.","l":"vi"},{"t":"I'm blank Vietnam.","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xfrom", text: "from" }
+      - { id: "xIm", text: "I'm" }
+      - { id: "xVietnam", text: "Vietnam" }
+    answer: { sequence: ["xIm", "xfrom", "xVietnam"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I'm from Vietnam."
+    option_lang: "en"
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Introduce yourself**."
+    say: "Em đã học xong bài Introduce yourself."

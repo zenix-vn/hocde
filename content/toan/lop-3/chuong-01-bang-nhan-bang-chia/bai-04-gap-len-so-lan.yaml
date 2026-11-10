@@ -1,0 +1,75 @@
+schema: 1
+slug: toan3-gap-len-giam-di-so-lan
+title: "Gấp một số lên nhiều lần, giảm đi nhiều lần"
+summary: "Gấp lên, giảm đi một số lần và so sánh số lớn gấp mấy lần số bé."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Gấp 4 lần số 5:** 5 × 4 = 20.
+
+      **Giảm 4 lần số 20:** 20 : 4 = 5.
+
+      **20 gấp mấy lần 5?** 20 : 5 = 4 (lần).
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "gap-len"
+    prompt: "Gấp 7 lên 3 lần được: _"
+    answer: { accept: ["21"] }
+    hint: "7 × 3."
+    explanation: "7 × 3 = 21."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giam-di"
+    prompt: "Giảm 36 đi 4 lần được: _"
+    answer: { accept: ["9"] }
+    hint: "36 : 4."
+    explanation: "36 : 4 = 9."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gap-may-lan"
+    prompt: "45 gấp mấy lần 9?"
+    options:
+      - { id: "a", text: "6" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["b"] }
+    hint: "45 : 9."
+    explanation: "45 : 9 = 5 (lần)."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Con gà cân nặng 2 kg, con ngỗng nặng gấp 4 lần con gà. Con ngỗng nặng _ kg."
+    answer: { accept: ["8"] }
+    hint: "2 × 4."
+    explanation: "2 × 4 = 8 (kg)."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Bao gạo nặng 40 kg, bao đường nhẹ hơn bao gạo 8 lần. Bao đường nặng _ kg."
+    answer: { accept: ["5"] }
+    hint: "40 : 8."
+    explanation: "40 : 8 = 5 (kg)."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Gấp một số lên nhiều lần, giảm đi nhiều lần**."
+    say: "Em đã học xong bài Gấp một số lên nhiều lần, giảm đi nhiều lần."

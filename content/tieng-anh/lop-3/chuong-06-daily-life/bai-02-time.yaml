@@ -1,0 +1,94 @@
+schema: 1
+slug: anh3-what-time-is-it
+title: "What time is it?"
+summary: "Nói giờ đúng: It's seven o'clock."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé biết nói giờ bằng tiếng Anh chưa?"
+    say: [{"t":"Bé biết nói giờ bằng tiếng Anh chưa?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "one o'clock", emoji: "🕐", meaning: "1 giờ" }, { word: "three o'clock", emoji: "🕒", meaning: "3 giờ" }, { word: "six o'clock", emoji: "🕕", meaning: "6 giờ" }, { word: "nine o'clock", emoji: "🕘", meaning: "9 giờ" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**What time is it? It's six o'clock.**"
+    say: [{"t":"What time is it?","l":"en"},{"t":"It's six o'clock.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-three-o-clock"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "three o'clock", lang: "en" }
+    options:
+      - { id: "a", text: "🕘", say: "nine o'clock", lang: "en" }
+      - { id: "b", text: "🕐", say: "one o'clock", lang: "en" }
+      - { id: "c", text: "🕒", say: "three o'clock", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là three o'clock."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Đồng hồ chỉ 9 giờ 🕘. Trả lời:
+
+      **What time is it?**
+    options:
+      - { id: "a", text: "It's Monday." }
+      - { id: "b", text: "It's nine o'clock." }
+      - { id: "c", text: "It's six o'clock." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "nine = 9."
+    option_lang: "en"
+    say: [{"t":"Đồng hồ chỉ 9 giờ 🕘. Trả lời:","l":"vi"},{"t":"What time is it?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-o-clock"
+    prompt: |
+      Điền: Bây giờ là 6 giờ.
+
+      **It's six _ .**
+    answer: { accept: ["o'clock"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "six o'clock."
+    say: [{"t":"Điền: Bây giờ là 6 giờ.","l":"vi"},{"t":"It's six blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xoclock", text: "o'clock" }
+      - { id: "xIts", text: "It's" }
+      - { id: "xone", text: "one" }
+    answer: { sequence: ["xIts", "xone", "xoclock"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "It's one o'clock."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **What time is it?**."
+    say: "Em đã học xong bài What time is it?."

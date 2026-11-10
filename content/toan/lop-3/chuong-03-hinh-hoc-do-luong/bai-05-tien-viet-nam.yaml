@@ -1,0 +1,64 @@
+schema: 1
+slug: toan3-tien-viet-nam
+title: "Tiền Việt Nam"
+summary: "Nhận biết các tờ tiền và tính tiền."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "Các loại tiền Việt Nam thường gặp: **1000 đồng, 2000 đồng, 5000 đồng, 10 000 đồng, 20 000 đồng, 50 000 đồng, 100 000 đồng**."
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tinh-tien"
+    prompt: "Em mua một quyển vở 8000 đồng và một cái bút 3000 đồng. Em phải trả _ đồng."
+    answer: { accept: ["11000"] }
+    hint: "8000 + 3000."
+    explanation: "11 000 đồng."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tinh-tien"
+    prompt: "Em đưa 20 000 đồng mua gói bánh 12 000 đồng. Em được trả lại _ đồng."
+    answer: { accept: ["8000"] }
+    hint: "20 000 − 12 000."
+    explanation: "8000 đồng."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tinh-tien"
+    prompt: "Hai tờ 5000 đồng bằng:"
+    options:
+      - { id: "a", text: "5000 đồng" }
+      - { id: "b", text: "10 000 đồng" }
+      - { id: "c", text: "20 000 đồng" }
+    answer: { correct: ["b"] }
+    hint: "5000 × 2."
+    explanation: "10 000 đồng."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tinh-tien"
+    prompt: "Em có 1 tờ 10 000 đồng và 2 tờ 2000 đồng. Em có tất cả:"
+    options:
+      - { id: "a", text: "12 000 đồng" }
+      - { id: "b", text: "14 000 đồng" }
+      - { id: "c", text: "16 000 đồng" }
+    answer: { correct: ["b"] }
+    hint: "10 000 + 4000."
+    explanation: "14 000 đồng."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Tiền Việt Nam**."
+    say: "Em đã học xong bài Tiền Việt Nam."

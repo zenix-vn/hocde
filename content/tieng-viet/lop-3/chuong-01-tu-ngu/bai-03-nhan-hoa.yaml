@@ -1,0 +1,72 @@
+schema: 1
+slug: tv3-bien-phap-nhan-hoa
+title: "Biện pháp nhân hóa"
+summary: "Nhận biết nhân hóa: gọi, tả vật bằng từ ngữ chỉ người."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Nhân hóa** là gọi hoặc tả con vật, đồ vật, cây cối bằng những từ ngữ vốn dùng cho **con người**.
+
+      - Chị gió **thì thầm** với lá.
+      - Bác mặt trời **thức dậy** thật sớm.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-hoa"
+    prompt: "Câu nào có biện pháp nhân hóa?"
+    options:
+      - { id: "a", text: "Cây bàng ngoài sân rất cao." }
+      - { id: "b", text: "Bác gà trống cất tiếng chào buổi sáng." }
+      - { id: "c", text: "Chú gà trống gáy vang." }
+    answer: { correct: ["b"] }
+    hint: "Gà trống được gọi là \"bác\" và \"chào\"."
+    explanation: "Câu cuối nhân hóa gà trống."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-hoa"
+    prompt: "Trong câu \"Cô mây trắng đi dạo trên trời\", từ ngữ chỉ người dùng cho mây là:"
+    options:
+      - { id: "a", text: "cô, đi dạo" }
+      - { id: "b", text: "trắng, trời" }
+      - { id: "c", text: "mây, trên" }
+    answer: { correct: ["a"] }
+    hint: "Gọi \"cô\" và \"đi dạo\"."
+    explanation: "\"cô\" và \"đi dạo\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-hoa"
+    prompt: "Trong câu \"Chị gió thì thầm với lá.\", từ nhân hóa gió là: chị và _"
+    answer: { accept: ["thì thầm"] }
+    hint: "Hành động như người."
+    explanation: "\"thì thầm\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-hoa"
+    prompt: "Tác dụng của nhân hóa:"
+    options:
+      - { id: "a", text: "làm câu dài hơn" }
+      - { id: "b", text: "làm câu khó hiểu" }
+      - { id: "c", text: "làm sự vật gần gũi, sinh động" }
+    answer: { correct: ["c"] }
+    hint: "Giống như con người."
+    explanation: "Gần gũi, sinh động."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Biện pháp nhân hóa**."
+    say: "Em đã học xong bài Biện pháp nhân hóa."

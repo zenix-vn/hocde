@@ -1,0 +1,71 @@
+schema: 1
+slug: toan4-bieu-thuc-chua-chu
+title: "Biểu thức chứa chữ"
+summary: "Tính giá trị biểu thức chứa chữ."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Biểu thức có chứa chữ, ví dụ **a + 5**, **3 × b**.
+
+      Khi biết giá trị của chữ, thay vào để tính.
+
+      Với a = 4 thì a + 5 = 4 + 5 = 9.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc-chu"
+    prompt: "Tính a + 7 với a = 5: _"
+    answer: { accept: ["12"] }
+    hint: "Thay a = 5."
+    explanation: "5 + 7 = 12."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc-chu"
+    prompt: "Tính 3 × b với b = 6: _"
+    answer: { accept: ["18"] }
+    hint: "Thay b = 6."
+    explanation: "3 × 6 = 18."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc-chu"
+    prompt: "Tính m − 8 với m = 20: _"
+    answer: { accept: ["12"] }
+    hint: "Thay m = 20."
+    explanation: "20 − 8 = 12."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "bieu-thuc-chu"
+    prompt: "Tính (x + 4) × 2 với x = 3: _"
+    answer: { accept: ["14"] }
+    hint: "Ngoặc trước: 3 + 4 = 7."
+    explanation: "7 × 2 = 14."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chu-vi-hv"
+    prompt: "Chu vi hình vuông cạnh a là a × 4. Với a = 9 thì chu vi là _"
+    answer: { accept: ["36"] }
+    hint: "9 × 4."
+    explanation: "36."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Biểu thức chứa chữ**."
+    say: "Em đã học xong bài Biểu thức chứa chữ."

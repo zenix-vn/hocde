@@ -1,0 +1,63 @@
+schema: 1
+slug: toan5-so-do-thoi-gian
+title: "Số đo thời gian"
+summary: "Đổi và tính với đơn vị thời gian."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **1 năm = 12 tháng · 1 ngày = 24 giờ · 1 giờ = 60 phút · 1 phút = 60 giây**
+
+      2 giờ 30 phút = 150 phút. 90 phút = 1 giờ 30 phút.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-thoi-gian"
+    prompt: "2 giờ 30 phút = _ phút"
+    answer: { accept: ["150"] }
+    hint: "120 + 30."
+    explanation: "150."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-thoi-gian"
+    prompt: "3 ngày = _ giờ"
+    answer: { accept: ["72"] }
+    hint: "3 × 24."
+    explanation: "72."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-thoi-gian"
+    prompt: "1 giờ 20 phút + 2 giờ 45 phút = _ phút (đổi ra phút)"
+    answer: { accept: ["245"] }
+    hint: "80 + 165."
+    explanation: "245 phút = 4 giờ 5 phút."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doi-thoi-gian"
+    prompt: "Chạy hết 95 phút bằng:"
+    options:
+      - { id: "a", text: "1 giờ 35 phút" }
+      - { id: "b", text: "1 giờ 25 phút" }
+      - { id: "c", text: "1 giờ 55 phút" }
+    answer: { correct: ["a"] }
+    hint: "95 − 60 = 35."
+    explanation: "1 giờ 35 phút."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Số đo thời gian**."
+    say: "Em đã học xong bài Số đo thời gian."

@@ -1,0 +1,73 @@
+schema: 1
+slug: tv5-lien-ket-cau
+title: "Liên kết câu"
+summary: "Liên kết câu bằng từ ngữ nối và từ ngữ lặp lại."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Các câu trong đoạn văn liên kết với nhau bằng:
+
+      - **Lặp từ ngữ:** *Em có một chú chó. **Chú chó** rất ngoan.*
+      - **Thay thế từ ngữ:** *Lan rất chăm. **Cô bé** luôn đứng đầu lớp.*
+      - **Từ ngữ nối:** *nhưng, vì vậy, tuy nhiên, ngoài ra.*
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "lien-ket"
+    prompt: "Trong \"Em nuôi một con mèo. Con mèo rất tinh nghịch.\", câu được liên kết bằng cách:"
+    options:
+      - { id: "a", text: "dùng từ nối" }
+      - { id: "b", text: "thay bằng đại từ" }
+      - { id: "c", text: "lặp từ ngữ" }
+    answer: { correct: ["c"] }
+    hint: "\"con mèo\" xuất hiện lại."
+    explanation: "Lặp từ ngữ."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "lien-ket"
+    prompt: "Từ nối thích hợp: Trời mưa. _, em vẫn đi học."
+    options:
+      - { id: "a", text: "Ngoài ra" }
+      - { id: "b", text: "Tuy nhiên" }
+      - { id: "c", text: "Vì vậy" }
+    answer: { correct: ["b"] }
+    hint: "Tương phản."
+    explanation: "Tuy nhiên."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "lien-ket"
+    prompt: "Từ nối thích hợp: Em bị ốm. _, em nghỉ học hôm nay."
+    options:
+      - { id: "a", text: "Tuy nhiên" }
+      - { id: "b", text: "Nhưng mà" }
+      - { id: "c", text: "Vì vậy" }
+    answer: { correct: ["c"] }
+    hint: "Kết quả."
+    explanation: "Vì vậy."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lien-ket"
+    prompt: "Thay đại từ: Nam là học sinh giỏi. _ luôn giúp bạn. (Cậu ấy / Bạn Lan)"
+    answer: { accept: ["Cậu ấy", "cậu ấy"] }
+    hint: "Thay cho Nam."
+    explanation: "Cậu ấy."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Liên kết câu**."
+    say: "Em đã học xong bài Liên kết câu."

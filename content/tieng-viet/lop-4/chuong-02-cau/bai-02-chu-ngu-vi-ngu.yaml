@@ -1,0 +1,74 @@
+schema: 1
+slug: tv4-chu-ngu-vi-ngu
+title: "Chủ ngữ và vị ngữ"
+summary: "Xác định chủ ngữ, vị ngữ trong câu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Câu kể có hai bộ phận chính:
+
+      - **Chủ ngữ (CN):** trả lời câu hỏi *Ai? Con gì? Cái gì?*
+      - **Vị ngữ (VN):** trả lời câu hỏi *Làm gì? Thế nào? Là gì?*
+
+      Ví dụ: **Chú mèo** (CN) **đang rình chuột** (VN).
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cn-vn"
+    prompt: "Chủ ngữ của câu \"Cây bàng đứng giữa sân.\" là:"
+    options:
+      - { id: "a", text: "đứng" }
+      - { id: "b", text: "giữa sân" }
+      - { id: "c", text: "Cây bàng" }
+    answer: { correct: ["c"] }
+    hint: "Cái gì đứng?"
+    explanation: "\"Cây bàng\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cn-vn"
+    prompt: "Vị ngữ của câu \"Bạn Lan hát rất hay.\" là:"
+    options:
+      - { id: "a", text: "hát rất hay" }
+      - { id: "b", text: "Lan hát" }
+      - { id: "c", text: "Bạn Lan" }
+    answer: { correct: ["a"] }
+    hint: "Bạn Lan làm gì?"
+    explanation: "\"hát rất hay\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cn-vn"
+    prompt: "Câu \"Mặt trời mọc ở đằng đông.\" có chủ ngữ là: _"
+    answer: { accept: ["mặt trời", "Mặt trời"] }
+    hint: "Cái gì mọc?"
+    explanation: "\"Mặt trời\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "cn-vn"
+    prompt: "Sắp xếp thành câu."
+    options:
+      - { id: "xdocsach", text: "đọc sách" }
+      - { id: "xBo", text: "Bố" }
+      - { id: "xdang", text: "đang" }
+    answer: { sequence: ["xBo", "xdang", "xdocsach"] }
+    hint: "CN rồi VN."
+    explanation: "Bố đang đọc sách."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Chủ ngữ và vị ngữ**."
+    say: "Em đã học xong bài Chủ ngữ và vị ngữ."

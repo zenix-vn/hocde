@@ -1,0 +1,73 @@
+schema: 1
+slug: tv3-chinh-ta-r-d-gi-l-n
+title: "Chính tả: r/d/gi, l/n"
+summary: "Phân biệt r/d/gi và l/n."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **r:** rừng rậm, rộn ràng · **d:** dịu dàng, dạy bảo · **gi:** giữ gìn, giọt sương
+
+      **l:** lấp lánh, lá cờ · **n:** nõn nà, nao núng
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: _ịu dàng"
+    answer: { accept: ["d"] }
+    hint: "Nhẹ nhàng."
+    explanation: "dịu dàng."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: _ữ gìn"
+    answer: { accept: ["gi"] }
+    hint: "Bảo vệ."
+    explanation: "giữ gìn."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "r-d-gi"
+    prompt: "Điền r, d hay gi: _ộn ràng"
+    answer: { accept: ["r"] }
+    hint: "Vui nhộn."
+    explanation: "rộn ràng."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "l-n"
+    prompt: "Điền l hay n: _ấp lánh"
+    answer: { accept: ["l"] }
+    hint: "Sáng nhấp nháy."
+    explanation: "lấp lánh."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "l-n"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "nõn là" }
+      - { id: "b", text: "nõn nà" }
+      - { id: "c", text: "lõn nà" }
+    answer: { correct: ["b"] }
+    hint: "Mềm và trắng."
+    explanation: "nõn nà."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Chính tả: r/d/gi, l/n**."
+    say: "Em đã học xong bài Chính tả: r/d/gi, l/n."

@@ -1,0 +1,98 @@
+schema: 1
+slug: anh5-past-simple-regular
+title: "Yesterday I played"
+summary: "Quá khứ đơn với động từ có quy tắc (-ed)."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm qua bé đã làm gì? Mình kể bằng tiếng Anh nhé!"
+    say: [{"t":"Hôm qua bé đã làm gì? Mình kể bằng tiếng Anh nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "played", emoji: "⚽", meaning: "đã chơi" }, { word: "watched", emoji: "📺", meaning: "đã xem" }, { word: "visited", emoji: "🏛️", meaning: "đã thăm" }, { word: "cooked", emoji: "🍳", meaning: "đã nấu" }, { word: "helped", emoji: "🤝", meaning: "đã giúp" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Động từ có quy tắc: thêm **-ed**. play → **played**, watch → **watched**.
+
+      **What did you do yesterday? I played football.**
+    say: [{"t":"What did you do yesterday?","l":"en"},{"t":"I played football.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-watched"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "watched", lang: "en" }
+    options:
+      - { id: "a", text: "watching", say: "watching", lang: "en" }
+      - { id: "b", text: "watched", say: "watched", lang: "en" }
+      - { id: "c", text: "watch", say: "watch", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là watched."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Hôm qua bạn đã xem ti vi. Trả lời:
+
+      **What did you do yesterday?**
+    options:
+      - { id: "a", text: "I watched TV." }
+      - { id: "b", text: "I watch TV." }
+      - { id: "c", text: "I watching TV." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Quá khứ dùng -ed."
+    option_lang: "en"
+    say: [{"t":"Hôm qua bạn đã xem ti vi. Trả lời:","l":"vi"},{"t":"What did you do yesterday?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-helped"
+    prompt: |
+      Điền: Hôm qua mình đã giúp mẹ.
+
+      **Yesterday I _ my mother. (help)**
+    answer: { accept: ["helped"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "helped."
+    say: [{"t":"Điền: Hôm qua mình đã giúp mẹ.","l":"vi"},{"t":"Yesterday I blank my mother. (help)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xvisited", text: "visited" }
+      - { id: "xI", text: "I" }
+      - { id: "xmy", text: "my" }
+      - { id: "xgrandma", text: "grandma" }
+    answer: { sequence: ["xI", "xvisited", "xmy", "xgrandma"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I visited my grandma."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Yesterday I played**."
+    say: "Em đã học xong bài Yesterday I played."

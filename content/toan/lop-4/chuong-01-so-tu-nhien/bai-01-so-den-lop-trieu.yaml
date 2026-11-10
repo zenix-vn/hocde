@@ -1,0 +1,79 @@
+schema: 1
+slug: toan4-so-den-lop-trieu
+title: "Các số đến lớp triệu"
+summary: "Hàng, lớp; đọc, viết số có nhiều chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Các hàng: đơn vị, chục, trăm | nghìn, chục nghìn, trăm nghìn | triệu, chục triệu, trăm triệu.
+
+      Mỗi **lớp** có 3 hàng: lớp đơn vị, lớp nghìn, lớp triệu.
+
+      **3 425 618** đọc là: ba triệu bốn trăm hai mươi lăm nghìn sáu trăm mười tám.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "hang-lop"
+    prompt: "Trong số 5 726 040, chữ số 7 thuộc hàng _ nghìn (viết: trăm / chục / đơn vị)"
+    answer: { accept: ["trăm"] }
+    hint: "Từ phải sang: 0, 4, 0, 6, 2, 7, 5."
+    explanation: "Chữ số 7 ở hàng trăm nghìn."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "gia-tri"
+    prompt: "Trong số 82 345, chữ số 8 có giá trị là:"
+    options:
+      - { id: "a", text: "8000" }
+      - { id: "b", text: "80 000" }
+      - { id: "c", text: "800 000" }
+    answer: { correct: ["b"] }
+    hint: "8 ở hàng chục nghìn."
+    explanation: "80 000."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-so"
+    prompt: "Số 1 000 000 đọc là:"
+    options:
+      - { id: "a", text: "một nghìn" }
+      - { id: "b", text: "một triệu" }
+      - { id: "c", text: "mười nghìn" }
+    answer: { correct: ["b"] }
+    hint: "Ba lớp, mỗi lớp 3 hàng."
+    explanation: "Một triệu."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "viet-so"
+    prompt: "Số gồm 2 triệu và 5 nghìn viết là: _ (liền không dấu cách)"
+    answer: { accept: ["2005000"] }
+    hint: "2 000 000 + 5 000."
+    explanation: "2 005 000."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lien-sau"
+    prompt: "Số liền sau của 999 999 là _ (viết liền)"
+    answer: { accept: ["1000000"] }
+    hint: "Thêm 1."
+    explanation: "1 000 000."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Các số đến lớp triệu**."
+    say: "Em đã học xong bài Các số đến lớp triệu."

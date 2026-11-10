@@ -1,0 +1,74 @@
+schema: 1
+slug: toan4-vuong-goc-song-song
+title: "Hai đường thẳng vuông góc, song song"
+summary: "Nhận biết đường thẳng vuông góc và song song."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Hai đường thẳng **vuông góc** cắt nhau tạo thành 4 góc vuông.
+
+      Hai đường thẳng **song song** không bao giờ cắt nhau.
+
+      Hai cạnh đối diện của hình chữ nhật thì **song song**; hai cạnh kề thì **vuông góc**.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "song-song"
+    prompt: "Hai cạnh đối diện của hình chữ nhật:"
+    options:
+      - { id: "a", text: "song song" }
+      - { id: "b", text: "vuông góc" }
+    answer: { correct: ["a"] }
+    hint: "Không cắt nhau."
+    explanation: "Song song."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "vuong-goc"
+    prompt: "Hai cạnh kề nhau của hình chữ nhật:"
+    options:
+      - { id: "a", text: "song song" }
+      - { id: "b", text: "vuông góc" }
+    answer: { correct: ["b"] }
+    hint: "Tạo góc vuông."
+    explanation: "Vuông góc."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "song-song"
+    prompt: "Hai thanh ray tàu hỏa thẳng thường:"
+    options:
+      - { id: "a", text: "song song" }
+      - { id: "b", text: "vuông góc" }
+    answer: { correct: ["a"] }
+    hint: "Không bao giờ gặp nhau."
+    explanation: "Song song."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "vuong-goc"
+    prompt: "Hai đường thẳng vuông góc tạo ra bao nhiêu góc vuông?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "4" }
+      - { id: "c", text: "1" }
+    answer: { correct: ["b"] }
+    hint: "Cắt nhau thành 4 góc."
+    explanation: "4 góc vuông."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Hai đường thẳng vuông góc, song song**."
+    say: "Em đã học xong bài Hai đường thẳng vuông góc, song song."

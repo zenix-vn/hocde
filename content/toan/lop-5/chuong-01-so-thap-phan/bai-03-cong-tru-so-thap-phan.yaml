@@ -1,0 +1,71 @@
+schema: 1
+slug: toan5-cong-tru-so-thap-phan
+title: "Cộng, trừ số thập phân"
+summary: "Cộng, trừ số thập phân."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Viết các số sao cho **dấu phẩy thẳng cột**, rồi cộng (trừ) như số tự nhiên.
+
+      12,4 + 5,38 = 17,78
+
+      9 − 3,25 = 5,75
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-td"
+    prompt: "4,5 + 2,35 = _"
+    answer: { accept: ["6,85", "6.85"] }
+    hint: "Viết 4,50 + 2,35."
+    explanation: "6,85."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-td"
+    prompt: "12,75 + 8,6 = _"
+    answer: { accept: ["21,35", "21.35"] }
+    hint: "Dấu phẩy thẳng cột."
+    explanation: "21,35."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-td"
+    prompt: "10 − 4,7 = _"
+    answer: { accept: ["5,3", "5.3"] }
+    hint: "10,0 − 4,7."
+    explanation: "5,3."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-td"
+    prompt: "8,25 − 3,5 = _"
+    answer: { accept: ["4,75", "4.75"] }
+    hint: "8,25 − 3,50."
+    explanation: "4,75."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Dây thứ nhất dài 3,6 m, dây thứ hai dài 2,45 m. Cả hai dây dài _ m."
+    answer: { accept: ["6,05", "6.05"] }
+    hint: "3,60 + 2,45."
+    explanation: "6,05 m."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Cộng, trừ số thập phân**."
+    say: "Em đã học xong bài Cộng, trừ số thập phân."

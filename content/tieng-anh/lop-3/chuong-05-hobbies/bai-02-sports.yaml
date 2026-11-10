@@ -1,0 +1,94 @@
+schema: 1
+slug: anh3-sports
+title: "Sports"
+summary: "Môn thể thao: I play football."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé thích chơi môn thể thao nào?"
+    say: [{"t":"Bé thích chơi môn thể thao nào?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "football", emoji: "⚽", meaning: "bóng đá" }, { word: "basketball", emoji: "🏀", meaning: "bóng rổ" }, { word: "badminton", emoji: "🏸", meaning: "cầu lông" }, { word: "table tennis", emoji: "🏓", meaning: "bóng bàn" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I play football.** Mình chơi bóng đá.
+
+      **Do you play badminton? Yes, I do.**
+    say: [{"t":"I play football.","l":"en"},{"t":"Do you play badminton?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-basketball"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "basketball", lang: "en" }
+    options:
+      - { id: "a", text: "🏀", say: "basketball", lang: "en" }
+      - { id: "b", text: "🏸", say: "badminton", lang: "en" }
+      - { id: "c", text: "⚽", say: "football", lang: "en" }
+    answer: { correct: ["a"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là basketball."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-table-tennis"
+    prompt: "Bóng bàn 🏓 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "table tennis" }
+      - { id: "b", text: "football" }
+      - { id: "c", text: "badminton" }
+    answer: { correct: ["a"] }
+    hint: "Nhớ lại các thẻ từ."
+    explanation: "table tennis."
+    option_lang: "en"
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-play"
+    prompt: |
+      Điền: Mình chơi bóng đá.
+
+      **I _ football.**
+    answer: { accept: ["play"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I play football."
+    say: [{"t":"Điền: Mình chơi bóng đá.","l":"vi"},{"t":"I blank football.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xyou", text: "you" }
+      - { id: "xDo", text: "Do" }
+      - { id: "xplay", text: "play" }
+      - { id: "xfootball", text: "football" }
+    answer: { sequence: ["xDo", "xyou", "xplay", "xfootball"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "Do you play football?"
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Sports**."
+    say: "Em đã học xong bài Sports."

@@ -1,0 +1,72 @@
+schema: 1
+slug: tv5-dai-tu
+title: "Đại từ"
+summary: "Đại từ xưng hô và đại từ thay thế."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Đại từ** là từ dùng để xưng hô hoặc thay thế danh từ, động từ, tính từ.
+
+      - Xưng hô: **tôi, chúng tôi, cậu, bạn, nó, họ**
+      - Thay thế: **vậy, thế** (Bạn học giỏi thế!)
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-tu"
+    prompt: "Từ nào là đại từ xưng hô?"
+    options:
+      - { id: "a", text: "chúng tôi" }
+      - { id: "b", text: "học sinh" }
+      - { id: "c", text: "chạy" }
+    answer: { correct: ["a"] }
+    hint: "Dùng để xưng."
+    explanation: "\"chúng tôi\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-tu"
+    prompt: "Trong câu \"Lan học giỏi, cô ấy luôn chăm chỉ\", \"cô ấy\" thay cho:"
+    options:
+      - { id: "a", text: "Lan" }
+      - { id: "b", text: "cô giáo" }
+      - { id: "c", text: "trường" }
+    answer: { correct: ["a"] }
+    hint: "Nhắc lại ai?"
+    explanation: "Lan."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dai-tu"
+    prompt: "Điền đại từ: Tôi và các bạn đi chơi. _ rất vui. (Chúng tôi / Họ)"
+    answer: { accept: ["Chúng tôi", "chúng tôi"] }
+    hint: "Gồm cả người nói."
+    explanation: "Chúng tôi."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-tu"
+    prompt: "Đại từ thay thế trong \"Em thích thế\":"
+    options:
+      - { id: "a", text: "thích" }
+      - { id: "b", text: "thế" }
+      - { id: "c", text: "em" }
+    answer: { correct: ["b"] }
+    hint: "Thay cho nội dung đã nói."
+    explanation: "\"thế\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đại từ**."
+    say: "Em đã học xong bài Đại từ."

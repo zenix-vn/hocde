@@ -1,0 +1,59 @@
+schema: 1
+slug: toan5-hinh-tron
+title: "Hình tròn, chu vi và diện tích"
+summary: "Tính chu vi, diện tích hình tròn (π = 3,14)."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Chu vi** = đường kính × 3,14 = bán kính × 2 × 3,14.
+
+      **Diện tích** = bán kính × bán kính × 3,14.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chu-vi-tron"
+    prompt: "Hình tròn bán kính 5 cm. Chu vi là _ cm."
+    answer: { accept: ["31,4", "31.4"] }
+    hint: "5 × 2 × 3,14."
+    explanation: "31,4 cm."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chu-vi-tron"
+    prompt: "Hình tròn đường kính 8 cm. Chu vi là _ cm."
+    answer: { accept: ["25,12", "25.12"] }
+    hint: "8 × 3,14."
+    explanation: "25,12 cm."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-tron"
+    prompt: "Hình tròn bán kính 3 cm. Diện tích là _ cm²."
+    answer: { accept: ["28,26", "28.26"] }
+    hint: "3 × 3 × 3,14."
+    explanation: "28,26."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-tron"
+    prompt: "Hình tròn bán kính 10 cm. Diện tích là _ cm²."
+    answer: { accept: ["314", "314"] }
+    hint: "10 × 10 × 3,14."
+    explanation: "314."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Hình tròn, chu vi và diện tích**."
+    say: "Em đã học xong bài Hình tròn, chu vi và diện tích."

@@ -1,0 +1,99 @@
+schema: 1
+slug: anh3-i-can
+title: "I can…"
+summary: "Khả năng: I can swim. I can't fly."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé làm được những gì nhỉ?"
+    say: [{"t":"Bé làm được những gì nhỉ?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "swim", emoji: "🏊", meaning: "bơi" }, { word: "run", emoji: "🏃", meaning: "chạy" }, { word: "jump", emoji: "🤸", meaning: "nhảy" }, { word: "sing", emoji: "🎤", meaning: "hát" }, { word: "fly", emoji: "🕊️", meaning: "bay" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I can swim.** Mình biết bơi.
+
+      **I can't fly.** Mình không biết bay.
+
+      **Can you sing? Yes, I can. / No, I can't.**
+    say: [{"t":"I can swim.","l":"en"},{"t":"I can't fly.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-jump"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "jump", lang: "en" }
+    options:
+      - { id: "a", text: "🏊", say: "swim", lang: "en" }
+      - { id: "b", text: "🤸", say: "jump", lang: "en" }
+      - { id: "c", text: "🏃", say: "run", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là jump."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn biết hát. Trả lời:
+
+      **Can you sing?**
+    options:
+      - { id: "a", text: "Yes, I can." }
+      - { id: "b", text: "No, I'm not." }
+      - { id: "c", text: "I'm sing." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Biết thì Yes, I can."
+    option_lang: "en"
+    say: [{"t":"Bạn biết hát. Trả lời:","l":"vi"},{"t":"Can you sing?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-can-t"
+    prompt: |
+      Điền: Mình không biết bay.
+
+      **I _ fly.**
+    answer: { accept: ["can't", "cannot"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I can't fly."
+    say: [{"t":"Điền: Mình không biết bay.","l":"vi"},{"t":"I blank fly.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xswim", text: "swim" }
+      - { id: "xcan", text: "can" }
+      - { id: "xI", text: "I" }
+    answer: { sequence: ["xI", "xcan", "xswim"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I can swim."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **I can…**."
+    say: "Em đã học xong bài I can…."

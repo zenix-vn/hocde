@@ -1,0 +1,94 @@
+schema: 1
+slug: anh3-furniture
+title: "Furniture"
+summary: "Đồ đạc trong nhà; There is a ..."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Phòng của bé có những đồ đạc gì?"
+    say: [{"t":"Phòng của bé có những đồ đạc gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "bed", emoji: "🛏️", meaning: "giường" }, { word: "sofa", emoji: "🛋️", meaning: "ghế sofa" }, { word: "table", emoji: "🪑", meaning: "cái bàn" }, { word: "lamp", emoji: "💡", meaning: "đèn" }, { word: "TV", emoji: "📺", meaning: "ti vi" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **There is a bed in my room.** Trong phòng mình có một cái giường.
+
+      **There are two lamps.** Có hai cái đèn.
+    say: [{"t":"There is a bed in my room.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-lamp"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "lamp", lang: "en" }
+    options:
+      - { id: "a", text: "🛏️", say: "bed", lang: "en" }
+      - { id: "b", text: "💡", say: "lamp", lang: "en" }
+      - { id: "c", text: "📺", say: "TV", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là lamp."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-sofa"
+    prompt: "Ghế sofa 🛋️ tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "sofa" }
+      - { id: "b", text: "lamp" }
+      - { id: "c", text: "table" }
+    answer: { correct: ["a"] }
+    hint: "Nhớ lại các thẻ từ."
+    explanation: "sofa."
+    option_lang: "en"
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-tv"
+    prompt: |
+      Điền: Có một cái ti vi.
+
+      **There is a _ .**
+    answer: { accept: ["TV", "tv"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "There is a TV."
+    say: [{"t":"Điền: Có một cái ti vi.","l":"vi"},{"t":"There is a blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xis", text: "is" }
+      - { id: "xThere", text: "There" }
+      - { id: "xa", text: "a" }
+      - { id: "xbed", text: "bed" }
+    answer: { sequence: ["xThere", "xis", "xa", "xbed"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "There is a bed."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Furniture**."
+    say: "Em đã học xong bài Furniture."

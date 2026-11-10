@@ -1,0 +1,69 @@
+schema: 1
+slug: toan5-chia-so-thap-phan
+title: "Chia số thập phân"
+summary: "Chia số thập phân cho số tự nhiên và cho số thập phân."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Chia cho 10, 100, 1000:** chuyển dấu phẩy sang trái 1, 2, 3 chữ số. 45,6 : 10 = 4,56
+
+      **Chia cho số tự nhiên:** chia như số tự nhiên, đến phần thập phân thì đặt dấu phẩy ở thương. 7,5 : 5 = 1,5
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-10"
+    prompt: "45,6 : 10 = _"
+    answer: { accept: ["4,56", "4.56"] }
+    hint: "Dời dấu phẩy 1 chữ số sang trái."
+    explanation: "4,56."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-td"
+    prompt: "7,5 : 5 = _"
+    answer: { accept: ["1,5", "1.5"] }
+    hint: "75 : 5 = 15."
+    explanation: "1,5."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-td"
+    prompt: "12,6 : 3 = _"
+    answer: { accept: ["4,2", "4.2"] }
+    hint: "126 : 3 = 42."
+    explanation: "4,2."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-td"
+    prompt: "9 : 2 = _"
+    answer: { accept: ["4,5", "4.5"] }
+    hint: "9,0 : 2."
+    explanation: "4,5."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Cuộn dây dài 18,6 m cắt thành 6 đoạn bằng nhau. Mỗi đoạn dài _ m."
+    answer: { accept: ["3,1", "3.1"] }
+    hint: "18,6 : 6."
+    explanation: "3,1 m."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Chia số thập phân**."
+    say: "Em đã học xong bài Chia số thập phân."

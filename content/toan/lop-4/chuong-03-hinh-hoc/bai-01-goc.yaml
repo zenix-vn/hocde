@@ -1,0 +1,72 @@
+schema: 1
+slug: toan4-goc-nhon-tu-bet
+title: "Góc nhọn, góc tù, góc bẹt"
+summary: "Phân biệt các loại góc."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "**Góc vuông** = 90°. **Góc nhọn** < 90°. **Góc tù** > 90° và < 180°. **Góc bẹt** = 180°."
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc"
+    prompt: "Góc 45° là góc:"
+    options:
+      - { id: "a", text: "nhọn" }
+      - { id: "b", text: "vuông" }
+      - { id: "c", text: "tù" }
+    answer: { correct: ["a"] }
+    hint: "Nhỏ hơn 90°."
+    explanation: "Góc nhọn."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc"
+    prompt: "Góc 120° là góc:"
+    options:
+      - { id: "a", text: "nhọn" }
+      - { id: "b", text: "tù" }
+      - { id: "c", text: "bẹt" }
+    answer: { correct: ["b"] }
+    hint: "Lớn hơn 90° nhưng nhỏ hơn 180°."
+    explanation: "Góc tù."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc"
+    prompt: "Góc 180° là góc:"
+    options:
+      - { id: "a", text: "vuông" }
+      - { id: "b", text: "tù" }
+      - { id: "c", text: "bẹt" }
+    answer: { correct: ["c"] }
+    hint: "Hai cạnh thành một đường thẳng."
+    explanation: "Góc bẹt."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc"
+    prompt: "Dụng cụ đo góc là:"
+    options:
+      - { id: "a", text: "thước đo góc" }
+      - { id: "b", text: "thước kẻ" }
+      - { id: "c", text: "cân" }
+    answer: { correct: ["a"] }
+    hint: "Có các vạch độ."
+    explanation: "Thước đo góc."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Góc nhọn, góc tù, góc bẹt**."
+    say: "Em đã học xong bài Góc nhọn, góc tù, góc bẹt."

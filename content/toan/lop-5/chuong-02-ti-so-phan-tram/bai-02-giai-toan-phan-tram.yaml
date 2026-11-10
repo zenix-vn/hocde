@@ -1,0 +1,59 @@
+schema: 1
+slug: toan5-giai-toan-ve-phan-tram
+title: "Giải toán về phần trăm"
+summary: "Tìm giá trị phần trăm của một số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Tìm 20% của 150:** 150 × 20 : 100 = **30**.
+
+      **Giảm giá 10%** cho món hàng 200 000 đồng: giảm 200 000 × 10 : 100 = 20 000 đồng, còn 180 000 đồng.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tim-phan-tram"
+    prompt: "20% của 300 là _"
+    answer: { accept: ["60"] }
+    hint: "300 × 20 : 100."
+    explanation: "60."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tim-phan-tram"
+    prompt: "50% của 86 là _"
+    answer: { accept: ["43"] }
+    hint: "Một nửa."
+    explanation: "43."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giam-gia"
+    prompt: "Cái áo giá 200 000 đồng, giảm giá 10%. Giá sau giảm là _ đồng."
+    answer: { accept: ["180000"] }
+    hint: "200 000 − 20 000."
+    explanation: "180 000 đồng."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Lớp có 30 học sinh, 40% là nam. Số học sinh nam là _ bạn."
+    answer: { accept: ["12"] }
+    hint: "30 × 40 : 100."
+    explanation: "12."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Giải toán về phần trăm**."
+    say: "Em đã học xong bài Giải toán về phần trăm."

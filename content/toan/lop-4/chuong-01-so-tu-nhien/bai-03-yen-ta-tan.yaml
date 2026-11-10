@@ -1,0 +1,75 @@
+schema: 1
+slug: toan4-yen-ta-tan-giay-the-ki
+title: "Yến, tạ, tấn; giây; thế kỉ"
+summary: "Đổi các đơn vị khối lượng và thời gian."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **1 yến = 10 kg · 1 tạ = 100 kg · 1 tấn = 1000 kg**
+
+      **1 phút = 60 giây · 1 thế kỉ = 100 năm**
+
+      Năm 2026 thuộc thế kỉ XXI.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "3 tạ = _ kg"
+    answer: { accept: ["300"] }
+    hint: "1 tạ = 100 kg."
+    explanation: "300 kg."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "5 tấn = _ kg"
+    answer: { accept: ["5000"] }
+    hint: "1 tấn = 1000 kg."
+    explanation: "5000 kg."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "2 phút = _ giây"
+    answer: { accept: ["120"] }
+    hint: "1 phút = 60 giây."
+    explanation: "120 giây."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "4 yến = _ kg"
+    answer: { accept: ["40"] }
+    hint: "1 yến = 10 kg."
+    explanation: "40 kg."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "the-ki"
+    prompt: "Năm 1945 thuộc thế kỉ:"
+    options:
+      - { id: "a", text: "XVIII" }
+      - { id: "b", text: "XIX" }
+      - { id: "c", text: "XX" }
+    answer: { correct: ["c"] }
+    hint: "Năm 1901 – 2000 là thế kỉ XX."
+    explanation: "Thế kỉ XX."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Yến, tạ, tấn; giây; thế kỉ**."
+    say: "Em đã học xong bài Yến, tạ, tấn; giây; thế kỉ."

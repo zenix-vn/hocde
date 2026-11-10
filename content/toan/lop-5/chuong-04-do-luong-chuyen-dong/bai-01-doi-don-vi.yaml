@@ -1,0 +1,61 @@
+schema: 1
+slug: toan5-doi-don-vi-do
+title: "Đổi đơn vị đo"
+summary: "Đổi đơn vị độ dài, khối lượng, diện tích."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Độ dài: km, hm, dam, m, dm, cm, mm (mỗi đơn vị gấp 10 lần đơn vị liền sau).
+
+      Khối lượng: tấn, tạ, yến, kg, hg, dag, g.
+
+      **Diện tích:** mỗi đơn vị gấp **100** lần đơn vị liền sau. 1 m² = 100 dm².
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "2,5 km = _ m"
+    answer: { accept: ["2500", "2500"] }
+    hint: "1 km = 1000 m."
+    explanation: "2500 m."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "350 g = _ kg"
+    answer: { accept: ["0,35", "0.35"] }
+    hint: "1000 g = 1 kg."
+    explanation: "0,35 kg."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "4 m² = _ dm²"
+    answer: { accept: ["400", "400"] }
+    hint: "1 m² = 100 dm²."
+    explanation: "400."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "0,6 tấn = _ kg"
+    answer: { accept: ["600", "600"] }
+    hint: "1 tấn = 1000 kg."
+    explanation: "600."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đổi đơn vị đo**."
+    say: "Em đã học xong bài Đổi đơn vị đo."

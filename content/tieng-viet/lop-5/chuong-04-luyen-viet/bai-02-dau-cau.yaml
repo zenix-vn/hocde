@@ -1,0 +1,61 @@
+schema: 1
+slug: tv5-dau-cau-on-tap
+title: "Ôn dấu câu"
+summary: "Dấu chấm lửng, dấu ngoặc đơn, dấu gạch ngang."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      - **Dấu chấm lửng (…):** báo hiệu lời nói bỏ lửng hoặc liệt kê chưa hết.
+      - **Dấu ngoặc đơn ( ):** đánh dấu phần chú thích.
+      - **Dấu gạch ngang (–):** nối các từ trong một liên danh, hoặc đặt đầu dòng lời thoại.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu nào báo hiệu liệt kê chưa hết?"
+    options:
+      - { id: "a", text: "dấu chấm hỏi" }
+      - { id: "b", text: "dấu chấm than" }
+      - { id: "c", text: "dấu chấm lửng" }
+    answer: { correct: ["c"] }
+    hint: "Ba chấm."
+    explanation: "Chấm lửng."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu ngoặc đơn dùng để:"
+    options:
+      - { id: "a", text: "chú thích" }
+      - { id: "b", text: "hỏi" }
+      - { id: "c", text: "nối từ" }
+    answer: { correct: ["a"] }
+    hint: "Giải thích thêm."
+    explanation: "Chú thích."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu gạch ngang trong \"Hà Nội – Hải Phòng\" dùng để:"
+    options:
+      - { id: "a", text: "ngắt đoạn" }
+      - { id: "b", text: "nối các địa danh" }
+      - { id: "c", text: "kết thúc câu" }
+    answer: { correct: ["b"] }
+    hint: "Liên danh."
+    explanation: "Nối địa danh."
+
+  - id: b5
+    type: "summary"
+    markdown: "Em đã học xong bài **Ôn dấu câu**."
+    say: "Em đã học xong bài Ôn dấu câu."

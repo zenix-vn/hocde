@@ -1,0 +1,83 @@
+schema: 1
+slug: toan5-khai-niem-so-thap-phan
+title: "Khái niệm số thập phân"
+summary: "Đọc, viết số thập phân; phần nguyên và phần thập phân."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **12,345** gồm phần nguyên **12** và phần thập phân **345**.
+
+      Hàng sau dấu phẩy: phần mười, phần trăm, phần nghìn.
+
+      0,5 = 5/10 · 0,25 = 25/100 · 0,125 = 125/1000
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-thap-phan"
+    prompt: "Trong số 7,42, chữ số 4 ở hàng:"
+    options:
+      - { id: "a", text: "phần mười" }
+      - { id: "b", text: "phần trăm" }
+      - { id: "c", text: "đơn vị" }
+    answer: { correct: ["a"] }
+    hint: "Ngay sau dấu phẩy."
+    explanation: "Phần mười."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-thap-phan"
+    prompt: "Phân số 3/10 viết thành số thập phân là:"
+    options:
+      - { id: "a", text: "0,3" }
+      - { id: "b", text: "3,0" }
+      - { id: "c", text: "0,03" }
+    answer: { correct: ["a"] }
+    hint: "Một chữ số 0 ở mẫu → một chữ số sau dấu phẩy."
+    explanation: "0,3."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-thap-phan"
+    prompt: "Phân số 7/100 viết thành số thập phân là:"
+    options:
+      - { id: "a", text: "0,7" }
+      - { id: "b", text: "0,07" }
+      - { id: "c", text: "7,00" }
+    answer: { correct: ["b"] }
+    hint: "Hai chữ số 0 ở mẫu."
+    explanation: "0,07."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thap-phan"
+    prompt: "Số 25,6 có phần nguyên là _"
+    answer: { accept: ["25"] }
+    hint: "Phần trước dấu phẩy."
+    explanation: "25."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thap-phan"
+    prompt: "0,8 = _/10"
+    answer: { accept: ["8"] }
+    hint: "Một chữ số thập phân."
+    explanation: "8/10."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Khái niệm số thập phân**."
+    say: "Em đã học xong bài Khái niệm số thập phân."

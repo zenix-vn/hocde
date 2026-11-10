@@ -1,0 +1,71 @@
+schema: 1
+slug: tv3-cau-khien-cau-cam
+title: "Câu khiến, câu cảm"
+summary: "Nhận biết và dùng câu khiến, câu cảm."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Câu khiến** dùng để nhờ, yêu cầu, đề nghị. Ví dụ: Em hãy xếp hàng ngay ngắn.
+
+      **Câu cảm** bày tỏ cảm xúc. Ví dụ: Ôi, bông hoa đẹp quá!
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-khien"
+    prompt: "Câu nào là câu khiến?"
+    options:
+      - { id: "a", text: "Hãy giữ trật tự!" }
+      - { id: "b", text: "Lớp mình rất đoàn kết." }
+      - { id: "c", text: "Bạn tên là gì?" }
+    answer: { correct: ["a"] }
+    hint: "Nhờ, yêu cầu."
+    explanation: "\"Hãy giữ trật tự!\""
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-cam"
+    prompt: "Câu nào là câu cảm?"
+    options:
+      - { id: "a", text: "Trời hôm nay đẹp quá!" }
+      - { id: "b", text: "Mẹ đi chợ rồi." }
+      - { id: "c", text: "Con làm bài chưa?" }
+    answer: { correct: ["a"] }
+    hint: "Bày tỏ cảm xúc."
+    explanation: "\"Trời hôm nay đẹp quá!\""
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-khien"
+    prompt: "Từ thường dùng trong câu khiến:"
+    options:
+      - { id: "a", text: "hãy, đừng, nên" }
+      - { id: "b", text: "rất, quá" }
+      - { id: "c", text: "và, nhưng" }
+    answer: { correct: ["a"] }
+    hint: "Ra lệnh, nhờ."
+    explanation: "hãy, đừng, nên."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cau-khien"
+    prompt: "Điền từ: _ mở cửa giúp mẹ nhé! (hãy / đã)"
+    answer: { accept: ["Hãy", "hãy"] }
+    hint: "Nhờ làm việc."
+    explanation: "Hãy mở cửa giúp mẹ nhé!"
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Câu khiến, câu cảm**."
+    say: "Em đã học xong bài Câu khiến, câu cảm."

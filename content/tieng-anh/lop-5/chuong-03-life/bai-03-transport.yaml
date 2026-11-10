@@ -1,0 +1,101 @@
+schema: 1
+slug: anh5-transport
+title: "How do you go to school?"
+summary: "Phương tiện: by bus, by bike, on foot."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đi học bằng phương tiện gì?"
+    say: [{"t":"Bé đi học bằng phương tiện gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "by bus", emoji: "🚌", meaning: "bằng xe buýt" }, { word: "by bike", emoji: "🚲", meaning: "bằng xe đạp" }, { word: "by motorbike", emoji: "🏍️", meaning: "bằng xe máy" }, { word: "on foot", emoji: "🚶", meaning: "đi bộ" }, { word: "by car", emoji: "🚗", meaning: "bằng ô tô" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**How do you go to school? I go by bike. / I go on foot.**"
+    say: [{"t":"How do you go to school?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn đi bộ đến trường. Trả lời:
+
+      **How do you go to school?**
+    options:
+      - { id: "a", text: "I go on foot." }
+      - { id: "b", text: "I go by foot." }
+      - { id: "c", text: "I go at foot." }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "on foot."
+    option_lang: "en"
+    say: [{"t":"Bạn đi bộ đến trường. Trả lời:","l":"vi"},{"t":"How do you go to school?","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn đi xe buýt. Trả lời:
+
+      **How do you go to school?**
+    options:
+      - { id: "a", text: "I go in bus." }
+      - { id: "b", text: "I go by bus." }
+      - { id: "c", text: "I go on bus." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "by + phương tiện."
+    option_lang: "en"
+    say: [{"t":"Bạn đi xe buýt. Trả lời:","l":"vi"},{"t":"How do you go to school?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-by"
+    prompt: |
+      Điền: Mình đi học bằng xe đạp.
+
+      **I go to school _ bike.**
+    answer: { accept: ["by"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "by bike."
+    say: [{"t":"Điền: Mình đi học bằng xe đạp.","l":"vi"},{"t":"I go to school blank bike.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xgo", text: "go" }
+      - { id: "xby", text: "by" }
+      - { id: "xI", text: "I" }
+      - { id: "xschool", text: "school" }
+      - { id: "xto", text: "to" }
+      - { id: "xbus", text: "bus" }
+    answer: { sequence: ["xI", "xgo", "xto", "xschool", "xby", "xbus"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I go to school by bus."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **How do you go to school?**."
+    say: "Em đã học xong bài How do you go to school?."

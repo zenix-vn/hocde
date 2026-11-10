@@ -1,0 +1,45 @@
+# Toán 3 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: toan
+grade: 3
+slug: toan-lop-3
+title: Toán 3
+summary: "Bảng nhân, bảng chia, nhân chia số có nhiều chữ số, hình học, đo lường và các số đến 100 000."
+status: published
+
+units:
+  - slug: chuong-01-bang-nhan-bang-chia
+    title: "Bảng nhân, bảng chia"
+    summary: "Bảng nhân 6, 7, 8, 9, bảng chia và gấp lên một số lần."
+    lessons:
+      - bai-01-bang-nhan-6-7
+      - bai-02-bang-nhan-8-9
+      - bai-03-bang-chia-6-9
+      - bai-04-gap-len-so-lan
+
+  - slug: chuong-02-nhan-chia-nhieu-chu-so
+    title: "Nhân, chia số có nhiều chữ số"
+    summary: "Nhân, chia với số có một chữ số; biểu thức số."
+    lessons:
+      - bai-01-nhan-so-co-hai-chu-so
+      - bai-02-chia-so-co-hai-chu-so
+      - bai-03-bieu-thuc-so
+
+  - slug: chuong-03-hinh-hoc-do-luong
+    title: "Hình học và đo lường"
+    summary: "Góc vuông, chu vi, diện tích, gam, mi-li-lít, nhiệt độ, tiền Việt Nam."
+    lessons:
+      - bai-01-goc-vuong
+      - bai-02-chu-vi
+      - bai-03-dien-tich
+      - bai-04-gam-ml-do-c
+      - bai-05-tien-viet-nam
+
+  - slug: chuong-04-so-den-100000
+    title: "Các số đến 100 000"
+    summary: "Đọc, viết, so sánh, cộng trừ các số đến 100 000."
+    lessons:
+      - bai-01-so-den-10000
+      - bai-02-so-den-100000
+      - bai-03-cong-tru-pham-vi-100000
+

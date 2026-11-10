@@ -1,0 +1,86 @@
+schema: 1
+slug: toan3-nhan-so-co-hai-chu-so
+title: "Nhân số có hai chữ số với số có một chữ số"
+summary: "Nhân có nhớ và không nhớ."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **24 × 3 = ?**
+
+      4 × 3 = 12, viết 2 nhớ 1.
+
+      2 × 3 = 6, thêm 1 là 7.
+
+      Vậy 24 × 3 = **72**.
+
+  - id: b2
+    type: "callout"
+    variant: "remember"
+    markdown: "Nhân lần lượt từ **hàng đơn vị**, nhớ sang hàng chục."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "32 × 3 = ?"
+    options:
+      - { id: "a", text: "106" }
+      - { id: "b", text: "96" }
+      - { id: "c", text: "90" }
+    answer: { correct: ["b"] }
+    hint: "Đơn vị: 2 × 3. Chục: 3 × 3."
+    explanation: "32 × 3 = 96."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "27 × 4 = ?"
+    options:
+      - { id: "a", text: "118" }
+      - { id: "b", text: "88" }
+      - { id: "c", text: "108" }
+    answer: { correct: ["c"] }
+    hint: "7 × 4 = 28, viết 8 nhớ 2."
+    explanation: "27 × 4 = 108."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "45 × 2 = _"
+    answer: { accept: ["90"] }
+    hint: "5 × 2 = 10, viết 0 nhớ 1."
+    explanation: "45 × 2 = 90."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "18 × 5 = _"
+    answer: { accept: ["90"] }
+    hint: "8 × 5 = 40, viết 0 nhớ 4."
+    explanation: "18 × 5 = 90."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Mỗi hộp có 24 cái bánh. 4 hộp có _ cái bánh."
+    answer: { accept: ["96"] }
+    hint: "24 × 4."
+    explanation: "24 × 4 = 96."
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Nhân số có hai chữ số với số có một chữ số**."
+    say: "Em đã học xong bài Nhân số có hai chữ số với số có một chữ số."

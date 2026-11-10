@@ -1,0 +1,75 @@
+schema: 1
+slug: tv5-cau-ghep
+title: "Câu ghép"
+summary: "Nhận biết câu ghép và các vế câu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Câu ghép** gồm hai hoặc nhiều **vế câu**, mỗi vế có cấu tạo như một câu (có chủ ngữ, vị ngữ).
+
+      Ví dụ: **Trời mưa** (vế 1), **đường trơn** (vế 2). → câu ghép.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ghep"
+    prompt: "Câu nào là câu ghép?"
+    options:
+      - { id: "a", text: "Trời mưa, đường trơn." }
+      - { id: "b", text: "Bạn Lan hát hay." }
+      - { id: "c", text: "Mẹ đi chợ." }
+    answer: { correct: ["a"] }
+    hint: "Hai vế, mỗi vế đủ CN – VN."
+    explanation: "\"Trời mưa, đường trơn.\""
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ghep"
+    prompt: "Câu \"Tuy nhà xa nhưng bạn Nam không bao giờ đi học muộn.\" có mấy vế?"
+    options:
+      - { id: "a", text: "1" }
+      - { id: "b", text: "2" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["b"] }
+    hint: "Hai vế."
+    explanation: "2 vế."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ghep"
+    prompt: "Câu đơn là câu:"
+    options:
+      - { id: "a", text: "chỉ có một cụm CN – VN" }
+      - { id: "b", text: "có hai cụm CN – VN" }
+      - { id: "c", text: "không có VN" }
+    answer: { correct: ["a"] }
+    hint: "Một nòng cốt."
+    explanation: "Một cụm CN – VN."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cau-ghep"
+    prompt: "Nối hai vế bằng cặp quan hệ từ: \"Nếu trời đẹp … em sẽ đi chơi.\""
+    options:
+      - { id: "a", text: "nên" }
+      - { id: "b", text: "nhưng" }
+      - { id: "c", text: "thì" }
+    answer: { correct: ["c"] }
+    hint: "Điều kiện."
+    explanation: "thì."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Câu ghép**."
+    say: "Em đã học xong bài Câu ghép."

@@ -1,0 +1,77 @@
+schema: 1
+slug: tv5-lap-dan-y-van-ta-canh
+title: "Lập dàn ý bài văn tả cảnh"
+summary: "Bố cục một bài văn tả cảnh."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Bài văn tả cảnh gồm 3 phần:
+
+      1. **Mở bài:** giới thiệu cảnh định tả.
+      2. **Thân bài:** tả bao quát, rồi tả chi tiết (theo thời gian hoặc theo vị trí).
+      3. **Kết bài:** nêu cảm nghĩ.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dan-y"
+    prompt: "Phần giới thiệu cảnh định tả gọi là:"
+    options:
+      - { id: "a", text: "Kết bài" }
+      - { id: "b", text: "Mở bài" }
+      - { id: "c", text: "Thân bài" }
+    answer: { correct: ["b"] }
+    hint: "Phần đầu."
+    explanation: "Mở bài."
+
+  - id: b3
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "dan-y"
+    prompt: "Sắp xếp các ý theo bố cục bài tả cảnh."
+    options:
+      - { id: "xKetbaiyeuquycanhque", text: "Kết bài: yêu quý cảnh quê" }
+      - { id: "xThanbaitachitietcanh", text: "Thân bài: tả chi tiết cảnh" }
+      - { id: "xMobaigioithieucanh", text: "Mở bài: giới thiệu cảnh" }
+    answer: { sequence: ["xMobaigioithieucanh", "xThanbaitachitietcanh", "xKetbaiyeuquycanhque"] }
+    hint: "Đầu – giữa – cuối."
+    explanation: "Mở – thân – kết."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dan-y"
+    prompt: "Khi tả cảnh, em nên dùng giác quan nào?"
+    options:
+      - { id: "a", text: "Chỉ nhìn" }
+      - { id: "b", text: "Không cần giác quan" }
+      - { id: "c", text: "Nhìn, nghe, ngửi, sờ" }
+    answer: { correct: ["c"] }
+    hint: "Càng nhiều càng sinh động."
+    explanation: "Nhiều giác quan."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dan-y"
+    prompt: "Câu kết bài phù hợp:"
+    options:
+      - { id: "a", text: "Con đường dài thăm thẳm." }
+      - { id: "b", text: "Buổi sáng, trời lạnh." }
+      - { id: "c", text: "Em rất yêu cảnh làng quê mình." }
+    answer: { correct: ["c"] }
+    hint: "Nêu cảm nghĩ."
+    explanation: "Nêu cảm xúc."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Lập dàn ý bài văn tả cảnh**."
+    say: "Em đã học xong bài Lập dàn ý bài văn tả cảnh."

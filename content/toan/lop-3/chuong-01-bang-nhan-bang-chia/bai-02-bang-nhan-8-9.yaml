@@ -1,0 +1,143 @@
+schema: 1
+slug: toan3-bang-nhan-8-9
+title: "Bảng nhân 8, bảng nhân 9"
+summary: "Học thuộc bảng nhân 8 và bảng nhân 9."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Bảng nhân 8**
+
+      8 × 1 = 8
+
+      8 × 2 = 16
+
+      8 × 3 = 24
+
+      8 × 4 = 32
+
+      8 × 5 = 40
+
+      8 × 6 = 48
+
+      8 × 7 = 56
+
+      8 × 8 = 64
+
+      8 × 9 = 72
+
+      8 × 10 = 80
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **Bảng nhân 9**
+
+      9 × 1 = 9
+
+      9 × 2 = 18
+
+      9 × 3 = 27
+
+      9 × 4 = 36
+
+      9 × 5 = 45
+
+      9 × 6 = 54
+
+      9 × 7 = 63
+
+      9 × 8 = 72
+
+      9 × 9 = 81
+
+      9 × 10 = 90
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: "Mẹo bảng nhân 9: tổng các chữ số của kết quả luôn bằng 9. Ví dụ 9 × 4 = 36, 3 + 6 = 9."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan"
+    prompt: "8 × 6 = ?"
+    options:
+      - { id: "a", text: "56" }
+      - { id: "b", text: "48" }
+      - { id: "c", text: "47" }
+    answer: { correct: ["b"] }
+    hint: "Nhớ bảng nhân 8."
+    explanation: "8 × 6 = 48."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan"
+    prompt: "8 × 9 = ?"
+    options:
+      - { id: "a", text: "80" }
+      - { id: "b", text: "71" }
+      - { id: "c", text: "72" }
+    answer: { correct: ["c"] }
+    hint: "Nhớ bảng nhân 8."
+    explanation: "8 × 9 = 72."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan"
+    prompt: "9 × 7 = ?"
+    options:
+      - { id: "a", text: "63" }
+      - { id: "b", text: "72" }
+      - { id: "c", text: "62" }
+    answer: { correct: ["a"] }
+    hint: "Nhớ bảng nhân 9."
+    explanation: "9 × 7 = 63."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan"
+    prompt: "9 × 5 = ?"
+    options:
+      - { id: "a", text: "54" }
+      - { id: "b", text: "45" }
+      - { id: "c", text: "44" }
+    answer: { correct: ["b"] }
+    hint: "Nhớ bảng nhân 9."
+    explanation: "9 × 5 = 45."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan"
+    prompt: "8 × 7 = _"
+    answer: { accept: ["56"] }
+    hint: "Nhớ bảng nhân 8."
+    explanation: "8 × 7 = 56."
+
+  - id: b9
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan"
+    prompt: "9 × 9 = _"
+    answer: { accept: ["81"] }
+    hint: "Nhớ bảng nhân 9."
+    explanation: "9 × 9 = 81."
+
+  - id: b10
+    type: "summary"
+    markdown: "Em đã học xong bài **Bảng nhân 8, bảng nhân 9**."
+    say: "Em đã học xong bài Bảng nhân 8, bảng nhân 9."

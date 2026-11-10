@@ -1,0 +1,75 @@
+schema: 1
+slug: toan3-goc-vuong-goc-khong-vuong
+title: "Góc vuông, góc không vuông"
+summary: "Nhận biết góc vuông bằng ê ke."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Góc vuông là góc ở các đỉnh của **hình chữ nhật** và **hình vuông**. Em dùng **ê ke** để kiểm tra góc vuông.
+
+      Góc **không vuông** là góc nhỏ hơn hoặc lớn hơn góc vuông.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc-vuong"
+    prompt: "Hình chữ nhật có mấy góc vuông?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["c"] }
+    hint: "Các góc của hình chữ nhật đều vuông."
+    explanation: "Hình chữ nhật có 4 góc vuông."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc-vuong"
+    prompt: "Dụng cụ dùng để kiểm tra góc vuông là:"
+    options:
+      - { id: "a", text: "ê ke" }
+      - { id: "b", text: "compa" }
+      - { id: "c", text: "cân" }
+    answer: { correct: ["a"] }
+    hint: "Có một góc vuông."
+    explanation: "Dùng ê ke."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc-vuong"
+    prompt: "Hình tam giác thường có bao nhiêu góc vuông nhất?"
+    options:
+      - { id: "a", text: "1" }
+      - { id: "b", text: "2" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["a"] }
+    hint: "Tổng ba góc là 180°."
+    explanation: "Một tam giác có nhiều nhất 1 góc vuông."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "goc-vuong"
+    prompt: "Hình vuông có mấy cạnh bằng nhau?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["c"] }
+    hint: "Hình vuông có 4 cạnh bằng nhau."
+    explanation: "4 cạnh."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Góc vuông, góc không vuông**."
+    say: "Em đã học xong bài Góc vuông, góc không vuông."

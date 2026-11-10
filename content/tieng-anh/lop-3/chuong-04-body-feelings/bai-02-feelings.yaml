@@ -1,0 +1,93 @@
+schema: 1
+slug: anh3-feelings
+title: "How do you feel?"
+summary: "Cảm xúc: I'm happy / sad / hungry."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay bé cảm thấy thế nào?"
+    say: [{"t":"Hôm nay bé cảm thấy thế nào?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "happy", emoji: "😀", meaning: "vui" }, { word: "sad", emoji: "😢", meaning: "buồn" }, { word: "hungry", emoji: "🍽️", meaning: "đói" }, { word: "tired", emoji: "😴", meaning: "mệt" }, { word: "angry", emoji: "😠", meaning: "giận" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**How are you? I'm happy.**"
+    say: [{"t":"How are you?","l":"en"},{"t":"I'm happy.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-sad"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "sad", lang: "en" }
+    options:
+      - { id: "a", text: "😴", say: "tired", lang: "en" }
+      - { id: "b", text: "😀", say: "happy", lang: "en" }
+      - { id: "c", text: "😢", say: "sad", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sad."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bé rất đói 🍽️. Trả lời:
+
+      **How are you?**
+    options:
+      - { id: "a", text: "I'm from Vietnam." }
+      - { id: "b", text: "I'm hungry." }
+      - { id: "c", text: "I'm eight." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "hungry = đói."
+    option_lang: "en"
+    say: [{"t":"Bé rất đói 🍽️. Trả lời:","l":"vi"},{"t":"How are you?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-happy"
+    prompt: |
+      Điền: Mình đang vui.
+
+      **I'm _ .**
+    answer: { accept: ["happy"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I'm happy."
+    say: [{"t":"Điền: Mình đang vui.","l":"vi"},{"t":"I'm blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xtired", text: "tired" }
+      - { id: "xIm", text: "I'm" }
+    answer: { sequence: ["xIm", "xtired"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I'm tired."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **How do you feel?**."
+    say: "Em đã học xong bài How do you feel?."

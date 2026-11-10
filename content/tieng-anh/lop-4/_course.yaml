@@ -1,0 +1,39 @@
+# Tiếng Anh 4 – nội dung bám các chủ đề phổ biến của Tiếng Anh tiểu học (bộ "Kết nối tri thức với cuộc sống" không có sách Tiếng Anh riêng)
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-anh
+grade: 4
+slug: tieng-anh-lop-4
+title: Tiếng Anh 4
+summary: "Quốc tịch, sinh hoạt hằng ngày, môn học, sở thích, nghề nghiệp, sinh nhật, nơi chốn, thời tiết và mua sắm."
+status: published
+
+units:
+  - slug: chuong-01-about-me
+    title: "About Me – Về bản thân"
+    summary: "Quốc tịch, sinh nhật."
+    lessons:
+      - bai-01-nationalities
+      - bai-02-birthday
+
+  - slug: chuong-02-daily
+    title: "Daily Routines – Hằng ngày"
+    summary: "Sinh hoạt hằng ngày, thời gian."
+    lessons:
+      - bai-01-routines
+      - bai-02-subjects
+
+  - slug: chuong-03-hobbies-jobs
+    title: "Hobbies and Jobs – Sở thích và nghề nghiệp"
+    summary: "Sở thích và công việc."
+    lessons:
+      - bai-01-hobbies
+      - bai-02-jobs
+
+  - slug: chuong-04-places-weather
+    title: "Places and Weather – Nơi chốn và thời tiết"
+    summary: "Địa điểm, thời tiết, mua sắm."
+    lessons:
+      - bai-01-places
+      - bai-02-weather
+      - bai-03-shopping
+

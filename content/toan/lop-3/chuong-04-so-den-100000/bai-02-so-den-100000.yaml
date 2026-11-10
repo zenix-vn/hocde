@@ -1,0 +1,75 @@
+schema: 1
+slug: toan3-so-den-100000
+title: "Các số trong phạm vi 100 000"
+summary: "Số có năm chữ số: đọc, viết, so sánh, làm tròn."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **45 678** gồm 4 chục nghìn, 5 nghìn, 6 trăm, 7 chục, 8 đơn vị.
+
+      Đọc: bốn mươi lăm nghìn sáu trăm bảy mươi tám.
+
+      **Làm tròn đến hàng nghìn:** 45 678 ≈ 46 000 (vì hàng trăm là 6 ≥ 5).
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "hang-so"
+    prompt: "Số 82 391 có chữ số hàng chục nghìn là _"
+    answer: { accept: ["8"] }
+    hint: "Chữ số đầu tiên."
+    explanation: "8."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Chọn dấu đúng: 61 250 _ 61 205"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "So hàng chục."
+    explanation: "61 250 > 61 205."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lam-tron"
+    prompt: "Làm tròn 3 740 đến hàng nghìn được: _"
+    answer: { accept: ["4000"] }
+    hint: "Hàng trăm là 7 ≥ 5."
+    explanation: "4000."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lam-tron"
+    prompt: "Làm tròn 25 340 đến hàng nghìn được: _"
+    answer: { accept: ["25000"] }
+    hint: "Hàng trăm là 3 < 5."
+    explanation: "25 000."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lon-nhat"
+    prompt: "Số lớn nhất có năm chữ số là _"
+    answer: { accept: ["99999"] }
+    hint: "Năm chữ số 9."
+    explanation: "99 999."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Các số trong phạm vi 100 000**."
+    say: "Em đã học xong bài Các số trong phạm vi 100 000."

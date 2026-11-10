@@ -1,0 +1,83 @@
+schema: 1
+slug: toan3-chia-so-co-hai-chu-so
+title: "Chia số có hai chữ số cho số có một chữ số"
+summary: "Chia hết và chia có dư."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **84 : 4 = ?** 8 : 4 = 2; 4 : 4 = 1. Vậy 84 : 4 = **21**.
+
+      **17 : 5 = 3 (dư 2)** vì 5 × 3 = 15 và 17 − 15 = 2.
+
+      Số dư luôn **bé hơn** số chia.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia-2-chu-so"
+    prompt: "96 : 3 = ?"
+    options:
+      - { id: "a", text: "32" }
+      - { id: "b", text: "42" }
+      - { id: "c", text: "30" }
+    answer: { correct: ["a"] }
+    hint: "9 : 3 = 3, 6 : 3 = 2."
+    explanation: "96 : 3 = 32."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia-2-chu-so"
+    prompt: "75 : 5 = ?"
+    options:
+      - { id: "a", text: "16" }
+      - { id: "b", text: "10" }
+      - { id: "c", text: "15" }
+    answer: { correct: ["c"] }
+    hint: "Nhẩm 5 × 15."
+    explanation: "75 : 5 = 15."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-du"
+    prompt: "23 : 5 = 4 (dư _)"
+    answer: { accept: ["3"] }
+    hint: "5 × 4 = 20, 23 − 20."
+    explanation: "Số dư là 3."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia-du"
+    prompt: "38 : 6 = 6 (dư _)"
+    answer: { accept: ["2"] }
+    hint: "6 × 6 = 36, 38 − 36."
+    explanation: "Số dư là 2."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia-du"
+    prompt: "Phép chia cho 4 có thể có số dư nào?"
+    options:
+      - { id: "a", text: "5" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["b"] }
+    hint: "Số dư bé hơn số chia."
+    explanation: "Số dư bé hơn 4, nên có thể là 3."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Chia số có hai chữ số cho số có một chữ số**."
+    say: "Em đã học xong bài Chia số có hai chữ số cho số có một chữ số."

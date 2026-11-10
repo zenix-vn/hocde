@@ -1,0 +1,47 @@
+# Tiếng Việt 3 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-viet
+grade: 3
+slug: tieng-viet-lop-3
+title: Tiếng Việt 3
+summary: "Biện pháp so sánh, nhân hóa, các kiểu câu, dấu câu, chính tả, đọc hiểu và viết đoạn văn."
+status: published
+
+units:
+  - slug: chuong-01-tu-ngu
+    title: "Từ ngữ và biện pháp tu từ"
+    summary: "Từ chỉ sự vật, hoạt động, đặc điểm; so sánh; nhân hóa."
+    lessons:
+      - bai-01-on-tu-loai
+      - bai-02-so-sanh
+      - bai-03-nhan-hoa
+
+  - slug: chuong-02-cau-va-dau-cau
+    title: "Câu và dấu câu"
+    summary: "Ai là gì, ai làm gì, ai thế nào; câu khiến; dấu hai chấm, ngoặc kép, gạch ngang."
+    lessons:
+      - bai-01-cac-kieu-cau
+      - bai-02-cau-khien-cau-cam
+      - bai-03-dau-hai-cham-ngoac-kep
+
+  - slug: chuong-03-chinh-ta
+    title: "Chính tả"
+    summary: "ch/tr, s/x, r/d/gi, vần dễ lẫn."
+    lessons:
+      - bai-01-ch-tr-s-x
+      - bai-02-r-d-gi-l-n
+      - bai-03-van-de-lan
+
+  - slug: chuong-04-doc-hieu
+    title: "Đọc hiểu"
+    summary: "Đọc đoạn văn ngắn và trả lời câu hỏi."
+    lessons:
+      - bai-01-ngoi-nha-cua-em
+      - bai-02-chu-voi-con
+
+  - slug: chuong-05-viet
+    title: "Luyện viết"
+    summary: "Sắp xếp câu thành đoạn và mở rộng vốn từ."
+    lessons:
+      - bai-01-sap-xep-cau-thanh-doan
+

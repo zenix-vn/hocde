@@ -1,0 +1,98 @@
+schema: 1
+slug: anh3-food-and-drink
+title: "Food and drink"
+summary: "Gọi món: I'd like some milk."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé muốn ăn gì, uống gì?"
+    say: [{"t":"Bé muốn ăn gì, uống gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "milk", emoji: "🥛", meaning: "sữa" }, { word: "juice", emoji: "🧃", meaning: "nước ép" }, { word: "rice", emoji: "🍚", meaning: "cơm" }, { word: "noodles", emoji: "🍜", meaning: "mì, phở" }, { word: "chicken", emoji: "🍗", meaning: "thịt gà" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I'd like some milk, please.** Cho mình xin ít sữa.
+
+      **Would you like some rice? Yes, please. / No, thanks.**
+    say: [{"t":"I'd like some milk, please.","l":"en"},{"t":"Would you like some rice?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-noodles"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "noodles", lang: "en" }
+    options:
+      - { id: "a", text: "🍚", say: "rice", lang: "en" }
+      - { id: "b", text: "🍗", say: "chicken", lang: "en" }
+      - { id: "c", text: "🍜", say: "noodles", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là noodles."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Mời bạn ăn cơm. Bạn muốn ăn:
+
+      **Would you like some rice?**
+    options:
+      - { id: "a", text: "It's Monday." }
+      - { id: "b", text: "Yes, please." }
+      - { id: "c", text: "I'm nine." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Đồng ý lịch sự."
+    option_lang: "en"
+    say: [{"t":"Mời bạn ăn cơm. Bạn muốn ăn:","l":"vi"},{"t":"Would you like some rice?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-milk"
+    prompt: |
+      Điền: Cho mình xin ít sữa.
+
+      **I'd like some _ , please.**
+    answer: { accept: ["milk"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "milk."
+    say: [{"t":"Điền: Cho mình xin ít sữa.","l":"vi"},{"t":"I'd like some blank , please.","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlike", text: "like" }
+      - { id: "xId", text: "I'd" }
+      - { id: "xsome", text: "some" }
+      - { id: "xjuice", text: "juice" }
+    answer: { sequence: ["xId", "xlike", "xsome", "xjuice"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I'd like some juice."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Food and drink**."
+    say: "Em đã học xong bài Food and drink."

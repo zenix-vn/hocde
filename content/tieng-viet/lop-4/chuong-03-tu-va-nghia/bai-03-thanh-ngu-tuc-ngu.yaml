@@ -1,0 +1,65 @@
+schema: 1
+slug: tv4-thanh-ngu-tuc-ngu
+title: "Thành ngữ, tục ngữ"
+summary: "Hiểu nghĩa một số thành ngữ, tục ngữ quen thuộc."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Ăn quả nhớ kẻ trồng cây:** biết ơn người đã giúp mình.
+
+      **Uống nước nhớ nguồn:** nhớ ơn những người tạo ra thành quả.
+
+      **Chậm như rùa:** rất chậm.
+
+      **Đoàn kết là sức mạnh:** cùng nhau thì làm được việc lớn.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "thanh-ngu"
+    prompt: "\"Uống nước nhớ nguồn\" khuyên ta:"
+    options:
+      - { id: "a", text: "uống nhiều nước" }
+      - { id: "b", text: "đi tìm suối" }
+      - { id: "c", text: "biết ơn" }
+    answer: { correct: ["c"] }
+    hint: "Nhớ ơn."
+    explanation: "Biết ơn."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "thanh-ngu"
+    prompt: "\"Chậm như rùa\" nói về người:"
+    options:
+      - { id: "a", text: "làm việc rất chậm" }
+      - { id: "b", text: "rất nhanh" }
+      - { id: "c", text: "rất khỏe" }
+    answer: { correct: ["a"] }
+    hint: "Rùa đi chậm."
+    explanation: "Rất chậm."
+
+  - id: b4
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "thanh-ngu"
+    prompt: "Nối thành ngữ với nghĩa."
+    pairs:
+      - { left: "Đoàn kết là sức mạnh", right: "cùng nhau làm việc lớn" }
+      - { left: "Ăn quả nhớ kẻ trồng cây", right: "biết ơn" }
+      - { left: "Nhanh như sóc", right: "rất nhanh nhẹn" }
+    answer: { pairs: [["Đoàn kết là sức mạnh", "cùng nhau làm việc lớn"], ["Ăn quả nhớ kẻ trồng cây", "biết ơn"], ["Nhanh như sóc", "rất nhanh nhẹn"]] }
+    hint: "Nghĩ hình ảnh."
+    explanation: "Mỗi câu có một ý."
+
+  - id: b5
+    type: "summary"
+    markdown: "Em đã học xong bài **Thành ngữ, tục ngữ**."
+    say: "Em đã học xong bài Thành ngữ, tục ngữ."

@@ -1,0 +1,71 @@
+schema: 1
+slug: tv3-on-tu-chi-su-vat-hoat-dong-dac-diem
+title: "Ôn từ chỉ sự vật, hoạt động, đặc điểm"
+summary: "Phân loại từ theo nghĩa."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      - **Sự vật:** học sinh, cây bàng, bàn ghế.
+      - **Hoạt động:** đọc, chạy, tưới.
+      - **Đặc điểm:** cao, xanh, chăm chỉ.
+
+  - id: b2
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "Nối từ với loại từ."
+    pairs:
+      - { left: "con trâu", right: "chỉ sự vật" }
+      - { left: "gặt lúa", right: "chỉ hoạt động" }
+      - { left: "vàng óng", right: "chỉ đặc điểm" }
+    answer: { pairs: [["con trâu", "chỉ sự vật"], ["gặt lúa", "chỉ hoạt động"], ["vàng óng", "chỉ đặc điểm"]] }
+    hint: "Hỏi: là gì? làm gì? thế nào?"
+    explanation: "Con trâu – sự vật; gặt lúa – hoạt động; vàng óng – đặc điểm."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "Trong câu \"Cánh đồng lúa chín vàng.\", từ chỉ đặc điểm là:"
+    options:
+      - { id: "a", text: "lúa" }
+      - { id: "b", text: "cánh đồng" }
+      - { id: "c", text: "chín vàng" }
+    answer: { correct: ["c"] }
+    hint: "Lúa như thế nào?"
+    explanation: "\"chín vàng\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "Từ nào chỉ hoạt động?"
+    options:
+      - { id: "a", text: "bàn" }
+      - { id: "b", text: "xinh đẹp" }
+      - { id: "c", text: "tưới" }
+    answer: { correct: ["c"] }
+    hint: "Làm gì?"
+    explanation: "\"tưới\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "Trong câu \"Bé hát rất hay.\", từ chỉ hoạt động là: _"
+    answer: { accept: ["hát"] }
+    hint: "Bé làm gì?"
+    explanation: "\"hát\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Ôn từ chỉ sự vật, hoạt động, đặc điểm**."
+    say: "Em đã học xong bài Ôn từ chỉ sự vật, hoạt động, đặc điểm."

@@ -1,0 +1,80 @@
+schema: 1
+slug: toan4-so-sanh-lam-tron-so
+title: "So sánh và làm tròn số"
+summary: "So sánh các số nhiều chữ số; làm tròn đến hàng chục, trăm, nghìn."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **So sánh:** số nào có nhiều chữ số hơn thì lớn hơn. Cùng số chữ số, so từng hàng từ trái sang.
+
+      **Làm tròn:** chữ số bên phải **≥ 5** thì làm tròn lên, **< 5** thì giữ nguyên.
+
+      7 352 làm tròn đến hàng trăm là 7 400.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh"
+    prompt: "Chọn dấu đúng: 98 765 _ 100 000"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["b"] }
+    hint: "100 000 có 6 chữ số."
+    explanation: "98 765 < 100 000."
+
+  - id: b3
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep"
+    prompt: "Xếp từ lớn đến bé."
+    options:
+      - { id: "x45678", text: "45678" }
+      - { id: "x45687", text: "45687" }
+      - { id: "x45768", text: "45768" }
+      - { id: "x45876", text: "45876" }
+    answer: { sequence: ["x45876", "x45768", "x45687", "x45678"] }
+    hint: "So hàng trăm trước."
+    explanation: "45 876, 45 768, 45 687, 45 678."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lam-tron"
+    prompt: "Làm tròn 4 628 đến hàng trăm: _"
+    answer: { accept: ["4600"] }
+    hint: "Chữ số hàng chục là 2."
+    explanation: "4600."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lam-tron"
+    prompt: "Làm tròn 15 780 đến hàng nghìn: _"
+    answer: { accept: ["16000"] }
+    hint: "Hàng trăm là 7 ≥ 5."
+    explanation: "16 000."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "lam-tron"
+    prompt: "Làm tròn 349 đến hàng chục: _"
+    answer: { accept: ["350"] }
+    hint: "Chữ số hàng đơn vị là 9."
+    explanation: "350."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **So sánh và làm tròn số**."
+    say: "Em đã học xong bài So sánh và làm tròn số."

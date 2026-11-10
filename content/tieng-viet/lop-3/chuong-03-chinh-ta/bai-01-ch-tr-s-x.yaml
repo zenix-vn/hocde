@@ -1,0 +1,73 @@
+schema: 1
+slug: tv3-chinh-ta-ch-tr-s-x
+title: "Chính tả: ch/tr, s/x"
+summary: "Phân biệt ch/tr và s/x."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **ch:** chăm chỉ, chuyền cành · **tr:** trồng trọt, trăng
+
+      **s:** sáng sủa, sương · **x:** xanh xao, xuống
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Điền ch hay tr: _ăng sáng"
+    answer: { accept: ["tr"] }
+    hint: "Soi sáng ban đêm."
+    explanation: "trăng."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Điền ch hay tr: _uyền cành"
+    answer: { accept: ["ch"] }
+    hint: "Chim chuyền."
+    explanation: "chuyền."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "s-x"
+    prompt: "Điền s hay x: _ương mù"
+    answer: { accept: ["s"] }
+    hint: "Hơi nước buổi sớm."
+    explanation: "sương."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "s-x"
+    prompt: "Điền s hay x: _anh xao"
+    answer: { accept: ["x"] }
+    hint: "Màu da ốm yếu."
+    explanation: "xanh xao."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ch-tr"
+    prompt: "Từ đúng chính tả:"
+    options:
+      - { id: "a", text: "trăm chỉ" }
+      - { id: "b", text: "chăm trỉ" }
+      - { id: "c", text: "chăm chỉ" }
+    answer: { correct: ["c"] }
+    hint: "Siêng năng."
+    explanation: "chăm chỉ."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Chính tả: ch/tr, s/x**."
+    say: "Em đã học xong bài Chính tả: ch/tr, s/x."

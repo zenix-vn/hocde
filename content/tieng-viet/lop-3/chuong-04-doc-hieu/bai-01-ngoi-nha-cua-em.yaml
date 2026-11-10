@@ -1,0 +1,89 @@
+schema: 1
+slug: tv3-doc-hieu-ngoi-nha
+title: "Đọc hiểu: Ngôi nhà của em"
+summary: "Đọc đoạn văn tả ngôi nhà."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Ngôi nhà của em**
+
+      Nhà em nằm cuối một con ngõ nhỏ. Mái ngói đỏ au, tường quét vôi trắng. Trước sân có giàn hoa giấy nở rực rỡ. Mỗi chiều, cả nhà ngồi quanh mâm cơm, nói chuyện rôm rả. Em yêu ngôi nhà vì ở đó có bố mẹ và tiếng cười.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Nhà bạn nhỏ nằm ở đâu?"
+    options:
+      - { id: "a", text: "Bên bờ sông" }
+      - { id: "b", text: "Cuối một con ngõ nhỏ" }
+      - { id: "c", text: "Giữa phố lớn" }
+    answer: { correct: ["b"] }
+    hint: "Câu đầu."
+    explanation: "Cuối ngõ nhỏ."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Mái nhà có màu gì?"
+    options:
+      - { id: "a", text: "Đỏ au" }
+      - { id: "b", text: "Xanh" }
+      - { id: "c", text: "Vàng" }
+    answer: { correct: ["a"] }
+    hint: "Mái ngói."
+    explanation: "Đỏ au."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Trước sân có gì?"
+    options:
+      - { id: "a", text: "Giàn hoa giấy" }
+      - { id: "b", text: "Cây cau" }
+      - { id: "c", text: "Ao cá" }
+    answer: { correct: ["a"] }
+    hint: "Câu thứ ba."
+    explanation: "Giàn hoa giấy."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Vì sao bạn nhỏ yêu ngôi nhà?"
+    options:
+      - { id: "a", text: "Vì nhà rất to" }
+      - { id: "b", text: "Vì nhà gần trường" }
+      - { id: "c", text: "Vì có bố mẹ và tiếng cười" }
+    answer: { correct: ["c"] }
+    hint: "Câu cuối."
+    explanation: "Vì có bố mẹ và tiếng cười."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Hình ảnh so sánh/nhân hóa nào xuất hiện trong bài?"
+    options:
+      - { id: "a", text: "Mái ngói đỏ au" }
+      - { id: "b", text: "Hoa giấy nở rực rỡ" }
+      - { id: "c", text: "Không có" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ từng câu."
+    explanation: "Bài tả thực, không dùng so sánh hay nhân hóa."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Ngôi nhà của em**."
+    say: "Em đã học xong bài Đọc hiểu: Ngôi nhà của em."

@@ -1,0 +1,78 @@
+schema: 1
+slug: toan5-so-sanh-so-thap-phan
+title: "So sánh số thập phân"
+summary: "So sánh hai số thập phân."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      So sánh **phần nguyên** trước. Nếu bằng nhau, so phần thập phân từng hàng từ trái sang.
+
+      8,6 > 7,9 (8 > 7)
+
+      5,47 < 5,5 vì 5,47 < 5,50.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-td"
+    prompt: "Chọn dấu đúng: 6,3 _ 6,29"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "6,30 và 6,29."
+    explanation: "6,3 > 6,29."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-td"
+    prompt: "Chọn dấu đúng: 0,5 _ 0,50"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["c"] }
+    hint: "Thêm chữ số 0 ở cuối không đổi giá trị."
+    explanation: "Bằng nhau."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-td"
+    prompt: "Số lớn nhất: 4,09; 4,9; 4,19?"
+    options:
+      - { id: "a", text: "4,09" }
+      - { id: "b", text: "4,9" }
+      - { id: "c", text: "4,19" }
+    answer: { correct: ["b"] }
+    hint: "4,90 lớn nhất."
+    explanation: "4,9."
+
+  - id: b5
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep"
+    prompt: "Xếp từ bé đến lớn."
+    options:
+      - { id: "x35", text: "3,5" }
+      - { id: "x305", text: "3,05" }
+      - { id: "x345", text: "3,45" }
+      - { id: "x354", text: "3,54" }
+    answer: { sequence: ["x305", "x345", "x35", "x354"] }
+    hint: "Viết thành 3,50 và 3,05..."
+    explanation: "3,05 < 3,45 < 3,5 < 3,54."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **So sánh số thập phân**."
+    say: "Em đã học xong bài So sánh số thập phân."

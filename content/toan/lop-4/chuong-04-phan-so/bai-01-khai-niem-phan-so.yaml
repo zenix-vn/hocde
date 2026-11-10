@@ -1,0 +1,71 @@
+schema: 1
+slug: toan4-khai-niem-phan-so
+title: "Khái niệm phân số"
+summary: "Đọc, viết phân số; tử số và mẫu số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Chia hình thành 4 phần bằng nhau, lấy 3 phần: ta có phân số **3/4** (ba phần tư).
+
+      **3** là **tử số** (số phần lấy), **4** là **mẫu số** (số phần bằng nhau).
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-so"
+    prompt: "Phân số 5/8 có tử số là:"
+    options:
+      - { id: "a", text: "5" }
+      - { id: "b", text: "8" }
+      - { id: "c", text: "13" }
+    answer: { correct: ["a"] }
+    hint: "Số ở trên."
+    explanation: "5."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-so"
+    prompt: "Phân số 5/8 có mẫu số là:"
+    options:
+      - { id: "a", text: "5" }
+      - { id: "b", text: "8" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["b"] }
+    hint: "Số ở dưới."
+    explanation: "8."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-so"
+    prompt: "Tô màu 2 trong 6 phần bằng nhau, phân số chỉ phần tô màu là:"
+    options:
+      - { id: "a", text: "2/6" }
+      - { id: "b", text: "6/2" }
+      - { id: "c", text: "2/4" }
+    answer: { correct: ["a"] }
+    hint: "Tử là phần tô, mẫu là tổng số phần."
+    explanation: "2/6."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "phan-so"
+    prompt: "Có 10 viên bi, 3 viên màu đỏ. Phân số chỉ số bi đỏ có mẫu số là _"
+    answer: { accept: ["10"] }
+    hint: "Tổng số viên bi."
+    explanation: "10."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Khái niệm phân số**."
+    say: "Em đã học xong bài Khái niệm phân số."

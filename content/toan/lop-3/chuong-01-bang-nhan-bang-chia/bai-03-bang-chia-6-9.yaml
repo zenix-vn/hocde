@@ -1,0 +1,109 @@
+schema: 1
+slug: toan3-bang-chia-6-9
+title: "Bảng chia 6, 7, 8, 9"
+summary: "Dùng bảng nhân để chia cho 6, 7, 8, 9."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Muốn chia, em nhớ lại bảng nhân:
+
+      42 : 6 = 7 vì 6 × 7 = 42
+
+      56 : 8 = 7 vì 8 × 7 = 56
+
+      81 : 9 = 9 vì 9 × 9 = 81
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "42 : 6 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "7" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "6 nhân mấy bằng 42?"
+    explanation: "42 : 6 = 7."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "56 : 7 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["a"] }
+    hint: "7 nhân mấy bằng 56?"
+    explanation: "56 : 7 = 8."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "72 : 8 = ?"
+    options:
+      - { id: "a", text: "10" }
+      - { id: "b", text: "7" }
+      - { id: "c", text: "9" }
+    answer: { correct: ["c"] }
+    hint: "8 nhân mấy bằng 72?"
+    explanation: "72 : 8 = 9."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "63 : 9 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "7" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "9 nhân mấy bằng 63?"
+    explanation: "63 : 9 = 7."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia"
+    prompt: "54 : 6 = _"
+    answer: { accept: ["9"] }
+    hint: "6 nhân mấy bằng 54?"
+    explanation: "54 : 6 = 9."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia"
+    prompt: "49 : 7 = _"
+    answer: { accept: ["7"] }
+    hint: "7 nhân mấy bằng 49?"
+    explanation: "49 : 7 = 7."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Có 48 quả cam chia đều vào 6 hộp. Mỗi hộp có _ quả."
+    answer: { accept: ["8"] }
+    hint: "48 : 6."
+    explanation: "48 : 6 = 8."
+
+  - id: b9
+    type: "summary"
+    markdown: "Em đã học xong bài **Bảng chia 6, 7, 8, 9**."
+    say: "Em đã học xong bài Bảng chia 6, 7, 8, 9."

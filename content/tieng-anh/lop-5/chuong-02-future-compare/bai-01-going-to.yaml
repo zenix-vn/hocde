@@ -1,0 +1,84 @@
+schema: 1
+slug: anh5-future-going-to
+title: "I'm going to…"
+summary: "Dự định tương lai: be going to."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cuối tuần này bé định làm gì?"
+    say: [{"t":"Cuối tuần này bé định làm gì?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "visit", emoji: "🏛️", meaning: "thăm" }, { word: "travel", emoji: "✈️", meaning: "du lịch" }, { word: "have a picnic", emoji: "🧺", meaning: "đi dã ngoại" }, { word: "next week", emoji: "📅", meaning: "tuần sau" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I'm going to visit my grandparents next week.**
+
+      **What are you going to do? I'm going to have a picnic.**
+    say: [{"t":"What are you going to do this weekend?","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn định đi dã ngoại. Trả lời:
+
+      **What are you going to do this weekend?**
+    options:
+      - { id: "a", text: "I went to have a picnic." }
+      - { id: "b", text: "I going have a picnic." }
+      - { id: "c", text: "I'm going to have a picnic." }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "be going to + V."
+    option_lang: "en"
+    say: [{"t":"Bạn định đi dã ngoại. Trả lời:","l":"vi"},{"t":"What are you going to do this weekend?","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-travel"
+    prompt: |
+      Điền: Mình sẽ đi du lịch.
+
+      **I'm going to _ . (travel)**
+    answer: { accept: ["travel"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "travel."
+    say: [{"t":"Điền: Mình sẽ đi du lịch.","l":"vi"},{"t":"I'm going to blank . (travel)","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xgoing", text: "going" }
+      - { id: "xIm", text: "I'm" }
+      - { id: "xto", text: "to" }
+      - { id: "xvisit", text: "visit" }
+      - { id: "xHue", text: "Hue" }
+    answer: { sequence: ["xIm", "xgoing", "xto", "xvisit", "xHue"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I'm going to visit Hue."
+    option_lang: "en"
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **I'm going to…**."
+    say: "Em đã học xong bài I'm going to…."

@@ -1,0 +1,75 @@
+schema: 1
+slug: tv5-doc-hieu-con-song-que-huong
+title: "Đọc hiểu: Con sông quê hương"
+summary: "Đọc đoạn văn tả con sông."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Con sông quê hương**
+
+      Con sông chảy qua làng em hiền hòa như một dải lụa mềm. Buổi sáng, mặt sông phủ làn sương mỏng. Trưa đến, nước sông xanh trong, in bóng mây trời. Chiều về, những chiếc thuyền chài nhẹ nhàng lướt trên sóng. Dù đi xa đến đâu, em cũng không quên hình ảnh dòng sông thân yêu ấy.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Con sông được so sánh với:"
+    options:
+      - { id: "a", text: "tấm gương" }
+      - { id: "b", text: "dải lụa mềm" }
+      - { id: "c", text: "con đường" }
+    answer: { correct: ["b"] }
+    hint: "Câu đầu."
+    explanation: "Dải lụa mềm."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Buổi sáng, mặt sông có gì?"
+    options:
+      - { id: "a", text: "Nhiều thuyền" }
+      - { id: "b", text: "Sóng lớn" }
+      - { id: "c", text: "Làn sương mỏng" }
+    answer: { correct: ["c"] }
+    hint: "Câu thứ hai."
+    explanation: "Sương mỏng."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Chiều về, trên sông có gì?"
+    options:
+      - { id: "a", text: "Cầu mới" }
+      - { id: "b", text: "Tàu lớn" }
+      - { id: "c", text: "Thuyền chài lướt nhẹ" }
+    answer: { correct: ["c"] }
+    hint: "Câu thứ tư."
+    explanation: "Thuyền chài."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Câu cuối thể hiện tình cảm của tác giả với dòng sông là:"
+    options:
+      - { id: "a", text: "sợ hãi" }
+      - { id: "b", text: "xa lạ" }
+      - { id: "c", text: "yêu mến, nhớ" }
+    answer: { correct: ["c"] }
+    hint: "Không quên."
+    explanation: "Yêu mến, nhớ."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Con sông quê hương**."
+    say: "Em đã học xong bài Đọc hiểu: Con sông quê hương."

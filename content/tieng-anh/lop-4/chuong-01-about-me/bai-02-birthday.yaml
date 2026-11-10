@@ -1,0 +1,94 @@
+schema: 1
+slug: anh4-months-and-birthday
+title: "Months and birthday"
+summary: "When's your birthday? It's in May."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Sinh nhật của bé vào tháng mấy?"
+    say: [{"t":"Sinh nhật của bé vào tháng mấy?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "January", emoji: "1️⃣", meaning: "tháng 1" }, { word: "March", emoji: "3️⃣", meaning: "tháng 3" }, { word: "May", emoji: "5️⃣", meaning: "tháng 5" }, { word: "August", emoji: "8️⃣", meaning: "tháng 8" }, { word: "December", emoji: "🎄", meaning: "tháng 12" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**When's your birthday? It's in May.**"
+    say: [{"t":"When's your birthday?","l":"en"},{"t":"It's in May.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-august"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "August", lang: "en" }
+    options:
+      - { id: "a", text: "January", say: "January", lang: "en" }
+      - { id: "b", text: "March", say: "March", lang: "en" }
+      - { id: "c", text: "August", say: "August", lang: "en" }
+    answer: { correct: ["c"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là August."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Sinh nhật vào tháng 3. Trả lời:
+
+      **When's your birthday?**
+    options:
+      - { id: "a", text: "I'm nine." }
+      - { id: "b", text: "It's in March." }
+      - { id: "c", text: "It's Monday." }
+    answer: { correct: ["b"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "in + tháng."
+    option_lang: "en"
+    say: [{"t":"Sinh nhật vào tháng 3. Trả lời:","l":"vi"},{"t":"When's your birthday?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-december"
+    prompt: |
+      Điền: Sinh nhật mình vào tháng 12.
+
+      **My birthday is in _ .**
+    answer: { accept: ["December"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "December."
+    say: [{"t":"Điền: Sinh nhật mình vào tháng 12.","l":"vi"},{"t":"My birthday is in blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xbirthday", text: "birthday" }
+      - { id: "xyour", text: "your" }
+      - { id: "xWhens", text: "When's" }
+    answer: { sequence: ["xWhens", "xyour", "xbirthday"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "When's your birthday?"
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Months and birthday**."
+    say: "Em đã học xong bài Months and birthday."

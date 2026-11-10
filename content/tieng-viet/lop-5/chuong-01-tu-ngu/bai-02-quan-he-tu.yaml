@@ -1,0 +1,74 @@
+schema: 1
+slug: tv5-quan-he-tu
+title: "Quan hệ từ"
+summary: "Nhận biết quan hệ từ nối các từ, các câu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Quan hệ từ** nối các từ trong câu hoặc nối các câu, thể hiện mối quan hệ giữa chúng.
+
+      - **và, với, hay, hoặc** (quan hệ liệt kê, lựa chọn)
+      - **nhưng, mà** (tương phản)
+      - **vì, nên, do, bởi** (nguyên nhân – kết quả)
+      - **nếu, thì** (điều kiện – kết quả)
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "quan-he-tu"
+    prompt: "Quan hệ từ trong câu \"Trời mưa nhưng em vẫn đi học.\" là:"
+    options:
+      - { id: "a", text: "đi học" }
+      - { id: "b", text: "nhưng" }
+      - { id: "c", text: "mưa" }
+    answer: { correct: ["b"] }
+    hint: "Chỉ sự tương phản."
+    explanation: "\"nhưng\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quan-he-tu"
+    prompt: "Điền quan hệ từ: _ trời mưa to nên lớp học muộn. (Vì / Tuy)"
+    answer: { accept: ["Vì", "vì"] }
+    hint: "Nguyên nhân."
+    explanation: "Vì."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "quan-he-tu"
+    prompt: "Cặp quan hệ từ chỉ điều kiện – kết quả:"
+    options:
+      - { id: "a", text: "tuy … nhưng" }
+      - { id: "b", text: "nếu … thì" }
+      - { id: "c", text: "vì … nên" }
+    answer: { correct: ["b"] }
+    hint: "Giả sử."
+    explanation: "nếu … thì."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "quan-he-tu"
+    prompt: "Cặp quan hệ từ chỉ nguyên nhân – kết quả:"
+    options:
+      - { id: "a", text: "tuy … nhưng" }
+      - { id: "b", text: "vì … nên" }
+      - { id: "c", text: "nếu … thì" }
+    answer: { correct: ["b"] }
+    hint: "Do đâu mà."
+    explanation: "vì … nên."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Quan hệ từ**."
+    say: "Em đã học xong bài Quan hệ từ."

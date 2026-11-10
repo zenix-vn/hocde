@@ -1,0 +1,79 @@
+schema: 1
+slug: toan3-cong-tru-pham-vi-100000
+title: "Cộng, trừ trong phạm vi 100 000"
+summary: "Cộng, trừ các số có nhiều chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      Đặt tính thẳng cột, cộng hoặc trừ **từ phải sang trái**, nhớ khi cần.
+
+      **3 456 + 2 789 = 6 245**
+
+      **9 000 − 4 275 = 4 725**
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong"
+    prompt: "4 215 + 3 678 = ?"
+    options:
+      - { id: "a", text: "7903" }
+      - { id: "b", text: "7893" }
+      - { id: "c", text: "7793" }
+    answer: { correct: ["b"] }
+    hint: "Cộng từ hàng đơn vị."
+    explanation: "4215 + 3678 = 7893."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru"
+    prompt: "7 400 − 2 650 = ?"
+    options:
+      - { id: "a", text: "4750" }
+      - { id: "b", text: "4850" }
+      - { id: "c", text: "4740" }
+    answer: { correct: ["a"] }
+    hint: "Mượn khi cần."
+    explanation: "7400 − 2650 = 4750."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong"
+    prompt: "25 000 + 18 500 = _"
+    answer: { accept: ["43500"] }
+    hint: "Cộng hàng nghìn rồi hàng trăm."
+    explanation: "43 500."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru"
+    prompt: "60 000 − 24 000 = _"
+    answer: { accept: ["36000"] }
+    hint: "60 − 24 = 36 nghìn."
+    explanation: "36 000."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Trường có 1 245 học sinh nam và 1 308 học sinh nữ. Trường có tất cả _ học sinh."
+    answer: { accept: ["2553"] }
+    hint: "1245 + 1308."
+    explanation: "2553."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Cộng, trừ trong phạm vi 100 000**."
+    say: "Em đã học xong bài Cộng, trừ trong phạm vi 100 000."

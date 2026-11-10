@@ -1,0 +1,79 @@
+schema: 1
+slug: toan4-nhan-nhieu-chu-so
+title: "Nhân với số có nhiều chữ số"
+summary: "Nhân với 10, 100, 1000 và với số có hai chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Nhân với 10, 100, 1000:** thêm 1, 2, 3 chữ số 0.
+
+      35 × 100 = 3 500
+
+      **Nhân với số có hai chữ số:** 24 × 13 = 24 × 10 + 24 × 3 = 240 + 72 = **312**.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-10-100"
+    prompt: "47 × 100 = _"
+    answer: { accept: ["4700"] }
+    hint: "Thêm hai chữ số 0."
+    explanation: "4700."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "nhan-10-100"
+    prompt: "60 × 1000 = _"
+    answer: { accept: ["60000"] }
+    hint: "Thêm ba chữ số 0."
+    explanation: "60 000."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "24 × 13 = ?"
+    options:
+      - { id: "a", text: "322" }
+      - { id: "b", text: "312" }
+      - { id: "c", text: "300" }
+    answer: { correct: ["b"] }
+    hint: "24 × 10 + 24 × 3."
+    explanation: "312."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-2-chu-so"
+    prompt: "35 × 21 = ?"
+    options:
+      - { id: "a", text: "735" }
+      - { id: "b", text: "745" }
+      - { id: "c", text: "700" }
+    answer: { correct: ["a"] }
+    hint: "35 × 20 + 35."
+    explanation: "735."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Mỗi thùng có 36 chai. 25 thùng có _ chai."
+    answer: { accept: ["900"] }
+    hint: "36 × 25."
+    explanation: "36 × 25 = 900."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Nhân với số có nhiều chữ số**."
+    say: "Em đã học xong bài Nhân với số có nhiều chữ số."

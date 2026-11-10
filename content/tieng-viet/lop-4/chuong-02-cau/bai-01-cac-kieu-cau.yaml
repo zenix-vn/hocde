@@ -1,0 +1,76 @@
+schema: 1
+slug: tv4-cac-kieu-cau
+title: "Câu kể, câu hỏi, câu khiến, câu cảm"
+summary: "Phân biệt bốn kiểu câu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      - **Câu kể:** kể, tả, giới thiệu (cuối câu: dấu chấm).
+      - **Câu hỏi:** dùng để hỏi (dấu chấm hỏi).
+      - **Câu khiến:** nhờ, yêu cầu (dấu chấm hoặc dấu chấm than).
+      - **Câu cảm:** bày tỏ cảm xúc (dấu chấm than).
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Bạn ăn cơm chưa?\" là câu:"
+    options:
+      - { id: "a", text: "kể" }
+      - { id: "b", text: "hỏi" }
+      - { id: "c", text: "cảm" }
+    answer: { correct: ["b"] }
+    hint: "Dùng để hỏi."
+    explanation: "Câu hỏi."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Các em hãy trật tự!\" là câu:"
+    options:
+      - { id: "a", text: "hỏi" }
+      - { id: "b", text: "kể" }
+      - { id: "c", text: "khiến" }
+    answer: { correct: ["c"] }
+    hint: "Yêu cầu."
+    explanation: "Câu khiến."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Cảnh biển đẹp biết bao!\" là câu:"
+    options:
+      - { id: "a", text: "khiến" }
+      - { id: "b", text: "cảm" }
+      - { id: "c", text: "hỏi" }
+    answer: { correct: ["b"] }
+    hint: "Bày tỏ cảm xúc."
+    explanation: "Câu cảm."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "kieu-cau"
+    prompt: "\"Em học lớp Bốn.\" là câu:"
+    options:
+      - { id: "a", text: "hỏi" }
+      - { id: "b", text: "khiến" }
+      - { id: "c", text: "kể" }
+    answer: { correct: ["c"] }
+    hint: "Giới thiệu."
+    explanation: "Câu kể."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Câu kể, câu hỏi, câu khiến, câu cảm**."
+    say: "Em đã học xong bài Câu kể, câu hỏi, câu khiến, câu cảm."

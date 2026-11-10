@@ -1,0 +1,71 @@
+schema: 1
+slug: tv4-tinh-tu
+title: "Tính từ"
+summary: "Tính từ chỉ đặc điểm, tính chất."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Tính từ** là từ miêu tả đặc điểm, tính chất của sự vật, hoạt động.
+
+      - **cao, thấp, nhanh, chậm, xanh, đỏ, dũng cảm, hiền lành**
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tinh-tu"
+    prompt: "Từ nào là tính từ?"
+    options:
+      - { id: "a", text: "dũng cảm" }
+      - { id: "b", text: "chạy" }
+      - { id: "c", text: "cái bút" }
+    answer: { correct: ["a"] }
+    hint: "Chỉ tính chất."
+    explanation: "\"dũng cảm\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tinh-tu"
+    prompt: "Trong câu \"Chiếc áo màu đỏ rất đẹp.\", tính từ là đỏ và _"
+    answer: { accept: ["đẹp"] }
+    hint: "Áo như thế nào?"
+    explanation: "\"đẹp\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tinh-tu"
+    prompt: "Từ chỉ đặc điểm về màu sắc:"
+    options:
+      - { id: "a", text: "nhảy múa" }
+      - { id: "b", text: "sách vở" }
+      - { id: "c", text: "xanh biếc" }
+    answer: { correct: ["c"] }
+    hint: "Màu."
+    explanation: "\"xanh biếc\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "phan-loai-tu"
+    prompt: "\"Học\" trong \"Em học bài\" là:"
+    options:
+      - { id: "a", text: "danh từ" }
+      - { id: "b", text: "động từ" }
+      - { id: "c", text: "tính từ" }
+    answer: { correct: ["b"] }
+    hint: "Hoạt động."
+    explanation: "Động từ."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Tính từ**."
+    say: "Em đã học xong bài Tính từ."

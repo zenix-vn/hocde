@@ -1,0 +1,57 @@
+schema: 1
+slug: tv4-tu-don-tu-phuc
+title: "Từ đơn và từ phức"
+summary: "Phân biệt từ đơn và từ phức."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Từ đơn** gồm một tiếng: nhà, cây, đi.
+
+      **Từ phức** gồm hai tiếng trở lên: xe đạp, long lanh, xinh đẹp.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-don"
+    prompt: "Từ nào là từ đơn?"
+    options:
+      - { id: "a", text: "lấp lánh" }
+      - { id: "b", text: "học sinh" }
+      - { id: "c", text: "bàn" }
+    answer: { correct: ["c"] }
+    hint: "Một tiếng."
+    explanation: "\"bàn\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-phuc"
+    prompt: "Từ nào là từ phức?"
+    options:
+      - { id: "a", text: "mèo" }
+      - { id: "b", text: "chạy" }
+      - { id: "c", text: "chăm chỉ" }
+    answer: { correct: ["c"] }
+    hint: "Hai tiếng."
+    explanation: "\"chăm chỉ\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tu-don"
+    prompt: "Câu \"Em đi học.\" có _ từ đơn (viết số)."
+    answer: { accept: ["3", "ba"] }
+    hint: "Em / đi / học."
+    explanation: "3."
+
+  - id: b5
+    type: "summary"
+    markdown: "Em đã học xong bài **Từ đơn và từ phức**."
+    say: "Em đã học xong bài Từ đơn và từ phức."

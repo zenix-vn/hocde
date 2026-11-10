@@ -1,0 +1,99 @@
+schema: 1
+slug: anh5-past-simple-irregular
+title: "Irregular past verbs"
+summary: "Động từ bất quy tắc: went, saw, ate."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có những động từ đổi dạng rất lạ ở quá khứ. Bé học nhé!"
+    say: [{"t":"Có những động từ đổi dạng rất lạ ở quá khứ. Bé học nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "go – went", emoji: "🚶", meaning: "đi – đã đi" }, { word: "see – saw", emoji: "👀", meaning: "thấy – đã thấy" }, { word: "eat – ate", emoji: "🍽️", meaning: "ăn – đã ăn" }, { word: "buy – bought", emoji: "🛒", meaning: "mua – đã mua" }, { word: "have – had", emoji: "🖐️", meaning: "có – đã có" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**I went to Da Nang last summer. I saw the beach and ate seafood.**"
+    say: [{"t":"I went to Da Nang last summer.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Điền dạng quá khứ của go:
+
+      **Last Sunday, I … to the zoo.**
+    options:
+      - { id: "a", text: "went" }
+      - { id: "b", text: "goed" }
+      - { id: "c", text: "go" }
+    answer: { correct: ["a"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "go → went."
+    option_lang: "en"
+    say: [{"t":"Điền dạng quá khứ của go:","l":"vi"},{"t":"Last Sunday, I … to the zoo.","l":"en"}]
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Điền dạng quá khứ của eat:
+
+      **She … noodles for lunch.**
+    options:
+      - { id: "a", text: "eated" }
+      - { id: "b", text: "eat" }
+      - { id: "c", text: "ate" }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "eat → ate."
+    option_lang: "en"
+    say: [{"t":"Điền dạng quá khứ của eat:","l":"vi"},{"t":"She … noodles for lunch.","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-bought"
+    prompt: |
+      Điền: Hôm qua mình đã mua một quyển sách.
+
+      **I _ a book yesterday. (buy)**
+    answer: { accept: ["bought"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "bought."
+    say: [{"t":"Điền: Hôm qua mình đã mua một quyển sách.","l":"vi"},{"t":"I blank a book yesterday. (buy)","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xa", text: "a" }
+      - { id: "xsaw", text: "saw" }
+      - { id: "xI", text: "I" }
+      - { id: "xlion", text: "lion" }
+    answer: { sequence: ["xI", "xsaw", "xa", "xlion"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I saw a lion."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Irregular past verbs**."
+    say: "Em đã học xong bài Irregular past verbs."

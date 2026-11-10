@@ -1,0 +1,71 @@
+schema: 1
+slug: tv4-tu-ghep-tu-lay
+title: "Từ ghép và từ láy"
+summary: "Phân biệt từ ghép và từ láy."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Từ ghép:** các tiếng có nghĩa ghép lại: *sách vở, xe đạp, cây cối*.
+
+      **Từ láy:** có sự lặp lại âm hoặc vần: *long lanh, xanh xao, lung linh, nhỏ nhắn*.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-ghep"
+    prompt: "Từ nào là từ ghép?"
+    options:
+      - { id: "a", text: "xinh xắn" }
+      - { id: "b", text: "lung linh" }
+      - { id: "c", text: "bàn ghế" }
+    answer: { correct: ["c"] }
+    hint: "Hai tiếng đều có nghĩa."
+    explanation: "\"bàn ghế\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-lay"
+    prompt: "Từ nào là từ láy?"
+    options:
+      - { id: "a", text: "thầy cô" }
+      - { id: "b", text: "long lanh" }
+      - { id: "c", text: "ruộng đồng" }
+    answer: { correct: ["b"] }
+    hint: "Lặp âm đầu l."
+    explanation: "\"long lanh\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-lay"
+    prompt: "Từ láy nào dưới đây có lặp âm đầu?"
+    options:
+      - { id: "a", text: "nhỏ nhắn" }
+      - { id: "b", text: "bạn bè" }
+      - { id: "c", text: "sách vở" }
+    answer: { correct: ["a"] }
+    hint: "nh–nh."
+    explanation: "\"nhỏ nhắn\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tu-ghep"
+    prompt: "Từ ghép chỉ đồ dùng học tập: bút _ (bút chì / bút bi...)"
+    answer: { accept: ["chì", "bi", "mực"] }
+    hint: "Một loại bút."
+    explanation: "Ví dụ \"bút chì\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Từ ghép và từ láy**."
+    say: "Em đã học xong bài Từ ghép và từ láy."

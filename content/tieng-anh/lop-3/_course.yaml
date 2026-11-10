@@ -1,0 +1,53 @@
+# Tiếng Anh 3 – nội dung bám các chủ đề phổ biến của Tiếng Anh tiểu học (bộ "Kết nối tri thức với cuộc sống" không có sách Tiếng Anh riêng)
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-anh
+grade: 3
+slug: tieng-anh-lop-3
+title: Tiếng Anh 3
+summary: "Giới thiệu bản thân, trường lớp, nhà cửa, cơ thể, sở thích, thời gian và đồ ăn thức uống."
+status: published
+
+units:
+  - slug: chuong-01-hello
+    title: "Hello – Chào hỏi"
+    summary: "Giới thiệu bản thân và bạn bè."
+    lessons:
+      - bai-01-introduce-yourself
+      - bai-02-my-friends
+
+  - slug: chuong-02-school
+    title: "School – Trường học"
+    summary: "Môn học và đồ dùng học tập."
+    lessons:
+      - bai-01-school-subjects
+      - bai-02-classroom
+
+  - slug: chuong-03-home
+    title: "Home – Ngôi nhà"
+    summary: "Các phòng và đồ vật trong nhà."
+    lessons:
+      - bai-01-rooms
+      - bai-02-furniture
+
+  - slug: chuong-04-body-feelings
+    title: "Body and Feelings – Cơ thể và cảm xúc"
+    summary: "Bộ phận cơ thể, cảm xúc."
+    lessons:
+      - bai-01-body
+      - bai-02-feelings
+
+  - slug: chuong-05-hobbies
+    title: "Hobbies – Sở thích"
+    summary: "Làm được gì, chơi môn gì."
+    lessons:
+      - bai-01-can
+      - bai-02-sports
+
+  - slug: chuong-06-daily-life
+    title: "Daily Life – Cuộc sống hằng ngày"
+    summary: "Thứ trong tuần, giờ giấc, đồ ăn."
+    lessons:
+      - bai-01-days
+      - bai-02-time
+      - bai-03-food
+

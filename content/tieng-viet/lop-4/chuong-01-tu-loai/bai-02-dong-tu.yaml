@@ -1,0 +1,72 @@
+schema: 1
+slug: tv4-dong-tu
+title: "Động từ"
+summary: "Động từ chỉ hoạt động, trạng thái."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Động từ** là từ chỉ hoạt động hoặc trạng thái của sự vật.
+
+      - Hoạt động: **chạy, viết, nấu**
+      - Trạng thái: **vui, buồn, yêu, ngủ**
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dong-tu"
+    prompt: "Từ nào là động từ?"
+    options:
+      - { id: "a", text: "xanh" }
+      - { id: "b", text: "bàn" }
+      - { id: "c", text: "chạy" }
+    answer: { correct: ["c"] }
+    hint: "Chỉ hoạt động."
+    explanation: "\"chạy\"."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dong-tu"
+    prompt: "Trong câu \"Bé đang ngủ.\", động từ là: _"
+    answer: { accept: ["ngủ", "đang ngủ"] }
+    hint: "Bé làm gì?"
+    explanation: "\"ngủ\"."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dong-tu"
+    prompt: "Từ nào chỉ trạng thái?"
+    options:
+      - { id: "a", text: "thương" }
+      - { id: "b", text: "nhà" }
+      - { id: "c", text: "đỏ" }
+    answer: { correct: ["a"] }
+    hint: "Cảm xúc."
+    explanation: "\"thương\"."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dong-tu"
+    prompt: "Điền động từ: Bà _ truyện cho em nghe."
+    options:
+      - { id: "a", text: "dài" }
+      - { id: "b", text: "lớn" }
+      - { id: "c", text: "kể" }
+    answer: { correct: ["c"] }
+    hint: "Bà làm gì?"
+    explanation: "\"kể\"."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Động từ**."
+    say: "Em đã học xong bài Động từ."

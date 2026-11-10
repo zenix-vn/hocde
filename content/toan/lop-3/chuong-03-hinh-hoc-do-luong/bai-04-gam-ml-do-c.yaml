@@ -1,0 +1,79 @@
+schema: 1
+slug: toan3-gam-mi-li-lit-nhiet-do
+title: "Gam, mi-li-lít, nhiệt độ"
+summary: "Đơn vị g, ml và độ C."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **1 kg = 1000 g**
+
+      **1 l = 1000 ml**
+
+      Nhiệt độ đo bằng **độ C (°C)**. Nước đóng băng ở 0°C, sôi ở 100°C.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "2 kg = _ g"
+    answer: { accept: ["2000"] }
+    hint: "1 kg = 1000 g."
+    explanation: "2 kg = 2000 g."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-don-vi"
+    prompt: "3 l = _ ml"
+    answer: { accept: ["3000"] }
+    hint: "1 l = 1000 ml."
+    explanation: "3 l = 3000 ml."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-gam"
+    prompt: "Quả cam nặng 200 g, quả chuối nặng 150 g. Cả hai nặng _ g."
+    answer: { accept: ["350"] }
+    hint: "200 + 150."
+    explanation: "350 g."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhiet-do"
+    prompt: "Nước sôi ở bao nhiêu độ C?"
+    options:
+      - { id: "a", text: "0°C" }
+      - { id: "b", text: "37°C" }
+      - { id: "c", text: "100°C" }
+    answer: { correct: ["c"] }
+    hint: "Rất nóng."
+    explanation: "100°C."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhiet-do"
+    prompt: "Dụng cụ đo nhiệt độ là:"
+    options:
+      - { id: "a", text: "nhiệt kế" }
+      - { id: "b", text: "thước" }
+      - { id: "c", text: "cân" }
+    answer: { correct: ["a"] }
+    hint: "Có cột thủy ngân."
+    explanation: "Nhiệt kế."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Gam, mi-li-lít, nhiệt độ**."
+    say: "Em đã học xong bài Gam, mi-li-lít, nhiệt độ."

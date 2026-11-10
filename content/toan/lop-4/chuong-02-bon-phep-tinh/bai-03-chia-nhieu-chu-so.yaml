@@ -1,0 +1,79 @@
+schema: 1
+slug: toan4-chia-cho-so-co-nhieu-chu-so
+title: "Chia cho số có một, hai chữ số"
+summary: "Chia số nhiều chữ số cho số có một, hai chữ số."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **1 248 : 4 = 312** vì 4 × 312 = 1248.
+
+      **576 : 24 = 24** vì 24 × 24 = 576.
+
+      Chia lần lượt từ **trái sang phải**, mỗi lần tìm thương rồi nhân, trừ.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "1 236 : 3 = ?"
+    options:
+      - { id: "a", text: "422" }
+      - { id: "b", text: "412" }
+      - { id: "c", text: "312" }
+    answer: { correct: ["b"] }
+    hint: "Chia từng hàng: 12 : 3 = 4."
+    explanation: "412."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chia"
+    prompt: "945 : 5 = ?"
+    options:
+      - { id: "a", text: "190" }
+      - { id: "b", text: "179" }
+      - { id: "c", text: "189" }
+    answer: { correct: ["c"] }
+    hint: "5 × 189 = 945."
+    explanation: "189."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia"
+    prompt: "720 : 24 = _"
+    answer: { accept: ["30"] }
+    hint: "24 × 30 = 720."
+    explanation: "30."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chia"
+    prompt: "875 : 25 = _"
+    answer: { accept: ["35"] }
+    hint: "25 × 35 = 875."
+    explanation: "35."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan"
+    prompt: "Có 1 440 quyển vở chia đều cho 36 lớp. Mỗi lớp được _ quyển."
+    answer: { accept: ["40"] }
+    hint: "1440 : 36."
+    explanation: "40."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Chia cho số có một, hai chữ số**."
+    say: "Em đã học xong bài Chia cho số có một, hai chữ số."

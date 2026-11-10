@@ -1,0 +1,97 @@
+schema: 1
+slug: anh3-school-subjects
+title: "School subjects"
+summary: "Các môn học: I like Maths."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé thích môn học nào nhất? Mình học tên các môn học nhé!"
+    say: [{"t":"Bé thích môn học nào nhất? Mình học tên các môn học nhé!","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "Maths", emoji: "➗", meaning: "Toán" }, { word: "English", emoji: "🔤", meaning: "Tiếng Anh" }, { word: "Art", emoji: "🎨", meaning: "Mỹ thuật" }, { word: "Music", emoji: "🎵", meaning: "Âm nhạc" }, { word: "PE", emoji: "⚽", meaning: "Thể dục" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **I like Maths.** Mình thích môn Toán.
+
+      **What subject do you like?** Bạn thích môn nào?
+    say: [{"t":"What subject do you like?","l":"en"},{"t":"I like Art.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-music"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "Music", lang: "en" }
+    options:
+      - { id: "a", text: "⚽", say: "PE", lang: "en" }
+      - { id: "b", text: "🎵", say: "Music", lang: "en" }
+      - { id: "c", text: "🎨", say: "Art", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là Music."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "hoi-dap-en"
+    prompt: |
+      Bạn thích vẽ tranh. Trả lời:
+
+      **What subject do you like?**
+    options:
+      - { id: "a", text: "I like Maths." }
+      - { id: "b", text: "I'm eight." }
+      - { id: "c", text: "I like Art." }
+    answer: { correct: ["c"] }
+    hint: "Đọc kỹ rồi chọn đáp án."
+    explanation: "Art là mỹ thuật."
+    option_lang: "en"
+    say: [{"t":"Bạn thích vẽ tranh. Trả lời:","l":"vi"},{"t":"What subject do you like?","l":"en"}]
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-maths"
+    prompt: |
+      Điền từ: Mình thích Toán.
+
+      **I like _ .**
+    answer: { accept: ["Maths", "maths"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I like Maths."
+    say: [{"t":"Điền từ: Mình thích Toán.","l":"vi"},{"t":"I like blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xlike", text: "like" }
+      - { id: "xI", text: "I" }
+      - { id: "xEnglish", text: "English" }
+    answer: { sequence: ["xI", "xlike", "xEnglish"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I like English."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **School subjects**."
+    say: "Em đã học xong bài School subjects."

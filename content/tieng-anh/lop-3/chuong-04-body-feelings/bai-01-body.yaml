@@ -1,0 +1,91 @@
+schema: 1
+slug: anh3-body-parts
+title: "Body parts"
+summary: "Các bộ phận cơ thể: I have two eyes."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cơ thể của bé có những bộ phận nào?"
+    say: [{"t":"Cơ thể của bé có những bộ phận nào?","l":"vi"}]
+
+  - id: b2
+    type: "interactive"
+    kind: "flashcards"
+    config: { lang: "en", caption: "Chạm vào từng thẻ để nghe và nhắc lại.", cards: [{ word: "head", emoji: "🧑", meaning: "đầu" }, { word: "eyes", emoji: "👀", meaning: "mắt" }, { word: "ears", emoji: "👂", meaning: "tai" }, { word: "nose", emoji: "👃", meaning: "mũi" }, { word: "mouth", emoji: "👄", meaning: "miệng" }, { word: "hands", emoji: "🤲", meaning: "bàn tay" }] }
+    say: [{"t":"Chạm vào từng thẻ để nghe và nhắc lại.","l":"vi"}]
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "**I have two eyes and two ears.** Mình có hai mắt và hai tai."
+    say: [{"t":"I have two eyes and two ears.","l":"en"}]
+
+  - id: b4
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-nose"
+    prompt: "Nghe và chọn đáp án đúng."
+    listen: { text: "nose", lang: "en" }
+    options:
+      - { id: "a", text: "👂", say: "ears", lang: "en" }
+      - { id: "b", text: "👃", say: "nose", lang: "en" }
+      - { id: "c", text: "👄", say: "mouth", lang: "en" }
+    answer: { correct: ["b"] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là nose."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nghia-eyes"
+    prompt: "Mắt 👀 tiếng Anh là gì?"
+    options:
+      - { id: "a", text: "eyes" }
+      - { id: "b", text: "ears" }
+      - { id: "c", text: "hands" }
+    answer: { correct: ["a"] }
+    hint: "Nhớ lại các thẻ từ."
+    explanation: "eyes."
+    option_lang: "en"
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-nose"
+    prompt: |
+      Điền: Mình có một cái mũi.
+
+      **I have a _ .**
+    answer: { accept: ["nose"] }
+    hint: "Nhìn lại phần ghi nhớ."
+    explanation: "I have a nose."
+    say: [{"t":"Điền: Mình có một cái mũi.","l":"vi"},{"t":"I have a blank .","l":"en"}]
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau-en"
+    prompt: "Sắp xếp các từ thành câu."
+    options:
+      - { id: "xtwo", text: "two" }
+      - { id: "xhave", text: "have" }
+      - { id: "xI", text: "I" }
+      - { id: "xears", text: "ears" }
+    answer: { sequence: ["xI", "xhave", "xtwo", "xears"] }
+    hint: "Chữ đầu câu viết hoa."
+    explanation: "I have two ears."
+    option_lang: "en"
+
+  - id: b8
+    type: "summary"
+    markdown: "Em đã học xong bài **Body parts**."
+    say: "Em đã học xong bài Body parts."

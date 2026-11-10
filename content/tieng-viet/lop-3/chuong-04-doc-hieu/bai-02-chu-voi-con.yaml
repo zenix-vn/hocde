@@ -1,0 +1,75 @@
+schema: 1
+slug: tv3-doc-hieu-chu-voi-con
+title: "Đọc hiểu: Chú voi con"
+summary: "Đọc câu chuyện ngắn."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Chú voi con**
+
+      Voi con lạc mẹ giữa rừng. Trời tối dần, voi con run rẩy. Bác khỉ nghe tiếng khóc liền chạy tới hỏi han. Bác dẫn voi con đi qua suối, vượt đồi. Cuối cùng, voi con gặp lại mẹ. Voi con cảm ơn bác khỉ rối rít.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Voi con gặp chuyện gì?"
+    options:
+      - { id: "a", text: "Lạc mẹ" }
+      - { id: "b", text: "Bị ốm" }
+      - { id: "c", text: "Đi học muộn" }
+    answer: { correct: ["a"] }
+    hint: "Câu đầu."
+    explanation: "Lạc mẹ."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Ai giúp voi con?"
+    options:
+      - { id: "a", text: "Cô chim" }
+      - { id: "b", text: "Chú hổ" }
+      - { id: "c", text: "Bác khỉ" }
+    answer: { correct: ["c"] }
+    hint: "Câu thứ ba."
+    explanation: "Bác khỉ."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bác khỉ dẫn voi con đi qua đâu?"
+    options:
+      - { id: "a", text: "Thung lũng" }
+      - { id: "b", text: "Suối và đồi" }
+      - { id: "c", text: "Sông và núi" }
+    answer: { correct: ["b"] }
+    hint: "Câu thứ tư."
+    explanation: "Suối và đồi."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu"
+    prompt: "Bài học rút ra là:"
+    options:
+      - { id: "a", text: "Không nên đi chơi" }
+      - { id: "b", text: "Khỉ rất nhanh" }
+      - { id: "c", text: "Biết giúp đỡ người gặp khó khăn" }
+    answer: { correct: ["c"] }
+    hint: "Ý nghĩa câu chuyện."
+    explanation: "Biết giúp đỡ người khác."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Đọc hiểu: Chú voi con**."
+    say: "Em đã học xong bài Đọc hiểu: Chú voi con."

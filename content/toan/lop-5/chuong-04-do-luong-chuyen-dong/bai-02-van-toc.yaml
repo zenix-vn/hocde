@@ -1,0 +1,73 @@
+schema: 1
+slug: toan5-van-toc-quang-duong-thoi-gian
+title: "Vận tốc, quãng đường, thời gian"
+summary: "Ba đại lượng của chuyển động đều."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      **Vận tốc** v = s : t
+
+      **Quãng đường** s = v × t
+
+      **Thời gian** t = s : v
+
+      Ví dụ: xe đi 120 km trong 2 giờ thì v = 120 : 2 = 60 km/giờ.
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "van-toc"
+    prompt: "Ô tô đi 150 km trong 3 giờ. Vận tốc là _ km/giờ."
+    answer: { accept: ["50"] }
+    hint: "150 : 3."
+    explanation: "50."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quang-duong"
+    prompt: "Xe đạp đi với vận tốc 12 km/giờ trong 3 giờ. Quãng đường là _ km."
+    answer: { accept: ["36"] }
+    hint: "12 × 3."
+    explanation: "36."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "thoi-gian"
+    prompt: "Người đi bộ đi 15 km với vận tốc 5 km/giờ. Thời gian là _ giờ."
+    answer: { accept: ["3"] }
+    hint: "15 : 5."
+    explanation: "3."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "van-toc"
+    prompt: "Máy bay bay 1 800 km trong 2 giờ. Vận tốc là _ km/giờ."
+    answer: { accept: ["900"] }
+    hint: "1800 : 2."
+    explanation: "900."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quang-duong"
+    prompt: "Xe máy đi 40 km/giờ trong 2,5 giờ. Quãng đường là _ km."
+    answer: { accept: ["100"] }
+    hint: "40 × 2,5."
+    explanation: "100."
+
+  - id: b7
+    type: "summary"
+    markdown: "Em đã học xong bài **Vận tốc, quãng đường, thời gian**."
+    say: "Em đã học xong bài Vận tốc, quãng đường, thời gian."

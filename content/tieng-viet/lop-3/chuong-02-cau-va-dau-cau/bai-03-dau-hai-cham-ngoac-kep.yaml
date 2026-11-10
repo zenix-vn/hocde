@@ -1,0 +1,75 @@
+schema: 1
+slug: tv3-dau-hai-cham-ngoac-kep-gach-ngang
+title: "Dấu hai chấm, dấu ngoặc kép, dấu gạch ngang"
+summary: "Công dụng của các dấu câu."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: |
+      - **Dấu hai chấm (:)** báo hiệu phần liệt kê hoặc lời nói.
+      - **Dấu ngoặc kép (" ")** đánh dấu lời nói trực tiếp hoặc tên riêng.
+      - **Dấu gạch ngang (–)** đặt trước lời nói của nhân vật hoặc nối các thành phần.
+
+  - id: b2
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu hai chấm trong \"Mẹ mua: cam, táo và nho.\" dùng để:"
+    options:
+      - { id: "a", text: "báo hiệu liệt kê" }
+      - { id: "b", text: "kết thúc câu" }
+      - { id: "c", text: "đặt câu hỏi" }
+    answer: { correct: ["a"] }
+    hint: "Sau đó là danh sách."
+    explanation: "Báo hiệu liệt kê."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu nào đánh dấu lời nói trực tiếp của nhân vật?"
+    options:
+      - { id: "a", text: "dấu chấm hỏi" }
+      - { id: "b", text: "dấu phẩy" }
+      - { id: "c", text: "dấu ngoặc kép" }
+    answer: { correct: ["c"] }
+    hint: "Bao quanh lời nói."
+    explanation: "Ngoặc kép."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Dấu gạch ngang đứng đầu dòng để:"
+    options:
+      - { id: "a", text: "kết thúc đoạn" }
+      - { id: "b", text: "kể thời gian" }
+      - { id: "c", text: "ghi lời nói của nhân vật" }
+    answer: { correct: ["c"] }
+    hint: "Trong hội thoại."
+    explanation: "Ghi lời nhân vật."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Điền dấu: Bố bảo_ \"Con nhớ đóng cửa nhé.\""
+    options:
+      - { id: "a", text: "." }
+      - { id: "b", text: "," }
+      - { id: "c", text: ":" }
+    answer: { correct: ["c"] }
+    hint: "Báo hiệu lời nói."
+    explanation: "Dấu hai chấm."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Dấu hai chấm, dấu ngoặc kép, dấu gạch ngang**."
+    say: "Em đã học xong bài Dấu hai chấm, dấu ngoặc kép, dấu gạch ngang."

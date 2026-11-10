@@ -1,0 +1,60 @@
+schema: 1
+slug: toan5-dien-tich-hinh-tam-giac
+title: "Diện tích hình tam giác"
+summary: "Tính diện tích hình tam giác."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "text"
+    markdown: "**Diện tích tam giác** = đáy × chiều cao : 2."
+
+  - id: b2
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-tam-giac"
+    prompt: "Tam giác đáy 10 cm, cao 6 cm. Diện tích là _ cm²."
+    answer: { accept: ["30"] }
+    hint: "10 × 6 : 2."
+    explanation: "30."
+
+  - id: b3
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-tam-giac"
+    prompt: "Tam giác đáy 8 m, cao 5 m. Diện tích là _ m²."
+    answer: { accept: ["20"] }
+    hint: "8 × 5 : 2."
+    explanation: "20."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dt-tam-giac"
+    prompt: "Tam giác diện tích 24 cm², đáy 8 cm. Chiều cao là _ cm."
+    answer: { accept: ["6"] }
+    hint: "24 × 2 : 8."
+    explanation: "6."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dt-tam-giac"
+    prompt: "Tam giác có diện tích bằng bao nhiêu phần hình chữ nhật cùng đáy và chiều cao?"
+    options:
+      - { id: "a", text: "một nửa" }
+      - { id: "b", text: "một phần ba" }
+      - { id: "c", text: "gấp đôi" }
+    answer: { correct: ["a"] }
+    hint: "Chia 2."
+    explanation: "Một nửa."
+
+  - id: b6
+    type: "summary"
+    markdown: "Em đã học xong bài **Diện tích hình tam giác**."
+    say: "Em đã học xong bài Diện tích hình tam giác."

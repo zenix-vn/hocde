@@ -1,0 +1,40 @@
+# Tiếng Việt 5 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-viet
+grade: 5
+slug: tieng-viet-lop-5
+title: Tiếng Việt 5
+summary: "Đại từ, quan hệ từ, từ đồng âm, từ nhiều nghĩa, câu ghép, liên kết câu, đọc hiểu và luyện viết."
+status: published
+
+units:
+  - slug: chuong-01-tu-ngu
+    title: "Từ ngữ"
+    summary: "Đại từ, quan hệ từ, từ đồng âm, từ nhiều nghĩa."
+    lessons:
+      - bai-01-dai-tu
+      - bai-02-quan-he-tu
+      - bai-03-tu-dong-am-nhieu-nghia
+
+  - slug: chuong-02-cau
+    title: "Câu"
+    summary: "Câu ghép, nối các vế câu, liên kết câu, thêm trạng ngữ."
+    lessons:
+      - bai-01-cau-ghep
+      - bai-02-noi-cac-ve-cau
+      - bai-03-lien-ket-cau
+
+  - slug: chuong-03-doc-hieu
+    title: "Đọc hiểu"
+    summary: "Đọc văn bản và trả lời câu hỏi."
+    lessons:
+      - bai-01-con-song-que-huong
+      - bai-02-nguoi-thay-cu
+
+  - slug: chuong-04-luyen-viet
+    title: "Luyện viết"
+    summary: "Dàn ý, đoạn văn tả cảnh, dấu câu."
+    lessons:
+      - bai-01-lap-dan-y-ta-canh
+      - bai-02-dau-cau
+

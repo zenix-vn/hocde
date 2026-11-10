@@ -1,0 +1,35 @@
+# Tiếng Anh 5 – nội dung bám các chủ đề phổ biến của Tiếng Anh tiểu học (bộ "Kết nối tri thức với cuộc sống" không có sách Tiếng Anh riêng)
+# Tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu sách giáo khoa bản hiện hành. Nội dung soạn mới, không sao chép sách.
+subject: tieng-anh
+grade: 5
+slug: tieng-anh-lop-5
+title: Tiếng Anh 5
+summary: "Quá khứ đơn, tương lai gần, so sánh, sức khỏe, lễ hội, phương tiện, tần suất và bảo vệ môi trường."
+status: published
+
+units:
+  - slug: chuong-01-past
+    title: "Past – Quá khứ"
+    summary: "Quá khứ đơn: động từ có quy tắc và bất quy tắc."
+    lessons:
+      - bai-01-past-regular
+      - bai-02-past-irregular
+
+  - slug: chuong-02-future-compare
+    title: "Future and Comparison – Tương lai và so sánh"
+    summary: "Tương lai gần, so sánh hơn, so sánh nhất."
+    lessons:
+      - bai-01-going-to
+      - bai-02-comparatives
+      - bai-03-superlatives
+
+  - slug: chuong-03-life
+    title: "Life – Cuộc sống"
+    summary: "Sức khỏe, lễ hội, phương tiện, tần suất, môi trường."
+    lessons:
+      - bai-01-health
+      - bai-02-festivals
+      - bai-03-transport
+      - bai-04-how-often
+      - bai-05-environment
+
