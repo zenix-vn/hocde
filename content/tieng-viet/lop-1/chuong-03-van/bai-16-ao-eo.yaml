@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-16-ao-eo"
+title: "Vần ao – eo"
+summary: "Học vần ao và eo; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ao và eo. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ao**: ghép âm đầu với vần để được tiếng.
+      - **s** + **ao** → **sao**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "s"
+      rhyme: "ao"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép s + ao rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **eo**: ghép âm đầu với vần để được tiếng.
+      - **m** + **eo** → **mèo**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "m"
+      rhyme: "eo"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép m + eo rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "sao", "emoji": "⭐"}
+        - {"word": "dao", "emoji": "🔪"}
+        - {"word": "áo", "emoji": "👕"}
+        - {"word": "mèo", "emoji": "🐱"}
+        - {"word": "heo", "emoji": "🐷"}
+        - {"word": "kéo", "emoji": "✂️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ao và eo."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ao** hoặc **eo**: **sao**, **dao**, **áo**, **mèo**, **heo**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ao"
+    prompt: "Tiếng nào có vần **ao**?"
+    options:
+      - {"id": "a", "text": "hoa"}
+      - {"id": "b", "text": "đàn"}
+      - {"id": "c", "text": "sao"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"sao\" có vần ao."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-eo"
+    prompt: "Tiếng nào có vần **eo**?"
+    options:
+      - {"id": "a", "text": "mèo"}
+      - {"id": "b", "text": "cam"}
+      - {"id": "c", "text": "quạ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"mèo\" có vần eo."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-sao"
+    prompt: "Sắp xếp để tạo thành tiếng **sao**:"
+    options:
+      - {"id": "x2", "text": "ao"}
+      - {"id": "x1", "text": "s"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "s + ao = sao."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ao"
+    prompt: "Điền phần còn lại để được tiếng **sao** ⭐: s_"
+    answer: {"accept": ["ao"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "s + ao = sao."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-eo"
+    prompt: "Điền phần còn lại để được tiếng **mèo** 🐱: m_"
+    answer: {"accept": ["èo", "eo"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "m + èo = mèo."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-eo"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "heo"}
+    options:
+      - {"id": "a", "text": "mưa"}
+      - {"id": "b", "text": "heo"}
+      - {"id": "c", "text": "cá"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"heo\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ao"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "⭐", "right": "sao"}
+      - {"left": "🔪", "right": "dao"}
+      - {"left": "👕", "right": "áo"}
+    answer: {"pairs": [["⭐", "sao"], ["🔪", "dao"], ["👕", "áo"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ao và eo** và đọc được: sao, dao, áo, mèo, heo, kéo. Giỏi quá!"

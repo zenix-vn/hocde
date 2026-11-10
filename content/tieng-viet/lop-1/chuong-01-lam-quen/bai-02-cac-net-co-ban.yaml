@@ -1,0 +1,84 @@
+schema: 1
+slug: "tv1-lam-quen-02-cac-net-co-ban"
+title: "Các nét cơ bản"
+summary: "Nhận biết nét thẳng, nét cong, nét móc, nét khuyết — nền tảng để viết chữ."
+est_minutes: 6
+xp_reward: 15
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mọi chữ cái đều được tạo từ những nét đơn giản. Mình cùng làm quen nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Các nét cơ bản:
+      - **Nét thẳng đứng** như chữ **l**.
+      - **Nét cong tròn** như chữ **o**.
+      - **Nét móc** như chữ **n**, **m**.
+      - **Nét khuyết** (cao lên trên) như chữ **b**, **h**, **k**.
+
+  - id: "b3"
+    type: "callout"
+    variant: "remember"
+    markdown: "Chữ **o** gồm một nét cong tròn khép kín. Chữ **l** gồm một nét thẳng đứng."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "net-chu-o"
+    prompt: "Chữ **o** được viết bằng nét nào?"
+    options:
+      - {"id": "a", "text": "Nét thẳng đứng"}
+      - {"id": "b", "text": "Nét cong tròn"}
+      - {"id": "c", "text": "Nét móc"}
+    answer: {"correct": ["b"]}
+    hint: "Chữ o tròn như quả bóng."
+    explanation: "Chữ o là một nét cong tròn khép kín."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "net-chu-l"
+    prompt: "Chữ **l** được viết bằng nét nào?"
+    options:
+      - {"id": "a", "text": "Nét móc"}
+      - {"id": "b", "text": "Nét cong tròn"}
+      - {"id": "c", "text": "Nét thẳng đứng"}
+    answer: {"correct": ["c"]}
+    hint: "Chữ l dài và đứng thẳng như cây cột."
+    explanation: "Chữ l là một nét thẳng đứng."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "net-chu-n"
+    prompt: "Chữ nào có nét móc?"
+    options:
+      - {"id": "a", "text": "l"}
+      - {"id": "b", "text": "n"}
+      - {"id": "c", "text": "o"}
+    answer: {"correct": ["b"]}
+    hint: "Nét móc cong như cái móc treo áo."
+    explanation: "Chữ n có nét móc."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "net-khuyet"
+    prompt: "Chữ nào có nét khuyết cao lên trên?"
+    options:
+      - {"id": "a", "text": "a"}
+      - {"id": "b", "text": "b"}
+      - {"id": "c", "text": "o"}
+    answer: {"correct": ["b"]}
+    hint: "Nhìn xem chữ nào có nét dài vượt lên trên các chữ khác."
+    explanation: "Chữ b có nét khuyết trên."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã biết nét thẳng, nét cong, nét móc và nét khuyết. Giỏi quá!", "say": null}

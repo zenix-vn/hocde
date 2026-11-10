@@ -1,0 +1,104 @@
+schema: 1
+slug: toan1-so-sanh-sap-xep-so
+title: "Xếp các số theo thứ tự"
+summary: "Tìm số lớn nhất, bé nhất và xếp thứ tự."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng xếp các số như xếp hàng nhé. Bé nhất đứng đầu!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Xếp từ **bé đến lớn**: 2, 5, 8
+
+      Xếp từ **lớn đến bé**: 8, 5, 2
+    say: "Xếp từ bé đến lớn: hai, năm, tám. Xếp từ lớn đến bé: tám, năm, hai."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Trong ba số 2, 5, 8: số **lớn nhất** là 8. Số **bé nhất** là 2."
+    say: "Trong ba số hai, năm, tám: số lớn nhất là tám. Số bé nhất là hai."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-lon-nhat"
+    prompt: "Số nào lớn nhất: 4, 9, 6?"
+    options:
+      - { id: "a", text: "4" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["b"] }
+    hint: "Đếm xem số nào đứng cuối cùng."
+    explanation: "9 là số lớn nhất."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-be-nhat"
+    prompt: "Số nào bé nhất: 7, 3, 5?"
+    options:
+      - { id: "a", text: "7" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "Số nào đứng đầu khi đếm?"
+    explanation: "3 là số bé nhất."
+
+  - id: b6
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-be-lon"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x6", text: "6" }
+      - { id: "x2", text: "2" }
+      - { id: "x9", text: "9" }
+      - { id: "x4", text: "4" }
+    answer: { sequence: ["x2", "x4", "x6", "x9"] }
+    hint: "Bắt đầu từ số bé nhất: hai."
+    explanation: "Hai, bốn, sáu, chín."
+
+  - id: b7
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-lon-be"
+    prompt: "Bấm các số theo thứ tự từ lớn đến bé."
+    options:
+      - { id: "x3", text: "3" }
+      - { id: "x7", text: "7" }
+      - { id: "x1", text: "1" }
+      - { id: "x10", text: "10" }
+    answer: { sequence: ["x10", "x7", "x3", "x1"] }
+    hint: "Bắt đầu từ số lớn nhất: mười."
+    explanation: "Mười, bảy, ba, một."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-lon-nhat"
+    prompt: "Số nào lớn nhất trong các số từ 0 đến 10?"
+    options:
+      - { id: "a", text: "9" }
+      - { id: "b", text: "10" }
+      - { id: "c", text: "8" }
+    answer: { correct: ["b"] }
+    hint: "Đếm đến hết dãy số."
+    explanation: "10 là số lớn nhất trong các số đến 10."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết xếp số từ bé đến lớn, từ lớn đến bé. Hết chương so sánh rồi!"
+    say: "Bé đã biết xếp số từ bé đến lớn, và từ lớn đến bé. Giỏi lắm!"

@@ -1,38 +1,83 @@
-# Toán lớp 1 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống" (đến hết học kỳ 1)
+# Toán lớp 1 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
 # LƯU Ý: tên chương và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu SGK bản hiện hành trước khi publish.
 # Nội dung bài là soạn mới, không sao chép nguyên văn SGK (bản quyền).
 subject: toan
 grade: 1
 slug: toan-lop-1
 title: Toán 1
-summary: "Đếm, nhận biết số, so sánh và làm quen phép cộng cho bé lớp 1."
-status: draft
+summary: "Đếm, so sánh, hình học, phép cộng, phép trừ đến 100 và đo lường cho bé lớp 1."
+status: published
 
 units:
   - slug: chuong-01-cac-so-den-10
     title: Các số đến 10
-    summary: "Đếm, đọc và nhận biết các số từ 1 đến 10."
+    summary: "Đếm, đọc và nhận biết các số từ 0 đến 10."
     lessons:
       - bai-01-dem-den-5
       - bai-02-cac-so-6-den-10
+      - bai-03-so-0
+      - bai-04-thu-tu-cac-so
 
   - slug: chuong-02-so-sanh
     title: So sánh số
-    summary: "Nhiều hơn, ít hơn, bằng nhau; lớn hơn, bé hơn."
-    lessons: []            # TODO
+    summary: "Nhiều hơn, ít hơn, bằng nhau; lớn hơn, bé hơn; xếp thứ tự."
+    lessons:
+      - bai-01-nhieu-hon-it-hon
+      - bai-02-lon-hon-be-hon
+      - bai-03-bang-nhau
+      - bai-04-sap-xep-so
 
   - slug: chuong-03-phep-cong
-    title: Phép cộng
-    summary: "Làm quen phép cộng trong phạm vi 5, rồi 10."
+    title: Phép cộng trong phạm vi 5
+    summary: "Làm quen phép cộng: gộp các nhóm vật, cộng với 0, đổi chỗ các số."
     lessons:
       - bai-01-phep-cong-pham-vi-5
+      - bai-02-cong-voi-0
+      - bai-03-doi-cho-so-cong
 
   - slug: chuong-04-hinh-hoc
     title: Làm quen với một số hình
-    summary: "Hình vuông, hình tròn, hình tam giác, hình chữ nhật."
-    lessons: []            # TODO
+    summary: "Hình vuông, hình tròn, hình tam giác, hình chữ nhật và các khối."
+    lessons:
+      - bai-01-vuong-tron
+      - bai-02-tam-giac-chu-nhat
+      - bai-03-gap-hinh-quanh-be
+      - bai-04-khoi-hop-khoi-lap-phuong
 
   - slug: chuong-05-cong-tru-pham-vi-10
     title: Cộng, trừ trong phạm vi 10
-    summary: "Phép cộng, phép trừ trong phạm vi 10."
-    lessons: []            # TODO
+    summary: "Phép trừ, phép cộng trong phạm vi 10, tìm số thiếu và bài toán có lời văn."
+    lessons:
+      - bai-01-phep-tru-pham-vi-5
+      - bai-02-phep-cong-pham-vi-10
+      - bai-03-phep-tru-pham-vi-10
+      - bai-04-quan-he-cong-tru
+      - bai-05-dien-so-thieu
+      - bai-06-bai-toan-co-loi-van
+
+  - slug: chuong-06-cac-so-den-20
+    title: Các số đến 20
+    summary: "Đếm, chục và đơn vị; cộng, trừ không nhớ trong phạm vi 20."
+    lessons:
+      - bai-01-cac-so-11-den-20
+      - bai-02-chuc-va-don-vi
+      - bai-03-cong-khong-nho-den-20
+      - bai-04-tru-khong-nho-den-20
+
+  - slug: chuong-07-cac-so-den-100
+    title: Các số đến 100
+    summary: "Số tròn chục, đọc viết, so sánh số đến 100; cộng, trừ số tròn chục."
+    lessons:
+      - bai-01-cac-so-tron-chuc
+      - bai-02-doc-viet-so-den-100
+      - bai-03-so-sanh-so-den-100
+      - bai-04-cong-tru-so-tron-chuc
+
+  - slug: chuong-08-do-luong
+    title: Đo lường và thời gian
+    summary: "Dài hơn, ngắn hơn, xăng-ti-mét, xem giờ đúng, các ngày trong tuần."
+    lessons:
+      - bai-01-dai-hon-ngan-hon
+      - bai-02-xang-ti-met
+      - bai-03-xem-gio-dung
+      - bai-04-ngay-trong-tuan

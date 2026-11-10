@@ -1,0 +1,113 @@
+schema: 1
+slug: toan1-tru-khong-nho-den-20
+title: "Trừ trong phạm vi 20 (không nhớ)"
+summary: "Trừ số có hai chữ số cho số có một chữ số, không nhớ."
+est_minutes: 10
+xp_reward: 30
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Giờ mình trừ trong phạm vi hai mươi. Bé trừ phần đơn vị nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      15 − 3 = ?
+
+      15 gồm 1 chục và 5 đơn vị. Trừ 3 đơn vị: 5 − 3 = 2.
+
+      Vậy 15 − 3 = **12**.
+    say: "Mười lăm trừ ba bằng mấy? Mười lăm gồm một chục và năm đơn vị. Trừ ba đơn vị: năm trừ ba bằng hai. Vậy mười lăm trừ ba bằng mười hai."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: |
+      Giữ nguyên **số chục**, chỉ trừ **số đơn vị**.
+
+      19 − 9 = 10
+    say: "Giữ nguyên số chục, chỉ trừ số đơn vị."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "16 − 4 = ?"
+    options:
+      - { id: "a", text: "11" }
+      - { id: "b", text: "12" }
+      - { id: "c", text: "13" }
+    answer: { correct: ["b"] }
+    hint: "Có 16, bớt đi 4. Bé đếm lùi nhé."
+    explanation: "16 trừ bốn bằng 12."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "18 − 5 = ?"
+    options:
+      - { id: "a", text: "12" }
+      - { id: "b", text: "14" }
+      - { id: "c", text: "13" }
+    answer: { correct: ["c"] }
+    hint: "Có 18, bớt đi 5. Bé đếm lùi nhé."
+    explanation: "18 trừ năm bằng 13."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "17 − 7 = ?"
+    options:
+      - { id: "a", text: "10" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "11" }
+    answer: { correct: ["a"] }
+    hint: "Có 17, bớt đi 7. Bé đếm lùi nhé."
+    explanation: "17 trừ bảy bằng mười."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "19 − 3 = _"
+    answer: { accept: ["16"] }
+    hint: "Có 19, bớt đi 3. Bé đếm lùi nhé."
+    explanation: "19 trừ ba bằng 16."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "14 − 4 = _"
+    answer: { accept: ["10"] }
+    hint: "Có 14, bớt đi 4. Bé đếm lùi nhé."
+    explanation: "14 trừ bốn bằng mười."
+
+  - id: b9
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-den-20"
+    prompt: "Phép tính nào có kết quả bằng 12?"
+    options:
+      - { id: "a", text: "15 − 2" }
+      - { id: "b", text: "16 − 4" }
+      - { id: "c", text: "17 − 3" }
+    answer: { correct: ["b"] }
+    hint: "Tính từng phép tính."
+    explanation: "16 − 4 = 12."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết **trừ trong phạm vi 20** (không nhớ). Hết chương rồi!"
+    say: "Bé đã biết trừ trong phạm vi hai mươi."

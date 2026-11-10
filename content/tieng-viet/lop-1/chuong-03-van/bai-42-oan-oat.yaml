@@ -1,0 +1,151 @@
+schema: 1
+slug: "tv1-van-42-oan-oat"
+title: "Vần oan – oat"
+summary: "Học vần oan và oat; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: oan và oat. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **oan**: ghép âm đầu với vần để được tiếng.
+      - **ng** + **oan** → **ngoan**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "ng"
+      rhyme: "oan"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép ng + oan rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **oat**: ghép âm đầu với vần để được tiếng.
+      - **h** + **oat** → **hoạt**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "h", "rhyme": "oat", "tones": ["sắc", "nặng"], "caption": "Ghép h + oat rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "ngoan", "emoji": "😇"}
+        - {"word": "khoan", "emoji": "🔧"}
+        - {"word": "toán", "emoji": "➕"}
+        - {"word": "hoạt", "emoji": "📺"}
+        - {"word": "thoát", "emoji": "🚪"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần oan và oat."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **oan** hoặc **oat**: **ngoan**, **khoan**, **toán**, **hoạt**, **thoát**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oan"
+    prompt: "Tiếng nào có vần **oan**?"
+    options:
+      - {"id": "a", "text": "lúa"}
+      - {"id": "b", "text": "hoạt"}
+      - {"id": "c", "text": "ngoan"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"ngoan\" có vần oan."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oat"
+    prompt: "Tiếng nào có vần **oat**?"
+    options:
+      - {"id": "a", "text": "hoạt"}
+      - {"id": "b", "text": "phở"}
+      - {"id": "c", "text": "nhà"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"hoạt\" có vần oat."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-ngoan"
+    prompt: "Sắp xếp để tạo thành tiếng **ngoan**:"
+    options:
+      - {"id": "x2", "text": "oan"}
+      - {"id": "x1", "text": "ng"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "ng + oan = ngoan."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oan"
+    prompt: "Điền phần còn lại để được tiếng **ngoan** 😇: ng_"
+    answer: {"accept": ["oan"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "ng + oan = ngoan."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oat"
+    prompt: "Điền phần còn lại để được tiếng **hoạt** 📺: h_"
+    answer: {"accept": ["oạt", "oat"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "h + oạt = hoạt."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-oat"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "thoát"}
+    options:
+      - {"id": "a", "text": "thoát"}
+      - {"id": "b", "text": "cua"}
+      - {"id": "c", "text": "bò"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"thoát\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-oan"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "😇", "right": "ngoan"}
+      - {"left": "🔧", "right": "khoan"}
+      - {"left": "➕", "right": "toán"}
+    answer: {"pairs": [["😇", "ngoan"], ["🔧", "khoan"], ["➕", "toán"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **oan và oat** và đọc được: ngoan, khoan, toán, hoạt, thoát. Giỏi quá!"

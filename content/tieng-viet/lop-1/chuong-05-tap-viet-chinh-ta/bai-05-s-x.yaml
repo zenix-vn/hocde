@@ -1,0 +1,91 @@
+schema: 1
+slug: "tv1-chinh-ta-05-s-x"
+title: "Chính tả: s hay x"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Bé nghe kỹ để phân biệt **s** và **x**, rồi nhìn hình để chọn."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: 📚 _ách"
+    options:
+      - {"id": "a", "text": "x"}
+      - {"id": "b", "text": "s"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "s + ách = sách."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: 🚗 _e"
+    options:
+      - {"id": "a", "text": "s"}
+      - {"id": "b", "text": "x"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "x + e = xe."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: ⭐ _ao"
+    options:
+      - {"id": "a", "text": "s"}
+      - {"id": "b", "text": "x"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "s + ao = sao."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: 🪣 _ô"
+    options:
+      - {"id": "a", "text": "s"}
+      - {"id": "b", "text": "x"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "x + ô = xô."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: 🌊 _ông"
+    answer: {"accept": ["s"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "s + ông = sông."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-s-x"
+    prompt: "Điền vào chỗ trống: 🟢 _anh"
+    answer: {"accept": ["x"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "x + anh = xanh."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **s hay x**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

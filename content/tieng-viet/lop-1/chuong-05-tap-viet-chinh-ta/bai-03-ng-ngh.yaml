@@ -1,0 +1,92 @@
+schema: 1
+slug: "tv1-chinh-ta-03-ng-ngh"
+title: "Chính tả: ng hay ngh"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Chữ **ngh** đứng trước **i, e, ê**. Chữ **ng** đứng trước các chữ còn lại."
+    say: "Chữ ngờ đứng trước i, e, ê. Chữ ngờ đứng trước các chữ còn lại."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 🌽 _ô"
+    options:
+      - {"id": "a", "text": "ngh", "say": "ngờ"}
+      - {"id": "b", "text": "ng", "say": "ngờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ng + ô = ngô."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 👂 _e"
+    options:
+      - {"id": "a", "text": "ng", "say": "ngờ"}
+      - {"id": "b", "text": "ngh", "say": "ngờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ngh + e = nghe."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 😴 _ủ"
+    options:
+      - {"id": "a", "text": "ng", "say": "ngờ"}
+      - {"id": "b", "text": "ngh", "say": "ngờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ng + ủ = ngủ."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 🛌 _ỉ"
+    options:
+      - {"id": "a", "text": "ng", "say": "ngờ"}
+      - {"id": "b", "text": "ngh", "say": "ngờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ngh + ỉ = nghỉ."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 🐃 _é"
+    answer: {"accept": ["ngh"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "ngh + é = nghé."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-ng-ngh"
+    prompt: "Điền vào chỗ trống: 🦷 _à"
+    answer: {"accept": ["ng"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "ng + à = ngà."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **ng hay ngh**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

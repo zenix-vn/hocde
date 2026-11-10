@@ -1,0 +1,121 @@
+schema: 1
+slug: "tv1-bai-12-i"
+title: "Chữ I i"
+summary: "Làm quen chữ I, i; nhận biết âm i trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ i. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **I** có hai dạng: **I** in hoa, **i** in thường.
+      Âm **i** đọc là "i".
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "i"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + i rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "bí", "emoji": "🎃"}
+        - {"word": "bi", "emoji": "🔵"}
+        - {"word": "dì", "emoji": "👩"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ i."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **bí**, **bi**, **dì** đều có chữ **i**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-i"
+    prompt: "Tiếng nào có chữ **i**?"
+    options:
+      - {"id": "a", "text": "tổ"}
+      - {"id": "b", "text": "cờ"}
+      - {"id": "c", "text": "bí"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"bí\" có chữ i."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-i"
+    prompt: "Hình 🔵 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "thỏ"}
+      - {"id": "b", "text": "bi"}
+      - {"id": "c", "text": "ca"}
+    answer: {"correct": ["b"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🔵 là \"bi\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-i"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "dì"}
+    options:
+      - {"id": "a", "text": "ca"}
+      - {"id": "b", "text": "bò"}
+      - {"id": "c", "text": "dì"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"dì\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-bi"
+    prompt: "Sắp xếp để tạo thành tiếng **bi**:"
+    options:
+      - {"id": "x2", "text": "i"}
+      - {"id": "x1", "text": "b"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "b + i = bi."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-i"
+    prompt: "Điền chữ còn thiếu để được tiếng **bi**: _i"
+    answer: {"accept": ["b"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "b + i = bi."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-i"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🎃", "right": "bí"}
+      - {"left": "🔵", "right": "bi"}
+      - {"left": "👩", "right": "dì"}
+    answer: {"pairs": [["🎃", "bí"], ["🔵", "bi"], ["👩", "dì"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+  - {"id": "b12", "type": "summary", "markdown": "Hôm nay bé biết chữ **I i** và đọc được: bí, bi, dì. Giỏi quá!", "say": null}

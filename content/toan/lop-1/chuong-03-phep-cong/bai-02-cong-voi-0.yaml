@@ -1,0 +1,99 @@
+schema: 1
+slug: toan1-cong-voi-0
+title: "Phép cộng với số 0"
+summary: "Cộng một số với 0 thì kết quả là chính số đó."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Nếu thêm không có gì vào thì sao nhỉ? Mình thử xem nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Có 🍎🍎🍎. Thêm **0** quả nữa (không thêm quả nào).
+
+      Vẫn là 🍎🍎🍎
+
+      3 + 0 = 3
+    say: "Có ba quả táo. Thêm không quả nào. Vẫn là ba quả táo. Ba cộng không bằng ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Một số cộng với **0** vẫn bằng **chính số đó**.
+
+      0 cộng một số cũng vậy: 0 + 4 = 4
+    say: "Một số cộng với không vẫn bằng chính số đó. Không cộng bốn bằng bốn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-voi-0"
+    prompt: "5 + 0 = ?"
+    options:
+      - { id: "a", text: "0" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["b"] }
+    hint: "Thêm không có gì, vẫn như cũ."
+    explanation: "Năm cộng không bằng năm."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-voi-0"
+    prompt: "0 + 2 = ?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "0" }
+      - { id: "c", text: "3" }
+    answer: { correct: ["a"] }
+    hint: "Không có gì, thêm hai."
+    explanation: "Không cộng hai bằng hai."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-voi-0"
+    prompt: "4 + 0 = _"
+    answer: { accept: ["4"] }
+    hint: "Thêm không thì không đổi."
+    explanation: "Bốn cộng không bằng bốn."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-voi-0"
+    prompt: "0 + _ = 1"
+    answer: { accept: ["1"] }
+    hint: "Không cộng mấy bằng một?"
+    explanation: "Không cộng một bằng một."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-pham-vi-5"
+    prompt: "Phép tính nào đúng?"
+    options:
+      - { id: "a", text: "3 + 0 = 0" }
+      - { id: "b", text: "3 + 0 = 3" }
+      - { id: "c", text: "3 + 0 = 4" }
+    answer: { correct: ["b"] }
+    hint: "Cộng với không thì số không đổi."
+    explanation: "3 + 0 = 3."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé nhớ nhé: một số **cộng với 0** vẫn bằng chính số đó."
+    say: "Bé nhớ nhé. Một số cộng với không vẫn bằng chính số đó."

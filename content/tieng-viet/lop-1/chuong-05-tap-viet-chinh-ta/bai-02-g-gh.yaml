@@ -1,0 +1,92 @@
+schema: 1
+slug: "tv1-chinh-ta-02-g-gh"
+title: "Chính tả: g hay gh"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Chữ **gh** đứng trước **i, e, ê**. Chữ **g** đứng trước các chữ còn lại."
+    say: "Chữ gờ đứng trước i, e, ê. Chữ g đứng trước các chữ còn lại."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: 🪑 _ế"
+    options:
+      - {"id": "a", "text": "gh", "say": "gờ"}
+      - {"id": "b", "text": "g"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "gh + ế = ghế."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: 🐔 _à"
+    options:
+      - {"id": "a", "text": "g"}
+      - {"id": "b", "text": "gh", "say": "gờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "g + à = gà."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: ✏️ _i"
+    options:
+      - {"id": "a", "text": "gh", "say": "gờ"}
+      - {"id": "b", "text": "g"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "gh + i = ghi."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: 🍚 _ạo"
+    options:
+      - {"id": "a", "text": "g"}
+      - {"id": "b", "text": "gh", "say": "gờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "g + ạo = gạo."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: 🛶 _e"
+    answer: {"accept": ["gh"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "gh + e = ghe."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-g-gh"
+    prompt: "Điền vào chỗ trống: 🪵 _ỗ"
+    answer: {"accept": ["g"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "g + ỗ = gỗ."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **g hay gh**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

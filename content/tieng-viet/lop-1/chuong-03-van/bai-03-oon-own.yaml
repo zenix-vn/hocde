@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-03-oon-own"
+title: "Vần ôn – ơn"
+summary: "Học vần ôn và ơn; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ôn và ơn. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ôn**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ôn** → **bồn**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "ôn"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + ôn rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ơn**: ghép âm đầu với vần để được tiếng.
+      - **s** + **ơn** → **sơn**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "s"
+      rhyme: "ơn"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép s + ơn rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "bồn", "emoji": "🛁"}
+        - {"word": "hôn", "emoji": "😘"}
+        - {"word": "ồn", "emoji": "🔊"}
+        - {"word": "sơn", "emoji": "🎨"}
+        - {"word": "cơn", "emoji": "🌧️"}
+        - {"word": "đơn", "emoji": "📝"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ôn và ơn."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ôn** hoặc **ơn**: **bồn**, **hôn**, **ồn**, **sơn**, **cơn**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oon"
+    prompt: "Tiếng nào có vần **ôn**?"
+    options:
+      - {"id": "a", "text": "sò"}
+      - {"id": "b", "text": "bồn"}
+      - {"id": "c", "text": "bàn"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bồn\" có vần ôn."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-own"
+    prompt: "Tiếng nào có vần **ơn**?"
+    options:
+      - {"id": "a", "text": "cây"}
+      - {"id": "b", "text": "sơn"}
+      - {"id": "c", "text": "bi"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"sơn\" có vần ơn."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-boon"
+    prompt: "Sắp xếp để tạo thành tiếng **bồn**:"
+    options:
+      - {"id": "x2", "text": "ồn"}
+      - {"id": "x1", "text": "b"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "b + ồn = bồn."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oon"
+    prompt: "Điền phần còn lại để được tiếng **bồn** 🛁: b_"
+    answer: {"accept": ["ồn", "ôn"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ồn = bồn."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-own"
+    prompt: "Điền phần còn lại để được tiếng **sơn** 🎨: s_"
+    answer: {"accept": ["ơn"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "s + ơn = sơn."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-own"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "cơn"}
+    options:
+      - {"id": "a", "text": "cơn"}
+      - {"id": "b", "text": "vịt"}
+      - {"id": "c", "text": "bò"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"cơn\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-oon"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🛁", "right": "bồn"}
+      - {"left": "😘", "right": "hôn"}
+      - {"left": "🔊", "right": "ồn"}
+    answer: {"pairs": [["🛁", "bồn"], ["😘", "hôn"], ["🔊", "ồn"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ôn và ơn** và đọc được: bồn, hôn, ồn, sơn, cơn, đơn. Giỏi quá!"

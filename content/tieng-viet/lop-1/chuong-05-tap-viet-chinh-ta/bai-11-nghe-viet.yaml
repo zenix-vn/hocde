@@ -1,0 +1,104 @@
+schema: 1
+slug: "tv1-chinh-ta-11-nghe-viet"
+title: "Nghe và chọn từ đúng"
+summary: "Nghe từ rồi chọn cách viết đúng, rèn tai nghe và chính tả."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé lắng tai nghe nhé! Nghe xong, bé chọn từ viết đúng."
+
+  - id: "b2"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "cá"}
+    options:
+      - {"id": "a", "text": "ká"}
+      - {"id": "b", "text": "gá"}
+      - {"id": "c", "text": "cá"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"cá\"."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "kem"}
+    options:
+      - {"id": "a", "text": "cem"}
+      - {"id": "b", "text": "chem"}
+      - {"id": "c", "text": "kem"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"kem\"."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "ghế"}
+    options:
+      - {"id": "a", "text": "gế"}
+      - {"id": "b", "text": "ghế"}
+      - {"id": "c", "text": "nghế"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"ghế\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "nghe"}
+    options:
+      - {"id": "a", "text": "ghe"}
+      - {"id": "b", "text": "nge"}
+      - {"id": "c", "text": "nghe"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"nghe\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "trâu"}
+    options:
+      - {"id": "a", "text": "trâu"}
+      - {"id": "b", "text": "tâu"}
+      - {"id": "c", "text": "châu"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"trâu\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-dung"
+    prompt: "Nghe và chọn từ viết đúng:"
+    listen: {"text": "sách"}
+    options:
+      - {"id": "a", "text": "sách"}
+      - {"id": "b", "text": "xách"}
+      - {"id": "c", "text": "tách"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Từ đúng là \"sách\"."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã nghe và chọn đúng từ. Giỏi quá!", "say": null}

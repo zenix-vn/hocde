@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-29-ip-up"
+title: "Vần ip – up"
+summary: "Học vần ip và up; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ip và up. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ip**: ghép âm đầu với vần để được tiếng.
+      - **nh** + **ip** → **nhịp**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "nh", "rhyme": "ip", "tones": ["sắc", "nặng"], "caption": "Ghép nh + ip rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **up**: ghép âm đầu với vần để được tiếng.
+      - **b** + **up** → **búp**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "b", "rhyme": "up", "tones": ["sắc", "nặng"], "caption": "Ghép b + up rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "nhịp", "emoji": "🎵"}
+        - {"word": "kịp", "emoji": "🏃"}
+        - {"word": "dịp", "emoji": "🎉"}
+        - {"word": "búp", "emoji": "🌷"}
+        - {"word": "chụp", "emoji": "📷"}
+        - {"word": "cúp", "emoji": "🏆"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ip và up."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ip** hoặc **up**: **nhịp**, **kịp**, **dịp**, **búp**, **chụp**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ip"
+    prompt: "Tiếng nào có vần **ip**?"
+    options:
+      - {"id": "a", "text": "nhịp"}
+      - {"id": "b", "text": "cam"}
+      - {"id": "c", "text": "quạ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"nhịp\" có vần ip."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-up"
+    prompt: "Tiếng nào có vần **up**?"
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "lúa"}
+      - {"id": "c", "text": "búp"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"búp\" có vần up."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-nhip"
+    prompt: "Sắp xếp để tạo thành tiếng **nhịp**:"
+    options:
+      - {"id": "x2", "text": "ịp"}
+      - {"id": "x1", "text": "nh"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "nh + ịp = nhịp."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ip"
+    prompt: "Điền phần còn lại để được tiếng **nhịp** 🎵: nh_"
+    answer: {"accept": ["ịp", "ip"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "nh + ịp = nhịp."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-up"
+    prompt: "Điền phần còn lại để được tiếng **búp** 🌷: b_"
+    answer: {"accept": ["úp", "up"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + úp = búp."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-up"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "chụp"}
+    options:
+      - {"id": "a", "text": "cua"}
+      - {"id": "b", "text": "chụp"}
+      - {"id": "c", "text": "vịt"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"chụp\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ip"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🎵", "right": "nhịp"}
+      - {"left": "🏃", "right": "kịp"}
+      - {"left": "🎉", "right": "dịp"}
+    answer: {"pairs": [["🎵", "nhịp"], ["🏃", "kịp"], ["🎉", "dịp"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ip và up** và đọc được: nhịp, kịp, dịp, búp, chụp, cúp. Giỏi quá!"

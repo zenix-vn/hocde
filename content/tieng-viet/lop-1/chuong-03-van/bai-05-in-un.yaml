@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-05-in-un"
+title: "Vần in – un"
+summary: "Học vần in và un; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: in và un. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **in**: ghép âm đầu với vần để được tiếng.
+      - **t** + **in** → **tin**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "t"
+      rhyme: "in"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép t + in rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **un**: ghép âm đầu với vần để được tiếng.
+      - **b** + **un** → **bún**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "un"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + un rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tin", "emoji": "📰"}
+        - {"word": "chín", "emoji": "9️⃣"}
+        - {"word": "xin", "emoji": "🙏"}
+        - {"word": "bún", "emoji": "🍜"}
+        - {"word": "cún", "emoji": "🐶"}
+        - {"word": "phun", "emoji": "⛲"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần in và un."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **in** hoặc **un**: **tin**, **chín**, **xin**, **bún**, **cún**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-in"
+    prompt: "Tiếng nào có vần **in**?"
+    options:
+      - {"id": "a", "text": "bò"}
+      - {"id": "b", "text": "rổ"}
+      - {"id": "c", "text": "tin"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tin\" có vần in."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-un"
+    prompt: "Tiếng nào có vần **un**?"
+    options:
+      - {"id": "a", "text": "cá"}
+      - {"id": "b", "text": "bún"}
+      - {"id": "c", "text": "rùa"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bún\" có vần un."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tin"
+    prompt: "Sắp xếp để tạo thành tiếng **tin**:"
+    options:
+      - {"id": "x2", "text": "in"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + in = tin."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-in"
+    prompt: "Điền phần còn lại để được tiếng **tin** 📰: t_"
+    answer: {"accept": ["in"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + in = tin."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-un"
+    prompt: "Điền phần còn lại để được tiếng **bún** 🍜: b_"
+    answer: {"accept": ["ún", "un"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ún = bún."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-un"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "cún"}
+    options:
+      - {"id": "a", "text": "cún"}
+      - {"id": "b", "text": "nhà"}
+      - {"id": "c", "text": "cá"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"cún\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-in"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "📰", "right": "tin"}
+      - {"left": "9️⃣", "right": "chín"}
+      - {"left": "🙏", "right": "xin"}
+    answer: {"pairs": [["📰", "tin"], ["9️⃣", "chín"], ["🙏", "xin"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **in và un** và đọc được: tin, chín, xin, bún, cún, phun. Giỏi quá!"

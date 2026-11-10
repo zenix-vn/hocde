@@ -1,0 +1,96 @@
+schema: 1
+slug: toan1-chuc-va-don-vi
+title: "Chục và đơn vị"
+summary: "Số có hai chữ số gồm mấy chục và mấy đơn vị."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mười que tính bó lại thành một bó. Bó đó gọi là một chục!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🔟 = **1 chục** (10 que tính)
+
+      15 gồm **1 chục** và **5 đơn vị**.
+
+      13 gồm **1 chục** và **3 đơn vị**.
+    say: "Mười que tính bó lại là một chục. Số mười lăm gồm một chục và năm đơn vị. Số mười ba gồm một chục và ba đơn vị."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Số **16**: chữ số **1** chỉ số chục, chữ số **6** chỉ số đơn vị."
+    say: "Số mười sáu: chữ số một chỉ số chục, chữ số sáu chỉ số đơn vị."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số 14 gồm mấy chục và mấy đơn vị?"
+    options:
+      - { id: "a", text: "1 chục 4 đơn vị" }
+      - { id: "b", text: "4 chục 1 đơn vị" }
+      - { id: "c", text: "1 chục 1 đơn vị" }
+    answer: { correct: ["a"] }
+    hint: "Chữ số đầu chỉ chục."
+    explanation: "14 gồm 1 chục và 4 đơn vị."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số 18 gồm 1 chục và _ đơn vị."
+    answer: { accept: ["8"] }
+    hint: "Chữ số cuối là số đơn vị."
+    explanation: "18 gồm 1 chục và 8 đơn vị."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "1 chục và 7 đơn vị là số _"
+    answer: { accept: ["17"] }
+    hint: "Viết chữ số chục trước, đơn vị sau."
+    explanation: "1 chục 7 đơn vị là 17."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số nào gồm 1 chục và 9 đơn vị?"
+    options:
+      - { id: "a", text: "10" }
+      - { id: "b", text: "19" }
+      - { id: "c", text: "9" }
+    answer: { correct: ["b"] }
+    hint: "Viết 1 rồi 9."
+    explanation: "19."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số 20 gồm mấy chục?"
+    options:
+      - { id: "a", text: "1 chục" }
+      - { id: "b", text: "2 chục" }
+      - { id: "c", text: "0 chục" }
+    answer: { correct: ["b"] }
+    hint: "20 là hai bó que tính."
+    explanation: "20 gồm 2 chục."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết số có hai chữ số gồm **chục** và **đơn vị**."
+    say: "Bé đã biết số có hai chữ số gồm chục và đơn vị."

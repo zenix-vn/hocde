@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-45-ia-ua"
+title: "Vần ia – ua"
+summary: "Học vần ia và ua; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ia và ua. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ia**: ghép âm đầu với vần để được tiếng.
+      - **t** + **ia** → **tia**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "t"
+      rhyme: "ia"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép t + ia rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ua**: ghép âm đầu với vần để được tiếng.
+      - **c** + **ua** → **cua**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "c"
+      rhyme: "ua"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + ua rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tia", "emoji": "☀️"}
+        - {"word": "đĩa", "emoji": "🍽️"}
+        - {"word": "chìa", "emoji": "🔑"}
+        - {"word": "cua", "emoji": "🦀"}
+        - {"word": "rùa", "emoji": "🐢"}
+        - {"word": "vua", "emoji": "👑"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ia và ua."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ia** hoặc **ua**: **tia**, **đĩa**, **chìa**, **cua**, **rùa**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ia"
+    prompt: "Tiếng nào có vần **ia**?"
+    options:
+      - {"id": "a", "text": "tia"}
+      - {"id": "b", "text": "sách"}
+      - {"id": "c", "text": "bi"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tia\" có vần ia."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ua"
+    prompt: "Tiếng nào có vần **ua**?"
+    options:
+      - {"id": "a", "text": "cua"}
+      - {"id": "b", "text": "xô"}
+      - {"id": "c", "text": "lọ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cua\" có vần ua."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tia"
+    prompt: "Sắp xếp để tạo thành tiếng **tia**:"
+    options:
+      - {"id": "x2", "text": "ia"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + ia = tia."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ia"
+    prompt: "Điền phần còn lại để được tiếng **tia** ☀️: t_"
+    answer: {"accept": ["ia"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + ia = tia."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ua"
+    prompt: "Điền phần còn lại để được tiếng **cua** 🦀: c_"
+    answer: {"accept": ["ua"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + ua = cua."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ua"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "rùa"}
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "rùa"}
+      - {"id": "c", "text": "dê"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"rùa\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ia"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "☀️", "right": "tia"}
+      - {"left": "🍽️", "right": "đĩa"}
+      - {"left": "🔑", "right": "chìa"}
+    answer: {"pairs": [["☀️", "tia"], ["🍽️", "đĩa"], ["🔑", "chìa"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ia và ua** và đọc được: tia, đĩa, chìa, cua, rùa, vua. Giỏi quá!"

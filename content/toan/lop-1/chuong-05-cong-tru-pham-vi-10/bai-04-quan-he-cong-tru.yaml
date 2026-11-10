@@ -1,0 +1,96 @@
+schema: 1
+slug: toan1-quan-he-cong-tru
+title: "Cộng và trừ đi cùng nhau"
+summary: "Từ một phép cộng, viết được ba phép tính còn lại."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Phép cộng và phép trừ là hai người bạn thân. Bé xem nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Có 3 chú gà 🐔 và 4 chú vịt 🦆. Tất cả có 7 con.
+
+      3 + 4 = 7
+
+      4 + 3 = 7
+
+      7 − 3 = 4
+
+      7 − 4 = 3
+    say: "Ba cộng bốn bằng bảy. Bốn cộng ba bằng bảy. Bảy trừ ba bằng bốn. Bảy trừ bốn bằng ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Ba số **3, 4, 7** cho ta bốn phép tính. Hai phép **cộng** và hai phép **trừ**."
+    say: "Ba số ba, bốn, bảy cho ta bốn phép tính. Hai phép cộng và hai phép trừ."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quan-he-cong-tru"
+    prompt: "2 + 5 = 7 thì 7 − 2 = _"
+    answer: { accept: ["5"] }
+    hint: "Lấy tổng bớt đi một số hạng."
+    explanation: "7 − 2 = 5."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quan-he-cong-tru"
+    prompt: "4 + 4 = 8 thì 8 − 4 = _"
+    answer: { accept: ["4"] }
+    hint: "Lấy tổng bớt đi một số hạng."
+    explanation: "8 − 4 = 4."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "quan-he-cong-tru"
+    prompt: "6 − 2 = 4 thì 4 + 2 = _"
+    answer: { accept: ["6"] }
+    hint: "Cộng trở lại số đã trừ."
+    explanation: "4 + 2 = 6."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "quan-he-cong-tru"
+    prompt: "Từ 3 + 6 = 9, phép tính nào đúng?"
+    options:
+      - { id: "a", text: "9 − 3 = 6" }
+      - { id: "b", text: "9 − 3 = 7" }
+      - { id: "c", text: "9 + 3 = 6" }
+    answer: { correct: ["a"] }
+    hint: "Lấy 9 bớt đi 3."
+    explanation: "9 − 3 = 6."
+
+  - id: b8
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "quan-he-cong-tru"
+    prompt: "Nối phép tính cùng nhóm với 2 + 3 = 5."
+    pairs:
+      - { left: "3 + 2", right: "5" }
+      - { left: "5 − 2", right: "3" }
+      - { left: "5 − 3", right: "2" }
+    answer: { pairs: [["3 + 2", "5"], ["5 − 2", "3"], ["5 − 3", "2"]] }
+    hint: "Dùng ba số 2, 3, 5."
+    explanation: "3 + 2 = 5, 5 − 2 = 3, 5 − 3 = 2."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết từ một phép cộng, viết được thêm các phép tính khác."
+    say: "Bé đã biết từ một phép cộng, viết được thêm các phép tính khác."

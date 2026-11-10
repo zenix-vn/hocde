@@ -1,0 +1,117 @@
+schema: 1
+slug: toan1-so-sanh-lon-hon-be-hon
+title: "Lớn hơn, bé hơn"
+summary: "So sánh hai số và dùng dấu > , <."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình so sánh các số. Dấu bé xíu nhưng rất hay, bé xem nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Số đứng sau thì **lớn hơn** khi đếm.
+
+      **7** lớn hơn **4**, ta viết: 7 > 4
+
+      **4** bé hơn **7**, ta viết: 4 < 7
+    say: "Bảy lớn hơn bốn. Ta viết bảy lớn hơn bốn. Bốn bé hơn bảy. Ta viết bốn bé hơn bảy."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Mồm cá sấu luôn **mở về phía số lớn hơn**: 🐊
+
+      9 > 5 và 5 < 9
+    say: "Miệng con cá sấu luôn mở về phía số lớn hơn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-dau"
+    prompt: "Chọn dấu đúng: 8 _ 3"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "Tám và ba, số nào lớn hơn?"
+    explanation: "8 lớn hơn 3, nên 8 > 3."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-dau"
+    prompt: "Chọn dấu đúng: 2 _ 6"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["b"] }
+    hint: "Hai và sáu, số nào lớn hơn?"
+    explanation: "2 bé hơn 6, nên 2 < 6."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-dau"
+    prompt: "Chọn dấu đúng: 10 _ 9"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "Đếm: chín rồi đến mười."
+    explanation: "10 lớn hơn 9, nên 10 > 9."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-lon-nhat"
+    prompt: "Số nào lớn hơn 7?"
+    options:
+      - { id: "a", text: "5" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["b"] }
+    hint: "Đếm tiếp sau bảy: tám, chín."
+    explanation: "9 lớn hơn 7."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-be-nhat"
+    prompt: "Số nào bé hơn 4?"
+    options:
+      - { id: "a", text: "6" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "2" }
+    answer: { correct: ["c"] }
+    hint: "Đếm lùi từ bốn: ba, hai."
+    explanation: "2 bé hơn 4."
+
+  - id: b9
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-sanh-dien-so"
+    prompt: "Điền số bé hơn 3 (một số bất kỳ trong 0, 1, 2): 3 > _"
+    answer: { accept: ["0", "1", "2"] }
+    hint: "Đếm lùi từ ba."
+    explanation: "Các số 0, 1, 2 đều bé hơn 3."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết dùng dấu **>** và **<** để so sánh hai số."
+    say: "Bé đã biết dùng dấu lớn hơn và dấu bé hơn để so sánh hai số."

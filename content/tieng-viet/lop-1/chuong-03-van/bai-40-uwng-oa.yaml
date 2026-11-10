@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-40-uwng-oa"
+title: "Vần ưng – oa"
+summary: "Học vần ưng và oa; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ưng và oa. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ưng**: ghép âm đầu với vần để được tiếng.
+      - **tr** + **ưng** → **trứng**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "tr"
+      rhyme: "ưng"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép tr + ưng rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **oa**: ghép âm đầu với vần để được tiếng.
+      - **h** + **oa** → **hoa**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "h"
+      rhyme: "oa"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép h + oa rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "trứng", "emoji": "🥚"}
+        - {"word": "dừng", "emoji": "🛑"}
+        - {"word": "mừng", "emoji": "🎉"}
+        - {"word": "hoa", "emoji": "🌸"}
+        - {"word": "loa", "emoji": "📢"}
+        - {"word": "toa", "emoji": "🚃"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ưng và oa."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ưng** hoặc **oa**: **trứng**, **dừng**, **mừng**, **hoa**, **loa**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uwng"
+    prompt: "Tiếng nào có vần **ưng**?"
+    options:
+      - {"id": "a", "text": "lọ"}
+      - {"id": "b", "text": "chim"}
+      - {"id": "c", "text": "trứng"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"trứng\" có vần ưng."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oa"
+    prompt: "Tiếng nào có vần **oa**?"
+    options:
+      - {"id": "a", "text": "kem"}
+      - {"id": "b", "text": "voi"}
+      - {"id": "c", "text": "hoa"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"hoa\" có vần oa."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-truwng"
+    prompt: "Sắp xếp để tạo thành tiếng **trứng**:"
+    options:
+      - {"id": "x2", "text": "ứng"}
+      - {"id": "x1", "text": "tr"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "tr + ứng = trứng."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uwng"
+    prompt: "Điền phần còn lại để được tiếng **trứng** 🥚: tr_"
+    answer: {"accept": ["ứng", "ưng"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "tr + ứng = trứng."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oa"
+    prompt: "Điền phần còn lại để được tiếng **hoa** 🌸: h_"
+    answer: {"accept": ["oa"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "h + oa = hoa."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-oa"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "loa"}
+    options:
+      - {"id": "a", "text": "loa"}
+      - {"id": "b", "text": "bi"}
+      - {"id": "c", "text": "nón"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"loa\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-uwng"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🥚", "right": "trứng"}
+      - {"left": "🛑", "right": "dừng"}
+      - {"left": "🎉", "right": "mừng"}
+    answer: {"pairs": [["🥚", "trứng"], ["🛑", "dừng"], ["🎉", "mừng"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ưng và oa** và đọc được: trứng, dừng, mừng, hoa, loa, toa. Giỏi quá!"

@@ -1,0 +1,107 @@
+schema: 1
+slug: "tv1-t2-01-gia-dinh"
+title: "Gia đình của em"
+summary: "Chủ đề gia đình: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Gia đình em có bốn người.
+
+      Bố em là bác sĩ. Mẹ em là cô giáo.
+
+      Em và em gái đều ngoan.
+
+      Cả nhà em rất yêu thương nhau.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "bố", "emoji": "👨"}
+        - {"word": "mẹ", "emoji": "👩"}
+        - {"word": "em gái", "emoji": "👧"}
+        - {"word": "gia đình", "emoji": "👪"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Gia đình em có mấy người?"
+    options:
+      - {"id": "a", "text": "Bốn người"}
+      - {"id": "b", "text": "Sáu người"}
+      - {"id": "c", "text": "Hai người"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bốn người\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Mẹ em làm nghề gì?"
+    options:
+      - {"id": "a", "text": "Bác sĩ"}
+      - {"id": "b", "text": "Cô giáo"}
+      - {"id": "c", "text": "Ca sĩ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Cô giáo\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Bố em làm nghề gì?"
+    options:
+      - {"id": "a", "text": "Cô giáo"}
+      - {"id": "b", "text": "Bác sĩ"}
+      - {"id": "c", "text": "Nông dân"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bác sĩ\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x4", "text": "rất"}
+      - {"id": "x1", "text": "Cả"}
+      - {"id": "x3", "text": "em"}
+      - {"id": "x7", "text": "nhau"}
+      - {"id": "x5", "text": "yêu"}
+      - {"id": "x6", "text": "thương"}
+      - {"id": "x2", "text": "nhà"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5", "x6", "x7"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Cả nhà em rất yêu thương nhau."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Gia đình em có _ người."
+    answer: {"accept": ["bốn"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Gia đình em có bốn người.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Gia đình của em**. Bé đọc thật hay!", "say": null}

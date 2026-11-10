@@ -1,0 +1,147 @@
+schema: 1
+slug: "tv1-van-11-on-tap-10"
+title: "Ôn tập vần (1)"
+summary: "Ôn lại các vần đã học qua trò chơi tìm tiếng, nghe và nối."
+est_minutes: 8
+xp_reward: 30
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng ôn lại các vần đã học nhé! Bé làm thật cẩn thận nha."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Muốn đọc một tiếng, bé ghép **âm đầu** với **vần**, rồi thêm **dấu thanh**."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-im"
+    prompt: "Tiếng nào có vần **im**?"
+    options:
+      - {"id": "a", "text": "chim"}
+      - {"id": "b", "text": "mềm"}
+      - {"id": "c", "text": "phun"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"chim\" có vần im."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-awn"
+    prompt: "Tiếng nào có vần **ăn**?"
+    options:
+      - {"id": "a", "text": "hôm"}
+      - {"id": "b", "text": "chim"}
+      - {"id": "c", "text": "khăn"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"khăn\" có vần ăn."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-om"
+    prompt: "Tiếng nào có vần **om**?"
+    options:
+      - {"id": "a", "text": "tám"}
+      - {"id": "b", "text": "xóm"}
+      - {"id": "c", "text": "năm"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"xóm\" có vần om."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-owm"
+    prompt: "Tiếng nào có vần **ơm**?"
+    options:
+      - {"id": "a", "text": "em"}
+      - {"id": "b", "text": "cơm"}
+      - {"id": "c", "text": "sơn"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cơm\" có vần ơm."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-an"
+    prompt: "Tiếng nào có vần **an**?"
+    options:
+      - {"id": "a", "text": "cúm"}
+      - {"id": "b", "text": "phun"}
+      - {"id": "c", "text": "đàn"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"đàn\" có vần an."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-on"
+    prompt: "Tiếng nào có vần **on**?"
+    options:
+      - {"id": "a", "text": "nón"}
+      - {"id": "b", "text": "phun"}
+      - {"id": "c", "text": "bún"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"nón\" có vần on."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-oom"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "hôm"}
+    options:
+      - {"id": "a", "text": "hôm"}
+      - {"id": "b", "text": "thơm"}
+      - {"id": "c", "text": "sen"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"hôm\"."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-own"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "đơn"}
+    options:
+      - {"id": "a", "text": "chạm"}
+      - {"id": "b", "text": "sân"}
+      - {"id": "c", "text": "đơn"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"đơn\"."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "on-tap-noi-hinh"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍇", "right": "chùm"}
+      - {"left": "🍄", "right": "nấm"}
+      - {"left": "🧣", "right": "khăn"}
+    answer: {"pairs": [["🍇", "chùm"], ["🍄", "nấm"], ["🧣", "khăn"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ."
+  - {"id": "b12", "type": "summary", "markdown": "Bé đã ôn xong các vần rồi. Bé giỏi lắm, cứ đọc thật nhiều nhé!", "say": null}

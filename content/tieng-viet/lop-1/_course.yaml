@@ -1,6 +1,6 @@
 # Tiếng Việt lớp 1 – theo định hướng bộ sách "Kết nối tri thức với cuộc sống"
 # LƯU Ý: thứ tự chữ/vần và tên bài dưới đây là KHUNG DỰ KIẾN, cần đối chiếu với
-# sách giáo khoa (SGK) bản hiện hành trước khi publish. Nội dung bài học là soạn mới,
+# sách giáo khoa (SGK) bản hiện hành trước khi dùng chính thức. Nội dung bài học là soạn mới,
 # không sao chép nguyên văn SGK (bản quyền).
 subject: tieng-viet
 grade: 1
@@ -11,13 +11,15 @@ status: published
 
 units:
   - slug: chuong-01-lam-quen
-    title: Làm quen với tiếng Việt
-    summary: Tư thế ngồi viết, cầm bút, các nét cơ bản.
-    lessons: []            # TODO: bài tư thế ngồi/cầm bút, nét cơ bản (draw_trace)
+    title: "Làm quen với tiếng Việt"
+    summary: "Tư thế ngồi viết, cầm bút, các nét cơ bản."
+    lessons:
+      - bai-01-tu-the-ngoi-viet
+      - bai-02-cac-net-co-ban
 
   - slug: chuong-02-chu-cai-dau
-    title: Chữ cái và âm đầu
-    summary: Nhận biết, đọc và viết các chữ cái đầu tiên; ghép tiếng đơn giản.
+    title: "Chữ cái và âm đầu"
+    summary: "Nhận biết, đọc và ghép các chữ cái, âm đầu; làm quen dấu thanh."
     lessons:
       - bai-01-a
       - bai-02-b
@@ -29,24 +31,135 @@ units:
       - bai-08-d-gach
       - bai-09-e
       - bai-10-e-mu
-      # TODO: các chữ tiếp theo (sắp theo SGK)
+      - bai-11-h
+      - bai-12-i
+      - bai-13-k
+      - bai-14-l
+      - bai-15-m
+      - bai-16-n
+      - bai-17-g
+      - bai-18-gh
+      - bai-19-r
+      - bai-20-s
+      - bai-21-t
+      - bai-22-u
+      - bai-23-u-u
+      - bai-24-v
+      - bai-25-x
+      - bai-26-y
+      - bai-27-p
+      - bai-28-ph
+      - bai-29-qu
+      - bai-30-kh
+      - bai-31-nh
+      - bai-32-ng
+      - bai-33-ngh
+      - bai-34-ch
+      - bai-35-tr
+      - bai-36-th
+      - bai-37-gi
+      - bai-38-on-tap-chu-cai
 
   - slug: chuong-03-van
-    title: Học vần
-    summary: Vần có âm cuối (an, ăn, ân, am, ...), vần có âm đôi, ghép tiếng – từ.
-    lessons: []            # TODO
+    title: "Học vần"
+    summary: "Vần có âm cuối, vần có âm đôi; ghép âm đầu với vần để đọc tiếng, từ."
+    lessons:
+      - bai-01-an-awn
+      - bai-02-aan-on
+      - bai-03-oon-own
+      - bai-04-en-een
+      - bai-05-in-un
+      - bai-06-am-awm
+      - bai-07-aam-om
+      - bai-08-oom-owm
+      - bai-09-em-eem
+      - bai-10-im-um
+      - bai-11-on-tap-10
+      - bai-12-ai-ay
+      - bai-13-aay-oi
+      - bai-14-ooi-owi
+      - bai-15-ui-uwi
+      - bai-16-ao-eo
+      - bai-17-au-aau
+      - bai-18-iu-uwu
+      - bai-19-at-awt
+      - bai-20-aat-ot
+      - bai-21-oot-owt
+      - bai-22-on-tap-20
+      - bai-23-et-eet
+      - bai-24-it-ut
+      - bai-25-ap-awp
+      - bai-26-aap-op
+      - bai-27-oop-owp
+      - bai-28-ep-eep
+      - bai-29-ip-up
+      - bai-30-ac-awc
+      - bai-31-aac-oc
+      - bai-32-ooc-uc
+      - bai-33-on-tap-30
+      - bai-34-uwc-ach
+      - bai-35-eech-ich
+      - bai-36-anh-inh
+      - bai-37-ang-awng
+      - bai-38-aang-ong
+      - bai-39-oong-ung
+      - bai-40-uwng-oa
+      - bai-41-oe-uy
+      - bai-42-oan-oat
+      - bai-43-uaan-uyeen
+      - bai-44-on-tap-40
+      - bai-45-ia-ua
+      - bai-46-uwa-ieen
+      - bai-47-ieet-ieem
+      - bai-48-ieep-ieec
+      - bai-49-ieeng-ieeu
+      - bai-50-uoon-uoot
+      - bai-51-uooc-uoong
+      - bai-52-uwown-uwowt
+      - bai-53-uwowc-uwowng
+      - bai-54-uwowi-uwowu
+      - bai-55-on-tap-50
 
   - slug: chuong-04-tap-doc-cau-ngan
-    title: Tập đọc câu ngắn
-    summary: Đọc câu, đoạn ngắn; tô sáng theo giọng đọc.
-    lessons: []            # TODO
+    title: "Tập đọc câu ngắn"
+    summary: "Đọc câu, đoạn ngắn; trả lời câu hỏi, sắp xếp từ thành câu."
+    lessons:
+      - bai-01-be-va-ba
+      - bai-02-co-va-ca
+      - bai-03-nha-cua-be
+      - bai-04-ga-me-ga-con
+      - bai-05-troi-mua
+      - bai-06-o-so-thu
+      - bai-07-di-hoc
+      - bai-08-cay-xanh
+      - bai-09-meo-con
+      - bai-10-bua-com
 
   - slug: chuong-05-tap-viet-chinh-ta
-    title: Tập viết và chính tả
-    summary: Viết chữ, từ, câu; nghe – viết đơn giản.
-    lessons: []            # TODO
+    title: "Tập viết và chính tả"
+    summary: "Quy tắc chính tả, viết hoa, dấu câu; nghe và chọn từ đúng."
+    lessons:
+      - bai-01-c-k
+      - bai-02-g-gh
+      - bai-03-ng-ngh
+      - bai-04-ch-tr
+      - bai-05-s-x
+      - bai-06-d-gi
+      - bai-07-l-n
+      - bai-08-hoi-nga
+      - bai-09-viet-hoa
+      - bai-10-dau-cau
+      - bai-11-nghe-viet
 
   - slug: chuong-06-tap-2-chu-de
-    title: Tập 2 – Đọc hiểu theo chủ đề
-    summary: Bài đọc ngắn theo chủ đề (gia đình, nhà trường, thiên nhiên, ...).
-    lessons: []            # TODO
+    title: "Tập 2 – Đọc hiểu theo chủ đề"
+    summary: "Bài đọc ngắn theo chủ đề: gia đình, nhà trường, bốn mùa, loài vật, giao thông..."
+    lessons:
+      - bai-01-gia-dinh
+      - bai-02-truong-em
+      - bai-03-mua-xuan
+      - bai-04-mua-he
+      - bai-05-con-vat-nuoi
+      - bai-06-trai-cay
+      - bai-07-an-toan-giao-thong
+      - bai-08-be-giup-me

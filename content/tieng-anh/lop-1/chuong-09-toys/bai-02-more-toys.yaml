@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-toys-2
+title: "More toys"
+summary: "Thêm đồ chơi: robot, teddy bear, train, balloon."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Còn nhiều món đồ chơi vui nữa!"
+    say:
+      - { t: "Còn nhiều món đồ chơi vui nữa! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "robot", emoji: "🤖", meaning: "người máy" }
+        - { word: "teddy bear", emoji: "🧸", meaning: "gấu bông" }
+        - { word: "train", emoji: "🚂", meaning: "tàu hỏa" }
+        - { word: "balloon", emoji: "🎈", meaning: "bóng bay" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **robot** (người máy) · **teddy bear** (gấu bông) · **train** (tàu hỏa) · **balloon** (bóng bay)"
+    say: [{ t: "robot", l: en }, { t: "người máy", l: vi }, { t: "teddy bear", l: en }, { t: "gấu bông", l: vi }, { t: "train", l: en }, { t: "tàu hỏa", l: vi }, { t: "balloon", l: en }, { t: "bóng bay", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-robot
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "robot", lang: en }
+    options:
+      - { id: a, text: "🤖", say: "robot", lang: en }
+      - { id: b, text: "🧸", say: "teddy bear", lang: en }
+      - { id: c, text: "🚂", say: "train", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là robot, nghĩa là người máy."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-teddy-bear
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "teddy bear", lang: en }
+    options:
+      - { id: a, text: "🚂", say: "train", lang: en }
+      - { id: b, text: "🧸", say: "teddy bear", lang: en }
+      - { id: c, text: "🎈", say: "balloon", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là teddy bear, nghĩa là gấu bông."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-train
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "train", lang: en }
+    options:
+      - { id: a, text: "🎈", say: "balloon", lang: en }
+      - { id: b, text: "🤖", say: "robot", lang: en }
+      - { id: c, text: "🚂", say: "train", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là train, nghĩa là tàu hỏa."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-balloon
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "balloon", lang: en }
+    options:
+      - { id: a, text: "🎈", say: "balloon", lang: en }
+      - { id: b, text: "🤖", say: "robot", lang: en }
+      - { id: c, text: "🧸", say: "teddy bear", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là balloon, nghĩa là bóng bay."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-train
+    prompt: "Tàu hỏa tiếng Anh là gì? 🚂"
+    option_lang: en
+    options:
+      - { id: a, text: "train" }
+      - { id: b, text: "balloon" }
+      - { id: c, text: "robot" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Tàu hỏa tiếng Anh là train."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-balloon
+    prompt: "Bóng bay tiếng Anh là gì? 🎈"
+    option_lang: en
+    options:
+      - { id: a, text: "robot" }
+      - { id: b, text: "balloon" }
+      - { id: c, text: "teddy bear" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Bóng bay tiếng Anh là balloon."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "robot", right: "người máy" }
+      - { left: "teddy bear", right: "gấu bông" }
+      - { left: "train", right: "tàu hỏa" }
+      - { left: "balloon", right: "bóng bay" }
+    answer: { pairs: [["robot", "người máy"], ["teddy bear", "gấu bông"], ["train", "tàu hỏa"], ["balloon", "bóng bay"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "robot là người máy; teddy bear là gấu bông; train là tàu hỏa; balloon là bóng bay."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **robot**, **teddy bear**, **train**, **balloon**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "robot, teddy bear, train, balloon.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

@@ -1,0 +1,101 @@
+schema: 1
+slug: toan1-hinh-tam-giac-hinh-chu-nhat
+title: "Hình tam giác, hình chữ nhật"
+summary: "Nhận biết hình tam giác và hình chữ nhật."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Còn hai hình nữa: hình tam giác và hình chữ nhật. Mình cùng khám phá!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🔺 là **hình tam giác**. Hình tam giác có **3 cạnh**, 3 góc.
+
+      🚪 có dạng **hình chữ nhật**. Hình chữ nhật có 4 cạnh, 4 góc, hai cạnh dài và hai cạnh ngắn.
+    say: "Đây là hình tam giác. Hình tam giác có ba cạnh, ba góc. Cánh cửa có dạng hình chữ nhật. Hình chữ nhật có bốn cạnh, bốn góc, hai cạnh dài và hai cạnh ngắn."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Tam giác: **3** cạnh.
+
+      Chữ nhật: **4** cạnh, hai cạnh dài và hai cạnh ngắn.
+    say: "Tam giác có ba cạnh. Chữ nhật có bốn cạnh, hai cạnh dài và hai cạnh ngắn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Hình nào là hình tam giác?"
+    options:
+      - { id: "a", text: "🔺" }
+      - { id: "b", text: "🟥" }
+      - { id: "c", text: "🔴" }
+    answer: { correct: ["a"] }
+    hint: "Hình tam giác có 3 cạnh."
+    explanation: "🔺 là hình tam giác."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-canh"
+    prompt: "Hình tam giác có bao nhiêu cạnh?"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["b"] }
+    hint: "Tam giác: tam là ba."
+    explanation: "Hình tam giác có 3 cạnh."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-canh"
+    prompt: "Hình chữ nhật có bao nhiêu cạnh?"
+    options:
+      - { id: "a", text: "3" }
+      - { id: "b", text: "4" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["b"] }
+    hint: "Đếm 4 cạnh của cánh cửa."
+    explanation: "Hình chữ nhật có 4 cạnh."
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "vat-co-hinh"
+    prompt: "Nối đồ vật với hình của nó."
+    pairs:
+      - { left: "🚩 lá cờ đuôi nheo", right: "hình tam giác" }
+      - { left: "📱 điện thoại", right: "hình chữ nhật" }
+      - { left: "🪟 ô cửa sổ vuông", right: "hình vuông" }
+    answer: { pairs: [["🚩 lá cờ đuôi nheo", "hình tam giác"], ["📱 điện thoại", "hình chữ nhật"], ["🪟 ô cửa sổ vuông", "hình vuông"]] }
+    hint: "Điện thoại dài hơn rộng. Lá cờ nhọn một đầu. Ô cửa sổ có bốn cạnh bằng nhau."
+    explanation: "Lá cờ là hình tam giác. Điện thoại là hình chữ nhật. Ô cửa sổ là hình vuông."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-hinh"
+    prompt: "Có 🔺🚪🔺🔺. Có bao nhiêu hình tam giác? Điền số: _"
+    answer: { accept: ["3"] }
+    hint: "Đếm các hình 🔺."
+    explanation: "Có 3 hình tam giác."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **hình tam giác** (3 cạnh) và **hình chữ nhật** (4 cạnh)."
+    say: "Bé đã biết hình tam giác có ba cạnh, hình chữ nhật có bốn cạnh."

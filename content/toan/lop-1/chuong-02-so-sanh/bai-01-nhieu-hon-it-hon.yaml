@@ -1,0 +1,120 @@
+schema: 1
+slug: toan1-so-sanh-nhieu-hon-it-hon
+title: "Nhiều hơn, ít hơn, bằng nhau"
+summary: "So sánh hai nhóm vật bằng cách ghép đôi."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bên nào có nhiều hơn nhỉ? Mình cùng so sánh nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🐰🐰🐰 và 🥕🥕
+
+      Mỗi chú thỏ lấy một củ cà rốt. Còn thừa **một chú thỏ**, vì chưa có cà rốt.
+
+      Số thỏ **nhiều hơn** số cà rốt. Số cà rốt **ít hơn** số thỏ.
+    say: "Ba chú thỏ và hai củ cà rốt. Mỗi chú thỏ lấy một củ cà rốt. Còn thừa một chú thỏ. Số thỏ nhiều hơn số cà rốt. Số cà rốt ít hơn số thỏ."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Ghép mỗi vật ở nhóm này với một vật ở nhóm kia. Nhóm còn **thừa** là nhóm **nhiều hơn**. Nhóm hết trước là nhóm **ít hơn**. Nếu không ai thừa thì **bằng nhau**."
+    say: "Ghép mỗi vật ở nhóm này với một vật ở nhóm kia. Nhóm còn thừa là nhóm nhiều hơn. Nhóm hết trước là nhóm ít hơn. Không ai thừa thì bằng nhau."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhieu-hon-it-hon"
+    prompt: |
+      Nhóm nào nhiều hơn?
+
+      🍎🍎🍎🍎
+
+      🍌🍌
+    options:
+      - { id: "a", text: "Táo 🍎" }
+      - { id: "b", text: "Chuối 🍌" }
+      - { id: "c", text: "Bằng nhau" }
+    answer: { correct: ["a"] }
+    hint: "Đếm từng nhóm: bốn quả táo, hai quả chuối."
+    explanation: "Bốn quả táo nhiều hơn hai quả chuối."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhieu-hon-it-hon"
+    prompt: |
+      Nhóm nào ít hơn?
+
+      ⚽⚽⚽
+
+      🏀🏀🏀🏀🏀
+    options:
+      - { id: "a", text: "Bóng đá ⚽" }
+      - { id: "b", text: "Bóng rổ 🏀" }
+      - { id: "c", text: "Bằng nhau" }
+    answer: { correct: ["a"] }
+    hint: "Đếm từng nhóm rồi so sánh."
+    explanation: "Ba quả bóng đá ít hơn năm quả bóng rổ."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "bang-nhau"
+    prompt: |
+      Hai nhóm có bằng nhau không?
+
+      🐟🐟🐟
+
+      🐱🐱🐱
+    options:
+      - { id: "a", text: "Bằng nhau" }
+      - { id: "b", text: "Cá nhiều hơn" }
+      - { id: "c", text: "Mèo nhiều hơn" }
+    answer: { correct: ["a"] }
+    hint: "Mỗi con mèo ăn một con cá. Có thừa không?"
+    explanation: "Ba con cá, ba con mèo. Hai nhóm bằng nhau."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhieu-hon-it-hon"
+    prompt: |
+      Hình nào nhiều hơn?
+
+      🌸🌸🌸
+
+      🌼🌼🌼🌼🌼🌼
+    options:
+      - { id: "a", text: "Hoa đào 🌸" }
+      - { id: "b", text: "Hoa cúc 🌼" }
+      - { id: "c", text: "Bằng nhau" }
+    answer: { correct: ["b"] }
+    hint: "Đếm: ba và sáu."
+    explanation: "Sáu bông hoa cúc nhiều hơn ba bông hoa đào."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-so-sanh"
+    prompt: "Có 5 bạn và 3 cái ghế. Mỗi bạn ngồi một ghế thì còn thiếu mấy cái ghế? Điền số: _"
+    answer: { accept: ["2"] }
+    hint: "Ba bạn đã có ghế. Còn mấy bạn chưa có ghế?"
+    explanation: "Còn hai bạn chưa có ghế, nên thiếu hai cái ghế."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết so sánh **nhiều hơn**, **ít hơn**, **bằng nhau**."
+    say: "Bé đã biết so sánh nhiều hơn, ít hơn, và bằng nhau."

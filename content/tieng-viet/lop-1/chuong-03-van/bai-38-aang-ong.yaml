@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-38-aang-ong"
+title: "Vần âng – ong"
+summary: "Học vần âng và ong; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: âng và ong. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **âng**: ghép âm đầu với vần để được tiếng.
+      - **t** + **âng** → **tầng**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "t"
+      rhyme: "âng"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép t + âng rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ong**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ong** → **bóng**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "ong"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + ong rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tầng", "emoji": "🏢"}
+        - {"word": "vâng", "emoji": "🙆"}
+        - {"word": "nâng", "emoji": "🏋️"}
+        - {"word": "bóng", "emoji": "⚽"}
+        - {"word": "ong", "emoji": "🐝"}
+        - {"word": "xong", "emoji": "✅"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần âng và ong."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **âng** hoặc **ong**: **tầng**, **vâng**, **nâng**, **bóng**, **ong**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-aang"
+    prompt: "Tiếng nào có vần **âng**?"
+    options:
+      - {"id": "a", "text": "tầng"}
+      - {"id": "b", "text": "lá"}
+      - {"id": "c", "text": "phở"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tầng\" có vần âng."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ong"
+    prompt: "Tiếng nào có vần **ong**?"
+    options:
+      - {"id": "a", "text": "nơ"}
+      - {"id": "b", "text": "sách"}
+      - {"id": "c", "text": "bóng"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bóng\" có vần ong."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-taang"
+    prompt: "Sắp xếp để tạo thành tiếng **tầng**:"
+    options:
+      - {"id": "x2", "text": "ầng"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + ầng = tầng."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-aang"
+    prompt: "Điền phần còn lại để được tiếng **tầng** 🏢: t_"
+    answer: {"accept": ["ầng", "âng"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + ầng = tầng."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ong"
+    prompt: "Điền phần còn lại để được tiếng **bóng** ⚽: b_"
+    answer: {"accept": ["óng", "ong"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + óng = bóng."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ong"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "ong"}
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "ghế"}
+      - {"id": "c", "text": "đàn"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"ong\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-aang"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🏢", "right": "tầng"}
+      - {"left": "🙆", "right": "vâng"}
+      - {"left": "🏋️", "right": "nâng"}
+    answer: {"pairs": [["🏢", "tầng"], ["🙆", "vâng"], ["🏋️", "nâng"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **âng và ong** và đọc được: tầng, vâng, nâng, bóng, ong, xong. Giỏi quá!"

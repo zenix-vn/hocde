@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-20-aat-ot"
+title: "Vần ât – ot"
+summary: "Học vần ât và ot; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ât và ot. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ât**: ghép âm đầu với vần để được tiếng.
+      - **m** + **ât** → **mật**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "m", "rhyme": "ât", "tones": ["sắc", "nặng"], "caption": "Ghép m + ât rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ot**: ghép âm đầu với vần để được tiếng.
+      - **h** + **ot** → **hót**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "h", "rhyme": "ot", "tones": ["sắc", "nặng"], "caption": "Ghép h + ot rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "mật", "emoji": "🍯"}
+        - {"word": "tất", "emoji": "🧦"}
+        - {"word": "đất", "emoji": "🌍"}
+        - {"word": "hót", "emoji": "🐤"}
+        - {"word": "sọt", "emoji": "🧺"}
+        - {"word": "lọt", "emoji": "🕳️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ât và ot."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ât** hoặc **ot**: **mật**, **tất**, **đất**, **hót**, **sọt**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-aat"
+    prompt: "Tiếng nào có vần **ât**?"
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "vịt"}
+      - {"id": "c", "text": "mật"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"mật\" có vần ât."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ot"
+    prompt: "Tiếng nào có vần **ot**?"
+    options:
+      - {"id": "a", "text": "ca"}
+      - {"id": "b", "text": "rổ"}
+      - {"id": "c", "text": "hót"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"hót\" có vần ot."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-maat"
+    prompt: "Sắp xếp để tạo thành tiếng **mật**:"
+    options:
+      - {"id": "x2", "text": "ật"}
+      - {"id": "x1", "text": "m"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "m + ật = mật."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-aat"
+    prompt: "Điền phần còn lại để được tiếng **mật** 🍯: m_"
+    answer: {"accept": ["ật", "ât"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "m + ật = mật."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ot"
+    prompt: "Điền phần còn lại để được tiếng **hót** 🐤: h_"
+    answer: {"accept": ["ót", "ot"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "h + ót = hót."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ot"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "sọt"}
+    options:
+      - {"id": "a", "text": "cá"}
+      - {"id": "b", "text": "sọt"}
+      - {"id": "c", "text": "dê"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"sọt\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-aat"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍯", "right": "mật"}
+      - {"left": "🧦", "right": "tất"}
+      - {"left": "🌍", "right": "đất"}
+    answer: {"pairs": [["🍯", "mật"], ["🧦", "tất"], ["🌍", "đất"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ât và ot** và đọc được: mật, tất, đất, hót, sọt, lọt. Giỏi quá!"

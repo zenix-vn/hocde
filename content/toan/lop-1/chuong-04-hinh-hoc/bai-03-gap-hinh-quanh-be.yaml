@@ -1,0 +1,102 @@
+schema: 1
+slug: toan1-gap-hinh-quanh-be
+title: "Tìm hình quanh bé"
+summary: "Gọi tên các hình vuông, tròn, tam giác, chữ nhật."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình thi tìm hình nhé. Bé nhớ lại bốn hình đã học!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Bốn hình bé đã học:
+
+      🟥 hình vuông
+
+      🔴 hình tròn
+
+      🔺 hình tam giác
+
+      🚪 hình chữ nhật
+    say: "Bốn hình bé đã học: hình vuông, hình tròn, hình tam giác, hình chữ nhật."
+
+  - id: b3
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Chiếc bánh xe 🛞 có dạng hình gì?"
+    options:
+      - { id: "a", text: "Hình tròn" }
+      - { id: "b", text: "Hình tam giác" }
+      - { id: "c", text: "Hình chữ nhật" }
+    answer: { correct: ["a"] }
+    hint: "Bánh xe lăn được vì nó tròn đều."
+    explanation: "Bánh xe có dạng hình tròn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Quyển vở 📒 thường có dạng hình gì?"
+    options:
+      - { id: "a", text: "Hình tròn" }
+      - { id: "b", text: "Hình chữ nhật" }
+      - { id: "c", text: "Hình tam giác" }
+    answer: { correct: ["b"] }
+    hint: "Vở có hai cạnh dài, hai cạnh ngắn."
+    explanation: "Quyển vở có dạng hình chữ nhật."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Mái nhà 🏠 phần trên có dạng hình gì?"
+    options:
+      - { id: "a", text: "Hình vuông" }
+      - { id: "b", text: "Hình tròn" }
+      - { id: "c", text: "Hình tam giác" }
+    answer: { correct: ["c"] }
+    hint: "Mái nhà nhọn lên trên."
+    explanation: "Mái nhà có dạng hình tam giác."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Nối hình với tên."
+    pairs:
+      - { left: "🟥", right: "hình vuông" }
+      - { left: "🔴", right: "hình tròn" }
+      - { left: "🔺", right: "hình tam giác" }
+    answer: { pairs: [["🟥", "hình vuông"], ["🔴", "hình tròn"], ["🔺", "hình tam giác"]] }
+    hint: "Nhớ số cạnh của từng hình."
+    explanation: "🟥 là hình vuông, 🔴 là hình tròn, 🔺 là hình tam giác."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-canh"
+    prompt: "Hình nào không có cạnh nào?"
+    options:
+      - { id: "a", text: "Hình tròn" }
+      - { id: "b", text: "Hình vuông" }
+      - { id: "c", text: "Hình tam giác" }
+    answer: { correct: ["a"] }
+    hint: "Hình nào tròn đều?"
+    explanation: "Hình tròn không có cạnh."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết tìm hình vuông, tròn, tam giác, chữ nhật quanh mình."
+    say: "Bé đã biết tìm hình vuông, hình tròn, hình tam giác, hình chữ nhật quanh mình."

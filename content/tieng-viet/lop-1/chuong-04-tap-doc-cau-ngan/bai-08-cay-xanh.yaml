@@ -1,0 +1,88 @@
+schema: 1
+slug: "tv1-doc-08-cay-xanh"
+title: "Cây xanh"
+summary: "Tập đọc câu ngắn: Cây xanh."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đọc một bài thật ngắn nhé! Bé đọc theo mình hoặc bấm nút loa để nghe."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Cây xanh cho bóng mát.
+
+      Chim làm tổ trên cây.
+
+      Bé yêu cây.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cây", "emoji": "🌳"}
+        - {"word": "chim", "emoji": "🐦"}
+        - {"word": "tổ", "emoji": "🪺"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Chim làm tổ ở đâu?"
+    options:
+      - {"id": "a", "text": "Trên cây"}
+      - {"id": "b", "text": "Dưới nước"}
+      - {"id": "c", "text": "Trong nhà"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Trên cây\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Cây xanh cho gì?"
+    options:
+      - {"id": "a", "text": "Đồ chơi"}
+      - {"id": "b", "text": "Bóng mát"}
+      - {"id": "c", "text": "Quần áo"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bóng mát\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x2", "text": "làm"}
+      - {"id": "x3", "text": "tổ"}
+      - {"id": "x5", "text": "cây"}
+      - {"id": "x4", "text": "trên"}
+      - {"id": "x1", "text": "Chim"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Chim làm tổ trên cây."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Cây xanh cho bóng _."
+    answer: {"accept": ["mát"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Cây xanh cho bóng mát.."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã đọc xong bài **Cây xanh**. Bé đọc thật hay!", "say": null}

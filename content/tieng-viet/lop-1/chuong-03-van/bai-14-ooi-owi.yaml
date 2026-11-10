@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-14-ooi-owi"
+title: "Vần ôi – ơi"
+summary: "Học vần ôi và ơi; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ôi và ơi. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ôi**: ghép âm đầu với vần để được tiếng.
+      - **n** + **ôi** → **nồi**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "n"
+      rhyme: "ôi"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép n + ôi rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ơi**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ơi** → **bơi**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "ơi"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + ơi rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "nồi", "emoji": "🍲"}
+        - {"word": "đồi", "emoji": "⛰️"}
+        - {"word": "gối", "emoji": "🛏️"}
+        - {"word": "bơi", "emoji": "🏊"}
+        - {"word": "chơi", "emoji": "🎮"}
+        - {"word": "trời", "emoji": "🌤️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ôi và ơi."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ôi** hoặc **ơi**: **nồi**, **đồi**, **gối**, **bơi**, **chơi**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ooi"
+    prompt: "Tiếng nào có vần **ôi**?"
+    options:
+      - {"id": "a", "text": "nồi"}
+      - {"id": "b", "text": "ong"}
+      - {"id": "c", "text": "khỉ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"nồi\" có vần ôi."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-owi"
+    prompt: "Tiếng nào có vần **ơi**?"
+    options:
+      - {"id": "a", "text": "rùa"}
+      - {"id": "b", "text": "bơi"}
+      - {"id": "c", "text": "tôm"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bơi\" có vần ơi."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-nooi"
+    prompt: "Sắp xếp để tạo thành tiếng **nồi**:"
+    options:
+      - {"id": "x2", "text": "ồi"}
+      - {"id": "x1", "text": "n"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "n + ồi = nồi."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ooi"
+    prompt: "Điền phần còn lại để được tiếng **nồi** 🍲: n_"
+    answer: {"accept": ["ồi", "ôi"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "n + ồi = nồi."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-owi"
+    prompt: "Điền phần còn lại để được tiếng **bơi** 🏊: b_"
+    answer: {"accept": ["ơi"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ơi = bơi."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-owi"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "chơi"}
+    options:
+      - {"id": "a", "text": "phở"}
+      - {"id": "b", "text": "khỉ"}
+      - {"id": "c", "text": "chơi"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"chơi\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ooi"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍲", "right": "nồi"}
+      - {"left": "⛰️", "right": "đồi"}
+      - {"left": "🛏️", "right": "gối"}
+    answer: {"pairs": [["🍲", "nồi"], ["⛰️", "đồi"], ["🛏️", "gối"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ôi và ơi** và đọc được: nồi, đồi, gối, bơi, chơi, trời. Giỏi quá!"

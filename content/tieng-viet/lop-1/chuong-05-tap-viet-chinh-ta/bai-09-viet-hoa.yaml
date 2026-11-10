@@ -1,0 +1,73 @@
+schema: 1
+slug: "tv1-chinh-ta-09-viet-hoa"
+title: "Viết hoa tên riêng"
+summary: "Biết viết hoa chữ cái đầu của tên người và tên địa danh."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Tên của bé và tên các bạn luôn được viết hoa chữ cái đầu. Mình cùng học nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Tên người và tên nơi chốn luôn **viết hoa** chữ cái đầu:
+      - Bạn **Lan**, bạn **Nam**.
+      - Thành phố **Hà Nội**, sông **Hồng**.
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-hoa-ten-rieng"
+    prompt: "Tên bạn viết đúng là:"
+    options:
+      - {"id": "a", "text": "lan"}
+      - {"id": "b", "text": "Lan"}
+    answer: {"correct": ["b"]}
+    hint: "Chữ cái đầu của tên riêng viết thế nào?"
+    explanation: "Tên bạn phải viết hoa chữ cái đầu."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-hoa-ten-rieng"
+    prompt: "Chọn tên viết đúng:"
+    options:
+      - {"id": "a", "text": "nam"}
+      - {"id": "b", "text": "Nam"}
+    answer: {"correct": ["b"]}
+    hint: "Chữ cái đầu của tên riêng viết thế nào?"
+    explanation: "Chữ N phải viết hoa."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-hoa-ten-rieng"
+    prompt: "Chọn cách viết đúng:"
+    options:
+      - {"id": "a", "text": "Hà Nội"}
+      - {"id": "b", "text": "hà nội"}
+    answer: {"correct": ["a"]}
+    hint: "Chữ cái đầu của tên riêng viết thế nào?"
+    explanation: "Tên thành phố viết hoa chữ cái đầu mỗi tiếng."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-hoa-ten-rieng"
+    prompt: "Chọn cách viết đúng:"
+    options:
+      - {"id": "a", "text": "Việt Nam"}
+      - {"id": "b", "text": "việt nam"}
+    answer: {"correct": ["a"]}
+    hint: "Chữ cái đầu của tên riêng viết thế nào?"
+    explanation: "Tên nước viết hoa chữ cái đầu mỗi tiếng."
+  - {"id": "b7", "type": "summary", "markdown": "Bé đã biết viết hoa tên riêng. Giỏi quá!", "say": null}

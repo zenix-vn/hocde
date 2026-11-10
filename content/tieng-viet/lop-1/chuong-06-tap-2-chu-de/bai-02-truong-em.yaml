@@ -1,0 +1,106 @@
+schema: 1
+slug: "tv1-t2-02-truong-em"
+title: "Trường của em"
+summary: "Chủ đề nhà trường: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Trường em có sân rộng và nhiều cây xanh.
+
+      Sáng nào em cũng đến lớp thật sớm.
+
+      Em học cùng các bạn và cô giáo.
+
+      Em rất yêu trường của em.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "trường", "emoji": "🏫"}
+        - {"word": "lớp", "emoji": "📚"}
+        - {"word": "bạn", "emoji": "🧒"}
+        - {"word": "cô giáo", "emoji": "👩‍🏫"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Trường em có gì?"
+    options:
+      - {"id": "a", "text": "Núi cao"}
+      - {"id": "b", "text": "Biển xanh"}
+      - {"id": "c", "text": "Sân rộng và nhiều cây xanh"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Sân rộng và nhiều cây xanh\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Em đến lớp lúc nào?"
+    options:
+      - {"id": "a", "text": "Thật muộn"}
+      - {"id": "b", "text": "Buổi tối"}
+      - {"id": "c", "text": "Thật sớm"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Thật sớm\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Em học cùng ai?"
+    options:
+      - {"id": "a", "text": "Các bạn và cô giáo"}
+      - {"id": "b", "text": "Chú bộ đội"}
+      - {"id": "c", "text": "Ông bà"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Các bạn và cô giáo\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x2", "text": "rất"}
+      - {"id": "x1", "text": "Em"}
+      - {"id": "x6", "text": "em"}
+      - {"id": "x3", "text": "yêu"}
+      - {"id": "x5", "text": "của"}
+      - {"id": "x4", "text": "trường"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5", "x6"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Em rất yêu trường của em."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Em học cùng các bạn và cô _."
+    answer: {"accept": ["giáo"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Em học cùng các bạn và cô giáo.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Trường của em**. Bé đọc thật hay!", "say": null}

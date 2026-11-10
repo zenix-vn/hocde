@@ -1,0 +1,121 @@
+schema: 1
+slug: "tv1-bai-22-u"
+title: "Chữ U u"
+summary: "Làm quen chữ U, u; nhận biết âm u trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ u. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **U** có hai dạng: **U** in hoa, **u** in thường.
+      Âm **u** đọc là "u".
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "c"
+      rhyme: "u"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + u rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "củ", "emoji": "🥕"}
+        - {"word": "cú", "emoji": "🦉"}
+        - {"word": "đu đủ", "emoji": "🍈"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ u."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **củ**, **cú**, **đu đủ** đều có chữ **u**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-u"
+    prompt: "Tiếng nào có chữ **u**?"
+    options:
+      - {"id": "a", "text": "củ"}
+      - {"id": "b", "text": "bé"}
+      - {"id": "c", "text": "bố"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"củ\" có chữ u."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-u"
+    prompt: "Hình 🦉 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "cú"}
+      - {"id": "b", "text": "lá"}
+      - {"id": "c", "text": "tay"}
+    answer: {"correct": ["a"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🦉 là \"cú\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-u"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "đu đủ"}
+    options:
+      - {"id": "a", "text": "cam"}
+      - {"id": "b", "text": "đu đủ"}
+      - {"id": "c", "text": "nón"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"đu đủ\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-cu"
+    prompt: "Sắp xếp để tạo thành tiếng **cu**:"
+    options:
+      - {"id": "x2", "text": "u"}
+      - {"id": "x1", "text": "c"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "c + u = cu."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-u"
+    prompt: "Điền chữ còn thiếu để được tiếng **cu**: _u"
+    answer: {"accept": ["c"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "c + u = cu."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-u"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🥕", "right": "củ"}
+      - {"left": "🦉", "right": "cú"}
+      - {"left": "🍈", "right": "đu đủ"}
+    answer: {"pairs": [["🥕", "củ"], ["🦉", "cú"], ["🍈", "đu đủ"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+  - {"id": "b12", "type": "summary", "markdown": "Hôm nay bé biết chữ **U u** và đọc được: củ, cú, đu đủ. Giỏi quá!", "say": null}

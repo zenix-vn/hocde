@@ -1,0 +1,132 @@
+schema: 1
+slug: "tv1-bai-37-gi"
+title: "Chữ Gi gi"
+summary: "Làm quen chữ Gi, gi; nhận biết âm gi trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ gi. Bé nghe và đọc theo mình nhé!"
+    say: "Hôm nay mình học chữ mới: chữ dờ. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Gi** có hai dạng: **Gi** in hoa, **gi** in thường.
+      Âm **gi** đọc là "dờ".
+    say: "Chữ Gi có hai dạng: Gi in hoa, dờ in thường.. Âm dờ đọc là \"dờ\"."
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "gi"
+      rhyme: "o"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép gi + o rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "gió", "emoji": "🌬️"}
+        - {"word": "giỏ", "emoji": "🧺"}
+        - {"word": "giường", "emoji": "🛏️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ gi."
+
+  - id: "b5"
+    type: "callout"
+    variant: "remember"
+    markdown: "Các tiếng **gió**, **giỏ**, **giường** đều có chữ **gi**."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-gi"
+    prompt: "Tiếng nào bắt đầu bằng chữ **gi**?"
+    say: "Tiếng nào bắt đầu bằng chữ dờ?"
+    options:
+      - {"id": "a", "text": "dê"}
+      - {"id": "b", "text": "gió"}
+      - {"id": "c", "text": "cây"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"gió\" bắt đầu bằng chữ gi."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-gi"
+    prompt: "Hình 🧺 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "giỏ"}
+    answer: {"correct": ["c"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🧺 là \"giỏ\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-gi"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "giường"}
+    options:
+      - {"id": "a", "text": "mưa"}
+      - {"id": "b", "text": "giường"}
+      - {"id": "c", "text": "dưa"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"giường\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-gio"
+    prompt: "Sắp xếp để tạo thành tiếng **gió**:"
+    options:
+      - {"id": "x2", "text": "ó"}
+      - {"id": "x1", "text": "gi", "say": "dờ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "gi + ó = gió."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-gi"
+    prompt: "Điền chữ còn thiếu để được tiếng **gió**: _ó"
+    answer: {"accept": ["gi"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "gi + ó = gió."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-gi"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🌬️", "right": "gió"}
+      - {"left": "🧺", "right": "giỏ"}
+      - {"left": "🛏️", "right": "giường"}
+    answer: {"pairs": [["🌬️", "gió"], ["🧺", "giỏ"], ["🛏️", "giường"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b12"
+    type: "summary"
+    markdown: "Hôm nay bé biết chữ **Gi gi** và đọc được: gió, giỏ, giường. Giỏi quá!"
+    say: "Hôm nay bé biết chữ dờ và đọc được: gió, giỏ, giường. Giỏi quá!"

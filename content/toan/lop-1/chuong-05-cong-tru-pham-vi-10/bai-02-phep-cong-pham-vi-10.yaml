@@ -1,0 +1,118 @@
+schema: 1
+slug: toan1-phep-cong-pham-vi-10
+title: "Phép cộng trong phạm vi 10"
+summary: "Cộng các số có kết quả đến 10."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cộng các số lớn hơn nhé. Bé nhớ đếm tiếp là được!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      6 + 3 = ?
+
+      Bé để **6** trong đầu, rồi đếm tiếp thêm 3: bảy, tám, chín.
+
+      Vậy 6 + 3 = 9
+    say: "Sáu cộng ba bằng mấy? Bé giữ số sáu trong đầu, rồi đếm tiếp thêm ba: bảy, tám, chín. Vậy sáu cộng ba bằng chín."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: |
+      Muốn cộng, bé **đếm tiếp** từ số lớn hơn.
+
+      3 + 6: bé để 6 trong đầu rồi đếm tiếp 3. Kết quả vẫn là 9.
+    say: "Muốn cộng, bé đếm tiếp từ số lớn hơn."
+
+  - id: b4
+    type: "interactive"
+    kind: "counters"
+    config: { count: 10, emoji: "🍓", caption: "Chạm đếm 10 quả dâu. 7 quả đỏ và 3 quả nữa là bao nhiêu?" }
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "6 + 3 = ?"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "10" }
+    answer: { correct: ["b"] }
+    hint: "Có 6, thêm 3. Bé đếm tiếp nhé."
+    explanation: "sáu cộng ba bằng chín."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "4 + 4 = ?"
+    options:
+      - { id: "a", text: "7" }
+      - { id: "b", text: "9" }
+      - { id: "c", text: "8" }
+    answer: { correct: ["c"] }
+    hint: "Có 4, thêm 4. Bé đếm tiếp nhé."
+    explanation: "bốn cộng bốn bằng tám."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "7 + 2 = ?"
+    options:
+      - { id: "a", text: "9" }
+      - { id: "b", text: "8" }
+      - { id: "c", text: "10" }
+    answer: { correct: ["a"] }
+    hint: "Có 7, thêm 2. Bé đếm tiếp nhé."
+    explanation: "bảy cộng hai bằng chín."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "5 + 5 = _"
+    answer: { accept: ["10"] }
+    hint: "Có 5, thêm 5. Bé đếm tiếp nhé."
+    explanation: "năm cộng năm bằng mười."
+
+  - id: b9
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "8 + 2 = _"
+    answer: { accept: ["10"] }
+    hint: "Có 8, thêm 2. Bé đếm tiếp nhé."
+    explanation: "tám cộng hai bằng mười."
+
+  - id: b10
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-pham-vi-10"
+    prompt: "Phép tính nào có kết quả bằng 10?"
+    options:
+      - { id: "a", text: "6 + 3" }
+      - { id: "b", text: "7 + 3" }
+      - { id: "c", text: "5 + 4" }
+    answer: { correct: ["b"] }
+    hint: "Tính từng phép tính."
+    explanation: "7 + 3 = 10."
+
+  - id: b11
+    type: "summary"
+    markdown: "Bé đã biết **cộng trong phạm vi 10**. Thật giỏi!"
+    say: "Bé đã biết cộng trong phạm vi mười. Thật giỏi!"

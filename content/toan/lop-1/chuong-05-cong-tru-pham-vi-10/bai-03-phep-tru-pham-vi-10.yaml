@@ -1,0 +1,113 @@
+schema: 1
+slug: toan1-phep-tru-pham-vi-10
+title: "Phép trừ trong phạm vi 10"
+summary: "Trừ các số trong phạm vi 10."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Giờ mình trừ trong phạm vi mười nhé. Bé đếm lùi là được!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      9 − 4 = ?
+
+      Bé để **9** trong đầu, rồi đếm lùi 4: tám, bảy, sáu, năm.
+
+      Vậy 9 − 4 = 5
+    say: "Chín trừ bốn bằng mấy? Bé giữ số chín trong đầu rồi đếm lùi bốn: tám, bảy, sáu, năm. Vậy chín trừ bốn bằng năm."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: |
+      Muốn trừ, bé **đếm lùi** từ số lớn.
+
+      Số nào trừ chính nó thì bằng **0**: 6 − 6 = 0.
+    say: "Muốn trừ, bé đếm lùi từ số lớn. Số nào trừ chính nó thì bằng không."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "8 − 3 = ?"
+    options:
+      - { id: "a", text: "4" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "6" }
+    answer: { correct: ["b"] }
+    hint: "Có 8, bớt đi 3. Bé đếm lùi nhé."
+    explanation: "tám trừ ba bằng năm."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "10 − 4 = ?"
+    options:
+      - { id: "a", text: "6" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "7" }
+    answer: { correct: ["a"] }
+    hint: "Có 10, bớt đi 4. Bé đếm lùi nhé."
+    explanation: "mười trừ bốn bằng sáu."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "9 − 5 = ?"
+    options:
+      - { id: "a", text: "3" }
+      - { id: "b", text: "5" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["c"] }
+    hint: "Có 9, bớt đi 5. Bé đếm lùi nhé."
+    explanation: "chín trừ năm bằng bốn."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "7 − 2 = _"
+    answer: { accept: ["5"] }
+    hint: "Có 7, bớt đi 2. Bé đếm lùi nhé."
+    explanation: "bảy trừ hai bằng năm."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "10 − 10 = _"
+    answer: { accept: ["0"] }
+    hint: "Có 10, bớt đi 10. Bé đếm lùi nhé."
+    explanation: "mười trừ mười bằng không."
+
+  - id: b9
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tru-pham-vi-10"
+    prompt: "Phép tính nào có kết quả bằng 5?"
+    options:
+      - { id: "a", text: "10 − 4" }
+      - { id: "b", text: "10 − 5" }
+      - { id: "c", text: "10 − 6" }
+    answer: { correct: ["b"] }
+    hint: "Tính từng phép tính."
+    explanation: "10 − 5 = 5."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết **trừ trong phạm vi 10**."
+    say: "Bé đã biết trừ trong phạm vi mười."

@@ -1,0 +1,151 @@
+schema: 1
+slug: anh1-abc-4
+title: "P, Q, R, S, T"
+summary: "Chữ P–T: pig, queen, rabbit, sun, tiger."
+est_minutes: 8
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Sắp hết bảng chữ cái rồi, cố lên nào!"
+    say:
+      - { t: "Sắp hết bảng chữ cái rồi, cố lên nào! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "pig", emoji: "🐷", meaning: "con lợn (chữ P)" }
+        - { word: "queen", emoji: "👸", meaning: "nữ hoàng (chữ Q)" }
+        - { word: "rabbit", emoji: "🐰", meaning: "con thỏ (chữ R)" }
+        - { word: "sun", emoji: "☀️", meaning: "mặt trời (chữ S)" }
+        - { word: "tiger", emoji: "🐯", meaning: "con hổ (chữ T)" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **pig** (con lợn (chữ P)) · **queen** (nữ hoàng (chữ Q)) · **rabbit** (con thỏ (chữ R)) · **sun** (mặt trời (chữ S)) · **tiger** (con hổ (chữ T))"
+    say: [{ t: "pig", l: en }, { t: "con lợn (chữ P)", l: vi }, { t: "queen", l: en }, { t: "nữ hoàng (chữ Q)", l: vi }, { t: "rabbit", l: en }, { t: "con thỏ (chữ R)", l: vi }, { t: "sun", l: en }, { t: "mặt trời (chữ S)", l: vi }, { t: "tiger", l: en }, { t: "con hổ (chữ T)", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-pig
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "pig", lang: en }
+    options:
+      - { id: a, text: "🐷", say: "pig", lang: en }
+      - { id: b, text: "👸", say: "queen", lang: en }
+      - { id: c, text: "🐰", say: "rabbit", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là pig, nghĩa là con lợn (chữ P)."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-queen
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "queen", lang: en }
+    options:
+      - { id: a, text: "🐰", say: "rabbit", lang: en }
+      - { id: b, text: "👸", say: "queen", lang: en }
+      - { id: c, text: "☀️", say: "sun", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là queen, nghĩa là nữ hoàng (chữ Q)."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-rabbit
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "rabbit", lang: en }
+    options:
+      - { id: a, text: "☀️", say: "sun", lang: en }
+      - { id: b, text: "🐯", say: "tiger", lang: en }
+      - { id: c, text: "🐰", say: "rabbit", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là rabbit, nghĩa là con thỏ (chữ R)."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-sun
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "sun", lang: en }
+    options:
+      - { id: a, text: "☀️", say: "sun", lang: en }
+      - { id: b, text: "🐯", say: "tiger", lang: en }
+      - { id: c, text: "🐷", say: "pig", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sun, nghĩa là mặt trời (chữ S)."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-sun
+    prompt: "Mặt trời (chữ S) tiếng Anh là gì? ☀️"
+    option_lang: en
+    options:
+      - { id: a, text: "tiger" }
+      - { id: b, text: "sun" }
+      - { id: c, text: "pig" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Mặt trời (chữ S) tiếng Anh là sun."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-tiger
+    prompt: "Con hổ (chữ T) tiếng Anh là gì? 🐯"
+    option_lang: en
+    options:
+      - { id: a, text: "pig" }
+      - { id: b, text: "queen" }
+      - { id: c, text: "tiger" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Con hổ (chữ T) tiếng Anh là tiger."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "queen", right: "nữ hoàng (chữ Q)" }
+      - { left: "rabbit", right: "con thỏ (chữ R)" }
+      - { left: "sun", right: "mặt trời (chữ S)" }
+      - { left: "tiger", right: "con hổ (chữ T)" }
+    answer: { pairs: [["queen", "nữ hoàng (chữ Q)"], ["rabbit", "con thỏ (chữ R)"], ["sun", "mặt trời (chữ S)"], ["tiger", "con hổ (chữ T)"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "queen là nữ hoàng (chữ Q); rabbit là con thỏ (chữ R); sun là mặt trời (chữ S); tiger là con hổ (chữ T)."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **pig**, **queen**, **rabbit**, **sun**, **tiger**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "pig, queen, rabbit, sun, tiger.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

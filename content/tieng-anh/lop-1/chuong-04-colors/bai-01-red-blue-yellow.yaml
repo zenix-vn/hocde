@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-colors-1
+title: "Red, blue, yellow"
+summary: "Ba màu đầu tiên: red, blue, yellow."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Thế giới có nhiều màu sắc lắm! Mình học ba màu đầu tiên nhé."
+    say:
+      - { t: "Thế giới có nhiều màu sắc lắm! Mình học ba màu đầu tiên nhé. Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "red", emoji: "🔴", meaning: "màu đỏ" }
+        - { word: "blue", emoji: "🔵", meaning: "màu xanh dương" }
+        - { word: "yellow", emoji: "🟡", meaning: "màu vàng" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **red** (màu đỏ) · **blue** (màu xanh dương) · **yellow** (màu vàng)"
+    say: [{ t: "red", l: en }, { t: "màu đỏ", l: vi }, { t: "blue", l: en }, { t: "màu xanh dương", l: vi }, { t: "yellow", l: en }, { t: "màu vàng", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-red
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "red", lang: en }
+    options:
+      - { id: a, text: "🔴", say: "red", lang: en }
+      - { id: b, text: "🔵", say: "blue", lang: en }
+      - { id: c, text: "🟡", say: "yellow", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là red, nghĩa là màu đỏ."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-blue
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "blue", lang: en }
+    options:
+      - { id: a, text: "🟡", say: "yellow", lang: en }
+      - { id: b, text: "🔵", say: "blue", lang: en }
+      - { id: c, text: "🔴", say: "red", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là blue, nghĩa là màu xanh dương."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-yellow
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "yellow", lang: en }
+    options:
+      - { id: a, text: "🔴", say: "red", lang: en }
+      - { id: b, text: "🔵", say: "blue", lang: en }
+      - { id: c, text: "🟡", say: "yellow", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là yellow, nghĩa là màu vàng."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-blue
+    prompt: "Màu xanh dương tiếng Anh là gì? 🔵"
+    option_lang: en
+    options:
+      - { id: a, text: "yellow" }
+      - { id: b, text: "red" }
+      - { id: c, text: "blue" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu xanh dương tiếng Anh là blue."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-yellow
+    prompt: "Màu vàng tiếng Anh là gì? 🟡"
+    option_lang: en
+    options:
+      - { id: a, text: "yellow" }
+      - { id: b, text: "red" }
+      - { id: c, text: "blue" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu vàng tiếng Anh là yellow."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "red", right: "màu đỏ" }
+      - { left: "blue", right: "màu xanh dương" }
+      - { left: "yellow", right: "màu vàng" }
+    answer: { pairs: [["red", "màu đỏ"], ["blue", "màu xanh dương"], ["yellow", "màu vàng"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "red là màu đỏ; blue là màu xanh dương; yellow là màu vàng."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **red**, **blue**, **yellow**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "red, blue, yellow.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

@@ -1,0 +1,101 @@
+schema: 1
+slug: toan1-so-sanh-bang-nhau
+title: "Bằng nhau, dấu ="
+summary: "Hai số giống nhau thì bằng nhau, dùng dấu =."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hai số giống nhau thì sao nhỉ? Mình cùng xem nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🍓🍓🍓 và 🍇🍇🍇
+
+      Ba quả dâu và ba quả nho. Hai nhóm **bằng nhau**.
+
+      Ta viết: 3 = 3
+    say: "Ba quả dâu và ba quả nho. Hai nhóm bằng nhau. Ta viết ba bằng ba."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Hai số **giống nhau** thì **bằng nhau**. Dùng dấu **=**."
+    say: "Hai số giống nhau thì bằng nhau. Dùng dấu bằng."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-bang"
+    prompt: "Chọn dấu đúng: 5 _ 5"
+    options:
+      - { id: "a", text: "=" }
+      - { id: "b", text: ">" }
+      - { id: "c", text: "<" }
+    answer: { correct: ["a"] }
+    hint: "Hai số này giống nhau."
+    explanation: "5 = 5."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-dau"
+    prompt: "Chọn dấu đúng: 6 _ 8"
+    options:
+      - { id: "a", text: "=" }
+      - { id: "b", text: ">" }
+      - { id: "c", text: "<" }
+    answer: { correct: ["c"] }
+    hint: "Sáu có bằng tám không?"
+    explanation: "6 bé hơn 8, nên 6 < 8."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-dau"
+    prompt: "Chọn dấu đúng: 9 _ 4"
+    options:
+      - { id: "a", text: "<" }
+      - { id: "b", text: "=" }
+      - { id: "c", text: ">" }
+    answer: { correct: ["c"] }
+    hint: "Chín và bốn, số nào lớn hơn?"
+    explanation: "9 lớn hơn 4, nên 9 > 4."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dau-bang-dien-so"
+    prompt: "Điền số: 7 = _"
+    answer: { accept: ["7"] }
+    hint: "Số bằng bảy chính là bảy."
+    explanation: "7 = 7."
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-dau"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x8", text: "8" }
+      - { id: "x5", text: "5" }
+      - { id: "x10", text: "10" }
+      - { id: "x3", text: "3" }
+    answer: { sequence: ["x3", "x5", "x8", "x10"] }
+    hint: "Tìm số bé nhất trước."
+    explanation: "Ba, năm, tám, mười."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết ba dấu **>**, **<**, **=** để so sánh số."
+    say: "Bé đã biết ba dấu: lớn hơn, bé hơn, và bằng, để so sánh số."

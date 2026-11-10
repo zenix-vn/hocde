@@ -1,0 +1,104 @@
+schema: 1
+slug: "tv1-t2-08-be-giup-me"
+title: "Bé giúp mẹ"
+summary: "Chủ đề việc nhà: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chiều nay, bé giúp mẹ quét nhà.
+
+      Bé xếp gọn đồ chơi vào hộp.
+
+      Mẹ khen bé ngoan.
+
+      Bé thấy rất vui.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "chổi", "emoji": "🧹"}
+        - {"word": "đồ chơi", "emoji": "🧸"}
+        - {"word": "hộp", "emoji": "📦"}
+        - {"word": "vui", "emoji": "😄"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Bé giúp mẹ làm gì?"
+    options:
+      - {"id": "a", "text": "Rửa xe"}
+      - {"id": "b", "text": "Nấu cơm"}
+      - {"id": "c", "text": "Quét nhà"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Quét nhà\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Bé xếp đồ chơi vào đâu?"
+    options:
+      - {"id": "a", "text": "Lên mái nhà"}
+      - {"id": "b", "text": "Xuống sông"}
+      - {"id": "c", "text": "Vào hộp"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Vào hộp\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Mẹ khen bé thế nào?"
+    options:
+      - {"id": "a", "text": "Ngoan"}
+      - {"id": "b", "text": "Nghịch"}
+      - {"id": "c", "text": "Lười"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Ngoan\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x2", "text": "khen"}
+      - {"id": "x4", "text": "ngoan"}
+      - {"id": "x1", "text": "Mẹ"}
+      - {"id": "x3", "text": "bé"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Mẹ khen bé ngoan."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Bé xếp gọn đồ chơi vào _."
+    answer: {"accept": ["hộp"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Bé xếp gọn đồ chơi vào hộp.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Bé giúp mẹ**. Bé đọc thật hay!", "say": null}

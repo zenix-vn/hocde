@@ -1,0 +1,94 @@
+schema: 1
+slug: toan1-cong-tru-so-tron-chuc
+title: "Cộng, trừ các số tròn chục"
+summary: "Cộng, trừ như cộng, trừ số chục."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cộng trừ số tròn chục dễ như cộng trừ số bé. Bé thử xem!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      20 + 30 = ?
+
+      2 chục + 3 chục = 5 chục.
+
+      Vậy 20 + 30 = **50**.
+
+      60 − 20: 6 chục − 2 chục = 4 chục. Vậy 60 − 20 = **40**.
+    say: "Hai mươi cộng ba mươi. Hai chục cộng ba chục bằng năm chục. Vậy bằng năm mươi. Sáu mươi trừ hai mươi. Sáu chục trừ hai chục bằng bốn chục. Vậy bằng bốn mươi."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: "Cộng, trừ các **số chục** như bé đã làm với số bé, rồi viết thêm số **0**."
+    say: "Cộng trừ các số chục như bé đã làm với số bé, rồi viết thêm số không."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-tron-chuc"
+    prompt: "30 + 40 = ?"
+    options:
+      - { id: "a", text: "60" }
+      - { id: "b", text: "70" }
+      - { id: "c", text: "80" }
+    answer: { correct: ["b"] }
+    hint: "3 chục cộng 4 chục."
+    explanation: "3 chục + 4 chục = 7 chục, nên 70."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-tron-chuc"
+    prompt: "50 + 20 = ?"
+    options:
+      - { id: "a", text: "70" }
+      - { id: "b", text: "60" }
+      - { id: "c", text: "30" }
+    answer: { correct: ["a"] }
+    hint: "5 chục cộng 2 chục."
+    explanation: "5 chục + 2 chục = 7 chục, nên 70."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-tron-chuc"
+    prompt: "90 − 50 = _"
+    answer: { accept: ["40"] }
+    hint: "9 chục trừ 5 chục."
+    explanation: "9 chục − 5 chục = 4 chục, nên 40."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "tru-tron-chuc"
+    prompt: "80 − 30 = _"
+    answer: { accept: ["50"] }
+    hint: "8 chục trừ 3 chục."
+    explanation: "8 chục − 3 chục = 5 chục, nên 50."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-tron-chuc"
+    prompt: "50 + 50 = _"
+    answer: { accept: ["100"] }
+    hint: "5 chục cộng 5 chục là 10 chục."
+    explanation: "10 chục là 100."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **cộng, trừ các số tròn chục**. Hết chương rồi!"
+    say: "Bé đã biết cộng, trừ các số tròn chục."

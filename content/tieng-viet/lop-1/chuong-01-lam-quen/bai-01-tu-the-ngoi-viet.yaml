@@ -1,0 +1,72 @@
+schema: 1
+slug: "tv1-lam-quen-01-tu-the-ngoi-viet"
+title: "Tư thế ngồi viết"
+summary: "Ngồi đúng tư thế và cầm bút đúng cách để viết đẹp, không mỏi."
+est_minutes: 5
+xp_reward: 15
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Chào bé! Trước khi học chữ, mình cùng học cách ngồi viết và cầm bút nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Khi ngồi viết, bé nhớ nhé:
+      - Lưng **thẳng**, hai chân đặt xuống sàn.
+      - Mắt cách vở khoảng **một gang tay**.
+      - Tay trái giữ vở, tay phải cầm bút.
+
+  - id: "b3"
+    type: "callout"
+    variant: "remember"
+    markdown: "Cầm bút bằng **ba ngón tay**: ngón cái, ngón trỏ và ngón giữa. Không cầm quá chặt."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tu-the-ngoi"
+    prompt: "Khi viết bài, lưng của bé phải như thế nào?"
+    options:
+      - {"id": "a", "text": "Nằm ra bàn"}
+      - {"id": "b", "text": "Thẳng"}
+      - {"id": "c", "text": "Cong xuống bàn"}
+    answer: {"correct": ["b"]}
+    hint: "Nhớ lại: ngồi ngay ngắn như bạn cây thông."
+    explanation: "Ngồi thẳng lưng giúp bé không bị mỏi và bảo vệ cột sống."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "khoang-cach-mat"
+    prompt: "Mắt của bé cách vở khoảng bao xa?"
+    options:
+      - {"id": "a", "text": "Một gang tay"}
+      - {"id": "b", "text": "Rất xa vở"}
+      - {"id": "c", "text": "Sát vào vở"}
+    answer: {"correct": ["a"]}
+    hint: "Bé thử xòe bàn tay ra xem."
+    explanation: "Cách vở một gang tay là đúng để bảo vệ mắt."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cam-but"
+    prompt: "Bé cầm bút bằng mấy ngón tay?"
+    options:
+      - {"id": "a", "text": "Cả năm ngón"}
+      - {"id": "b", "text": "Một ngón"}
+      - {"id": "c", "text": "Ba ngón"}
+    answer: {"correct": ["c"]}
+    hint: "Ngón cái, ngón trỏ và ngón giữa."
+    explanation: "Cầm bút bằng ba ngón tay giúp viết nhẹ nhàng."
+
+  - id: "b7"
+    type: "summary"
+    markdown: "Bé đã biết ngồi thẳng lưng, mắt cách vở một gang tay và cầm bút bằng ba ngón tay. Giỏi quá!"

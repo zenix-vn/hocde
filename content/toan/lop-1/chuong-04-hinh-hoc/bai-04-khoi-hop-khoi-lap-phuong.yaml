@@ -1,0 +1,95 @@
+schema: 1
+slug: toan1-khoi-hop-khoi-lap-phuong
+title: "Khối hộp chữ nhật, khối lập phương"
+summary: "Làm quen khối hộp chữ nhật và khối lập phương."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có những hình không phẳng mà nổi lên, gọi là khối. Mình làm quen nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🧊 là **khối lập phương**. Các mặt của nó đều là hình vuông.
+
+      📦 là **khối hộp chữ nhật**. Các mặt của nó là hình chữ nhật.
+    say: "Khối đá này là khối lập phương. Các mặt đều là hình vuông. Chiếc hộp là khối hộp chữ nhật. Các mặt là hình chữ nhật."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Xúc xắc 🎲 là khối lập phương. Hộp sữa, hộp bánh thường là khối hộp chữ nhật."
+    say: "Xúc xắc là khối lập phương. Hộp sữa, hộp bánh thường là khối hộp chữ nhật."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-khoi"
+    prompt: "Con xúc xắc 🎲 có dạng khối gì?"
+    options:
+      - { id: "a", text: "Khối lập phương" }
+      - { id: "b", text: "Khối hộp chữ nhật" }
+    answer: { correct: ["a"] }
+    hint: "Các mặt xúc xắc là hình vuông."
+    explanation: "Xúc xắc là khối lập phương."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-khoi"
+    prompt: "Chiếc hộp quà 📦 thường có dạng khối gì?"
+    options:
+      - { id: "a", text: "Khối lập phương" }
+      - { id: "b", text: "Khối hộp chữ nhật" }
+    answer: { correct: ["b"] }
+    hint: "Các mặt dài và ngắn khác nhau."
+    explanation: "Hộp quà là khối hộp chữ nhật."
+
+  - id: b6
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nhan-biet-khoi"
+    prompt: "Nối đồ vật với khối của nó."
+    pairs:
+      - { left: "🎲 xúc xắc", right: "khối lập phương" }
+      - { left: "📚 chồng sách", right: "khối hộp chữ nhật" }
+    answer: { pairs: [["🎲 xúc xắc", "khối lập phương"], ["📚 chồng sách", "khối hộp chữ nhật"]] }
+    hint: "Các mặt xúc xắc đều là hình vuông."
+    explanation: "Xúc xắc là khối lập phương. Chồng sách là khối hộp chữ nhật."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-khoi"
+    prompt: "Mặt của khối lập phương có dạng hình gì?"
+    options:
+      - { id: "a", text: "Hình tròn" }
+      - { id: "b", text: "Hình vuông" }
+      - { id: "c", text: "Hình tam giác" }
+    answer: { correct: ["b"] }
+    hint: "Nhìn mặt xúc xắc."
+    explanation: "Mặt của khối lập phương là hình vuông."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-khoi"
+    prompt: "Có 🎲📦🎲🎲. Có bao nhiêu khối lập phương (🎲)? Điền số: _"
+    answer: { accept: ["3"] }
+    hint: "Đếm số 🎲."
+    explanation: "Có 3 khối lập phương."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **khối lập phương** và **khối hộp chữ nhật**. Hết chương hình rồi!"
+    say: "Bé đã biết khối lập phương và khối hộp chữ nhật."

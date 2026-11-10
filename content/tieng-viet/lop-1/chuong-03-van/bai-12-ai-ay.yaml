@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-12-ai-ay"
+title: "Vần ai – ay"
+summary: "Học vần ai và ay; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ai và ay. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ai**: ghép âm đầu với vần để được tiếng.
+      - **t** + **ai** → **tai**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "t"
+      rhyme: "ai"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép t + ai rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ay**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ay** → **bay**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "ay"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + ay rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tai", "emoji": "👂"}
+        - {"word": "hai", "emoji": "2️⃣"}
+        - {"word": "mai", "emoji": "🌼"}
+        - {"word": "bay", "emoji": "✈️"}
+        - {"word": "tay", "emoji": "🖐️"}
+        - {"word": "cay", "emoji": "🌶️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ai và ay."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ai** hoặc **ay**: **tai**, **hai**, **mai**, **bay**, **tay**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ai"
+    prompt: "Tiếng nào có vần **ai**?"
+    options:
+      - {"id": "a", "text": "vở"}
+      - {"id": "b", "text": "tai"}
+      - {"id": "c", "text": "lọ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tai\" có vần ai."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ay"
+    prompt: "Tiếng nào có vần **ay**?"
+    options:
+      - {"id": "a", "text": "bay"}
+      - {"id": "b", "text": "bàn"}
+      - {"id": "c", "text": "sao"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bay\" có vần ay."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tai"
+    prompt: "Sắp xếp để tạo thành tiếng **tai**:"
+    options:
+      - {"id": "x2", "text": "ai"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + ai = tai."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ai"
+    prompt: "Điền phần còn lại để được tiếng **tai** 👂: t_"
+    answer: {"accept": ["ai"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + ai = tai."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ay"
+    prompt: "Điền phần còn lại để được tiếng **bay** ✈️: b_"
+    answer: {"accept": ["ay"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ay = bay."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ay"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "tay"}
+    options:
+      - {"id": "a", "text": "tay"}
+      - {"id": "b", "text": "rổ"}
+      - {"id": "c", "text": "quạ"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"tay\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ai"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "👂", "right": "tai"}
+      - {"left": "2️⃣", "right": "hai"}
+      - {"left": "🌼", "right": "mai"}
+    answer: {"pairs": [["👂", "tai"], ["2️⃣", "hai"], ["🌼", "mai"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ai và ay** và đọc được: tai, hai, mai, bay, tay, cay. Giỏi quá!"

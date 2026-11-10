@@ -1,0 +1,95 @@
+schema: 1
+slug: toan1-doc-viet-so-den-100
+title: "Đọc, viết các số đến 100"
+summary: "Đọc và viết số có hai chữ số; chục và đơn vị."
+est_minutes: 10
+xp_reward: 30
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Giờ mình đọc và viết các số lớn hơn nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      **35** gồm 3 chục và 5 đơn vị. Đọc là: **ba mươi lăm**.
+
+      **47** gồm 4 chục và 7 đơn vị. Đọc là: **bốn mươi bảy**.
+
+      **99** gồm 9 chục và 9 đơn vị. Đọc là: **chín mươi chín**.
+    say: "Ba mươi lăm gồm ba chục và năm đơn vị. Bốn mươi bảy gồm bốn chục và bảy đơn vị. Chín mươi chín gồm chín chục và chín đơn vị."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Viết số: viết **chữ số chục** trước, **chữ số đơn vị** sau.
+
+      2 chục 6 đơn vị → **26**
+    say: "Viết số: viết chữ số chục trước, chữ số đơn vị sau."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "viet-so"
+    prompt: "4 chục và 7 đơn vị là số _"
+    answer: { accept: ["47"] }
+    hint: "Viết 4 rồi viết 7."
+    explanation: "4 chục 7 đơn vị là 47."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chuc-don-vi"
+    prompt: "Số 58 gồm _ chục và 8 đơn vị."
+    answer: { accept: ["5"] }
+    hint: "Chữ số đầu là số chục."
+    explanation: "58 gồm 5 chục và 8 đơn vị."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "viet-so"
+    prompt: "Số gồm 6 chục và 2 đơn vị là:"
+    options:
+      - { id: "a", text: "26" }
+      - { id: "b", text: "62" }
+      - { id: "c", text: "60" }
+    answer: { correct: ["b"] }
+    hint: "Chục viết trước."
+    explanation: "6 chục 2 đơn vị là 62."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-so"
+    prompt: "Số 83 có chữ số hàng đơn vị là:"
+    options:
+      - { id: "a", text: "8" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "83" }
+    answer: { correct: ["b"] }
+    hint: "Chữ số cuối là đơn vị."
+    explanation: "Chữ số hàng đơn vị của 83 là 3."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-den-100"
+    prompt: "Số liền sau của 99 là số _"
+    answer: { accept: ["100"] }
+    hint: "Sau chín mươi chín là số tròn trăm."
+    explanation: "Số liền sau của 99 là 100."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **đọc, viết số đến 100**."
+    say: "Bé đã biết đọc và viết số đến một trăm."

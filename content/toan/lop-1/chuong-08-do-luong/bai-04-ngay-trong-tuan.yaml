@@ -1,0 +1,101 @@
+schema: 1
+slug: toan1-ngay-trong-tuan
+title: "Các ngày trong tuần"
+summary: "Một tuần có 7 ngày; thứ tự các ngày."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Một tuần có bảy ngày. Bé cùng gọi tên từng ngày nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Một tuần có **7 ngày**:
+
+      Thứ hai, thứ ba, thứ tư, thứ năm, thứ sáu, thứ bảy, chủ nhật.
+
+      Bé đi học từ thứ hai đến thứ sáu. Thứ bảy và chủ nhật bé được nghỉ.
+    say: "Một tuần có bảy ngày: thứ hai, thứ ba, thứ tư, thứ năm, thứ sáu, thứ bảy, chủ nhật. Bé đi học từ thứ hai đến thứ sáu. Thứ bảy và chủ nhật bé được nghỉ."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Ngày hôm nay, **ngày mai** là ngày liền sau. **Hôm qua** là ngày liền trước."
+    say: "Ngày mai là ngày liền sau hôm nay. Hôm qua là ngày liền trước."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "ngay-trong-tuan"
+    prompt: "Một tuần có _ ngày."
+    answer: { accept: ["7"] }
+    hint: "Đếm: hai, ba, tư, năm, sáu, bảy, chủ nhật."
+    explanation: "Một tuần có 7 ngày."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ngay-trong-tuan"
+    prompt: "Sau thứ ba là thứ mấy?"
+    options:
+      - { id: "a", text: "Thứ hai" }
+      - { id: "b", text: "Thứ tư" }
+      - { id: "c", text: "Thứ năm" }
+    answer: { correct: ["b"] }
+    hint: "Thứ hai, thứ ba, rồi đến..."
+    explanation: "Sau thứ ba là thứ tư."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ngay-trong-tuan"
+    prompt: "Hôm nay là thứ năm. Ngày mai là thứ mấy?"
+    options:
+      - { id: "a", text: "Thứ tư" }
+      - { id: "b", text: "Thứ sáu" }
+      - { id: "c", text: "Thứ bảy" }
+    answer: { correct: ["b"] }
+    hint: "Ngày mai là ngày liền sau."
+    explanation: "Ngày mai là thứ sáu."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "ngay-trong-tuan"
+    prompt: "Ngày nào là ngày cuối cùng của tuần?"
+    options:
+      - { id: "a", text: "Thứ bảy" }
+      - { id: "b", text: "Chủ nhật" }
+      - { id: "c", text: "Thứ hai" }
+    answer: { correct: ["b"] }
+    hint: "Tuần bắt đầu từ thứ hai."
+    explanation: "Chủ nhật là ngày cuối tuần."
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ngay-trong-tuan"
+    prompt: "Bấm các ngày theo đúng thứ tự trong tuần."
+    options:
+      - { id: "xThutu", text: "Thứ tư" }
+      - { id: "xThuhai", text: "Thứ hai" }
+      - { id: "xThuba", text: "Thứ ba" }
+      - { id: "xThunam", text: "Thứ năm" }
+    answer: { sequence: ["xThuhai", "xThuba", "xThutu", "xThunam"] }
+    hint: "Bắt đầu từ thứ hai."
+    explanation: "Thứ hai, thứ ba, thứ tư, thứ năm."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **một tuần có 7 ngày** và gọi tên từng ngày. Bé hoàn thành Toán lớp 1 rồi!"
+    say: "Bé đã biết một tuần có bảy ngày, và gọi tên từng ngày. Giỏi lắm!"

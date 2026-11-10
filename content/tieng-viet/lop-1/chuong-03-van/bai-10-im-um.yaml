@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-10-im-um"
+title: "Vần im – um"
+summary: "Học vần im và um; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: im và um. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **im**: ghép âm đầu với vần để được tiếng.
+      - **ch** + **im** → **chim**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "ch"
+      rhyme: "im"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép ch + im rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **um**: ghép âm đầu với vần để được tiếng.
+      - **ch** + **um** → **chùm**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "ch"
+      rhyme: "um"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép ch + um rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "chim", "emoji": "🐦"}
+        - {"word": "kim", "emoji": "🪡"}
+        - {"word": "phim", "emoji": "🎬"}
+        - {"word": "chùm", "emoji": "🍇"}
+        - {"word": "cúm", "emoji": "🤧"}
+        - {"word": "bụm", "emoji": "🤲"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần im và um."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **im** hoặc **um**: **chim**, **kim**, **phim**, **chùm**, **cúm**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-im"
+    prompt: "Tiếng nào có vần **im**?"
+    options:
+      - {"id": "a", "text": "phở"}
+      - {"id": "b", "text": "chim"}
+      - {"id": "c", "text": "tổ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"chim\" có vần im."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-um"
+    prompt: "Tiếng nào có vần **um**?"
+    options:
+      - {"id": "a", "text": "chùm"}
+      - {"id": "b", "text": "vịt"}
+      - {"id": "c", "text": "nơ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"chùm\" có vần um."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-chim"
+    prompt: "Sắp xếp để tạo thành tiếng **chim**:"
+    options:
+      - {"id": "x2", "text": "im"}
+      - {"id": "x1", "text": "ch"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "ch + im = chim."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-im"
+    prompt: "Điền phần còn lại để được tiếng **chim** 🐦: ch_"
+    answer: {"accept": ["im"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "ch + im = chim."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-um"
+    prompt: "Điền phần còn lại để được tiếng **chùm** 🍇: ch_"
+    answer: {"accept": ["ùm", "um"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "ch + ùm = chùm."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-um"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "cúm"}
+    options:
+      - {"id": "a", "text": "nón"}
+      - {"id": "b", "text": "lúa"}
+      - {"id": "c", "text": "cúm"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"cúm\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-im"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🐦", "right": "chim"}
+      - {"left": "🪡", "right": "kim"}
+      - {"left": "🎬", "right": "phim"}
+    answer: {"pairs": [["🐦", "chim"], ["🪡", "kim"], ["🎬", "phim"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **im và um** và đọc được: chim, kim, phim, chùm, cúm, bụm. Giỏi quá!"

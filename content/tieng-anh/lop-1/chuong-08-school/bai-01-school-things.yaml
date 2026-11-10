@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-school-1
+title: "School things"
+summary: "Đồ dùng học tập: book, pen, pencil, bag."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé có gì trong cặp sách nào? Mình học tên nhé!"
+    say:
+      - { t: "Bé có gì trong cặp sách nào? Mình học tên nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "book", emoji: "📖", meaning: "quyển sách" }
+        - { word: "pen", emoji: "🖊️", meaning: "cái bút mực" }
+        - { word: "pencil", emoji: "✏️", meaning: "bút chì" }
+        - { word: "bag", emoji: "🎒", meaning: "cái cặp" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **book** (quyển sách) · **pen** (cái bút mực) · **pencil** (bút chì) · **bag** (cái cặp)"
+    say: [{ t: "book", l: en }, { t: "quyển sách", l: vi }, { t: "pen", l: en }, { t: "cái bút mực", l: vi }, { t: "pencil", l: en }, { t: "bút chì", l: vi }, { t: "bag", l: en }, { t: "cái cặp", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-book
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "book", lang: en }
+    options:
+      - { id: a, text: "📖", say: "book", lang: en }
+      - { id: b, text: "🖊️", say: "pen", lang: en }
+      - { id: c, text: "✏️", say: "pencil", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là book, nghĩa là quyển sách."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-pen
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "pen", lang: en }
+    options:
+      - { id: a, text: "✏️", say: "pencil", lang: en }
+      - { id: b, text: "🖊️", say: "pen", lang: en }
+      - { id: c, text: "🎒", say: "bag", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là pen, nghĩa là cái bút mực."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-pencil
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "pencil", lang: en }
+    options:
+      - { id: a, text: "🎒", say: "bag", lang: en }
+      - { id: b, text: "📖", say: "book", lang: en }
+      - { id: c, text: "✏️", say: "pencil", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là pencil, nghĩa là bút chì."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-bag
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "bag", lang: en }
+    options:
+      - { id: a, text: "🎒", say: "bag", lang: en }
+      - { id: b, text: "📖", say: "book", lang: en }
+      - { id: c, text: "🖊️", say: "pen", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là bag, nghĩa là cái cặp."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-pencil
+    prompt: "Bút chì tiếng Anh là gì? ✏️"
+    option_lang: en
+    options:
+      - { id: a, text: "pencil" }
+      - { id: b, text: "bag" }
+      - { id: c, text: "book" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Bút chì tiếng Anh là pencil."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-bag
+    prompt: "Cái cặp tiếng Anh là gì? 🎒"
+    option_lang: en
+    options:
+      - { id: a, text: "book" }
+      - { id: b, text: "bag" }
+      - { id: c, text: "pen" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Cái cặp tiếng Anh là bag."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "book", right: "quyển sách" }
+      - { left: "pen", right: "cái bút mực" }
+      - { left: "pencil", right: "bút chì" }
+      - { left: "bag", right: "cái cặp" }
+    answer: { pairs: [["book", "quyển sách"], ["pen", "cái bút mực"], ["pencil", "bút chì"], ["bag", "cái cặp"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "book là quyển sách; pen là cái bút mực; pencil là bút chì; bag là cái cặp."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **book**, **pen**, **pencil**, **bag**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "book, pen, pencil, bag.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

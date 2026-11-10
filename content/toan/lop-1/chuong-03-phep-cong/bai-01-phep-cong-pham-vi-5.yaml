@@ -4,7 +4,7 @@ title: "Phép cộng trong phạm vi 5"
 summary: "Làm quen phép cộng: gộp hai nhóm vật lại với nhau."
 est_minutes: 8
 xp_reward: 25
-status: draft
+status: published
 blocks:
   - id: b1
     type: mascot_say

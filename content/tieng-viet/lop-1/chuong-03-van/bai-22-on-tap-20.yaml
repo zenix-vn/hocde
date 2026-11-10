@@ -1,0 +1,147 @@
+schema: 1
+slug: "tv1-van-22-on-tap-20"
+title: "Ôn tập vần (2)"
+summary: "Ôn lại các vần đã học qua trò chơi tìm tiếng, nghe và nối."
+est_minutes: 8
+xp_reward: 30
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng ôn lại các vần đã học nhé! Bé làm thật cẩn thận nha."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Muốn đọc một tiếng, bé ghép **âm đầu** với **vần**, rồi thêm **dấu thanh**."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-ooi"
+    prompt: "Tiếng nào có vần **ôi**?"
+    options:
+      - {"id": "a", "text": "rau"}
+      - {"id": "b", "text": "tay"}
+      - {"id": "c", "text": "nồi"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"nồi\" có vần ôi."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-ao"
+    prompt: "Tiếng nào có vần **ao**?"
+    options:
+      - {"id": "a", "text": "sao"}
+      - {"id": "b", "text": "núi"}
+      - {"id": "c", "text": "dâu"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"sao\" có vần ao."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-oi"
+    prompt: "Tiếng nào có vần **oi**?"
+    options:
+      - {"id": "a", "text": "chơi"}
+      - {"id": "b", "text": "rau"}
+      - {"id": "c", "text": "voi"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"voi\" có vần oi."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-au"
+    prompt: "Tiếng nào có vần **au**?"
+    options:
+      - {"id": "a", "text": "rau"}
+      - {"id": "b", "text": "tắt"}
+      - {"id": "c", "text": "bát"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"rau\" có vần au."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-owi"
+    prompt: "Tiếng nào có vần **ơi**?"
+    options:
+      - {"id": "a", "text": "bơi"}
+      - {"id": "b", "text": "màu"}
+      - {"id": "c", "text": "cay"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bơi\" có vần ơi."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-van-ai"
+    prompt: "Tiếng nào có vần **ai**?"
+    options:
+      - {"id": "a", "text": "kéo"}
+      - {"id": "b", "text": "dây"}
+      - {"id": "c", "text": "tai"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tai\" có vần ai."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-ay"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "cay"}
+    options:
+      - {"id": "a", "text": "dây"}
+      - {"id": "b", "text": "voi"}
+      - {"id": "c", "text": "cay"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"cay\"."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-ui"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "núi"}
+    options:
+      - {"id": "a", "text": "núi"}
+      - {"id": "b", "text": "sọt"}
+      - {"id": "c", "text": "mật"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"núi\"."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "on-tap-noi-hinh"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "⭐", "right": "sao"}
+      - {"left": "🏊", "right": "bơi"}
+      - {"left": "🐘", "right": "voi"}
+    answer: {"pairs": [["⭐", "sao"], ["🏊", "bơi"], ["🐘", "voi"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ."
+  - {"id": "b12", "type": "summary", "markdown": "Bé đã ôn xong các vần rồi. Bé giỏi lắm, cứ đọc thật nhiều nhé!", "say": null}

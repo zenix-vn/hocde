@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-28-ep-eep"
+title: "Vần ep – êp"
+summary: "Học vần ep và êp; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ep và êp. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ep**: ghép âm đầu với vần để được tiếng.
+      - **d** + **ep** → **dép**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "d", "rhyme": "ep", "tones": ["sắc", "nặng"], "caption": "Ghép d + ep rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **êp**: ghép âm đầu với vần để được tiếng.
+      - **b** + **êp** → **bếp**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "b", "rhyme": "êp", "tones": ["sắc", "nặng"], "caption": "Ghép b + êp rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "dép", "emoji": "🩴"}
+        - {"word": "kẹp", "emoji": "📎"}
+        - {"word": "chép", "emoji": "✍️"}
+        - {"word": "bếp", "emoji": "🍳"}
+        - {"word": "xếp", "emoji": "🗂️"}
+        - {"word": "nếp", "emoji": "🍙"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ep và êp."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ep** hoặc **êp**: **dép**, **kẹp**, **chép**, **bếp**, **xếp**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ep"
+    prompt: "Tiếng nào có vần **ep**?"
+    options:
+      - {"id": "a", "text": "lá"}
+      - {"id": "b", "text": "dép"}
+      - {"id": "c", "text": "ong"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"dép\" có vần ep."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-eep"
+    prompt: "Tiếng nào có vần **êp**?"
+    options:
+      - {"id": "a", "text": "bò"}
+      - {"id": "b", "text": "tay"}
+      - {"id": "c", "text": "bếp"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bếp\" có vần êp."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-dep"
+    prompt: "Sắp xếp để tạo thành tiếng **dép**:"
+    options:
+      - {"id": "x2", "text": "ép"}
+      - {"id": "x1", "text": "d"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "d + ép = dép."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ep"
+    prompt: "Điền phần còn lại để được tiếng **dép** 🩴: d_"
+    answer: {"accept": ["ép", "ep"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "d + ép = dép."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-eep"
+    prompt: "Điền phần còn lại để được tiếng **bếp** 🍳: b_"
+    answer: {"accept": ["ếp", "êp"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ếp = bếp."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-eep"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "xếp"}
+    options:
+      - {"id": "a", "text": "chim"}
+      - {"id": "b", "text": "xếp"}
+      - {"id": "c", "text": "lúa"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"xếp\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ep"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🩴", "right": "dép"}
+      - {"left": "📎", "right": "kẹp"}
+      - {"left": "✍️", "right": "chép"}
+    answer: {"pairs": [["🩴", "dép"], ["📎", "kẹp"], ["✍️", "chép"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ep và êp** và đọc được: dép, kẹp, chép, bếp, xếp, nếp. Giỏi quá!"

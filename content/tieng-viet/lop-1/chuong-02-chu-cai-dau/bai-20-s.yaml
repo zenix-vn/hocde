@@ -1,0 +1,121 @@
+schema: 1
+slug: "tv1-bai-20-s"
+title: "Chữ S s"
+summary: "Làm quen chữ S, s; nhận biết âm s trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ s. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **S** có hai dạng: **S** in hoa, **s** in thường.
+      Âm **s** đọc là "sờ".
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "s"
+      rhyme: "o"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép s + o rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "sò", "emoji": "🐚"}
+        - {"word": "sói", "emoji": "🐺"}
+        - {"word": "sâu", "emoji": "🐛"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ s."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **sò**, **sói**, **sâu** đều có chữ **s**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-s"
+    prompt: "Tiếng nào bắt đầu bằng chữ **s**?"
+    options:
+      - {"id": "a", "text": "vở"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "bố"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"sò\" bắt đầu bằng chữ s."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-s"
+    prompt: "Hình 🐺 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "nơ"}
+      - {"id": "b", "text": "đèn"}
+      - {"id": "c", "text": "sói"}
+    answer: {"correct": ["c"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🐺 là \"sói\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-s"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "sâu"}
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "sâu"}
+      - {"id": "c", "text": "bút"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"sâu\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-so"
+    prompt: "Sắp xếp để tạo thành tiếng **sò**:"
+    options:
+      - {"id": "x2", "text": "ò"}
+      - {"id": "x1", "text": "s"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "s + ò = sò."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-s"
+    prompt: "Điền chữ còn thiếu để được tiếng **sò**: _ò"
+    answer: {"accept": ["s"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "s + ò = sò."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-s"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🐚", "right": "sò"}
+      - {"left": "🐺", "right": "sói"}
+      - {"left": "🐛", "right": "sâu"}
+    answer: {"pairs": [["🐚", "sò"], ["🐺", "sói"], ["🐛", "sâu"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+  - {"id": "b12", "type": "summary", "markdown": "Hôm nay bé biết chữ **S s** và đọc được: sò, sói, sâu. Giỏi quá!", "say": null}

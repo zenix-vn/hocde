@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-08-oom-owm"
+title: "Vần ôm – ơm"
+summary: "Học vần ôm và ơm; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ôm và ơm. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ôm**: ghép âm đầu với vần để được tiếng.
+      - **t** + **ôm** → **tôm**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "t"
+      rhyme: "ôm"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép t + ôm rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ơm**: ghép âm đầu với vần để được tiếng.
+      - **c** + **ơm** → **cơm**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "c"
+      rhyme: "ơm"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + ơm rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tôm", "emoji": "🦐"}
+        - {"word": "ôm", "emoji": "🤗"}
+        - {"word": "hôm", "emoji": "📅"}
+        - {"word": "cơm", "emoji": "🍚"}
+        - {"word": "thơm", "emoji": "👃"}
+        - {"word": "rơm", "emoji": "🌾"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ôm và ơm."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ôm** hoặc **ơm**: **tôm**, **ôm**, **hôm**, **cơm**, **thơm**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oom"
+    prompt: "Tiếng nào có vần **ôm**?"
+    options:
+      - {"id": "a", "text": "tôm"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "mẹ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tôm\" có vần ôm."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-owm"
+    prompt: "Tiếng nào có vần **ơm**?"
+    options:
+      - {"id": "a", "text": "cơm"}
+      - {"id": "b", "text": "mơ"}
+      - {"id": "c", "text": "vịt"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cơm\" có vần ơm."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-toom"
+    prompt: "Sắp xếp để tạo thành tiếng **tôm**:"
+    options:
+      - {"id": "x2", "text": "ôm"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + ôm = tôm."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oom"
+    prompt: "Điền phần còn lại để được tiếng **tôm** 🦐: t_"
+    answer: {"accept": ["ôm"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + ôm = tôm."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-owm"
+    prompt: "Điền phần còn lại để được tiếng **cơm** 🍚: c_"
+    answer: {"accept": ["ơm"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + ơm = cơm."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-owm"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "thơm"}
+    options:
+      - {"id": "a", "text": "chim"}
+      - {"id": "b", "text": "thơm"}
+      - {"id": "c", "text": "pin"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"thơm\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-oom"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🦐", "right": "tôm"}
+      - {"left": "🤗", "right": "ôm"}
+      - {"left": "📅", "right": "hôm"}
+    answer: {"pairs": [["🦐", "tôm"], ["🤗", "ôm"], ["📅", "hôm"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ôm và ơm** và đọc được: tôm, ôm, hôm, cơm, thơm, rơm. Giỏi quá!"

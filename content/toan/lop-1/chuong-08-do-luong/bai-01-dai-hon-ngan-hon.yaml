@@ -1,0 +1,99 @@
+schema: 1
+slug: toan1-dai-hon-ngan-hon
+title: "Dài hơn, ngắn hơn"
+summary: "So sánh độ dài hai đồ vật; cao hơn, thấp hơn."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hai que tính, que nào dài hơn nhỉ? Mình cùng đặt cạnh nhau để so sánh!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Que đỏ: 🟥🟥🟥🟥🟥
+
+      Que xanh: 🟦🟦🟦
+
+      Que đỏ **dài hơn**. Que xanh **ngắn hơn**.
+    say: "Que đỏ dài hơn. Que xanh ngắn hơn."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Đặt hai vật **cùng một đầu**. Vật nào **vượt ra** là vật **dài hơn**.
+
+      Với người và cây: **cao hơn**, **thấp hơn**.
+    say: "Đặt hai vật cùng một đầu. Vật nào vượt ra là vật dài hơn. Với người và cây, ta nói cao hơn, thấp hơn."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-ngan"
+    prompt: |
+      Que nào dài hơn?
+
+      Que A: 🟩🟩🟩🟩
+
+      Que B: 🟨🟨🟨🟨🟨🟨
+    options:
+      - { id: "a", text: "Que A" }
+      - { id: "b", text: "Que B" }
+    answer: { correct: ["b"] }
+    hint: "Đếm số ô của mỗi que."
+    explanation: "Que B có 6 ô, dài hơn que A có 4 ô."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-ngan"
+    prompt: |
+      Que nào ngắn hơn?
+
+      Que C: 🟪🟪
+
+      Que D: 🟪🟪🟪🟪🟪
+    options:
+      - { id: "a", text: "Que C" }
+      - { id: "b", text: "Que D" }
+    answer: { correct: ["a"] }
+    hint: "Que ít ô hơn thì ngắn hơn."
+    explanation: "Que C có 2 ô, ngắn hơn que D có 5 ô."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cao-thap"
+    prompt: "Hươu cao cổ 🦒 và thỏ 🐇, con nào cao hơn?"
+    options:
+      - { id: "a", text: "Hươu cao cổ" }
+      - { id: "b", text: "Thỏ" }
+    answer: { correct: ["a"] }
+    hint: "Con nào có cổ dài?"
+    explanation: "Hươu cao cổ cao hơn thỏ."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dai-ngan"
+    prompt: "Cây bút chì dài 6 ô, cục tẩy dài 2 ô. Vật nào ngắn hơn?"
+    options:
+      - { id: "a", text: "Bút chì" }
+      - { id: "b", text: "Cục tẩy" }
+    answer: { correct: ["b"] }
+    hint: "Số ô ít hơn thì ngắn hơn."
+    explanation: "Cục tẩy ngắn hơn."
+
+  - id: b8
+    type: "summary"
+    markdown: "Bé đã biết so sánh **dài hơn, ngắn hơn**, **cao hơn, thấp hơn**."
+    say: "Bé đã biết so sánh dài hơn, ngắn hơn, cao hơn, thấp hơn."

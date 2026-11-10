@@ -1,0 +1,84 @@
+schema: 1
+slug: "tv1-doc-03-nha-cua-be"
+title: "Nhà của bé"
+summary: "Tập đọc câu ngắn: Nhà của bé."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đọc một bài thật ngắn nhé! Bé đọc theo mình hoặc bấm nút loa để nghe."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Nhà bé có bố, mẹ và bé.
+
+      Bố đi làm. Mẹ nấu cơm.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "nhà", "emoji": "🏠"}
+        - {"word": "bố", "emoji": "👨"}
+        - {"word": "mẹ", "emoji": "👩"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Ai nấu cơm?"
+    options:
+      - {"id": "a", "text": "Mẹ"}
+      - {"id": "b", "text": "Bố"}
+      - {"id": "c", "text": "Bé"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Mẹ\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Ai đi làm?"
+    options:
+      - {"id": "a", "text": "Bé"}
+      - {"id": "b", "text": "Bà"}
+      - {"id": "c", "text": "Bố"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bố\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x3", "text": "cơm"}
+      - {"id": "x1", "text": "Mẹ"}
+      - {"id": "x2", "text": "nấu"}
+    answer: {"sequence": ["x1", "x2", "x3"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Mẹ nấu cơm."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Bố đi _."
+    answer: {"accept": ["làm"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Bố đi làm.."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã đọc xong bài **Nhà của bé**. Bé đọc thật hay!", "say": null}

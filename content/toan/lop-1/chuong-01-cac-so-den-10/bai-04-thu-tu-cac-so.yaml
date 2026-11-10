@@ -1,0 +1,103 @@
+schema: 1
+slug: toan1-bai-04-thu-tu-cac-so
+title: "Thứ tự các số từ 0 đến 10"
+summary: "Đếm xuôi, đếm ngược; số liền trước, số liền sau."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đếm xuôi, rồi đếm ngược từ mười về không nhé!"
+
+  - id: b2
+    type: "interactive"
+    kind: "counters"
+    config: { count: 10, emoji: "⭐", caption: "Chạm vào các ngôi sao để đếm xuôi từ 1 đến 10." }
+
+  - id: b3
+    type: "text"
+    markdown: |
+      Đếm xuôi: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10.
+
+      Đếm ngược: 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.
+    say: "Đếm xuôi: không, một, hai, ba, bốn, năm, sáu, bảy, tám, chín, mười. Đếm ngược: mười, chín, tám, bảy, sáu, năm, bốn, ba, hai, một, không."
+
+  - id: b4
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Số đứng **ngay sau** là số **liền sau**. Số đứng **ngay trước** là số **liền trước**.
+
+      Ví dụ: số liền sau của 4 là 5. Số liền trước của 4 là 3.
+    say: "Số đứng ngay sau là số liền sau. Số đứng ngay trước là số liền trước. Số liền sau của bốn là năm. Số liền trước của bốn là ba."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lien-sau"
+    prompt: "Số liền sau của 6 là số _"
+    answer: { accept: ["7"] }
+    hint: "Đếm tiếp sau sáu."
+    explanation: "Sau sáu là bảy."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lien-truoc"
+    prompt: "Số liền trước của 9 là số _"
+    answer: { accept: ["8"] }
+    hint: "Đếm lùi một số từ chín."
+    explanation: "Trước chín là tám."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dem-nguoc"
+    prompt: "Đếm ngược: 5, 4, _, 2, 1. Số còn thiếu là:"
+    options:
+      - { id: "a", text: "2" }
+      - { id: "b", text: "3" }
+      - { id: "c", text: "4" }
+    answer: { correct: ["b"] }
+    hint: "Sau bốn, đếm lùi là số nào?"
+    explanation: "Năm, bốn, ba, hai, một."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-o-giua"
+    prompt: "Số nào đứng giữa 4 và 6?"
+    options:
+      - { id: "a", text: "4" }
+      - { id: "b", text: "6" }
+      - { id: "c", text: "5" }
+    answer: { correct: ["c"] }
+    hint: "Đếm: bốn, ..., sáu."
+    explanation: "Bốn, năm, sáu. Số năm đứng giữa."
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-lon-be-10"
+    prompt: "Bấm các số theo thứ tự từ lớn đến bé."
+    options:
+      - { id: "x7", text: "7" }
+      - { id: "x9", text: "9" }
+      - { id: "x8", text: "8" }
+      - { id: "x10", text: "10" }
+    answer: { sequence: ["x10", "x9", "x8", "x7"] }
+    hint: "Bắt đầu từ số lớn nhất: mười."
+    explanation: "Mười, chín, tám, bảy."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết đếm xuôi, đếm ngược và tìm số liền trước, liền sau."
+    say: "Bé đã biết đếm xuôi, đếm ngược, và tìm số liền trước, số liền sau. Giỏi quá!"

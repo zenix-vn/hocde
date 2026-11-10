@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-24-it-ut"
+title: "Vần it – ut"
+summary: "Học vần it và ut; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: it và ut. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **it**: ghép âm đầu với vần để được tiếng.
+      - **v** + **it** → **vịt**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "v", "rhyme": "it", "tones": ["sắc", "nặng"], "caption": "Ghép v + it rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ut**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ut** → **bút**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "b", "rhyme": "ut", "tones": ["sắc", "nặng"], "caption": "Ghép b + ut rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "vịt", "emoji": "🦆"}
+        - {"word": "mít", "emoji": "🍈"}
+        - {"word": "thịt", "emoji": "🥩"}
+        - {"word": "bút", "emoji": "🖊️"}
+        - {"word": "phút", "emoji": "⏱️"}
+        - {"word": "mút", "emoji": "🍭"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần it và ut."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **it** hoặc **ut**: **vịt**, **mít**, **thịt**, **bút**, **phút**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-it"
+    prompt: "Tiếng nào có vần **it**?"
+    options:
+      - {"id": "a", "text": "dưa"}
+      - {"id": "b", "text": "pin"}
+      - {"id": "c", "text": "vịt"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"vịt\" có vần it."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ut"
+    prompt: "Tiếng nào có vần **ut**?"
+    options:
+      - {"id": "a", "text": "bò"}
+      - {"id": "b", "text": "phở"}
+      - {"id": "c", "text": "bút"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bút\" có vần ut."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-vit"
+    prompt: "Sắp xếp để tạo thành tiếng **vịt**:"
+    options:
+      - {"id": "x2", "text": "ịt"}
+      - {"id": "x1", "text": "v"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "v + ịt = vịt."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-it"
+    prompt: "Điền phần còn lại để được tiếng **vịt** 🦆: v_"
+    answer: {"accept": ["ịt", "it"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + ịt = vịt."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ut"
+    prompt: "Điền phần còn lại để được tiếng **bút** 🖊️: b_"
+    answer: {"accept": ["út", "ut"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + út = bút."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ut"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "phút"}
+    options:
+      - {"id": "a", "text": "nón"}
+      - {"id": "b", "text": "na"}
+      - {"id": "c", "text": "phút"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"phút\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-it"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🦆", "right": "vịt"}
+      - {"left": "🍈", "right": "mít"}
+      - {"left": "🥩", "right": "thịt"}
+    answer: {"pairs": [["🦆", "vịt"], ["🍈", "mít"], ["🥩", "thịt"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **it và ut** và đọc được: vịt, mít, thịt, bút, phút, mút. Giỏi quá!"

@@ -1,0 +1,128 @@
+schema: 1
+slug: "tv1-bai-34-ch"
+title: "Chữ Ch ch"
+summary: "Làm quen chữ Ch, ch; nhận biết âm ch trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ ch. Bé nghe và đọc theo mình nhé!"
+    say: "Hôm nay mình học chữ mới: chữ chờ. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Ch** có hai dạng: **Ch** in hoa, **ch** in thường.
+      Âm **ch** đọc là "chờ".
+    say: "Chữ Ch có hai dạng: Ch in hoa, chờ in thường.. Âm chờ đọc là \"chờ\"."
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "ch"
+      rhyme: "a"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép ch + a rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cha", "emoji": "👨"}
+        - {"word": "chó", "emoji": "🐶"}
+        - {"word": "chổi", "emoji": "🧹"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ ch."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **cha**, **chó**, **chổi** đều có chữ **ch**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-ch"
+    prompt: "Tiếng nào bắt đầu bằng chữ **ch**?"
+    say: "Tiếng nào bắt đầu bằng chữ chờ?"
+    options:
+      - {"id": "a", "text": "cha"}
+      - {"id": "b", "text": "đèn"}
+      - {"id": "c", "text": "mèo"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"cha\" bắt đầu bằng chữ ch."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-ch"
+    prompt: "Hình 🐶 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "chó"}
+      - {"id": "b", "text": "bò"}
+      - {"id": "c", "text": "vịt"}
+    answer: {"correct": ["a"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🐶 là \"chó\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-ch"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "chổi"}
+    options:
+      - {"id": "a", "text": "tôm"}
+      - {"id": "b", "text": "cá"}
+      - {"id": "c", "text": "chổi"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"chổi\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-cha"
+    prompt: "Sắp xếp để tạo thành tiếng **cha**:"
+    options:
+      - {"id": "x2", "text": "a"}
+      - {"id": "x1", "text": "ch", "say": "chờ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "ch + a = cha."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-ch"
+    prompt: "Điền chữ còn thiếu để được tiếng **cha**: _a"
+    answer: {"accept": ["ch"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "ch + a = cha."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ch"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "👨", "right": "cha"}
+      - {"left": "🐶", "right": "chó"}
+      - {"left": "🧹", "right": "chổi"}
+    answer: {"pairs": [["👨", "cha"], ["🐶", "chó"], ["🧹", "chổi"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b12"
+    type: "summary"
+    markdown: "Hôm nay bé biết chữ **Ch ch** và đọc được: cha, chó, chổi. Giỏi quá!"
+    say: "Hôm nay bé biết chữ chờ và đọc được: cha, chó, chổi. Giỏi quá!"

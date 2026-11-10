@@ -1,0 +1,151 @@
+schema: 1
+slug: anh1-abc-1
+title: "A, B, C, D, E"
+summary: "Chữ A–E: apple, ball, cat, dog, egg."
+est_minutes: 8
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mỗi chữ cái bắt đầu một từ tiếng Anh. Mình cùng nghe nhé!"
+    say:
+      - { t: "Mỗi chữ cái bắt đầu một từ tiếng Anh. Mình cùng nghe nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "apple", emoji: "🍎", meaning: "quả táo (chữ A)" }
+        - { word: "ball", emoji: "⚽", meaning: "quả bóng (chữ B)" }
+        - { word: "cat", emoji: "🐱", meaning: "con mèo (chữ C)" }
+        - { word: "dog", emoji: "🐶", meaning: "con chó (chữ D)" }
+        - { word: "egg", emoji: "🥚", meaning: "quả trứng (chữ E)" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **apple** (quả táo (chữ A)) · **ball** (quả bóng (chữ B)) · **cat** (con mèo (chữ C)) · **dog** (con chó (chữ D)) · **egg** (quả trứng (chữ E))"
+    say: [{ t: "apple", l: en }, { t: "quả táo (chữ A)", l: vi }, { t: "ball", l: en }, { t: "quả bóng (chữ B)", l: vi }, { t: "cat", l: en }, { t: "con mèo (chữ C)", l: vi }, { t: "dog", l: en }, { t: "con chó (chữ D)", l: vi }, { t: "egg", l: en }, { t: "quả trứng (chữ E)", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-apple
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "apple", lang: en }
+    options:
+      - { id: a, text: "🍎", say: "apple", lang: en }
+      - { id: b, text: "⚽", say: "ball", lang: en }
+      - { id: c, text: "🐱", say: "cat", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là apple, nghĩa là quả táo (chữ A)."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-ball
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "ball", lang: en }
+    options:
+      - { id: a, text: "🐱", say: "cat", lang: en }
+      - { id: b, text: "⚽", say: "ball", lang: en }
+      - { id: c, text: "🐶", say: "dog", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là ball, nghĩa là quả bóng (chữ B)."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-cat
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "cat", lang: en }
+    options:
+      - { id: a, text: "🐶", say: "dog", lang: en }
+      - { id: b, text: "🥚", say: "egg", lang: en }
+      - { id: c, text: "🐱", say: "cat", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là cat, nghĩa là con mèo (chữ C)."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-dog
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "dog", lang: en }
+    options:
+      - { id: a, text: "🐶", say: "dog", lang: en }
+      - { id: b, text: "🥚", say: "egg", lang: en }
+      - { id: c, text: "🍎", say: "apple", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là dog, nghĩa là con chó (chữ D)."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-dog
+    prompt: "Con chó (chữ D) tiếng Anh là gì? 🐶"
+    option_lang: en
+    options:
+      - { id: a, text: "egg" }
+      - { id: b, text: "dog" }
+      - { id: c, text: "apple" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Con chó (chữ D) tiếng Anh là dog."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-egg
+    prompt: "Quả trứng (chữ E) tiếng Anh là gì? 🥚"
+    option_lang: en
+    options:
+      - { id: a, text: "apple" }
+      - { id: b, text: "ball" }
+      - { id: c, text: "egg" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Quả trứng (chữ E) tiếng Anh là egg."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "ball", right: "quả bóng (chữ B)" }
+      - { left: "cat", right: "con mèo (chữ C)" }
+      - { left: "dog", right: "con chó (chữ D)" }
+      - { left: "egg", right: "quả trứng (chữ E)" }
+    answer: { pairs: [["ball", "quả bóng (chữ B)"], ["cat", "con mèo (chữ C)"], ["dog", "con chó (chữ D)"], ["egg", "quả trứng (chữ E)"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "ball là quả bóng (chữ B); cat là con mèo (chữ C); dog là con chó (chữ D); egg là quả trứng (chữ E)."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **apple**, **ball**, **cat**, **dog**, **egg**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "apple, ball, cat, dog, egg.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

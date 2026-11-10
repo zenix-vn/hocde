@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-32-ooc-uc"
+title: "Vần ôc – uc"
+summary: "Học vần ôc và uc; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ôc và uc. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ôc**: ghép âm đầu với vần để được tiếng.
+      - **c** + **ôc** → **cốc**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "c", "rhyme": "ôc", "tones": ["sắc", "nặng"], "caption": "Ghép c + ôc rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **uc**: ghép âm đầu với vần để được tiếng.
+      - **c** + **uc** → **cúc**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "c", "rhyme": "uc", "tones": ["sắc", "nặng"], "caption": "Ghép c + uc rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cốc", "emoji": "🥛"}
+        - {"word": "ốc", "emoji": "🐌"}
+        - {"word": "gốc", "emoji": "🌲"}
+        - {"word": "cúc", "emoji": "🌼"}
+        - {"word": "chục", "emoji": "🔢"}
+        - {"word": "múc", "emoji": "🥄"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ôc và uc."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ôc** hoặc **uc**: **cốc**, **ốc**, **gốc**, **cúc**, **chục**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ooc"
+    prompt: "Tiếng nào có vần **ôc**?"
+    options:
+      - {"id": "a", "text": "cốc"}
+      - {"id": "b", "text": "rùa"}
+      - {"id": "c", "text": "pin"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cốc\" có vần ôc."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uc"
+    prompt: "Tiếng nào có vần **uc**?"
+    options:
+      - {"id": "a", "text": "lọ"}
+      - {"id": "b", "text": "tay"}
+      - {"id": "c", "text": "cúc"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cúc\" có vần uc."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-cooc"
+    prompt: "Sắp xếp để tạo thành tiếng **cốc**:"
+    options:
+      - {"id": "x2", "text": "ốc"}
+      - {"id": "x1", "text": "c"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "c + ốc = cốc."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ooc"
+    prompt: "Điền phần còn lại để được tiếng **cốc** 🥛: c_"
+    answer: {"accept": ["ốc", "ôc"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + ốc = cốc."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uc"
+    prompt: "Điền phần còn lại để được tiếng **cúc** 🌼: c_"
+    answer: {"accept": ["úc", "uc"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + úc = cúc."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-uc"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "chục"}
+    options:
+      - {"id": "a", "text": "rùa"}
+      - {"id": "b", "text": "tôm"}
+      - {"id": "c", "text": "chục"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"chục\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ooc"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🥛", "right": "cốc"}
+      - {"left": "🐌", "right": "ốc"}
+      - {"left": "🌲", "right": "gốc"}
+    answer: {"pairs": [["🥛", "cốc"], ["🐌", "ốc"], ["🌲", "gốc"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ôc và uc** và đọc được: cốc, ốc, gốc, cúc, chục, múc. Giỏi quá!"

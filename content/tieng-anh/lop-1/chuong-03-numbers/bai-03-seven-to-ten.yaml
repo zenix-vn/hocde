@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-numbers-7-10
+title: "Seven to ten"
+summary: "Đếm số 7, 8, 9, 10 bằng tiếng Anh."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình đếm đến mười nhé!"
+    say:
+      - { t: "Mình đếm đến mười nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "seven", emoji: "7️⃣", meaning: "số 7" }
+        - { word: "eight", emoji: "8️⃣", meaning: "số 8" }
+        - { word: "nine", emoji: "9️⃣", meaning: "số 9" }
+        - { word: "ten", emoji: "🔟", meaning: "số 10" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **seven** (số 7) · **eight** (số 8) · **nine** (số 9) · **ten** (số 10)"
+    say: [{ t: "seven", l: en }, { t: "số 7", l: vi }, { t: "eight", l: en }, { t: "số 8", l: vi }, { t: "nine", l: en }, { t: "số 9", l: vi }, { t: "ten", l: en }, { t: "số 10", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-seven
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "seven", lang: en }
+    options:
+      - { id: a, text: "7️⃣", say: "seven", lang: en }
+      - { id: b, text: "8️⃣", say: "eight", lang: en }
+      - { id: c, text: "9️⃣", say: "nine", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là seven, nghĩa là số 7."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-eight
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "eight", lang: en }
+    options:
+      - { id: a, text: "9️⃣", say: "nine", lang: en }
+      - { id: b, text: "8️⃣", say: "eight", lang: en }
+      - { id: c, text: "🔟", say: "ten", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là eight, nghĩa là số 8."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-nine
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "nine", lang: en }
+    options:
+      - { id: a, text: "🔟", say: "ten", lang: en }
+      - { id: b, text: "7️⃣", say: "seven", lang: en }
+      - { id: c, text: "9️⃣", say: "nine", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là nine, nghĩa là số 9."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-ten
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "ten", lang: en }
+    options:
+      - { id: a, text: "🔟", say: "ten", lang: en }
+      - { id: b, text: "7️⃣", say: "seven", lang: en }
+      - { id: c, text: "8️⃣", say: "eight", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là ten, nghĩa là số 10."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-nine
+    prompt: "Số 9 tiếng Anh là gì? 9️⃣"
+    option_lang: en
+    options:
+      - { id: a, text: "nine" }
+      - { id: b, text: "ten" }
+      - { id: c, text: "seven" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 9 tiếng Anh là nine."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-ten
+    prompt: "Số 10 tiếng Anh là gì? 🔟"
+    option_lang: en
+    options:
+      - { id: a, text: "seven" }
+      - { id: b, text: "ten" }
+      - { id: c, text: "eight" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 10 tiếng Anh là ten."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "seven", right: "số 7" }
+      - { left: "eight", right: "số 8" }
+      - { left: "nine", right: "số 9" }
+      - { left: "ten", right: "số 10" }
+    answer: { pairs: [["seven", "số 7"], ["eight", "số 8"], ["nine", "số 9"], ["ten", "số 10"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "seven là số 7; eight là số 8; nine là số 9; ten là số 10."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **seven**, **eight**, **nine**, **ten**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "seven, eight, nine, ten.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

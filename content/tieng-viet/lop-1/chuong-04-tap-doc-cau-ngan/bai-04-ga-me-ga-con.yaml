@@ -1,0 +1,86 @@
+schema: 1
+slug: "tv1-doc-04-ga-me-ga-con"
+title: "Gà mẹ, gà con"
+summary: "Tập đọc câu ngắn: Gà mẹ, gà con."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đọc một bài thật ngắn nhé! Bé đọc theo mình hoặc bấm nút loa để nghe."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Gà mẹ có năm gà con.
+
+      Gà con chạy theo mẹ.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "gà mẹ", "emoji": "🐔"}
+        - {"word": "gà con", "emoji": "🐥"}
+        - {"word": "trứng", "emoji": "🥚"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Gà mẹ có mấy gà con?"
+    options:
+      - {"id": "a", "text": "Hai"}
+      - {"id": "b", "text": "Năm"}
+      - {"id": "c", "text": "Ba"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Năm\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Gà con chạy theo ai?"
+    options:
+      - {"id": "a", "text": "Gà mẹ"}
+      - {"id": "b", "text": "Bố"}
+      - {"id": "c", "text": "Bé"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Gà mẹ\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x5", "text": "mẹ"}
+      - {"id": "x1", "text": "Gà"}
+      - {"id": "x3", "text": "chạy"}
+      - {"id": "x4", "text": "theo"}
+      - {"id": "x2", "text": "con"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Gà con chạy theo mẹ."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Gà mẹ có năm gà _."
+    answer: {"accept": ["con"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Gà mẹ có năm gà con.."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã đọc xong bài **Gà mẹ, gà con**. Bé đọc thật hay!", "say": null}

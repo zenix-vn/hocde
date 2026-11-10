@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-39-oong-ung"
+title: "Vần ông – ung"
+summary: "Học vần ông và ung; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ông và ung. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ông**: ghép âm đầu với vần để được tiếng.
+      - **s** + **ông** → **sông**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "s"
+      rhyme: "ông"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép s + ông rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ung**: ghép âm đầu với vần để được tiếng.
+      - **th** + **ung** → **thùng**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "th"
+      rhyme: "ung"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép th + ung rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "sông", "emoji": "🌊"}
+        - {"word": "rồng", "emoji": "🐉"}
+        - {"word": "trống", "emoji": "🥁"}
+        - {"word": "thùng", "emoji": "🪣"}
+        - {"word": "sung", "emoji": "🍈"}
+        - {"word": "rung", "emoji": "📳"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ông và ung."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ông** hoặc **ung**: **sông**, **rồng**, **trống**, **thùng**, **sung**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oong"
+    prompt: "Tiếng nào có vần **ông**?"
+    options:
+      - {"id": "a", "text": "dưa"}
+      - {"id": "b", "text": "đèn"}
+      - {"id": "c", "text": "sông"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"sông\" có vần ông."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ung"
+    prompt: "Tiếng nào có vần **ung**?"
+    options:
+      - {"id": "a", "text": "tôm"}
+      - {"id": "b", "text": "thùng"}
+      - {"id": "c", "text": "ca"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"thùng\" có vần ung."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-soong"
+    prompt: "Sắp xếp để tạo thành tiếng **sông**:"
+    options:
+      - {"id": "x2", "text": "ông"}
+      - {"id": "x1", "text": "s"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "s + ông = sông."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oong"
+    prompt: "Điền phần còn lại để được tiếng **sông** 🌊: s_"
+    answer: {"accept": ["ông"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "s + ông = sông."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ung"
+    prompt: "Điền phần còn lại để được tiếng **thùng** 🪣: th_"
+    answer: {"accept": ["ùng", "ung"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "th + ùng = thùng."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ung"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "sung"}
+    options:
+      - {"id": "a", "text": "nón"}
+      - {"id": "b", "text": "sung"}
+      - {"id": "c", "text": "xe"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"sung\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-oong"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🌊", "right": "sông"}
+      - {"left": "🐉", "right": "rồng"}
+      - {"left": "🥁", "right": "trống"}
+    answer: {"pairs": [["🌊", "sông"], ["🐉", "rồng"], ["🥁", "trống"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ông và ung** và đọc được: sông, rồng, trống, thùng, sung, rung. Giỏi quá!"

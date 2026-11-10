@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-23-et-eet"
+title: "Vần et – êt"
+summary: "Học vần et và êt; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: et và êt. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **et**: ghép âm đầu với vần để được tiếng.
+      - **v** + **et** → **vẹt**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "v", "rhyme": "et", "tones": ["sắc", "nặng"], "caption": "Ghép v + et rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **êt**: ghép âm đầu với vần để được tiếng.
+      - **t** + **êt** → **tết**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "t", "rhyme": "êt", "tones": ["sắc", "nặng"], "caption": "Ghép t + êt rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "vẹt", "emoji": "🦜"}
+        - {"word": "sét", "emoji": "⚡"}
+        - {"word": "hét", "emoji": "😱"}
+        - {"word": "tết", "emoji": "🧧"}
+        - {"word": "mệt", "emoji": "😫"}
+        - {"word": "rét", "emoji": "🥶"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần et và êt."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **et** hoặc **êt**: **vẹt**, **sét**, **hét**, **tết**, **mệt**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-et"
+    prompt: "Tiếng nào có vần **et**?"
+    options:
+      - {"id": "a", "text": "đàn"}
+      - {"id": "b", "text": "vẹt"}
+      - {"id": "c", "text": "xô"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"vẹt\" có vần et."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-eet"
+    prompt: "Tiếng nào có vần **êt**?"
+    options:
+      - {"id": "a", "text": "tết"}
+      - {"id": "b", "text": "voi"}
+      - {"id": "c", "text": "bố"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tết\" có vần êt."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-vet"
+    prompt: "Sắp xếp để tạo thành tiếng **vẹt**:"
+    options:
+      - {"id": "x2", "text": "ẹt"}
+      - {"id": "x1", "text": "v"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "v + ẹt = vẹt."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-et"
+    prompt: "Điền phần còn lại để được tiếng **vẹt** 🦜: v_"
+    answer: {"accept": ["ẹt", "et"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + ẹt = vẹt."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-eet"
+    prompt: "Điền phần còn lại để được tiếng **tết** 🧧: t_"
+    answer: {"accept": ["ết", "êt"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + ết = tết."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-eet"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "mệt"}
+    options:
+      - {"id": "a", "text": "mệt"}
+      - {"id": "b", "text": "nón"}
+      - {"id": "c", "text": "dưa"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"mệt\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-et"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🦜", "right": "vẹt"}
+      - {"left": "⚡", "right": "sét"}
+      - {"left": "😱", "right": "hét"}
+    answer: {"pairs": [["🦜", "vẹt"], ["⚡", "sét"], ["😱", "hét"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **et và êt** và đọc được: vẹt, sét, hét, tết, mệt, rét. Giỏi quá!"

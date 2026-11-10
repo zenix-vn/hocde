@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-colors-2
+title: "Green, orange, pink"
+summary: "Ba màu tiếp theo: green, orange, pink."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình học thêm ba màu nữa nhé!"
+    say:
+      - { t: "Mình học thêm ba màu nữa nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "green", emoji: "🟢", meaning: "màu xanh lá" }
+        - { word: "orange", emoji: "🟠", meaning: "màu cam" }
+        - { word: "pink", emoji: "🩷", meaning: "màu hồng" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **green** (màu xanh lá) · **orange** (màu cam) · **pink** (màu hồng)"
+    say: [{ t: "green", l: en }, { t: "màu xanh lá", l: vi }, { t: "orange", l: en }, { t: "màu cam", l: vi }, { t: "pink", l: en }, { t: "màu hồng", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-green
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "green", lang: en }
+    options:
+      - { id: a, text: "🟢", say: "green", lang: en }
+      - { id: b, text: "🟠", say: "orange", lang: en }
+      - { id: c, text: "🩷", say: "pink", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là green, nghĩa là màu xanh lá."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-orange
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "orange", lang: en }
+    options:
+      - { id: a, text: "🩷", say: "pink", lang: en }
+      - { id: b, text: "🟠", say: "orange", lang: en }
+      - { id: c, text: "🟢", say: "green", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là orange, nghĩa là màu cam."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-pink
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "pink", lang: en }
+    options:
+      - { id: a, text: "🟢", say: "green", lang: en }
+      - { id: b, text: "🟠", say: "orange", lang: en }
+      - { id: c, text: "🩷", say: "pink", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là pink, nghĩa là màu hồng."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-orange
+    prompt: "Màu cam tiếng Anh là gì? 🟠"
+    option_lang: en
+    options:
+      - { id: a, text: "pink" }
+      - { id: b, text: "green" }
+      - { id: c, text: "orange" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu cam tiếng Anh là orange."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-pink
+    prompt: "Màu hồng tiếng Anh là gì? 🩷"
+    option_lang: en
+    options:
+      - { id: a, text: "pink" }
+      - { id: b, text: "green" }
+      - { id: c, text: "orange" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu hồng tiếng Anh là pink."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "green", right: "màu xanh lá" }
+      - { left: "orange", right: "màu cam" }
+      - { left: "pink", right: "màu hồng" }
+    answer: { pairs: [["green", "màu xanh lá"], ["orange", "màu cam"], ["pink", "màu hồng"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "green là màu xanh lá; orange là màu cam; pink là màu hồng."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **green**, **orange**, **pink**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "green, orange, pink.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

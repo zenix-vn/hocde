@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-09-em-eem"
+title: "Vần em – êm"
+summary: "Học vần em và êm; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: em và êm. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **em**: ghép âm đầu với vần để được tiếng.
+      - **k** + **em** → **kem**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "k"
+      rhyme: "em"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép k + em rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **êm**: ghép âm đầu với vần để được tiếng.
+      - **đ** + **êm** → **đêm**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "đ"
+      rhyme: "êm"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép đ + êm rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "kem", "emoji": "🍦"}
+        - {"word": "xem", "emoji": "👀"}
+        - {"word": "em", "emoji": "👶"}
+        - {"word": "đêm", "emoji": "🌙"}
+        - {"word": "mềm", "emoji": "☁️"}
+        - {"word": "êm", "emoji": "🛋️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần em và êm."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **em** hoặc **êm**: **kem**, **xem**, **em**, **đêm**, **mềm**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-em"
+    prompt: "Tiếng nào có vần **em**?"
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "kem"}
+      - {"id": "c", "text": "nơ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"kem\" có vần em."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-eem"
+    prompt: "Tiếng nào có vần **êm**?"
+    options:
+      - {"id": "a", "text": "đêm"}
+      - {"id": "b", "text": "cá"}
+      - {"id": "c", "text": "dưa"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"đêm\" có vần êm."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-kem"
+    prompt: "Sắp xếp để tạo thành tiếng **kem**:"
+    options:
+      - {"id": "x2", "text": "em"}
+      - {"id": "x1", "text": "k"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "k + em = kem."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-em"
+    prompt: "Điền phần còn lại để được tiếng **kem** 🍦: k_"
+    answer: {"accept": ["em"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "k + em = kem."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-eem"
+    prompt: "Điền phần còn lại để được tiếng **đêm** 🌙: đ_"
+    answer: {"accept": ["êm"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "đ + êm = đêm."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-eem"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "mềm"}
+    options:
+      - {"id": "a", "text": "tôm"}
+      - {"id": "b", "text": "mềm"}
+      - {"id": "c", "text": "bàn"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"mềm\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-em"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍦", "right": "kem"}
+      - {"left": "👀", "right": "xem"}
+      - {"left": "👶", "right": "em"}
+    answer: {"pairs": [["🍦", "kem"], ["👀", "xem"], ["👶", "em"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **em và êm** và đọc được: kem, xem, em, đêm, mềm, êm. Giỏi quá!"

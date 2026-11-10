@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-numbers-1-3
+title: "One, two, three"
+summary: "Đếm số 1, 2, 3 bằng tiếng Anh."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình cùng đếm số bằng tiếng Anh nhé!"
+    say:
+      - { t: "Mình cùng đếm số bằng tiếng Anh nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "one", emoji: "1️⃣", meaning: "số 1" }
+        - { word: "two", emoji: "2️⃣", meaning: "số 2" }
+        - { word: "three", emoji: "3️⃣", meaning: "số 3" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **one** (số 1) · **two** (số 2) · **three** (số 3)"
+    say: [{ t: "one", l: en }, { t: "số 1", l: vi }, { t: "two", l: en }, { t: "số 2", l: vi }, { t: "three", l: en }, { t: "số 3", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-one
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "one", lang: en }
+    options:
+      - { id: a, text: "1️⃣", say: "one", lang: en }
+      - { id: b, text: "2️⃣", say: "two", lang: en }
+      - { id: c, text: "3️⃣", say: "three", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là one, nghĩa là số 1."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-two
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "two", lang: en }
+    options:
+      - { id: a, text: "3️⃣", say: "three", lang: en }
+      - { id: b, text: "2️⃣", say: "two", lang: en }
+      - { id: c, text: "1️⃣", say: "one", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là two, nghĩa là số 2."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-three
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "three", lang: en }
+    options:
+      - { id: a, text: "1️⃣", say: "one", lang: en }
+      - { id: b, text: "2️⃣", say: "two", lang: en }
+      - { id: c, text: "3️⃣", say: "three", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là three, nghĩa là số 3."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-two
+    prompt: "Số 2 tiếng Anh là gì? 2️⃣"
+    option_lang: en
+    options:
+      - { id: a, text: "three" }
+      - { id: b, text: "one" }
+      - { id: c, text: "two" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 2 tiếng Anh là two."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-three
+    prompt: "Số 3 tiếng Anh là gì? 3️⃣"
+    option_lang: en
+    options:
+      - { id: a, text: "three" }
+      - { id: b, text: "one" }
+      - { id: c, text: "two" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 3 tiếng Anh là three."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "one", right: "số 1" }
+      - { left: "two", right: "số 2" }
+      - { left: "three", right: "số 3" }
+    answer: { pairs: [["one", "số 1"], ["two", "số 2"], ["three", "số 3"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "one là số 1; two là số 2; three là số 3."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **one**, **two**, **three**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "one, two, three.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

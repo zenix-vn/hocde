@@ -1,0 +1,85 @@
+schema: 1
+slug: "tv1-doc-02-co-va-ca"
+title: "Cò và cá"
+summary: "Tập đọc câu ngắn: Cò và cá."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đọc một bài thật ngắn nhé! Bé đọc theo mình hoặc bấm nút loa để nghe."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Cò đứng bên bờ ao.
+
+      Cá bơi dưới nước.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cò", "emoji": "🦢"}
+        - {"word": "ao", "emoji": "🏞️"}
+        - {"word": "cá", "emoji": "🐟"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Cá bơi ở đâu?"
+    options:
+      - {"id": "a", "text": "Trên trời"}
+      - {"id": "b", "text": "Trên cây"}
+      - {"id": "c", "text": "Dưới nước"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Dưới nước\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Cò đứng ở đâu?"
+    options:
+      - {"id": "a", "text": "Trong nhà"}
+      - {"id": "b", "text": "Bên bờ ao"}
+      - {"id": "c", "text": "Trên mái nhà"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bên bờ ao\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x3", "text": "dưới"}
+      - {"id": "x4", "text": "nước"}
+      - {"id": "x2", "text": "bơi"}
+      - {"id": "x1", "text": "Cá"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Cá bơi dưới nước."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Cò đứng bên bờ _."
+    answer: {"accept": ["ao"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Cò đứng bên bờ ao.."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã đọc xong bài **Cò và cá**. Bé đọc thật hay!", "say": null}

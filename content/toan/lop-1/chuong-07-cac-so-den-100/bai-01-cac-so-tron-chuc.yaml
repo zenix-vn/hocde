@@ -1,0 +1,91 @@
+schema: 1
+slug: toan1-cac-so-tron-chuc
+title: "Các số tròn chục"
+summary: "Nhận biết các số 10, 20, 30, ... 100."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé có nhiều bó que tính! Mỗi bó là một chục. Mình đếm theo chục nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      1 chục là **10**, 2 chục là **20**, 3 chục là **30**, 4 chục là **40**, 5 chục là **50**.
+
+      6 chục là **60**, 7 chục là **70**, 8 chục là **80**, 9 chục là **90**, 10 chục là **100**.
+    say: "Một chục là mười, hai chục là hai mươi, ba chục là ba mươi, bốn chục là bốn mươi, năm chục là năm mươi. Sáu chục là sáu mươi, bảy chục là bảy mươi, tám chục là tám mươi, chín chục là chín mươi, mười chục là một trăm."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Các số **10, 20, 30, ..., 90** gọi là các **số tròn chục**. Số tròn chục có chữ số 0 ở cuối."
+    say: "Các số mười, hai mươi, ba mươi, đến chín mươi gọi là các số tròn chục."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-tron-chuc"
+    prompt: "4 chục là số _"
+    answer: { accept: ["40"] }
+    hint: "Thêm một chữ số 0 vào sau số chục."
+    explanation: "4 chục là 40."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-tron-chuc"
+    prompt: "70 là _ chục"
+    answer: { accept: ["7"] }
+    hint: "Bỏ chữ số 0 ở cuối."
+    explanation: "70 là 7 chục."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-tron-chuc"
+    prompt: "Điền số còn thiếu: 10, 20, _, 40, 50"
+    answer: { accept: ["30"] }
+    hint: "Đếm thêm 10 mỗi lần."
+    explanation: "Số còn thiếu là 30."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-tron-chuc"
+    prompt: "10 chục là số nào?"
+    options:
+      - { id: "a", text: "90" }
+      - { id: "b", text: "100" }
+      - { id: "c", text: "110" }
+    answer: { correct: ["b"] }
+    hint: "Đếm: 90 rồi thêm 10."
+    explanation: "10 chục là 100."
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-tron-chuc"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x50", text: "50" }
+      - { id: "x20", text: "20" }
+      - { id: "x80", text: "80" }
+      - { id: "x30", text: "30" }
+    answer: { sequence: ["x20", "x30", "x50", "x80"] }
+    hint: "Tìm số bé nhất: hai mươi."
+    explanation: "20, 30, 50, 80."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết các **số tròn chục** từ 10 đến 100."
+    say: "Bé đã biết các số tròn chục từ mười đến một trăm."

@@ -4,7 +4,7 @@ title: "Hello!"
 summary: "Học chào hỏi và tạm biệt bằng tiếng Anh."
 est_minutes: 6
 xp_reward: 20
-status: draft
+status: published
 blocks:
   - id: b1
     type: mascot_say

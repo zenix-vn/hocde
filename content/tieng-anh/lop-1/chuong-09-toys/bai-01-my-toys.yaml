@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-toys-1
+title: "My toys"
+summary: "Đồ chơi: ball, doll, car, kite."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé thích chơi đồ chơi nào nhất? Mình cùng học nhé!"
+    say:
+      - { t: "Bé thích chơi đồ chơi nào nhất? Mình cùng học nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "ball", emoji: "⚽", meaning: "quả bóng" }
+        - { word: "doll", emoji: "🪆", meaning: "búp bê" }
+        - { word: "car", emoji: "🚗", meaning: "xe ô tô" }
+        - { word: "kite", emoji: "🪁", meaning: "con diều" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **ball** (quả bóng) · **doll** (búp bê) · **car** (xe ô tô) · **kite** (con diều)"
+    say: [{ t: "ball", l: en }, { t: "quả bóng", l: vi }, { t: "doll", l: en }, { t: "búp bê", l: vi }, { t: "car", l: en }, { t: "xe ô tô", l: vi }, { t: "kite", l: en }, { t: "con diều", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-ball
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "ball", lang: en }
+    options:
+      - { id: a, text: "⚽", say: "ball", lang: en }
+      - { id: b, text: "🪆", say: "doll", lang: en }
+      - { id: c, text: "🚗", say: "car", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là ball, nghĩa là quả bóng."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-doll
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "doll", lang: en }
+    options:
+      - { id: a, text: "🚗", say: "car", lang: en }
+      - { id: b, text: "🪆", say: "doll", lang: en }
+      - { id: c, text: "🪁", say: "kite", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là doll, nghĩa là búp bê."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-car
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "car", lang: en }
+    options:
+      - { id: a, text: "🪁", say: "kite", lang: en }
+      - { id: b, text: "⚽", say: "ball", lang: en }
+      - { id: c, text: "🚗", say: "car", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là car, nghĩa là xe ô tô."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-kite
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "kite", lang: en }
+    options:
+      - { id: a, text: "🪁", say: "kite", lang: en }
+      - { id: b, text: "⚽", say: "ball", lang: en }
+      - { id: c, text: "🪆", say: "doll", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là kite, nghĩa là con diều."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-car
+    prompt: "Xe ô tô tiếng Anh là gì? 🚗"
+    option_lang: en
+    options:
+      - { id: a, text: "car" }
+      - { id: b, text: "kite" }
+      - { id: c, text: "ball" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Xe ô tô tiếng Anh là car."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-kite
+    prompt: "Con diều tiếng Anh là gì? 🪁"
+    option_lang: en
+    options:
+      - { id: a, text: "ball" }
+      - { id: b, text: "kite" }
+      - { id: c, text: "doll" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Con diều tiếng Anh là kite."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "ball", right: "quả bóng" }
+      - { left: "doll", right: "búp bê" }
+      - { left: "car", right: "xe ô tô" }
+      - { left: "kite", right: "con diều" }
+    answer: { pairs: [["ball", "quả bóng"], ["doll", "búp bê"], ["car", "xe ô tô"], ["kite", "con diều"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "ball là quả bóng; doll là búp bê; car là xe ô tô; kite là con diều."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **ball**, **doll**, **car**, **kite**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "ball, doll, car, kite.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

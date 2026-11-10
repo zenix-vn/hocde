@@ -4,7 +4,7 @@ title: "Animals"
 summary: "Học tên ba con vật bằng tiếng Anh: cat, dog, fish."
 est_minutes: 7
 xp_reward: 20
-status: draft
+status: published
 blocks:
   - id: b1
     type: mascot_say

@@ -1,0 +1,103 @@
+schema: 1
+slug: "tv1-bai-26-y"
+title: "Chữ Y y"
+summary: "Làm quen chữ Y, y; nhận biết âm y trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ y. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Y** có hai dạng: **Y** in hoa, **y** in thường.
+      Âm **y** đọc là "i dài".
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "y tá", "emoji": "🧑‍⚕️"}
+        - {"word": "y học", "emoji": "🩺"}
+        - {"word": "ý", "emoji": "💡"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ y."
+
+  - id: "b4"
+    type: "callout"
+    variant: "tip"
+    markdown: "Chữ **y** đọc như **i**, gọi là **i dài**. Chữ **i** gọi là **i ngắn**."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-y"
+    prompt: "Tiếng nào có chữ **y**?"
+    options:
+      - {"id": "a", "text": "y tá"}
+      - {"id": "b", "text": "bò"}
+      - {"id": "c", "text": "trâu"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"y tá\" có chữ y."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-y"
+    prompt: "Hình 🩺 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "bóng"}
+      - {"id": "b", "text": "y học"}
+      - {"id": "c", "text": "đàn"}
+    answer: {"correct": ["b"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🩺 là \"y học\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-y"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "ý"}
+    options:
+      - {"id": "a", "text": "ý"}
+      - {"id": "b", "text": "kem"}
+      - {"id": "c", "text": "trâu"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"ý\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-y"
+    prompt: "Điền chữ còn thiếu để được từ **y tá**: _ tá"
+    answer: {"accept": ["y"]}
+    hint: "Chữ cần điền là chữ i dài."
+    explanation: "y + tá = y tá."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-y"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🧑‍⚕️", "right": "y tá"}
+      - {"left": "🩺", "right": "y học"}
+      - {"left": "💡", "right": "ý"}
+    answer: {"pairs": [["🧑‍⚕️", "y tá"], ["🩺", "y học"], ["💡", "ý"]]}
+    hint: "Nhìn hình rồi chọn từ phù hợp."
+    explanation: "Bé đã nối đúng các từ có chữ y."
+  - {"id": "b10", "type": "summary", "markdown": "Hôm nay bé biết chữ **Y y** và đọc được: y tá, y học, ý. Giỏi quá!", "say": null}

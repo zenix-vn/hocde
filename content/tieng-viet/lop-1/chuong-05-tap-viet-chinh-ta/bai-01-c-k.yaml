@@ -1,0 +1,91 @@
+schema: 1
+slug: "tv1-chinh-ta-01-c-k"
+title: "Chính tả: c hay k"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Chữ **k** đứng trước **i, e, ê**. Chữ **c** đứng trước các chữ còn lại (a, o, ô, ơ, u, ư)."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: 🍦 _em"
+    options:
+      - {"id": "a", "text": "k"}
+      - {"id": "b", "text": "c"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "k + em = kem."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: 🐟 _á"
+    options:
+      - {"id": "a", "text": "c"}
+      - {"id": "b", "text": "k"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "c + á = cá."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: 🌾 _ê"
+    options:
+      - {"id": "a", "text": "c"}
+      - {"id": "b", "text": "k"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "k + ê = kê."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: 👩‍🏫 _ô"
+    options:
+      - {"id": "a", "text": "c"}
+      - {"id": "b", "text": "k"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "c + ô = cô."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: ✂️ _éo"
+    answer: {"accept": ["k"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "k + éo = kéo."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-c-k"
+    prompt: "Điền vào chỗ trống: 🦀 _ua"
+    answer: {"accept": ["c"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "c + ua = cua."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **c hay k**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

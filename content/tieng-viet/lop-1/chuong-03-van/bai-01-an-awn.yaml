@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-01-an-awn"
+title: "Vần an – ăn"
+summary: "Học vần an và ăn; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: an và ăn. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **an**: ghép âm đầu với vần để được tiếng.
+      - **đ** + **an** → **đàn**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "đ"
+      rhyme: "an"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép đ + an rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ăn**: ghép âm đầu với vần để được tiếng.
+      - **kh** + **ăn** → **khăn**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "kh"
+      rhyme: "ăn"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép kh + ăn rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "đàn", "emoji": "🎸"}
+        - {"word": "lan", "emoji": "🌺"}
+        - {"word": "than", "emoji": "⚫"}
+        - {"word": "khăn", "emoji": "🧣"}
+        - {"word": "chăn", "emoji": "🛏️"}
+        - {"word": "ăn", "emoji": "🍚"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần an và ăn."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **an** hoặc **ăn**: **đàn**, **lan**, **than**, **khăn**, **chăn**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-an"
+    prompt: "Tiếng nào có vần **an**?"
+    options:
+      - {"id": "a", "text": "lá"}
+      - {"id": "b", "text": "đàn"}
+      - {"id": "c", "text": "hổ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"đàn\" có vần an."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-awn"
+    prompt: "Tiếng nào có vần **ăn**?"
+    options:
+      - {"id": "a", "text": "khăn"}
+      - {"id": "b", "text": "quạ"}
+      - {"id": "c", "text": "bố"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"khăn\" có vần ăn."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-ddan"
+    prompt: "Sắp xếp để tạo thành tiếng **đàn**:"
+    options:
+      - {"id": "x2", "text": "àn"}
+      - {"id": "x1", "text": "đ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "đ + àn = đàn."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-an"
+    prompt: "Điền phần còn lại để được tiếng **đàn** 🎸: đ_"
+    answer: {"accept": ["àn", "an"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "đ + àn = đàn."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-awn"
+    prompt: "Điền phần còn lại để được tiếng **khăn** 🧣: kh_"
+    answer: {"accept": ["ăn"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "kh + ăn = khăn."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-awn"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "chăn"}
+    options:
+      - {"id": "a", "text": "chăn"}
+      - {"id": "b", "text": "bò"}
+      - {"id": "c", "text": "cam"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"chăn\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-an"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🎸", "right": "đàn"}
+      - {"left": "🌺", "right": "lan"}
+      - {"left": "⚫", "right": "than"}
+    answer: {"pairs": [["🎸", "đàn"], ["🌺", "lan"], ["⚫", "than"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **an và ăn** và đọc được: đàn, lan, than, khăn, chăn, ăn. Giỏi quá!"

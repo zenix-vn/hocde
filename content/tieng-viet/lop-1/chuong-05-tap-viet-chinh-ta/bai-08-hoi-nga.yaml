@@ -1,0 +1,97 @@
+schema: 1
+slug: "tv1-chinh-ta-08-hoi-nga"
+title: "Chính tả: dấu hỏi hay dấu ngã"
+summary: "Chọn từ có dấu hỏi hoặc dấu ngã viết đúng."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Dấu hỏi và dấu ngã nghe gần giống nhau. Mình cùng luyện nhé!"
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Dấu **hỏi** là nét cong như dấu hỏi. Dấu **ngã** là nét lượn sóng."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 👒:"
+    options:
+      - {"id": "a", "text": "mủ"}
+      - {"id": "b", "text": "mũ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"mũ\" là cách viết đúng."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 🌿:"
+    options:
+      - {"id": "a", "text": "cõ"}
+      - {"id": "b", "text": "cỏ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"cỏ\" là cách viết đúng."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 🪵:"
+    options:
+      - {"id": "a", "text": "gỗ"}
+      - {"id": "b", "text": "gổ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"gỗ\" là cách viết đúng."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 🧺:"
+    options:
+      - {"id": "a", "text": "rổ"}
+      - {"id": "b", "text": "rỗ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"rổ\" là cách viết đúng."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 🌊:"
+    options:
+      - {"id": "a", "text": "bể"}
+      - {"id": "b", "text": "bễ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"bể\" là cách viết đúng."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-hoi-nga"
+    prompt: "Chọn từ viết đúng cho hình 😴:"
+    options:
+      - {"id": "a", "text": "ngũ"}
+      - {"id": "b", "text": "ngủ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to rồi nhìn kỹ dấu trên chữ."
+    explanation: "\"ngủ\" là cách viết đúng."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện dấu hỏi và dấu ngã. Giỏi quá!", "say": null}

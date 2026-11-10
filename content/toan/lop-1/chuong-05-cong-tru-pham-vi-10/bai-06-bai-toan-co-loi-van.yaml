@@ -1,0 +1,93 @@
+schema: 1
+slug: toan1-bai-toan-co-loi-van
+title: "Bài toán có lời văn"
+summary: "Đọc bài toán, chọn phép cộng hoặc trừ để giải."
+est_minutes: 10
+xp_reward: 30
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Giờ mình giải bài toán nhé. Bé nghe kỹ câu chuyện rồi chọn phép tính!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Mai có 3 quả bóng 🎈. Nam có 4 quả bóng 🎈. Hai bạn có tất cả mấy quả bóng?
+
+      **Gộp lại** thì làm phép **cộng**: 3 + 4 = 7.
+    say: "Mai có ba quả bóng. Nam có bốn quả bóng. Hai bạn có tất cả mấy quả bóng? Gộp lại thì làm phép cộng. Ba cộng bốn bằng bảy."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Gộp lại, thêm vào, tất cả** → phép **cộng**.
+
+      **Bớt đi, cho đi, còn lại** → phép **trừ**.
+    say: "Gộp lại, thêm vào, tất cả, thì làm phép cộng. Bớt đi, cho đi, còn lại, thì làm phép trừ."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chon-phep-tinh"
+    prompt: "Lan có 5 cái kẹo. Mẹ cho thêm 2 cái. Lan có tất cả mấy cái kẹo?"
+    options:
+      - { id: "a", text: "5 + 2 = 7" }
+      - { id: "b", text: "5 − 2 = 3" }
+      - { id: "c", text: "5 + 2 = 8" }
+    answer: { correct: ["a"] }
+    hint: "Cho thêm nghĩa là nhiều lên."
+    explanation: "Làm phép cộng: 5 + 2 = 7."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan-cong"
+    prompt: "Bình có 6 viên bi. Bình mua thêm 3 viên bi. Bình có tất cả _ viên bi."
+    answer: { accept: ["9"] }
+    hint: "Thêm vào thì làm phép cộng."
+    explanation: "6 + 3 = 9."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan-tru"
+    prompt: "Có 8 con cá 🐟. Mèo ăn mất 3 con. Còn lại _ con cá."
+    answer: { accept: ["5"] }
+    hint: "Ăn mất là bớt đi, làm phép trừ."
+    explanation: "8 − 3 = 5."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chon-phep-tinh"
+    prompt: "Có 9 quả cam. Bé cho bạn 4 quả. Bé còn mấy quả cam?"
+    options:
+      - { id: "a", text: "9 + 4" }
+      - { id: "b", text: "9 − 4" }
+      - { id: "c", text: "4 − 9" }
+    answer: { correct: ["b"] }
+    hint: "Cho đi nghĩa là ít đi."
+    explanation: "Làm phép trừ: 9 − 4 = 5."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "giai-toan-tru"
+    prompt: "Trên cành có 10 con chim 🐦. Bay đi 6 con. Còn lại _ con chim."
+    answer: { accept: ["4"] }
+    hint: "Bay đi là bớt đi."
+    explanation: "10 − 6 = 4."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết giải **bài toán có lời văn**: cộng khi gộp, trừ khi bớt."
+    say: "Bé đã biết giải bài toán có lời văn. Cộng khi gộp, trừ khi bớt."

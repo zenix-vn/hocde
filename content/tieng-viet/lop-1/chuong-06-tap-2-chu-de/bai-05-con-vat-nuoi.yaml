@@ -1,0 +1,106 @@
+schema: 1
+slug: "tv1-t2-05-con-vat-nuoi"
+title: "Con vật nuôi trong nhà"
+summary: "Chủ đề loài vật: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Nhà em nuôi một chú chó và một chú mèo.
+
+      Chó giữ nhà rất giỏi.
+
+      Mèo bắt chuột rất tài.
+
+      Em chăm sóc chúng mỗi ngày.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "chó", "emoji": "🐶"}
+        - {"word": "mèo", "emoji": "🐱"}
+        - {"word": "chuột", "emoji": "🐭"}
+        - {"word": "nhà", "emoji": "🏠"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Chó giỏi việc gì?"
+    options:
+      - {"id": "a", "text": "Hót hay"}
+      - {"id": "b", "text": "Bắt chuột"}
+      - {"id": "c", "text": "Giữ nhà"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Giữ nhà\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Mèo giỏi việc gì?"
+    options:
+      - {"id": "a", "text": "Giữ nhà"}
+      - {"id": "b", "text": "Bắt chuột"}
+      - {"id": "c", "text": "Bơi lội"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Bắt chuột\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Nhà em nuôi mấy con vật?"
+    options:
+      - {"id": "a", "text": "Ba con"}
+      - {"id": "b", "text": "Một con"}
+      - {"id": "c", "text": "Hai con"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Hai con\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x2", "text": "chăm"}
+      - {"id": "x6", "text": "ngày"}
+      - {"id": "x3", "text": "sóc"}
+      - {"id": "x4", "text": "chúng"}
+      - {"id": "x5", "text": "mỗi"}
+      - {"id": "x1", "text": "Em"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5", "x6"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Em chăm sóc chúng mỗi ngày."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Chó giữ nhà rất _."
+    answer: {"accept": ["giỏi"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Chó giữ nhà rất giỏi.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Con vật nuôi trong nhà**. Bé đọc thật hay!", "say": null}

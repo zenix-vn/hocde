@@ -1,0 +1,102 @@
+schema: 1
+slug: toan1-bai-03-so-0
+title: "Số 0"
+summary: "Nhận biết số 0: không có vật nào."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình gặp một số rất đặc biệt: số không!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Trên đĩa có 🍪🍪🍪.
+
+      Bé ăn hết từng cái. Trên đĩa **không còn cái nào**.
+
+      Không có cái nào, ta viết số **0**.
+    say: "Trên đĩa có ba cái bánh. Bé ăn hết. Trên đĩa không còn cái nào. Không có cái nào, ta viết số không."
+
+  - id: b3
+    type: "interactive"
+    kind: "counters"
+    config: { count: 3, emoji: "🍪", caption: "Chạm vào từng cái bánh để đếm. Nếu bé ăn hết thì còn mấy cái?" }
+
+  - id: b4
+    type: "callout"
+    variant: "remember"
+    markdown: "Số **0** đọc là **không**. Số 0 nghĩa là **không có vật nào**."
+    say: "Số không, nghĩa là không có vật nào."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-0"
+    prompt: "Chuồng gà không có con gà nào. Ta ghi số nào?"
+    options:
+      - { id: "a", text: "0" }
+      - { id: "b", text: "1" }
+      - { id: "c", text: "2" }
+    answer: { correct: ["a"] }
+    hint: "Không có con nào thì ghi số mấy?"
+    explanation: "Không có con nào, ta ghi số 0."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-0"
+    prompt: "Hộp nào có số bi là 0?"
+    options:
+      - { id: "a", text: "📦 (hộp trống)" }
+      - { id: "b", text: "📦 ⚪⚪" }
+      - { id: "c", text: "📦 ⚪" }
+    answer: { correct: ["a"] }
+    hint: "Số 0 là không có viên bi nào."
+    explanation: "Hộp trống không có viên bi nào, nên là số 0."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-xuoi-0"
+    prompt: "Điền số còn thiếu: 0, 1, _, 3, 4"
+    answer: { accept: ["2"] }
+    hint: "Sau một là số nào?"
+    explanation: "Số còn thiếu là hai."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-nguoc-0"
+    prompt: "Điền số còn thiếu: 3, 2, 1, _"
+    answer: { accept: ["0"] }
+    hint: "Đếm lùi: ba, hai, một, rồi đến số nào?"
+    explanation: "Đếm lùi đến không."
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-0-3"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x3", text: "3" }
+      - { id: "x0", text: "0" }
+      - { id: "x2", text: "2" }
+      - { id: "x1", text: "1" }
+    answer: { sequence: ["x0", "x1", "x2", "x3"] }
+    hint: "Số bé nhất là số không."
+    explanation: "Không, một, hai, ba."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết **số 0** là không có vật nào. Giỏi lắm!"
+    say: "Bé đã biết số không là không có vật nào. Giỏi lắm!"

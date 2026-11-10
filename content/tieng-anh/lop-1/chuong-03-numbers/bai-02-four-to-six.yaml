@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-numbers-4-6
+title: "Four, five, six"
+summary: "Đếm số 4, 5, 6 bằng tiếng Anh."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình đếm tiếp nào: bốn, năm, sáu!"
+    say:
+      - { t: "Mình đếm tiếp nào: bốn, năm, sáu! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "four", emoji: "4️⃣", meaning: "số 4" }
+        - { word: "five", emoji: "5️⃣", meaning: "số 5" }
+        - { word: "six", emoji: "6️⃣", meaning: "số 6" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **four** (số 4) · **five** (số 5) · **six** (số 6)"
+    say: [{ t: "four", l: en }, { t: "số 4", l: vi }, { t: "five", l: en }, { t: "số 5", l: vi }, { t: "six", l: en }, { t: "số 6", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-four
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "four", lang: en }
+    options:
+      - { id: a, text: "4️⃣", say: "four", lang: en }
+      - { id: b, text: "5️⃣", say: "five", lang: en }
+      - { id: c, text: "6️⃣", say: "six", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là four, nghĩa là số 4."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-five
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "five", lang: en }
+    options:
+      - { id: a, text: "6️⃣", say: "six", lang: en }
+      - { id: b, text: "5️⃣", say: "five", lang: en }
+      - { id: c, text: "4️⃣", say: "four", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là five, nghĩa là số 5."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-six
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "six", lang: en }
+    options:
+      - { id: a, text: "4️⃣", say: "four", lang: en }
+      - { id: b, text: "5️⃣", say: "five", lang: en }
+      - { id: c, text: "6️⃣", say: "six", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là six, nghĩa là số 6."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-five
+    prompt: "Số 5 tiếng Anh là gì? 5️⃣"
+    option_lang: en
+    options:
+      - { id: a, text: "six" }
+      - { id: b, text: "four" }
+      - { id: c, text: "five" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 5 tiếng Anh là five."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-six
+    prompt: "Số 6 tiếng Anh là gì? 6️⃣"
+    option_lang: en
+    options:
+      - { id: a, text: "six" }
+      - { id: b, text: "four" }
+      - { id: c, text: "five" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Số 6 tiếng Anh là six."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "four", right: "số 4" }
+      - { left: "five", right: "số 5" }
+      - { left: "six", right: "số 6" }
+    answer: { pairs: [["four", "số 4"], ["five", "số 5"], ["six", "số 6"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "four là số 4; five là số 5; six là số 6."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **four**, **five**, **six**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "four, five, six.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

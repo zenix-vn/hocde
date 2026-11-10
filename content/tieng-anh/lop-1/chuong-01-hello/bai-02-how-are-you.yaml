@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-how-are-you
+title: "How are you?"
+summary: "Hỏi thăm và cảm ơn: fine, thank you, sorry."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Hôm nay mình học cách hỏi thăm và nói cảm ơn nhé!"
+    say:
+      - { t: "Hôm nay mình học cách hỏi thăm và nói cảm ơn nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "fine", emoji: "😊", meaning: "khỏe" }
+        - { word: "thank you", emoji: "🙏", meaning: "cảm ơn" }
+        - { word: "sorry", emoji: "😔", meaning: "xin lỗi" }
+        - { word: "please", emoji: "🤲", meaning: "làm ơn" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **fine** (khỏe) · **thank you** (cảm ơn) · **sorry** (xin lỗi) · **please** (làm ơn)"
+    say: [{ t: "fine", l: en }, { t: "khỏe", l: vi }, { t: "thank you", l: en }, { t: "cảm ơn", l: vi }, { t: "sorry", l: en }, { t: "xin lỗi", l: vi }, { t: "please", l: en }, { t: "làm ơn", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-fine
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "fine", lang: en }
+    options:
+      - { id: a, text: "😊", say: "fine", lang: en }
+      - { id: b, text: "🙏", say: "thank you", lang: en }
+      - { id: c, text: "😔", say: "sorry", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là fine, nghĩa là khỏe."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-thank-you
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "thank you", lang: en }
+    options:
+      - { id: a, text: "😔", say: "sorry", lang: en }
+      - { id: b, text: "🙏", say: "thank you", lang: en }
+      - { id: c, text: "🤲", say: "please", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là thank you, nghĩa là cảm ơn."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-sorry
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "sorry", lang: en }
+    options:
+      - { id: a, text: "🤲", say: "please", lang: en }
+      - { id: b, text: "😊", say: "fine", lang: en }
+      - { id: c, text: "😔", say: "sorry", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sorry, nghĩa là xin lỗi."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-please
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "please", lang: en }
+    options:
+      - { id: a, text: "🤲", say: "please", lang: en }
+      - { id: b, text: "😊", say: "fine", lang: en }
+      - { id: c, text: "🙏", say: "thank you", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là please, nghĩa là làm ơn."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-sorry
+    prompt: "Xin lỗi tiếng Anh là gì? 😔"
+    option_lang: en
+    options:
+      - { id: a, text: "sorry" }
+      - { id: b, text: "please" }
+      - { id: c, text: "fine" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Xin lỗi tiếng Anh là sorry."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-please
+    prompt: "Làm ơn tiếng Anh là gì? 🤲"
+    option_lang: en
+    options:
+      - { id: a, text: "fine" }
+      - { id: b, text: "please" }
+      - { id: c, text: "thank you" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Làm ơn tiếng Anh là please."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "fine", right: "khỏe" }
+      - { left: "thank you", right: "cảm ơn" }
+      - { left: "sorry", right: "xin lỗi" }
+      - { left: "please", right: "làm ơn" }
+    answer: { pairs: [["fine", "khỏe"], ["thank you", "cảm ơn"], ["sorry", "xin lỗi"], ["please", "làm ơn"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "fine là khỏe; thank you là cảm ơn; sorry là xin lỗi; please là làm ơn."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **fine**, **thank you**, **sorry**, **please**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "fine, thank you, sorry, please.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

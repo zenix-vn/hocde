@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-36-anh-inh"
+title: "Vần anh – inh"
+summary: "Học vần anh và inh; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: anh và inh. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **anh**: ghép âm đầu với vần để được tiếng.
+      - **b** + **anh** → **bánh**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "anh"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + anh rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **inh**: ghép âm đầu với vần để được tiếng.
+      - **x** + **inh** → **xinh**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "x"
+      rhyme: "inh"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép x + inh rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "bánh", "emoji": "🥮"}
+        - {"word": "xanh", "emoji": "🟢"}
+        - {"word": "chanh", "emoji": "🍋"}
+        - {"word": "xinh", "emoji": "🌸"}
+        - {"word": "kính", "emoji": "👓"}
+        - {"word": "đình", "emoji": "🛖"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần anh và inh."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **anh** hoặc **inh**: **bánh**, **xanh**, **chanh**, **xinh**, **kính**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-anh"
+    prompt: "Tiếng nào có vần **anh**?"
+    options:
+      - {"id": "a", "text": "mưa"}
+      - {"id": "b", "text": "bánh"}
+      - {"id": "c", "text": "bóng"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bánh\" có vần anh."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-inh"
+    prompt: "Tiếng nào có vần **inh**?"
+    options:
+      - {"id": "a", "text": "bò"}
+      - {"id": "b", "text": "cam"}
+      - {"id": "c", "text": "xinh"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"xinh\" có vần inh."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-banh"
+    prompt: "Sắp xếp để tạo thành tiếng **bánh**:"
+    options:
+      - {"id": "x2", "text": "ánh"}
+      - {"id": "x1", "text": "b"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "b + ánh = bánh."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-anh"
+    prompt: "Điền phần còn lại để được tiếng **bánh** 🥮: b_"
+    answer: {"accept": ["ánh", "anh"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ánh = bánh."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-inh"
+    prompt: "Điền phần còn lại để được tiếng **xinh** 🌸: x_"
+    answer: {"accept": ["inh"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "x + inh = xinh."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-inh"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "kính"}
+    options:
+      - {"id": "a", "text": "kính"}
+      - {"id": "b", "text": "vịt"}
+      - {"id": "c", "text": "gà"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"kính\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-anh"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🥮", "right": "bánh"}
+      - {"left": "🟢", "right": "xanh"}
+      - {"left": "🍋", "right": "chanh"}
+    answer: {"pairs": [["🥮", "bánh"], ["🟢", "xanh"], ["🍋", "chanh"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **anh và inh** và đọc được: bánh, xanh, chanh, xinh, kính, đình. Giỏi quá!"

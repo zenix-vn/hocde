@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-34-uwc-ach"
+title: "Vần ưc – ach"
+summary: "Học vần ưc và ach; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ưc và ach. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ưc**: ghép âm đầu với vần để được tiếng.
+      - **m** + **ưc** → **mực**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "m", "rhyme": "ưc", "tones": ["sắc", "nặng"], "caption": "Ghép m + ưc rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ach**: ghép âm đầu với vần để được tiếng.
+      - **s** + **ach** → **sách**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "s", "rhyme": "ach", "tones": ["sắc", "nặng"], "caption": "Ghép s + ach rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "mực", "emoji": "🦑"}
+        - {"word": "bức", "emoji": "🖼️"}
+        - {"word": "sức", "emoji": "💪"}
+        - {"word": "sách", "emoji": "📚"}
+        - {"word": "gạch", "emoji": "🧱"}
+        - {"word": "khách", "emoji": "🧳"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ưc và ach."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ưc** hoặc **ach**: **mực**, **bức**, **sức**, **sách**, **gạch**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uwc"
+    prompt: "Tiếng nào có vần **ưc**?"
+    options:
+      - {"id": "a", "text": "mực"}
+      - {"id": "b", "text": "đàn"}
+      - {"id": "c", "text": "ca"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"mực\" có vần ưc."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ach"
+    prompt: "Tiếng nào có vần **ach**?"
+    options:
+      - {"id": "a", "text": "trâu"}
+      - {"id": "b", "text": "cam"}
+      - {"id": "c", "text": "sách"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"sách\" có vần ach."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-muwc"
+    prompt: "Sắp xếp để tạo thành tiếng **mực**:"
+    options:
+      - {"id": "x2", "text": "ực"}
+      - {"id": "x1", "text": "m"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "m + ực = mực."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uwc"
+    prompt: "Điền phần còn lại để được tiếng **mực** 🦑: m_"
+    answer: {"accept": ["ực", "ưc"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "m + ực = mực."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ach"
+    prompt: "Điền phần còn lại để được tiếng **sách** 📚: s_"
+    answer: {"accept": ["ách", "ach"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "s + ách = sách."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ach"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "gạch"}
+    options:
+      - {"id": "a", "text": "gạch"}
+      - {"id": "b", "text": "gà"}
+      - {"id": "c", "text": "khỉ"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"gạch\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-uwc"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🦑", "right": "mực"}
+      - {"left": "🖼️", "right": "bức"}
+      - {"left": "💪", "right": "sức"}
+    answer: {"pairs": [["🦑", "mực"], ["🖼️", "bức"], ["💪", "sức"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ưc và ach** và đọc được: mực, bức, sức, sách, gạch, khách. Giỏi quá!"

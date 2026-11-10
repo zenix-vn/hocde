@@ -1,0 +1,100 @@
+schema: 1
+slug: toan1-xem-gio-dung
+title: "Xem đồng hồ: giờ đúng"
+summary: "Đọc giờ đúng trên đồng hồ."
+est_minutes: 8
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Đồng hồ có hai kim. Mình cùng học cách xem giờ nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      Đồng hồ có **kim ngắn** chỉ **giờ** và **kim dài** chỉ **phút**.
+
+      Khi kim dài chỉ số **12**, kim ngắn chỉ số mấy thì là mấy **giờ**.
+
+      🕒 là **3 giờ**.
+    say: "Đồng hồ có kim ngắn chỉ giờ và kim dài chỉ phút. Khi kim dài chỉ số mười hai, kim ngắn chỉ số mấy thì là mấy giờ. Đồng hồ này chỉ ba giờ."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: "Kim dài chỉ số **12**, kim ngắn chỉ số **6** → **6 giờ**."
+    say: "Kim dài chỉ số mười hai, kim ngắn chỉ số sáu, là sáu giờ."
+
+  - id: b4
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "xem-gio"
+    prompt: "Nối đồng hồ với giờ."
+    pairs:
+      - { left: "🕐", right: "1 giờ" }
+      - { left: "🕕", right: "6 giờ" }
+      - { left: "🕘", right: "9 giờ" }
+    answer: { pairs: [["🕐", "1 giờ"], ["🕕", "6 giờ"], ["🕘", "9 giờ"]] }
+    hint: "Nhìn kim ngắn chỉ số mấy."
+    explanation: "🕐 là 1 giờ, 🕕 là 6 giờ, 🕘 là 9 giờ."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "xem-gio"
+    prompt: "Đồng hồ 🕒 chỉ mấy giờ?"
+    options:
+      - { id: "a", text: "2 giờ" }
+      - { id: "b", text: "3 giờ" }
+      - { id: "c", text: "4 giờ" }
+    answer: { correct: ["b"] }
+    hint: "Kim ngắn chỉ số 3."
+    explanation: "Đó là 3 giờ."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "xem-gio"
+    prompt: "Đồng hồ 🕛 chỉ mấy giờ?"
+    options:
+      - { id: "a", text: "12 giờ" }
+      - { id: "b", text: "11 giờ" }
+      - { id: "c", text: "6 giờ" }
+    answer: { correct: ["a"] }
+    hint: "Cả hai kim cùng chỉ số 12."
+    explanation: "Đó là 12 giờ."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "xem-gio"
+    prompt: "Bé đi học lúc 7 giờ. Đồng hồ nào chỉ 7 giờ?"
+    options:
+      - { id: "a", text: "🕖" }
+      - { id: "b", text: "🕗" }
+      - { id: "c", text: "🕕" }
+    answer: { correct: ["a"] }
+    hint: "Kim ngắn chỉ số 7."
+    explanation: "🕖 là 7 giờ."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "xem-gio"
+    prompt: "Kim dài chỉ số 12, kim ngắn chỉ số 5. Đó là _ giờ."
+    answer: { accept: ["5"] }
+    hint: "Kim ngắn chỉ giờ."
+    explanation: "Đó là 5 giờ."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết xem **giờ đúng** trên đồng hồ."
+    say: "Bé đã biết xem giờ đúng trên đồng hồ."

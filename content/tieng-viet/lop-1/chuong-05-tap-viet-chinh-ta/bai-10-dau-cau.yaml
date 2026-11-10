@@ -1,0 +1,72 @@
+schema: 1
+slug: "tv1-chinh-ta-10-dau-cau"
+title: "Dấu chấm và dấu hỏi"
+summary: "Biết dùng dấu chấm kết thúc câu kể và dấu chấm hỏi kết thúc câu hỏi."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Cuối câu, bé nhớ đặt dấu nhé! Mình cùng học dấu chấm và dấu chấm hỏi."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Cuối **câu kể**, ta đặt **dấu chấm** (.).
+      Cuối **câu hỏi**, ta đặt **dấu chấm hỏi** (?).
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Cuối câu \"Bé đi học\" đặt dấu gì?"
+    options:
+      - {"id": "a", "text": "?"}
+      - {"id": "b", "text": "."}
+    answer: {"correct": ["b"]}
+    hint: "Câu đang kể hay đang hỏi?"
+    explanation: "Đây là câu kể nên đặt dấu chấm."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Cuối câu \"Bạn tên là gì\" đặt dấu gì?"
+    options:
+      - {"id": "a", "text": "?"}
+      - {"id": "b", "text": "."}
+    answer: {"correct": ["a"]}
+    hint: "Câu đang kể hay đang hỏi?"
+    explanation: "Đây là câu hỏi nên đặt dấu chấm hỏi."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Cuối câu \"Mẹ nấu cơm\" đặt dấu gì?"
+    options:
+      - {"id": "a", "text": "."}
+      - {"id": "b", "text": "?"}
+    answer: {"correct": ["a"]}
+    hint: "Câu đang kể hay đang hỏi?"
+    explanation: "Đây là câu kể nên đặt dấu chấm."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-cau"
+    prompt: "Cuối câu \"Con mèo ở đâu\" đặt dấu gì?"
+    options:
+      - {"id": "a", "text": "?"}
+      - {"id": "b", "text": "."}
+    answer: {"correct": ["a"]}
+    hint: "Câu đang kể hay đang hỏi?"
+    explanation: "Đây là câu hỏi nên đặt dấu chấm hỏi."
+  - {"id": "b7", "type": "summary", "markdown": "Bé đã biết đặt dấu chấm và dấu chấm hỏi. Giỏi quá!", "say": null}

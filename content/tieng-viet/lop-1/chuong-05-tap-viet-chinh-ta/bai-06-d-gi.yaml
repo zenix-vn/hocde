@@ -1,0 +1,92 @@
+schema: 1
+slug: "tv1-chinh-ta-06-d-gi"
+title: "Chính tả: d hay gi"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Bé nghe kỹ để phân biệt **d** và **gi**, rồi nhìn hình để chọn."
+    say: "Bé nghe kỹ để phân biệt d và dờ, rồi nhìn hình để chọn."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🐐 _ê"
+    options:
+      - {"id": "a", "text": "d"}
+      - {"id": "b", "text": "gi", "say": "dờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "d + ê = dê."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🌬️ _ó"
+    options:
+      - {"id": "a", "text": "d"}
+      - {"id": "b", "text": "gi", "say": "dờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "gi + ó = gió."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🍉 _ưa"
+    options:
+      - {"id": "a", "text": "gi", "say": "dờ"}
+      - {"id": "b", "text": "d"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "d + ưa = dưa."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🧺 _ỏ"
+    options:
+      - {"id": "a", "text": "d"}
+      - {"id": "b", "text": "gi", "say": "dờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "gi + ỏ = giỏ."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🩴 _ép"
+    answer: {"accept": ["d"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "d + ép = dép."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-d-gi"
+    prompt: "Điền vào chỗ trống: 🛏️ _ường"
+    answer: {"accept": ["gi"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "gi + ường = giường."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **d hay gi**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

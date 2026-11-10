@@ -1,0 +1,99 @@
+schema: 1
+slug: toan1-hinh-vuong-hinh-tron
+title: "Hình vuông, hình tròn"
+summary: "Nhận biết hình vuông và hình tròn trong đồ vật quanh bé."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Xung quanh bé có rất nhiều hình đẹp. Hôm nay mình gặp hình vuông và hình tròn!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🟥 là **hình vuông**. Hình vuông có 4 cạnh bằng nhau.
+
+      🔴 là **hình tròn**. Hình tròn không có góc, tròn đều.
+    say: "Đây là hình vuông. Hình vuông có bốn cạnh bằng nhau. Đây là hình tròn. Hình tròn không có góc, tròn đều."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Hình vuông: ⬜ 4 cạnh bằng nhau, 4 góc.
+
+      Hình tròn: ⚪ không có cạnh, không có góc.
+    say: "Hình vuông có bốn cạnh bằng nhau. Hình tròn không có cạnh, không có góc."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Hình nào là hình vuông?"
+    options:
+      - { id: "a", text: "🟦" }
+      - { id: "b", text: "🔵" }
+      - { id: "c", text: "🔺" }
+    answer: { correct: ["a"] }
+    hint: "Hình vuông có 4 cạnh bằng nhau."
+    explanation: "🟦 là hình vuông."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Hình nào là hình tròn?"
+    options:
+      - { id: "a", text: "🟨" }
+      - { id: "b", text: "🟡" }
+      - { id: "c", text: "🔻" }
+    answer: { correct: ["b"] }
+    hint: "Hình tròn không có góc."
+    explanation: "🟡 là hình tròn."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "vat-co-hinh"
+    prompt: "Mặt đồng hồ 🕐 có dạng hình gì?"
+    options:
+      - { id: "a", text: "Hình tròn" }
+      - { id: "b", text: "Hình vuông" }
+    answer: { correct: ["a"] }
+    hint: "Mặt đồng hồ tròn đều."
+    explanation: "Mặt đồng hồ có dạng hình tròn."
+
+  - id: b7
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "nhan-biet-hinh"
+    prompt: "Nối đồ vật với hình của nó."
+    pairs:
+      - { left: "⚽ quả bóng", right: "hình tròn" }
+      - { left: "🧇 bánh quy vuông", right: "hình vuông" }
+    answer: { pairs: [["⚽ quả bóng", "hình tròn"], ["🧇 bánh quy vuông", "hình vuông"]] }
+    hint: "Bóng thì tròn. Bánh quy này có bốn cạnh bằng nhau."
+    explanation: "Quả bóng hình tròn. Bánh quy hình vuông."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-hinh"
+    prompt: "Có 🟥🔴🟥🔴🟥. Có bao nhiêu hình vuông? Điền số: _"
+    answer: { accept: ["3"] }
+    hint: "Đếm các hình 🟥."
+    explanation: "Có 3 hình vuông."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **hình vuông** và **hình tròn**."
+    say: "Bé đã biết hình vuông và hình tròn."

@@ -1,0 +1,121 @@
+schema: 1
+slug: "tv1-bai-27-p"
+title: "Chữ P p"
+summary: "Làm quen chữ P, p; nhận biết âm p trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ p. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **P** có hai dạng: **P** in hoa, **p** in thường.
+      Âm **p** đọc là "pờ".
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "p"
+      rhyme: "i"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép p + i rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "pin", "emoji": "🔋"}
+        - {"word": "pa-nô", "emoji": "🪧"}
+        - {"word": "pi-a-nô", "emoji": "🎹"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ p."
+  - {"id": "b5", "type": "callout", "variant": "tip", "markdown": "Chữ **p** thường có trong các từ mượn: pin, pa-nô, pi-a-nô.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-p"
+    prompt: "Tiếng nào bắt đầu bằng chữ **p**?"
+    options:
+      - {"id": "a", "text": "hổ"}
+      - {"id": "b", "text": "pin"}
+      - {"id": "c", "text": "ong"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"pin\" bắt đầu bằng chữ p."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-p"
+    prompt: "Hình 🪧 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "nhà"}
+      - {"id": "b", "text": "pa-nô"}
+      - {"id": "c", "text": "cam"}
+    answer: {"correct": ["b"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🪧 là \"pa-nô\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-p"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "pi-a-nô"}
+    options:
+      - {"id": "a", "text": "xô"}
+      - {"id": "b", "text": "pi-a-nô"}
+      - {"id": "c", "text": "mèo"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"pi-a-nô\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-pin"
+    prompt: "Sắp xếp để tạo thành tiếng **pin**:"
+    options:
+      - {"id": "x2", "text": "in"}
+      - {"id": "x1", "text": "p"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "p + in = pin."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-p"
+    prompt: "Điền chữ còn thiếu để được tiếng **pin**: _in"
+    answer: {"accept": ["p"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "p + in = pin."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-p"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🔋", "right": "pin"}
+      - {"left": "🪧", "right": "pa-nô"}
+      - {"left": "🎹", "right": "pi-a-nô"}
+    answer: {"pairs": [["🔋", "pin"], ["🪧", "pa-nô"], ["🎹", "pi-a-nô"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+  - {"id": "b12", "type": "summary", "markdown": "Hôm nay bé biết chữ **P p** và đọc được: pin, pa-nô, pi-a-nô. Giỏi quá!", "say": null}

@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-13-aay-oi"
+title: "Vần ây – oi"
+summary: "Học vần ây và oi; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ây và oi. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ây**: ghép âm đầu với vần để được tiếng.
+      - **c** + **ây** → **cây**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "c"
+      rhyme: "ây"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + ây rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **oi**: ghép âm đầu với vần để được tiếng.
+      - **v** + **oi** → **voi**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "v"
+      rhyme: "oi"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép v + oi rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cây", "emoji": "🌳"}
+        - {"word": "mây", "emoji": "☁️"}
+        - {"word": "dây", "emoji": "🪢"}
+        - {"word": "voi", "emoji": "🐘"}
+        - {"word": "còi", "emoji": "📯"}
+        - {"word": "ngói", "emoji": "🧱"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ây và oi."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ây** hoặc **oi**: **cây**, **mây**, **dây**, **voi**, **còi**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-aay"
+    prompt: "Tiếng nào có vần **ây**?"
+    options:
+      - {"id": "a", "text": "vịt"}
+      - {"id": "b", "text": "cây"}
+      - {"id": "c", "text": "lúa"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cây\" có vần ây."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oi"
+    prompt: "Tiếng nào có vần **oi**?"
+    options:
+      - {"id": "a", "text": "pin"}
+      - {"id": "b", "text": "voi"}
+      - {"id": "c", "text": "tay"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"voi\" có vần oi."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-caay"
+    prompt: "Sắp xếp để tạo thành tiếng **cây**:"
+    options:
+      - {"id": "x2", "text": "ây"}
+      - {"id": "x1", "text": "c"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "c + ây = cây."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-aay"
+    prompt: "Điền phần còn lại để được tiếng **cây** 🌳: c_"
+    answer: {"accept": ["ây"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + ây = cây."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oi"
+    prompt: "Điền phần còn lại để được tiếng **voi** 🐘: v_"
+    answer: {"accept": ["oi"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + oi = voi."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-oi"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "còi"}
+    options:
+      - {"id": "a", "text": "còi"}
+      - {"id": "b", "text": "bé"}
+      - {"id": "c", "text": "bút"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"còi\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-aay"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🌳", "right": "cây"}
+      - {"left": "☁️", "right": "mây"}
+      - {"left": "🪢", "right": "dây"}
+    answer: {"pairs": [["🌳", "cây"], ["☁️", "mây"], ["🪢", "dây"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ây và oi** và đọc được: cây, mây, dây, voi, còi, ngói. Giỏi quá!"

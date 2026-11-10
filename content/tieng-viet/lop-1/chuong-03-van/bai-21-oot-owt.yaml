@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-21-oot-owt"
+title: "Vần ôt – ơt"
+summary: "Học vần ôt và ơt; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ôt và ơt. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ôt**: ghép âm đầu với vần để được tiếng.
+      - **c** + **ôt** → **cột**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "c", "rhyme": "ôt", "tones": ["sắc", "nặng"], "caption": "Ghép c + ôt rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ơt**: ghép âm đầu với vần để được tiếng.
+      - **v** + **ơt** → **vớt**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "v", "rhyme": "ơt", "tones": ["sắc", "nặng"], "caption": "Ghép v + ơt rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cột", "emoji": "🏛️"}
+        - {"word": "sốt", "emoji": "🤒"}
+        - {"word": "tốt", "emoji": "👍"}
+        - {"word": "vớt", "emoji": "🎣"}
+        - {"word": "ớt", "emoji": "🌶️"}
+        - {"word": "rớt", "emoji": "🍂"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ôt và ơt."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ôt** hoặc **ơt**: **cột**, **sốt**, **tốt**, **vớt**, **ớt**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oot"
+    prompt: "Tiếng nào có vần **ôt**?"
+    options:
+      - {"id": "a", "text": "mơ"}
+      - {"id": "b", "text": "cột"}
+      - {"id": "c", "text": "ong"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cột\" có vần ôt."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-owt"
+    prompt: "Tiếng nào có vần **ơt**?"
+    options:
+      - {"id": "a", "text": "nhà"}
+      - {"id": "b", "text": "bố"}
+      - {"id": "c", "text": "vớt"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"vớt\" có vần ơt."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-coot"
+    prompt: "Sắp xếp để tạo thành tiếng **cột**:"
+    options:
+      - {"id": "x2", "text": "ột"}
+      - {"id": "x1", "text": "c"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "c + ột = cột."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oot"
+    prompt: "Điền phần còn lại để được tiếng **cột** 🏛️: c_"
+    answer: {"accept": ["ột", "ôt"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + ột = cột."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-owt"
+    prompt: "Điền phần còn lại để được tiếng **vớt** 🎣: v_"
+    answer: {"accept": ["ớt", "ơt"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + ớt = vớt."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-owt"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "ớt"}
+    options:
+      - {"id": "a", "text": "sách"}
+      - {"id": "b", "text": "ớt"}
+      - {"id": "c", "text": "mơ"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"ớt\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-oot"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🏛️", "right": "cột"}
+      - {"left": "🤒", "right": "sốt"}
+      - {"left": "👍", "right": "tốt"}
+    answer: {"pairs": [["🏛️", "cột"], ["🤒", "sốt"], ["👍", "tốt"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ôt và ơt** và đọc được: cột, sốt, tốt, vớt, ớt, rớt. Giỏi quá!"

@@ -1,0 +1,128 @@
+schema: 1
+slug: "tv1-bai-31-nh"
+title: "Chữ Nh nh"
+summary: "Làm quen chữ Nh, nh; nhận biết âm nh trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ nh. Bé nghe và đọc theo mình nhé!"
+    say: "Hôm nay mình học chữ mới: chữ nhờ. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Nh** có hai dạng: **Nh** in hoa, **nh** in thường.
+      Âm **nh** đọc là "nhờ".
+    say: "Chữ Nh có hai dạng: Nh in hoa, nhờ in thường.. Âm nhờ đọc là \"nhờ\"."
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "nh"
+      rhyme: "a"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép nh + a rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "nhà", "emoji": "🏠"}
+        - {"word": "nho", "emoji": "🍇"}
+        - {"word": "nhện", "emoji": "🕷️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ nh."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **nhà**, **nho**, **nhện** đều có chữ **nh**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-nh"
+    prompt: "Tiếng nào bắt đầu bằng chữ **nh**?"
+    say: "Tiếng nào bắt đầu bằng chữ nhờ?"
+    options:
+      - {"id": "a", "text": "bàn"}
+      - {"id": "b", "text": "hổ"}
+      - {"id": "c", "text": "nhà"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"nhà\" bắt đầu bằng chữ nh."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-nh"
+    prompt: "Hình 🍇 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "gà"}
+      - {"id": "b", "text": "thỏ"}
+      - {"id": "c", "text": "nho"}
+    answer: {"correct": ["c"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🍇 là \"nho\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-nh"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "nhện"}
+    options:
+      - {"id": "a", "text": "phở"}
+      - {"id": "b", "text": "nhện"}
+      - {"id": "c", "text": "ghế"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"nhện\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-nha"
+    prompt: "Sắp xếp để tạo thành tiếng **nhà**:"
+    options:
+      - {"id": "x2", "text": "à"}
+      - {"id": "x1", "text": "nh", "say": "nhờ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "nh + à = nhà."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-nh"
+    prompt: "Điền chữ còn thiếu để được tiếng **nhà**: _à"
+    answer: {"accept": ["nh"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "nh + à = nhà."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-nh"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🏠", "right": "nhà"}
+      - {"left": "🍇", "right": "nho"}
+      - {"left": "🕷️", "right": "nhện"}
+    answer: {"pairs": [["🏠", "nhà"], ["🍇", "nho"], ["🕷️", "nhện"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b12"
+    type: "summary"
+    markdown: "Hôm nay bé biết chữ **Nh nh** và đọc được: nhà, nho, nhện. Giỏi quá!"
+    say: "Hôm nay bé biết chữ nhờ và đọc được: nhà, nho, nhện. Giỏi quá!"

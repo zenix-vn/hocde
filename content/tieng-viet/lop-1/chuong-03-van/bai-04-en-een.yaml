@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-04-en-een"
+title: "Vần en – ên"
+summary: "Học vần en và ên; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: en và ên. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **en**: ghép âm đầu với vần để được tiếng.
+      - **l** + **en** → **len**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "l"
+      rhyme: "en"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép l + en rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ên**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ên** → **bến**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "ên"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + ên rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "len", "emoji": "🧶"}
+        - {"word": "sen", "emoji": "🪷"}
+        - {"word": "đèn", "emoji": "💡"}
+        - {"word": "bến", "emoji": "⛴️"}
+        - {"word": "nến", "emoji": "🕯️"}
+        - {"word": "tên", "emoji": "🏷️"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần en và ên."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **en** hoặc **ên**: **len**, **sen**, **đèn**, **bến**, **nến**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-en"
+    prompt: "Tiếng nào có vần **en**?"
+    options:
+      - {"id": "a", "text": "rổ"}
+      - {"id": "b", "text": "len"}
+      - {"id": "c", "text": "nhà"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"len\" có vần en."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-een"
+    prompt: "Tiếng nào có vần **ên**?"
+    options:
+      - {"id": "a", "text": "bến"}
+      - {"id": "b", "text": "gà"}
+      - {"id": "c", "text": "kem"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bến\" có vần ên."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-len"
+    prompt: "Sắp xếp để tạo thành tiếng **len**:"
+    options:
+      - {"id": "x2", "text": "en"}
+      - {"id": "x1", "text": "l"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "l + en = len."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-en"
+    prompt: "Điền phần còn lại để được tiếng **len** 🧶: l_"
+    answer: {"accept": ["en"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "l + en = len."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-een"
+    prompt: "Điền phần còn lại để được tiếng **bến** ⛴️: b_"
+    answer: {"accept": ["ến", "ên"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ến = bến."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-een"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "nến"}
+    options:
+      - {"id": "a", "text": "đèn"}
+      - {"id": "b", "text": "xô"}
+      - {"id": "c", "text": "nến"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"nến\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-en"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🧶", "right": "len"}
+      - {"left": "🪷", "right": "sen"}
+      - {"left": "💡", "right": "đèn"}
+    answer: {"pairs": [["🧶", "len"], ["🪷", "sen"], ["💡", "đèn"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **en và ên** và đọc được: len, sen, đèn, bến, nến, tên. Giỏi quá!"

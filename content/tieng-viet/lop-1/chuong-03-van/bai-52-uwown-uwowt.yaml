@@ -1,0 +1,152 @@
+schema: 1
+slug: "tv1-van-52-uwown-uwowt"
+title: "Vần ươn – ươt"
+summary: "Học vần ươn và ươt; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ươn và ươt. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ươn**: ghép âm đầu với vần để được tiếng.
+      - **v** + **ươn** → **vườn**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "v"
+      rhyme: "ươn"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép v + ươn rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ươt**: ghép âm đầu với vần để được tiếng.
+      - **l** + **ươt** → **lướt**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "l", "rhyme": "ươt", "tones": ["sắc", "nặng"], "caption": "Ghép l + ươt rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "vườn", "emoji": "🌳"}
+        - {"word": "lươn", "emoji": "🐍"}
+        - {"word": "sườn", "emoji": "🍖"}
+        - {"word": "lướt", "emoji": "🏄"}
+        - {"word": "ướt", "emoji": "💧"}
+        - {"word": "trượt", "emoji": "🛝"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ươn và ươt."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ươn** hoặc **ươt**: **vườn**, **lươn**, **sườn**, **lướt**, **ướt**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uwown"
+    prompt: "Tiếng nào có vần **ươn**?"
+    options:
+      - {"id": "a", "text": "mẹ"}
+      - {"id": "b", "text": "na"}
+      - {"id": "c", "text": "vườn"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"vườn\" có vần ươn."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uwowt"
+    prompt: "Tiếng nào có vần **ươt**?"
+    options:
+      - {"id": "a", "text": "lướt"}
+      - {"id": "b", "text": "bút"}
+      - {"id": "c", "text": "tôm"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"lướt\" có vần ươt."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-vuwown"
+    prompt: "Sắp xếp để tạo thành tiếng **vườn**:"
+    options:
+      - {"id": "x2", "text": "ườn"}
+      - {"id": "x1", "text": "v"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "v + ườn = vườn."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uwown"
+    prompt: "Điền phần còn lại để được tiếng **vườn** 🌳: v_"
+    answer: {"accept": ["ườn", "ươn"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + ườn = vườn."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uwowt"
+    prompt: "Điền phần còn lại để được tiếng **lướt** 🏄: l_"
+    answer: {"accept": ["ướt", "ươt"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "l + ướt = lướt."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-uwowt"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "ướt"}
+    options:
+      - {"id": "a", "text": "ướt"}
+      - {"id": "b", "text": "bò"}
+      - {"id": "c", "text": "cam"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"ướt\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-uwown"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🌳", "right": "vườn"}
+      - {"left": "🐍", "right": "lươn"}
+      - {"left": "🍖", "right": "sườn"}
+    answer: {"pairs": [["🌳", "vườn"], ["🐍", "lươn"], ["🍖", "sườn"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ươn và ươt** và đọc được: vườn, lươn, sườn, lướt, ướt, trượt. Giỏi quá!"

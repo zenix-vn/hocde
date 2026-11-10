@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-06-am-awm"
+title: "Vần am – ăm"
+summary: "Học vần am và ăm; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: am và ăm. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **am**: ghép âm đầu với vần để được tiếng.
+      - **c** + **am** → **cam**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "c"
+      rhyme: "am"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép c + am rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ăm**: ghép âm đầu với vần để được tiếng.
+      - **n** + **ăm** → **năm**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "n"
+      rhyme: "ăm"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép n + ăm rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cam", "emoji": "🍊"}
+        - {"word": "tám", "emoji": "8️⃣"}
+        - {"word": "chạm", "emoji": "✋"}
+        - {"word": "năm", "emoji": "5️⃣"}
+        - {"word": "tắm", "emoji": "🚿"}
+        - {"word": "trăm", "emoji": "💯"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần am và ăm."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **am** hoặc **ăm**: **cam**, **tám**, **chạm**, **năm**, **tắm**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-am"
+    prompt: "Tiếng nào có vần **am**?"
+    options:
+      - {"id": "a", "text": "mưa"}
+      - {"id": "b", "text": "cam"}
+      - {"id": "c", "text": "năm"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"cam\" có vần am."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-awm"
+    prompt: "Tiếng nào có vần **ăm**?"
+    options:
+      - {"id": "a", "text": "năm"}
+      - {"id": "b", "text": "trâu"}
+      - {"id": "c", "text": "lá"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"năm\" có vần ăm."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-cam"
+    prompt: "Sắp xếp để tạo thành tiếng **cam**:"
+    options:
+      - {"id": "x2", "text": "am"}
+      - {"id": "x1", "text": "c"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "c + am = cam."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-am"
+    prompt: "Điền phần còn lại để được tiếng **cam** 🍊: c_"
+    answer: {"accept": ["am"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "c + am = cam."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-awm"
+    prompt: "Điền phần còn lại để được tiếng **năm** 5️⃣: n_"
+    answer: {"accept": ["ăm"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "n + ăm = năm."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-awm"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "tắm"}
+    options:
+      - {"id": "a", "text": "đèn"}
+      - {"id": "b", "text": "cá"}
+      - {"id": "c", "text": "tắm"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"tắm\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-am"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍊", "right": "cam"}
+      - {"left": "8️⃣", "right": "tám"}
+      - {"left": "✋", "right": "chạm"}
+    answer: {"pairs": [["🍊", "cam"], ["8️⃣", "tám"], ["✋", "chạm"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **am và ăm** và đọc được: cam, tám, chạm, năm, tắm, trăm. Giỏi quá!"

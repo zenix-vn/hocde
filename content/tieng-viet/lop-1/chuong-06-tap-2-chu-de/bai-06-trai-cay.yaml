@@ -1,0 +1,106 @@
+schema: 1
+slug: "tv1-t2-06-trai-cay"
+title: "Trái cây ngon"
+summary: "Chủ đề trái cây: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chuối vàng, cam ngọt, bưởi thơm.
+
+      Mẹ mua trái cây về cho cả nhà.
+
+      Em thích nhất quả xoài chín.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "chuối", "emoji": "🍌"}
+        - {"word": "cam", "emoji": "🍊"}
+        - {"word": "xoài", "emoji": "🥭"}
+        - {"word": "bưởi", "emoji": "🍈"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Mẹ mua gì về cho cả nhà?"
+    options:
+      - {"id": "a", "text": "Đồ chơi"}
+      - {"id": "b", "text": "Quần áo"}
+      - {"id": "c", "text": "Trái cây"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Trái cây\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Em thích nhất quả gì?"
+    options:
+      - {"id": "a", "text": "Cam"}
+      - {"id": "b", "text": "Chuối"}
+      - {"id": "c", "text": "Xoài chín"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Xoài chín\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Quả cam như thế nào?"
+    options:
+      - {"id": "a", "text": "Cay"}
+      - {"id": "b", "text": "Ngọt"}
+      - {"id": "c", "text": "Chua"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Ngọt\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x5", "text": "về"}
+      - {"id": "x7", "text": "cả"}
+      - {"id": "x6", "text": "cho"}
+      - {"id": "x4", "text": "cây"}
+      - {"id": "x2", "text": "mua"}
+      - {"id": "x8", "text": "nhà"}
+      - {"id": "x3", "text": "trái"}
+      - {"id": "x1", "text": "Mẹ"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5", "x6", "x7", "x8"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Mẹ mua trái cây về cho cả nhà."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Chuối vàng, cam ngọt, bưởi _."
+    answer: {"accept": ["thơm"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Chuối vàng, cam ngọt, bưởi thơm.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Trái cây ngon**. Bé đọc thật hay!", "say": null}

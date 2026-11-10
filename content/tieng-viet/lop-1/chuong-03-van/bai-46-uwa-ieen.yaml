@@ -1,0 +1,156 @@
+schema: 1
+slug: "tv1-van-46-uwa-ieen"
+title: "Vần ưa – iên"
+summary: "Học vần ưa và iên; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ưa và iên. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ưa**: ghép âm đầu với vần để được tiếng.
+      - **d** + **ưa** → **dưa**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "d"
+      rhyme: "ưa"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép d + ưa rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **iên**: ghép âm đầu với vần để được tiếng.
+      - **b** + **iên** → **biển**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "b"
+      rhyme: "iên"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép b + iên rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "dưa", "emoji": "🍉"}
+        - {"word": "mưa", "emoji": "🌧️"}
+        - {"word": "ngựa", "emoji": "🐴"}
+        - {"word": "biển", "emoji": "🌊"}
+        - {"word": "kiến", "emoji": "🐜"}
+        - {"word": "tiền", "emoji": "💵"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ưa và iên."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ưa** hoặc **iên**: **dưa**, **mưa**, **ngựa**, **biển**, **kiến**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uwa"
+    prompt: "Tiếng nào có vần **ưa**?"
+    options:
+      - {"id": "a", "text": "dưa"}
+      - {"id": "b", "text": "rùa"}
+      - {"id": "c", "text": "đàn"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"dưa\" có vần ưa."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ieen"
+    prompt: "Tiếng nào có vần **iên**?"
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "lá"}
+      - {"id": "c", "text": "biển"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"biển\" có vần iên."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-duwa"
+    prompt: "Sắp xếp để tạo thành tiếng **dưa**:"
+    options:
+      - {"id": "x2", "text": "ưa"}
+      - {"id": "x1", "text": "d"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "d + ưa = dưa."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uwa"
+    prompt: "Điền phần còn lại để được tiếng **dưa** 🍉: d_"
+    answer: {"accept": ["ưa"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "d + ưa = dưa."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ieen"
+    prompt: "Điền phần còn lại để được tiếng **biển** 🌊: b_"
+    answer: {"accept": ["iển", "iên"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + iển = biển."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ieen"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "kiến"}
+    options:
+      - {"id": "a", "text": "kiến"}
+      - {"id": "b", "text": "rổ"}
+      - {"id": "c", "text": "lúa"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"kiến\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-uwa"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍉", "right": "dưa"}
+      - {"left": "🌧️", "right": "mưa"}
+      - {"left": "🐴", "right": "ngựa"}
+    answer: {"pairs": [["🍉", "dưa"], ["🌧️", "mưa"], ["🐴", "ngựa"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ưa và iên** và đọc được: dưa, mưa, ngựa, biển, kiến, tiền. Giỏi quá!"

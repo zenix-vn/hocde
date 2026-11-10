@@ -1,0 +1,110 @@
+schema: 1
+slug: toan1-so-sanh-so-den-100
+title: "So sánh các số đến 100"
+summary: "So sánh hai số có hai chữ số."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "So sánh số lớn có mẹo hay lắm. Bé xem nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      So sánh **47** và **52**.
+
+      So số chục trước: 4 chục bé hơn 5 chục.
+
+      Vậy 47 < 52.
+    say: "So sánh bốn mươi bảy và năm mươi hai. So số chục trước: bốn chục bé hơn năm chục. Vậy bốn mươi bảy bé hơn năm mươi hai."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      **Bước 1:** so số **chục**. Số nào có nhiều chục hơn thì lớn hơn.
+
+      **Bước 2:** nếu số chục **bằng nhau** thì so **đơn vị**.
+
+      35 và 38: chục bằng nhau, 5 < 8 nên 35 < 38.
+    say: "Bước một: so số chục. Số nào có nhiều chục hơn thì lớn hơn. Bước hai: nếu số chục bằng nhau thì so số đơn vị."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-den-100"
+    prompt: "Chọn dấu đúng: 63 _ 59"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["a"] }
+    hint: "So số chục: 6 chục và 5 chục."
+    explanation: "63 > 59."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-den-100"
+    prompt: "Chọn dấu đúng: 28 _ 34"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "<" }
+      - { id: "c", text: "=" }
+    answer: { correct: ["b"] }
+    hint: "So số chục: 2 chục và 3 chục."
+    explanation: "28 < 34."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-den-100"
+    prompt: "Chọn dấu đúng: 45 _ 48"
+    options:
+      - { id: "a", text: ">" }
+      - { id: "b", text: "=" }
+      - { id: "c", text: "<" }
+    answer: { correct: ["c"] }
+    hint: "Số chục bằng nhau. So đơn vị: 5 và 8."
+    explanation: "45 < 48."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-sanh-lon-nhat"
+    prompt: "Số nào lớn nhất: 39, 41, 36?"
+    options:
+      - { id: "a", text: "39" }
+      - { id: "b", text: "41" }
+      - { id: "c", text: "36" }
+    answer: { correct: ["b"] }
+    hint: "So số chục trước."
+    explanation: "41 có 4 chục nên lớn nhất."
+
+  - id: b8
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-den-100"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x72", text: "72" }
+      - { id: "x27", text: "27" }
+      - { id: "x70", text: "70" }
+      - { id: "x45", text: "45" }
+    answer: { sequence: ["x27", "x45", "x70", "x72"] }
+    hint: "So số chục trước, rồi so đơn vị."
+    explanation: "27, 45, 70, 72."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **so sánh các số đến 100**: so chục trước, rồi so đơn vị."
+    say: "Bé đã biết so sánh các số đến một trăm. So chục trước, rồi so đơn vị."

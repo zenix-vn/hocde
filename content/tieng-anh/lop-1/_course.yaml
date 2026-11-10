@@ -1,31 +1,87 @@
-# Tiếng Anh lớp 1 (đến hết học kỳ 1) – bé nghe và nhắc lại, chưa cần đọc chữ.
-# LƯU Ý: chủ đề và thứ tự bài là KHUNG DỰ KIẾN, cần đối chiếu chương trình/SGK đang dùng trước khi publish.
+# Tiếng Anh lớp 1 – bé nghe và nhắc lại, chưa cần đọc chữ.
+# Từ vựng chọn theo các chủ đề phổ biến của Tiếng Anh tiểu học (chào hỏi, con vật, số, màu, gia đình,
+# cơ thể, đồ ăn, trường học, đồ chơi, bảng chữ cái). Nội dung soạn mới, không sao chép SGK.
+# LƯU Ý: thứ tự chủ đề là KHUNG, cần đối chiếu SGK đang dùng nếu muốn bám sát từng bài.
 subject: tieng-anh
 grade: 1
 slug: tieng-anh-lop-1
 title: Tiếng Anh 1
-summary: "Nghe và nói những từ tiếng Anh đầu tiên: chào hỏi, con vật, số đếm."
-status: draft
+summary: "Nghe và nói những từ tiếng Anh đầu tiên: chào hỏi, con vật, số đếm, màu sắc, gia đình, đồ ăn, trường học, đồ chơi và bảng chữ cái."
+status: published
 
 units:
   - slug: chuong-01-hello
-    title: Hello! – Chào hỏi
-    summary: "Chào hỏi và tạm biệt bằng tiếng Anh."
+    title: "Hello! – Chào hỏi"
+    summary: "Chào hỏi, hỏi thăm và cảm ơn bằng tiếng Anh."
     lessons:
       - bai-01-hello
+      - bai-02-how-are-you
 
   - slug: chuong-02-animals
-    title: Animals – Con vật
+    title: "Animals – Con vật"
     summary: "Gọi tên các con vật quen thuộc."
     lessons:
       - bai-01-animals
+      - bai-02-farm-animals
+      - bai-03-more-animals
 
   - slug: chuong-03-numbers
-    title: Numbers – Số đếm
+    title: "Numbers – Số đếm"
     summary: "Đếm từ one đến ten."
-    lessons: []            # TODO
+    lessons:
+      - bai-01-one-to-three
+      - bai-02-four-to-six
+      - bai-03-seven-to-ten
 
   - slug: chuong-04-colors
-    title: Colors – Màu sắc
+    title: "Colors – Màu sắc"
     summary: "Gọi tên các màu cơ bản."
-    lessons: []            # TODO
+    lessons:
+      - bai-01-red-blue-yellow
+      - bai-02-green-orange-pink
+      - bai-03-black-white-brown
+
+  - slug: chuong-05-family
+    title: "Family – Gia đình"
+    summary: "Gọi tên những người thân trong gia đình."
+    lessons:
+      - bai-01-mom-dad
+      - bai-02-brother-sister
+
+  - slug: chuong-06-body
+    title: "My body – Cơ thể em"
+    summary: "Gọi tên các bộ phận trên cơ thể."
+    lessons:
+      - bai-01-head-face
+      - bai-02-hands-legs
+
+  - slug: chuong-07-food
+    title: "Food – Đồ ăn"
+    summary: "Gọi tên trái cây và đồ ăn quen thuộc."
+    lessons:
+      - bai-01-fruits
+      - bai-02-food-drink
+
+  - slug: chuong-08-school
+    title: "School – Trường học"
+    summary: "Gọi tên đồ dùng học tập."
+    lessons:
+      - bai-01-school-things
+      - bai-02-in-the-classroom
+
+  - slug: chuong-09-toys
+    title: "Toys – Đồ chơi"
+    summary: "Gọi tên các món đồ chơi."
+    lessons:
+      - bai-01-my-toys
+      - bai-02-more-toys
+
+  - slug: chuong-10-abc
+    title: "ABC – Bảng chữ cái"
+    summary: "Làm quen các chữ cái A–Z qua từ quen thuộc."
+    lessons:
+      - bai-01-a-to-e
+      - bai-02-f-to-j
+      - bai-03-k-to-o
+      - bai-04-p-to-t
+      - bai-05-u-to-z

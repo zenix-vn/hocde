@@ -1,0 +1,132 @@
+schema: 1
+slug: "tv1-bai-35-tr"
+title: "Chữ Tr tr"
+summary: "Làm quen chữ Tr, tr; nhận biết âm tr trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ tr. Bé nghe và đọc theo mình nhé!"
+    say: "Hôm nay mình học chữ mới: chữ trờ. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Tr** có hai dạng: **Tr** in hoa, **tr** in thường.
+      Âm **tr** đọc là "trờ".
+    say: "Chữ Tr có hai dạng: Tr in hoa, trờ in thường.. Âm trờ đọc là \"trờ\"."
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "tr"
+      rhyme: "e"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép tr + e rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tre", "emoji": "🎋"}
+        - {"word": "trứng", "emoji": "🥚"}
+        - {"word": "trâu", "emoji": "🐃"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ tr."
+
+  - id: "b5"
+    type: "callout"
+    variant: "remember"
+    markdown: "Các tiếng **tre**, **trứng**, **trâu** đều có chữ **tr**."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-tr"
+    prompt: "Tiếng nào bắt đầu bằng chữ **tr**?"
+    say: "Tiếng nào bắt đầu bằng chữ trờ?"
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "ghế"}
+      - {"id": "c", "text": "tre"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"tre\" bắt đầu bằng chữ tr."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-tr"
+    prompt: "Hình 🥚 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "trứng"}
+      - {"id": "b", "text": "bi"}
+      - {"id": "c", "text": "hổ"}
+    answer: {"correct": ["a"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 🥚 là \"trứng\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-tr"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "trâu"}
+    options:
+      - {"id": "a", "text": "sách"}
+      - {"id": "b", "text": "trâu"}
+      - {"id": "c", "text": "thỏ"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"trâu\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tre"
+    prompt: "Sắp xếp để tạo thành tiếng **tre**:"
+    options:
+      - {"id": "x2", "text": "e"}
+      - {"id": "x1", "text": "tr", "say": "trờ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "tr + e = tre."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-tr"
+    prompt: "Điền chữ còn thiếu để được tiếng **tre**: _e"
+    answer: {"accept": ["tr"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "tr + e = tre."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-tr"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🎋", "right": "tre"}
+      - {"left": "🥚", "right": "trứng"}
+      - {"left": "🐃", "right": "trâu"}
+    answer: {"pairs": [["🎋", "tre"], ["🥚", "trứng"], ["🐃", "trâu"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b12"
+    type: "summary"
+    markdown: "Hôm nay bé biết chữ **Tr tr** và đọc được: tre, trứng, trâu. Giỏi quá!"
+    say: "Hôm nay bé biết chữ trờ và đọc được: tre, trứng, trâu. Giỏi quá!"

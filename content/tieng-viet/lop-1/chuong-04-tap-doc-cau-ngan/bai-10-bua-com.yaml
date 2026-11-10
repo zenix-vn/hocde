@@ -1,0 +1,87 @@
+schema: 1
+slug: "tv1-doc-10-bua-com"
+title: "Bữa cơm"
+summary: "Tập đọc câu ngắn: Bữa cơm."
+est_minutes: 6
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cùng đọc một bài thật ngắn nhé! Bé đọc theo mình hoặc bấm nút loa để nghe."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Cả nhà ăn cơm.
+
+      Có cá, có rau, có canh.
+
+      Bé ăn thật ngon.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "cơm", "emoji": "🍚"}
+        - {"word": "cá", "emoji": "🐟"}
+        - {"word": "rau", "emoji": "🥬"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Cả nhà đang làm gì?"
+    options:
+      - {"id": "a", "text": "Ăn cơm"}
+      - {"id": "b", "text": "Đi học"}
+      - {"id": "c", "text": "Đi ngủ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Ăn cơm\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Bữa cơm không có gì?"
+    options:
+      - {"id": "a", "text": "Rau"}
+      - {"id": "b", "text": "Cá"}
+      - {"id": "c", "text": "Thịt gà"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Thịt gà\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x4", "text": "ngon"}
+      - {"id": "x3", "text": "thật"}
+      - {"id": "x1", "text": "Bé"}
+      - {"id": "x2", "text": "ăn"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Bé ăn thật ngon."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Cả nhà ăn _."
+    answer: {"accept": ["cơm"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Cả nhà ăn cơm.."
+  - {"id": "b8", "type": "summary", "markdown": "Bé đã đọc xong bài **Bữa cơm**. Bé đọc thật hay!", "say": null}

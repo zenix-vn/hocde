@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-48-ieep-ieec"
+title: "Vần iêp – iêc"
+summary: "Học vần iêp và iêc; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: iêp và iêc. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **iêp**: ghép âm đầu với vần để được tiếng.
+      - **t** + **iêp** → **tiếp**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "t", "rhyme": "iêp", "tones": ["sắc", "nặng"], "caption": "Ghép t + iêp rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **iêc**: ghép âm đầu với vần để được tiếng.
+      - **x** + **iêc** → **xiếc**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "x", "rhyme": "iêc", "tones": ["sắc", "nặng"], "caption": "Ghép x + iêc rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "tiếp", "emoji": "➡️"}
+        - {"word": "thiếp", "emoji": "💌"}
+        - {"word": "hiệp", "emoji": "🕐"}
+        - {"word": "xiếc", "emoji": "🎪"}
+        - {"word": "việc", "emoji": "💼"}
+        - {"word": "tiệc", "emoji": "🎂"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần iêp và iêc."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **iêp** hoặc **iêc**: **tiếp**, **thiếp**, **hiệp**, **xiếc**, **việc**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ieep"
+    prompt: "Tiếng nào có vần **iêp**?"
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "đèn"}
+      - {"id": "c", "text": "tiếp"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"tiếp\" có vần iêp."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ieec"
+    prompt: "Tiếng nào có vần **iêc**?"
+    options:
+      - {"id": "a", "text": "sách"}
+      - {"id": "b", "text": "xiếc"}
+      - {"id": "c", "text": "trâu"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"xiếc\" có vần iêc."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tieep"
+    prompt: "Sắp xếp để tạo thành tiếng **tiếp**:"
+    options:
+      - {"id": "x2", "text": "iếp"}
+      - {"id": "x1", "text": "t"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "t + iếp = tiếp."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ieep"
+    prompt: "Điền phần còn lại để được tiếng **tiếp** ➡️: t_"
+    answer: {"accept": ["iếp", "iêp"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "t + iếp = tiếp."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ieec"
+    prompt: "Điền phần còn lại để được tiếng **xiếc** 🎪: x_"
+    answer: {"accept": ["iếc", "iêc"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "x + iếc = xiếc."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ieec"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "việc"}
+    options:
+      - {"id": "a", "text": "cá"}
+      - {"id": "b", "text": "việc"}
+      - {"id": "c", "text": "tổ"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"việc\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ieep"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "➡️", "right": "tiếp"}
+      - {"left": "💌", "right": "thiếp"}
+      - {"left": "🕐", "right": "hiệp"}
+    answer: {"pairs": [["➡️", "tiếp"], ["💌", "thiếp"], ["🕐", "hiệp"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **iêp và iêc** và đọc được: tiếp, thiếp, hiệp, xiếc, việc, tiệc. Giỏi quá!"

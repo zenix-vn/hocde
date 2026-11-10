@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-colors-3
+title: "Black, white, brown"
+summary: "Ba màu: black, white, brown."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Cuối cùng là ba màu này nhé!"
+    say:
+      - { t: "Cuối cùng là ba màu này nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "black", emoji: "⚫", meaning: "màu đen" }
+        - { word: "white", emoji: "⚪", meaning: "màu trắng" }
+        - { word: "brown", emoji: "🟤", meaning: "màu nâu" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **black** (màu đen) · **white** (màu trắng) · **brown** (màu nâu)"
+    say: [{ t: "black", l: en }, { t: "màu đen", l: vi }, { t: "white", l: en }, { t: "màu trắng", l: vi }, { t: "brown", l: en }, { t: "màu nâu", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-black
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "black", lang: en }
+    options:
+      - { id: a, text: "⚫", say: "black", lang: en }
+      - { id: b, text: "⚪", say: "white", lang: en }
+      - { id: c, text: "🟤", say: "brown", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là black, nghĩa là màu đen."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-white
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "white", lang: en }
+    options:
+      - { id: a, text: "🟤", say: "brown", lang: en }
+      - { id: b, text: "⚪", say: "white", lang: en }
+      - { id: c, text: "⚫", say: "black", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là white, nghĩa là màu trắng."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-brown
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "brown", lang: en }
+    options:
+      - { id: a, text: "⚫", say: "black", lang: en }
+      - { id: b, text: "⚪", say: "white", lang: en }
+      - { id: c, text: "🟤", say: "brown", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là brown, nghĩa là màu nâu."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-white
+    prompt: "Màu trắng tiếng Anh là gì? ⚪"
+    option_lang: en
+    options:
+      - { id: a, text: "brown" }
+      - { id: b, text: "black" }
+      - { id: c, text: "white" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu trắng tiếng Anh là white."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-brown
+    prompt: "Màu nâu tiếng Anh là gì? 🟤"
+    option_lang: en
+    options:
+      - { id: a, text: "brown" }
+      - { id: b, text: "black" }
+      - { id: c, text: "white" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Màu nâu tiếng Anh là brown."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "black", right: "màu đen" }
+      - { left: "white", right: "màu trắng" }
+      - { left: "brown", right: "màu nâu" }
+    answer: { pairs: [["black", "màu đen"], ["white", "màu trắng"], ["brown", "màu nâu"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "black là màu đen; white là màu trắng; brown là màu nâu."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **black**, **white**, **brown**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "black, white, brown.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

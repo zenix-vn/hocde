@@ -1,0 +1,141 @@
+schema: 1
+slug: "tv1-van-41-oe-uy"
+title: "Vần oe – uy"
+summary: "Học vần oe và uy; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: oe và uy. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **oe**: ghép âm đầu với vần để được tiếng.
+      - **kh** + **oe** → **khỏe**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "kh"
+      rhyme: "oe"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép kh + oe rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **uy**: ghép âm đầu với vần để được tiếng.
+      - **kh** + **uy** → **khuy**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "kh"
+      rhyme: "uy"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép kh + uy rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "khỏe", "emoji": "💪"}
+        - {"word": "xòe", "emoji": "🪭"}
+        - {"word": "khuy", "emoji": "🔘"}
+        - {"word": "huy", "emoji": "🏅"}
+        - {"word": "quý", "emoji": "💎"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần oe và uy."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **oe** hoặc **uy**: **khỏe**, **xòe**, **khuy**, **huy**, **quý**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-oe"
+    prompt: "Tiếng nào có vần **oe**?"
+    options:
+      - {"id": "a", "text": "sao"}
+      - {"id": "b", "text": "khỏe"}
+      - {"id": "c", "text": "ghế"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"khỏe\" có vần oe."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-uy"
+    prompt: "Tiếng nào có vần **uy**?"
+    options:
+      - {"id": "a", "text": "bé"}
+      - {"id": "b", "text": "khuy"}
+      - {"id": "c", "text": "cây"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"khuy\" có vần uy."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-khoe"
+    prompt: "Sắp xếp để tạo thành tiếng **khỏe**:"
+    options:
+      - {"id": "x2", "text": "ỏe"}
+      - {"id": "x1", "text": "kh"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "kh + ỏe = khỏe."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-oe"
+    prompt: "Điền phần còn lại để được tiếng **khỏe** 💪: kh_"
+    answer: {"accept": ["ỏe", "oe"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "kh + ỏe = khỏe."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-uy"
+    prompt: "Điền phần còn lại để được tiếng **khuy** 🔘: kh_"
+    answer: {"accept": ["uy"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "kh + uy = khuy."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-uy"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "huy"}
+    options:
+      - {"id": "a", "text": "ghế"}
+      - {"id": "b", "text": "huy"}
+      - {"id": "c", "text": "voi"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"huy\"."
+
+  - id: "b14"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **oe và uy** và đọc được: khỏe, xòe, khuy, huy, quý. Giỏi quá!"

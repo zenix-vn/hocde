@@ -1,0 +1,152 @@
+schema: 1
+slug: anh1-abc-5
+title: "U, V, W, X, Y, Z"
+summary: "Chữ U–Z: umbrella, van, water, box, yo-yo, zebra."
+est_minutes: 8
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Những chữ cái cuối cùng đây rồi!"
+    say:
+      - { t: "Những chữ cái cuối cùng đây rồi! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "umbrella", emoji: "☂️", meaning: "cái ô (chữ U)" }
+        - { word: "van", emoji: "🚐", meaning: "xe tải nhỏ (chữ V)" }
+        - { word: "water", emoji: "💧", meaning: "nước (chữ W)" }
+        - { word: "box", emoji: "📦", meaning: "cái hộp (chữ X)" }
+        - { word: "yo-yo", emoji: "🪀", meaning: "yo-yo (chữ Y)" }
+        - { word: "zebra", emoji: "🦓", meaning: "ngựa vằn (chữ Z)" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **umbrella** (cái ô (chữ U)) · **van** (xe tải nhỏ (chữ V)) · **water** (nước (chữ W)) · **box** (cái hộp (chữ X)) · **yo-yo** (yo-yo (chữ Y)) · **zebra** (ngựa vằn (chữ Z))"
+    say: [{ t: "umbrella", l: en }, { t: "cái ô (chữ U)", l: vi }, { t: "van", l: en }, { t: "xe tải nhỏ (chữ V)", l: vi }, { t: "water", l: en }, { t: "nước (chữ W)", l: vi }, { t: "box", l: en }, { t: "cái hộp (chữ X)", l: vi }, { t: "yo-yo", l: en }, { t: "yo-yo (chữ Y)", l: vi }, { t: "zebra", l: en }, { t: "ngựa vằn (chữ Z)", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-umbrella
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "umbrella", lang: en }
+    options:
+      - { id: a, text: "☂️", say: "umbrella", lang: en }
+      - { id: b, text: "🚐", say: "van", lang: en }
+      - { id: c, text: "💧", say: "water", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là umbrella, nghĩa là cái ô (chữ U)."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-van
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "van", lang: en }
+    options:
+      - { id: a, text: "💧", say: "water", lang: en }
+      - { id: b, text: "🚐", say: "van", lang: en }
+      - { id: c, text: "📦", say: "box", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là van, nghĩa là xe tải nhỏ (chữ V)."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-water
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "water", lang: en }
+    options:
+      - { id: a, text: "📦", say: "box", lang: en }
+      - { id: b, text: "🪀", say: "yo-yo", lang: en }
+      - { id: c, text: "💧", say: "water", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là water, nghĩa là nước (chữ W)."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-box
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "box", lang: en }
+    options:
+      - { id: a, text: "📦", say: "box", lang: en }
+      - { id: b, text: "🪀", say: "yo-yo", lang: en }
+      - { id: c, text: "🦓", say: "zebra", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là box, nghĩa là cái hộp (chữ X)."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-yo-yo
+    prompt: "Yo-yo (chữ Y) tiếng Anh là gì? 🪀"
+    option_lang: en
+    options:
+      - { id: a, text: "zebra" }
+      - { id: b, text: "umbrella" }
+      - { id: c, text: "yo-yo" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Yo-yo (chữ Y) tiếng Anh là yo-yo."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-zebra
+    prompt: "Ngựa vằn (chữ Z) tiếng Anh là gì? 🦓"
+    option_lang: en
+    options:
+      - { id: a, text: "zebra" }
+      - { id: b, text: "umbrella" }
+      - { id: c, text: "van" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Ngựa vằn (chữ Z) tiếng Anh là zebra."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "water", right: "nước (chữ W)" }
+      - { left: "box", right: "cái hộp (chữ X)" }
+      - { left: "yo-yo", right: "yo-yo (chữ Y)" }
+      - { left: "zebra", right: "ngựa vằn (chữ Z)" }
+    answer: { pairs: [["water", "nước (chữ W)"], ["box", "cái hộp (chữ X)"], ["yo-yo", "yo-yo (chữ Y)"], ["zebra", "ngựa vằn (chữ Z)"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "water là nước (chữ W); box là cái hộp (chữ X); yo-yo là yo-yo (chữ Y); zebra là ngựa vằn (chữ Z)."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **umbrella**, **van**, **water**, **box**, **yo-yo**, **zebra**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "umbrella, van, water, box, yo-yo, zebra.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

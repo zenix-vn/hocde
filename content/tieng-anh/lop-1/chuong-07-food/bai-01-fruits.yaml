@@ -1,0 +1,150 @@
+schema: 1
+slug: anh1-fruits
+title: "Fruits"
+summary: "Trái cây: apple, banana, orange, grapes."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé thích ăn trái cây nào? Mình cùng học tên nhé!"
+    say:
+      - { t: "Bé thích ăn trái cây nào? Mình cùng học tên nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "apple", emoji: "🍎", meaning: "quả táo" }
+        - { word: "banana", emoji: "🍌", meaning: "quả chuối" }
+        - { word: "orange", emoji: "🍊", meaning: "quả cam" }
+        - { word: "grapes", emoji: "🍇", meaning: "quả nho" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **apple** (quả táo) · **banana** (quả chuối) · **orange** (quả cam) · **grapes** (quả nho)"
+    say: [{ t: "apple", l: en }, { t: "quả táo", l: vi }, { t: "banana", l: en }, { t: "quả chuối", l: vi }, { t: "orange", l: en }, { t: "quả cam", l: vi }, { t: "grapes", l: en }, { t: "quả nho", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-apple
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "apple", lang: en }
+    options:
+      - { id: a, text: "🍎", say: "apple", lang: en }
+      - { id: b, text: "🍌", say: "banana", lang: en }
+      - { id: c, text: "🍊", say: "orange", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là apple, nghĩa là quả táo."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-banana
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "banana", lang: en }
+    options:
+      - { id: a, text: "🍊", say: "orange", lang: en }
+      - { id: b, text: "🍌", say: "banana", lang: en }
+      - { id: c, text: "🍇", say: "grapes", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là banana, nghĩa là quả chuối."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-orange
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "orange", lang: en }
+    options:
+      - { id: a, text: "🍇", say: "grapes", lang: en }
+      - { id: b, text: "🍎", say: "apple", lang: en }
+      - { id: c, text: "🍊", say: "orange", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là orange, nghĩa là quả cam."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-grapes
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "grapes", lang: en }
+    options:
+      - { id: a, text: "🍇", say: "grapes", lang: en }
+      - { id: b, text: "🍎", say: "apple", lang: en }
+      - { id: c, text: "🍌", say: "banana", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là grapes, nghĩa là quả nho."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-orange
+    prompt: "Quả cam tiếng Anh là gì? 🍊"
+    option_lang: en
+    options:
+      - { id: a, text: "orange" }
+      - { id: b, text: "grapes" }
+      - { id: c, text: "apple" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Quả cam tiếng Anh là orange."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-grapes
+    prompt: "Quả nho tiếng Anh là gì? 🍇"
+    option_lang: en
+    options:
+      - { id: a, text: "apple" }
+      - { id: b, text: "grapes" }
+      - { id: c, text: "banana" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Quả nho tiếng Anh là grapes."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "apple", right: "quả táo" }
+      - { left: "banana", right: "quả chuối" }
+      - { left: "orange", right: "quả cam" }
+      - { left: "grapes", right: "quả nho" }
+    answer: { pairs: [["apple", "quả táo"], ["banana", "quả chuối"], ["orange", "quả cam"], ["grapes", "quả nho"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "apple là quả táo; banana là quả chuối; orange là quả cam; grapes là quả nho."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **apple**, **banana**, **orange**, **grapes**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "apple, banana, orange, grapes.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

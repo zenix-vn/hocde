@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-body-2
+title: "Hands and legs"
+summary: "Tay và chân: hand, leg, foot."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé chạm vào tay và chân của mình nào!"
+    say:
+      - { t: "Bé chạm vào tay và chân của mình nào! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "hand", emoji: "✋", meaning: "bàn tay" }
+        - { word: "leg", emoji: "🦵", meaning: "cái chân" }
+        - { word: "foot", emoji: "🦶", meaning: "bàn chân" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **hand** (bàn tay) · **leg** (cái chân) · **foot** (bàn chân)"
+    say: [{ t: "hand", l: en }, { t: "bàn tay", l: vi }, { t: "leg", l: en }, { t: "cái chân", l: vi }, { t: "foot", l: en }, { t: "bàn chân", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-hand
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "hand", lang: en }
+    options:
+      - { id: a, text: "✋", say: "hand", lang: en }
+      - { id: b, text: "🦵", say: "leg", lang: en }
+      - { id: c, text: "🦶", say: "foot", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là hand, nghĩa là bàn tay."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-leg
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "leg", lang: en }
+    options:
+      - { id: a, text: "🦶", say: "foot", lang: en }
+      - { id: b, text: "🦵", say: "leg", lang: en }
+      - { id: c, text: "✋", say: "hand", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là leg, nghĩa là cái chân."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-foot
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "foot", lang: en }
+    options:
+      - { id: a, text: "✋", say: "hand", lang: en }
+      - { id: b, text: "🦵", say: "leg", lang: en }
+      - { id: c, text: "🦶", say: "foot", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là foot, nghĩa là bàn chân."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-leg
+    prompt: "Cái chân tiếng Anh là gì? 🦵"
+    option_lang: en
+    options:
+      - { id: a, text: "foot" }
+      - { id: b, text: "hand" }
+      - { id: c, text: "leg" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Cái chân tiếng Anh là leg."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-foot
+    prompt: "Bàn chân tiếng Anh là gì? 🦶"
+    option_lang: en
+    options:
+      - { id: a, text: "foot" }
+      - { id: b, text: "hand" }
+      - { id: c, text: "leg" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Bàn chân tiếng Anh là foot."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "hand", right: "bàn tay" }
+      - { left: "leg", right: "cái chân" }
+      - { left: "foot", right: "bàn chân" }
+    answer: { pairs: [["hand", "bàn tay"], ["leg", "cái chân"], ["foot", "bàn chân"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "hand là bàn tay; leg là cái chân; foot là bàn chân."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **hand**, **leg**, **foot**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "hand, leg, foot.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

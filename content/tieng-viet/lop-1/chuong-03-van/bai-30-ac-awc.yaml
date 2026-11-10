@@ -1,0 +1,148 @@
+schema: 1
+slug: "tv1-van-30-ac-awc"
+title: "Vần ac – ăc"
+summary: "Học vần ac và ăc; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: ac và ăc. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **ac**: ghép âm đầu với vần để được tiếng.
+      - **b** + **ac** → **bác**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "b", "rhyme": "ac", "tones": ["sắc", "nặng"], "caption": "Ghép b + ac rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **ăc**: ghép âm đầu với vần để được tiếng.
+      - **m** + **ăc** → **mặc**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "m", "rhyme": "ăc", "tones": ["sắc", "nặng"], "caption": "Ghép m + ăc rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "bác", "emoji": "👴"}
+        - {"word": "hạc", "emoji": "🦢"}
+        - {"word": "rác", "emoji": "🗑️"}
+        - {"word": "mặc", "emoji": "👕"}
+        - {"word": "bắc", "emoji": "🧭"}
+        - {"word": "chắc", "emoji": "💪"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần ac và ăc."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **ac** hoặc **ăc**: **bác**, **hạc**, **rác**, **mặc**, **bắc**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ac"
+    prompt: "Tiếng nào có vần **ac**?"
+    options:
+      - {"id": "a", "text": "bác"}
+      - {"id": "b", "text": "kem"}
+      - {"id": "c", "text": "tổ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"bác\" có vần ac."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-awc"
+    prompt: "Tiếng nào có vần **ăc**?"
+    options:
+      - {"id": "a", "text": "mặc"}
+      - {"id": "b", "text": "rác"}
+      - {"id": "c", "text": "rùa"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"mặc\" có vần ăc."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-bac"
+    prompt: "Sắp xếp để tạo thành tiếng **bác**:"
+    options:
+      - {"id": "x2", "text": "ác"}
+      - {"id": "x1", "text": "b"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "b + ác = bác."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ac"
+    prompt: "Điền phần còn lại để được tiếng **bác** 👴: b_"
+    answer: {"accept": ["ác", "ac"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "b + ác = bác."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-awc"
+    prompt: "Điền phần còn lại để được tiếng **mặc** 👕: m_"
+    answer: {"accept": ["ặc", "ăc"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "m + ặc = mặc."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-awc"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "bắc"}
+    options:
+      - {"id": "a", "text": "vở"}
+      - {"id": "b", "text": "bắc"}
+      - {"id": "c", "text": "bố"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"bắc\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ac"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "👴", "right": "bác"}
+      - {"left": "🦢", "right": "hạc"}
+      - {"left": "🗑️", "right": "rác"}
+    answer: {"pairs": [["👴", "bác"], ["🦢", "hạc"], ["🗑️", "rác"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **ac và ăc** và đọc được: bác, hạc, rác, mặc, bắc, chắc. Giỏi quá!"

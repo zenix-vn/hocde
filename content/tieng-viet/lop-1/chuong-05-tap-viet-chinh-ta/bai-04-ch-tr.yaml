@@ -1,0 +1,92 @@
+schema: 1
+slug: "tv1-chinh-ta-04-ch-tr"
+title: "Chính tả: ch hay tr"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Bé nghe kỹ để phân biệt **ch** và **tr**, rồi nhìn hình để chọn."
+    say: "Bé nghe kỹ để phân biệt chờ và trờ, rồi nhìn hình để chọn."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🐶 _ó"
+    options:
+      - {"id": "a", "text": "ch", "say": "chờ"}
+      - {"id": "b", "text": "tr", "say": "trờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ch + ó = chó."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🎋 _e"
+    options:
+      - {"id": "a", "text": "ch", "say": "chờ"}
+      - {"id": "b", "text": "tr", "say": "trờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "tr + e = tre."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🐃 _âu"
+    options:
+      - {"id": "a", "text": "ch", "say": "chờ"}
+      - {"id": "b", "text": "tr", "say": "trờ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "tr + âu = trâu."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🧹 _ổi"
+    options:
+      - {"id": "a", "text": "ch", "say": "chờ"}
+      - {"id": "b", "text": "tr", "say": "trờ"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "ch + ổi = chổi."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🥚 _ứng"
+    answer: {"accept": ["tr"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "tr + ứng = trứng."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-ch-tr"
+    prompt: "Điền vào chỗ trống: 🐦 _im"
+    answer: {"accept": ["ch"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "ch + im = chim."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **ch hay tr**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

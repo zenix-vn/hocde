@@ -1,0 +1,91 @@
+schema: 1
+slug: "tv1-chinh-ta-07-l-n"
+title: "Chính tả: l hay n"
+summary: "Luyện chính tả: chọn đúng chữ để viết đúng từ."
+est_minutes: 7
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình luyện viết đúng chính tả nhé! Bé nhìn hình và nghe kỹ từ."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Bé nghe kỹ để phân biệt **l** và **n**, rồi nhìn hình để chọn."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 🍃 _á"
+    options:
+      - {"id": "a", "text": "l"}
+      - {"id": "b", "text": "n"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "l + á = lá."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 👒 _ón"
+    options:
+      - {"id": "a", "text": "l"}
+      - {"id": "b", "text": "n"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "n + ón = nón."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 🏺 _ọ"
+    options:
+      - {"id": "a", "text": "l"}
+      - {"id": "b", "text": "n"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "l + ọ = lọ."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 🎀 _ơ"
+    options:
+      - {"id": "a", "text": "l"}
+      - {"id": "b", "text": "n"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to cả từ rồi chọn chữ phù hợp."
+    explanation: "n + ơ = nơ."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 🍐 _ê"
+    answer: {"accept": ["l"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "l + ê = lê."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "chinh-ta-l-n"
+    prompt: "Điền vào chỗ trống: 🕯️ _ến"
+    answer: {"accept": ["n"]}
+    hint: "Đọc to cả từ rồi gõ chữ còn thiếu."
+    explanation: "n + ến = nến."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã luyện xong **l hay n**. Bé nhớ đọc to rồi mới viết nhé!", "say": null}

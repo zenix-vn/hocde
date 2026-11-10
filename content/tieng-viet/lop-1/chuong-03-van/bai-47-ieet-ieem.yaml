@@ -1,0 +1,152 @@
+schema: 1
+slug: "tv1-van-47-ieet-ieem"
+title: "Vần iêt – iêm"
+summary: "Học vần iêt và iêm; ghép âm đầu với vần để đọc tiếng."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học vần mới: iêt và iêm. Bé nghe, đọc và ghép tiếng cùng mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Vần **iêt**: ghép âm đầu với vần để được tiếng.
+      - **v** + **iêt** → **viết**
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config: {"onset": "v", "rhyme": "iêt", "tones": ["sắc", "nặng"], "caption": "Ghép v + iêt rồi thử đổi dấu thanh để nghe các tiếng khác nhau."}
+
+  - id: "b4"
+    type: "text"
+    markdown: |
+      Vần **iêm**: ghép âm đầu với vần để được tiếng.
+      - **đ** + **iêm** → **điểm**
+
+  - id: "b5"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "đ"
+      rhyme: "iêm"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép đ + iêm rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b6"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "viết", "emoji": "✍️"}
+        - {"word": "biết", "emoji": "🧠"}
+        - {"word": "tiết", "emoji": "🌦️"}
+        - {"word": "điểm", "emoji": "💯"}
+        - {"word": "tiệm", "emoji": "🏪"}
+        - {"word": "diêm", "emoji": "🔥"}
+      caption: "Chạm vào từng thẻ để nghe các từ có vần iêt và iêm."
+
+  - id: "b7"
+    type: "callout"
+    variant: "remember"
+    markdown: "Tiếng có vần **iêt** hoặc **iêm**: **viết**, **biết**, **tiết**, **điểm**, **tiệm**."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ieet"
+    prompt: "Tiếng nào có vần **iêt**?"
+    options:
+      - {"id": "a", "text": "thỏ"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "viết"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"viết\" có vần iêt."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "tim-tieng-co-van-ieem"
+    prompt: "Tiếng nào có vần **iêm**?"
+    options:
+      - {"id": "a", "text": "điểm"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "mưa"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe phần cuối của tiếng."
+    explanation: "Tiếng \"điểm\" có vần iêm."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-vieet"
+    prompt: "Sắp xếp để tạo thành tiếng **viết**:"
+    options:
+      - {"id": "x2", "text": "iết"}
+      - {"id": "x1", "text": "v"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, vần đứng sau."
+    explanation: "v + iết = viết."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ieet"
+    prompt: "Điền phần còn lại để được tiếng **viết** ✍️: v_"
+    answer: {"accept": ["iết", "iêt"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "v + iết = viết."
+
+  - id: "b12"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-van-ieem"
+    prompt: "Điền phần còn lại để được tiếng **điểm** 💯: đ_"
+    answer: {"accept": ["iểm", "iêm"]}
+    hint: "Phần cần điền là vần bé vừa học."
+    explanation: "đ + iểm = điểm."
+
+  - id: "b13"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-van-ieem"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "tiệm"}
+    options:
+      - {"id": "a", "text": "tôm"}
+      - {"id": "b", "text": "hoa"}
+      - {"id": "c", "text": "tiệm"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"tiệm\"."
+
+  - id: "b14"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-ieet"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "✍️", "right": "viết"}
+      - {"left": "🧠", "right": "biết"}
+      - {"left": "🌦️", "right": "tiết"}
+    answer: {"pairs": [["✍️", "viết"], ["🧠", "biết"], ["🌦️", "tiết"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b15"
+    type: "summary"
+    markdown: "Hôm nay bé biết vần **iêt và iêm** và đọc được: viết, biết, tiết, điểm, tiệm, diêm. Giỏi quá!"

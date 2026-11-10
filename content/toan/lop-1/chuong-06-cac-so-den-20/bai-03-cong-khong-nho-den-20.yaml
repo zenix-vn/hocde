@@ -1,0 +1,113 @@
+schema: 1
+slug: toan1-cong-khong-nho-den-20
+title: "Cộng trong phạm vi 20 (không nhớ)"
+summary: "Cộng số có hai chữ số với số có một chữ số, không nhớ."
+est_minutes: 10
+xp_reward: 30
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Mình cộng các số đến hai mươi. Bé chỉ cần cộng phần đơn vị thôi!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      12 + 3 = ?
+
+      12 gồm 1 chục và 2 đơn vị. Cộng 3 đơn vị: 2 + 3 = 5.
+
+      Vậy 12 + 3 = **15**.
+    say: "Mười hai cộng ba bằng mấy? Mười hai gồm một chục và hai đơn vị. Cộng ba đơn vị: hai cộng ba bằng năm. Vậy mười hai cộng ba bằng mười lăm."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: |
+      Giữ nguyên **số chục**, chỉ cộng **số đơn vị**.
+
+      10 + 6 = 16
+    say: "Giữ nguyên số chục, chỉ cộng số đơn vị."
+
+  - id: b4
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "11 + 4 = ?"
+    options:
+      - { id: "a", text: "14" }
+      - { id: "b", text: "15" }
+      - { id: "c", text: "16" }
+    answer: { correct: ["b"] }
+    hint: "Có 11, thêm 4. Bé đếm tiếp nhé."
+    explanation: "11 cộng bốn bằng 15."
+
+  - id: b5
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "13 + 5 = ?"
+    options:
+      - { id: "a", text: "18" }
+      - { id: "b", text: "17" }
+      - { id: "c", text: "19" }
+    answer: { correct: ["a"] }
+    hint: "Có 13, thêm 5. Bé đếm tiếp nhé."
+    explanation: "13 cộng năm bằng 18."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "10 + 7 = ?"
+    options:
+      - { id: "a", text: "16" }
+      - { id: "b", text: "18" }
+      - { id: "c", text: "17" }
+    answer: { correct: ["c"] }
+    hint: "Có 10, thêm 7. Bé đếm tiếp nhé."
+    explanation: "mười cộng bảy bằng 17."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "14 + 3 = _"
+    answer: { accept: ["17"] }
+    hint: "Có 14, thêm 3. Bé đếm tiếp nhé."
+    explanation: "14 cộng ba bằng 17."
+
+  - id: b8
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "12 + 6 = _"
+    answer: { accept: ["18"] }
+    hint: "Có 12, thêm 6. Bé đếm tiếp nhé."
+    explanation: "12 cộng sáu bằng 18."
+
+  - id: b9
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "cong-den-20"
+    prompt: "Phép tính nào có kết quả bằng 18?"
+    options:
+      - { id: "a", text: "15 + 2" }
+      - { id: "b", text: "14 + 4" }
+      - { id: "c", text: "16 + 4" }
+    answer: { correct: ["b"] }
+    hint: "Tính từng phép tính."
+    explanation: "14 + 4 = 18."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết **cộng trong phạm vi 20** (không nhớ)."
+    say: "Bé đã biết cộng trong phạm vi hai mươi."

@@ -1,0 +1,133 @@
+schema: 1
+slug: anh1-family-2
+title: "Brother and sister"
+summary: "Anh chị em: brother, sister, baby."
+est_minutes: 6
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Bé có anh, chị, em không nhỉ? Mình cùng học nhé!"
+    say:
+      - { t: "Bé có anh, chị, em không nhỉ? Mình cùng học nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "brother", emoji: "👦", meaning: "anh trai / em trai" }
+        - { word: "sister", emoji: "👧", meaning: "chị gái / em gái" }
+        - { word: "baby", emoji: "👶", meaning: "em bé" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **brother** (anh trai / em trai) · **sister** (chị gái / em gái) · **baby** (em bé)"
+    say: [{ t: "brother", l: en }, { t: "anh trai / em trai", l: vi }, { t: "sister", l: en }, { t: "chị gái / em gái", l: vi }, { t: "baby", l: en }, { t: "em bé", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-brother
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "brother", lang: en }
+    options:
+      - { id: a, text: "👦", say: "brother", lang: en }
+      - { id: b, text: "👧", say: "sister", lang: en }
+      - { id: c, text: "👶", say: "baby", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là brother, nghĩa là anh trai / em trai."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-sister
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "sister", lang: en }
+    options:
+      - { id: a, text: "👶", say: "baby", lang: en }
+      - { id: b, text: "👧", say: "sister", lang: en }
+      - { id: c, text: "👦", say: "brother", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là sister, nghĩa là chị gái / em gái."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-baby
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "baby", lang: en }
+    options:
+      - { id: a, text: "👦", say: "brother", lang: en }
+      - { id: b, text: "👧", say: "sister", lang: en }
+      - { id: c, text: "👶", say: "baby", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là baby, nghĩa là em bé."
+
+  - id: b7
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-sister
+    prompt: "Chị gái / em gái tiếng Anh là gì? 👧"
+    option_lang: en
+    options:
+      - { id: a, text: "baby" }
+      - { id: b, text: "brother" }
+      - { id: c, text: "sister" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Chị gái / em gái tiếng Anh là sister."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-baby
+    prompt: "Em bé tiếng Anh là gì? 👶"
+    option_lang: en
+    options:
+      - { id: a, text: "baby" }
+      - { id: b, text: "brother" }
+      - { id: c, text: "sister" }
+    answer: { correct: [a] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Em bé tiếng Anh là baby."
+
+  - id: b9
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "brother", right: "anh trai / em trai" }
+      - { left: "sister", right: "chị gái / em gái" }
+      - { left: "baby", right: "em bé" }
+    answer: { pairs: [["brother", "anh trai / em trai"], ["sister", "chị gái / em gái"], ["baby", "em bé"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "brother là anh trai / em trai; sister là chị gái / em gái; baby là em bé."
+
+  - id: b10
+    type: summary
+    markdown: "Bé đã biết **brother**, **sister**, **baby**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "brother, sister, baby.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

@@ -1,0 +1,151 @@
+schema: 1
+slug: anh1-abc-3
+title: "K, L, M, N, O"
+summary: "Chữ K–O: kite, lion, monkey, nose, orange."
+est_minutes: 8
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình đi tiếp từ chữ K nhé!"
+    say:
+      - { t: "Mình đi tiếp từ chữ K nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "kite", emoji: "🪁", meaning: "con diều (chữ K)" }
+        - { word: "lion", emoji: "🦁", meaning: "sư tử (chữ L)" }
+        - { word: "monkey", emoji: "🐵", meaning: "con khỉ (chữ M)" }
+        - { word: "nose", emoji: "👃", meaning: "cái mũi (chữ N)" }
+        - { word: "orange", emoji: "🍊", meaning: "quả cam (chữ O)" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **kite** (con diều (chữ K)) · **lion** (sư tử (chữ L)) · **monkey** (con khỉ (chữ M)) · **nose** (cái mũi (chữ N)) · **orange** (quả cam (chữ O))"
+    say: [{ t: "kite", l: en }, { t: "con diều (chữ K)", l: vi }, { t: "lion", l: en }, { t: "sư tử (chữ L)", l: vi }, { t: "monkey", l: en }, { t: "con khỉ (chữ M)", l: vi }, { t: "nose", l: en }, { t: "cái mũi (chữ N)", l: vi }, { t: "orange", l: en }, { t: "quả cam (chữ O)", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-kite
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "kite", lang: en }
+    options:
+      - { id: a, text: "🪁", say: "kite", lang: en }
+      - { id: b, text: "🦁", say: "lion", lang: en }
+      - { id: c, text: "🐵", say: "monkey", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là kite, nghĩa là con diều (chữ K)."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-lion
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "lion", lang: en }
+    options:
+      - { id: a, text: "🐵", say: "monkey", lang: en }
+      - { id: b, text: "🦁", say: "lion", lang: en }
+      - { id: c, text: "👃", say: "nose", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là lion, nghĩa là sư tử (chữ L)."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-monkey
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "monkey", lang: en }
+    options:
+      - { id: a, text: "👃", say: "nose", lang: en }
+      - { id: b, text: "🍊", say: "orange", lang: en }
+      - { id: c, text: "🐵", say: "monkey", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là monkey, nghĩa là con khỉ (chữ M)."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-nose
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "nose", lang: en }
+    options:
+      - { id: a, text: "👃", say: "nose", lang: en }
+      - { id: b, text: "🍊", say: "orange", lang: en }
+      - { id: c, text: "🪁", say: "kite", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là nose, nghĩa là cái mũi (chữ N)."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-nose
+    prompt: "Cái mũi (chữ N) tiếng Anh là gì? 👃"
+    option_lang: en
+    options:
+      - { id: a, text: "orange" }
+      - { id: b, text: "nose" }
+      - { id: c, text: "kite" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Cái mũi (chữ N) tiếng Anh là nose."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-orange
+    prompt: "Quả cam (chữ O) tiếng Anh là gì? 🍊"
+    option_lang: en
+    options:
+      - { id: a, text: "kite" }
+      - { id: b, text: "lion" }
+      - { id: c, text: "orange" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Quả cam (chữ O) tiếng Anh là orange."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "lion", right: "sư tử (chữ L)" }
+      - { left: "monkey", right: "con khỉ (chữ M)" }
+      - { left: "nose", right: "cái mũi (chữ N)" }
+      - { left: "orange", right: "quả cam (chữ O)" }
+    answer: { pairs: [["lion", "sư tử (chữ L)"], ["monkey", "con khỉ (chữ M)"], ["nose", "cái mũi (chữ N)"], ["orange", "quả cam (chữ O)"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "lion là sư tử (chữ L); monkey là con khỉ (chữ M); nose là cái mũi (chữ N); orange là quả cam (chữ O)."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **kite**, **lion**, **monkey**, **nose**, **orange**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "kite, lion, monkey, nose, orange.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

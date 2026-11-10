@@ -1,0 +1,101 @@
+schema: 1
+slug: toan1-doi-cho-so-cong
+title: "Đổi chỗ các số trong phép cộng"
+summary: "2 + 3 = 3 + 2: đổi chỗ hai số, tổng không đổi."
+est_minutes: 7
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé có biết không? Đổi chỗ hai số khi cộng, kết quả vẫn không đổi!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      🍊🍊 + 🍊🍊🍊 = 🍊🍊🍊🍊🍊
+
+      2 + 3 = 5
+
+      🍊🍊🍊 + 🍊🍊 = 🍊🍊🍊🍊🍊
+
+      3 + 2 = 5
+    say: "Hai quả cam cộng ba quả cam bằng năm quả cam. Ba quả cam cộng hai quả cam cũng bằng năm quả cam."
+
+  - id: b3
+    type: "callout"
+    variant: "remember"
+    markdown: |
+      Khi **đổi chỗ** hai số trong phép cộng, kết quả **không đổi**.
+
+      2 + 3 = 3 + 2
+    say: "Khi đổi chỗ hai số trong phép cộng, kết quả không đổi."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-cho-cong"
+    prompt: "1 + 4 = 5 thì 4 + 1 = _"
+    answer: { accept: ["5"] }
+    hint: "Đổi chỗ thì kết quả không đổi."
+    explanation: "4 + 1 = 5."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "doi-cho-cong"
+    prompt: "3 + 1 = 4 thì 1 + 3 = _"
+    answer: { accept: ["4"] }
+    hint: "Đổi chỗ thì kết quả không đổi."
+    explanation: "1 + 3 = 4."
+
+  - id: b6
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doi-cho-cong"
+    prompt: "Phép tính nào có kết quả giống 2 + 1?"
+    options:
+      - { id: "a", text: "1 + 2" }
+      - { id: "b", text: "2 + 2" }
+      - { id: "c", text: "1 + 1" }
+    answer: { correct: ["a"] }
+    hint: "Đổi chỗ hai số."
+    explanation: "1 + 2 và 2 + 1 đều bằng 3."
+
+  - id: b7
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "dau-so-sanh-tong"
+    prompt: "Chọn dấu đúng: 2 + 2 _ 1 + 3"
+    options:
+      - { id: "a", text: "=" }
+      - { id: "b", text: ">" }
+      - { id: "c", text: "<" }
+    answer: { correct: ["a"] }
+    hint: "Tính hai bên: 2 + 2 = 4 và 1 + 3 = 4."
+    explanation: "Cả hai bên đều bằng 4."
+
+  - id: b8
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "cong-pham-vi-5"
+    prompt: "Nối phép tính với kết quả."
+    pairs:
+      - { left: "1 + 1", right: "2" }
+      - { left: "2 + 2", right: "4" }
+      - { left: "3 + 2", right: "5" }
+    answer: { pairs: [["1 + 1", "2"], ["2 + 2", "4"], ["3 + 2", "5"]] }
+    hint: "Tính từng phép cộng."
+    explanation: "1 + 1 = 2, 2 + 2 = 4, 3 + 2 = 5."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **đổi chỗ** hai số, phép cộng vẫn cho kết quả như cũ."
+    say: "Bé đã biết đổi chỗ hai số, phép cộng vẫn cho kết quả như cũ."

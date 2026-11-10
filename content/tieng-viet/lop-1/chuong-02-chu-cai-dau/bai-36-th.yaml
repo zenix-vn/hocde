@@ -1,0 +1,128 @@
+schema: 1
+slug: "tv1-bai-36-th"
+title: "Chữ Th th"
+summary: "Làm quen chữ Th, th; nhận biết âm th trong tiếng."
+est_minutes: 7
+xp_reward: 20
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình học chữ mới: chữ th. Bé nghe và đọc theo mình nhé!"
+    say: "Hôm nay mình học chữ mới: chữ thờ. Bé nghe và đọc theo mình nhé!"
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Chữ **Th** có hai dạng: **Th** in hoa, **th** in thường.
+      Âm **th** đọc là "thờ".
+    say: "Chữ Th có hai dạng: Th in hoa, thờ in thường.. Âm thờ đọc là \"thờ\"."
+
+  - id: "b3"
+    type: "interactive"
+    kind: "syllable_builder"
+    config:
+      onset: "th"
+      rhyme: "o"
+      tones: ["ngang", "huyền", "sắc", "hỏi", "ngã", "nặng"]
+      caption: "Ghép th + o rồi thử đổi dấu thanh để nghe các tiếng khác nhau."
+
+  - id: "b4"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "thỏ", "emoji": "🐰"}
+        - {"word": "thợ", "emoji": "👷"}
+        - {"word": "thang", "emoji": "🪜"}
+      caption: "Chạm vào từng thẻ để nghe các từ có chữ th."
+  - {"id": "b5", "type": "callout", "variant": "remember", "markdown": "Các tiếng **thỏ**, **thợ**, **thang** đều có chữ **th**.", "say": null}
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhan-biet-chu-th"
+    prompt: "Tiếng nào bắt đầu bằng chữ **th**?"
+    say: "Tiếng nào bắt đầu bằng chữ thờ?"
+    options:
+      - {"id": "a", "text": "lá"}
+      - {"id": "b", "text": "thỏ"}
+      - {"id": "c", "text": "mèo"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe xem có âm cần tìm không."
+    explanation: "Tiếng \"thỏ\" bắt đầu bằng chữ th."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "nhin-hinh-doc-tu-th"
+    prompt: "Hình 👷 là tiếng nào?"
+    options:
+      - {"id": "a", "text": "đàn"}
+      - {"id": "b", "text": "thợ"}
+      - {"id": "c", "text": "lọ"}
+    answer: {"correct": ["b"]}
+    hint: "Nhìn kỹ hình rồi đọc to các đáp án."
+    explanation: "Hình 👷 là \"thợ\"."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "nghe-chon-tu-th"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "thang"}
+    options:
+      - {"id": "a", "text": "thang"}
+      - {"id": "b", "text": "khỉ"}
+      - {"id": "c", "text": "voi"}
+    answer: {"correct": ["a"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"thang\"."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "ghep-tieng-tho"
+    prompt: "Sắp xếp để tạo thành tiếng **thỏ**:"
+    options:
+      - {"id": "x2", "text": "ỏ"}
+      - {"id": "x1", "text": "th", "say": "thờ"}
+    answer: {"sequence": ["x1", "x2"]}
+    hint: "Âm đầu đứng trước, phần còn lại đứng sau."
+    explanation: "th + ỏ = thỏ."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-chu-th"
+    prompt: "Điền chữ còn thiếu để được tiếng **thỏ**: _ỏ"
+    answer: {"accept": ["th"]}
+    hint: "Chữ cần điền là chữ bé vừa học hôm nay."
+    explanation: "th + ỏ = thỏ."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "noi-hinh-voi-tu-th"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🐰", "right": "thỏ"}
+      - {"left": "👷", "right": "thợ"}
+      - {"left": "🪜", "right": "thang"}
+    answer: {"pairs": [["🐰", "thỏ"], ["👷", "thợ"], ["🪜", "thang"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ vừa học."
+
+  - id: "b12"
+    type: "summary"
+    markdown: "Hôm nay bé biết chữ **Th th** và đọc được: thỏ, thợ, thang. Giỏi quá!"
+    say: "Hôm nay bé biết chữ thờ và đọc được: thỏ, thợ, thang. Giỏi quá!"

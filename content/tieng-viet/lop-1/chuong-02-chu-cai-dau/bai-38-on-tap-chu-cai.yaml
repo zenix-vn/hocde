@@ -1,0 +1,149 @@
+schema: 1
+slug: "tv1-bai-38-on-tap-chu-cai"
+title: "Ôn tập chữ cái"
+summary: "Ôn lại các chữ cái đã học qua trò chơi tìm tiếng và nghe chọn."
+est_minutes: 8
+xp_reward: 30
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đã học rất nhiều chữ rồi! Mình cùng ôn lại nhé."
+
+  - id: "b2"
+    type: "callout"
+    variant: "remember"
+    markdown: "Mỗi tiếng đều có **âm đầu**. Bé nghe kỹ để biết tiếng bắt đầu bằng chữ nào."
+
+  - id: "b3"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-t"
+    prompt: "Tiếng nào bắt đầu bằng chữ **t**?"
+    options:
+      - {"id": "a", "text": "tổ"}
+      - {"id": "b", "text": "bé"}
+      - {"id": "c", "text": "bò"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"tổ\" bắt đầu bằng chữ t."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-ph"
+    prompt: "Tiếng nào bắt đầu bằng chữ **ph**?"
+    say: "Tiếng nào bắt đầu bằng chữ phờ?"
+    options:
+      - {"id": "a", "text": "ong"}
+      - {"id": "b", "text": "phở"}
+      - {"id": "c", "text": "mơ"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"phở\" bắt đầu bằng chữ ph."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-th"
+    prompt: "Tiếng nào bắt đầu bằng chữ **th**?"
+    say: "Tiếng nào bắt đầu bằng chữ thờ?"
+    options:
+      - {"id": "a", "text": "thỏ"}
+      - {"id": "b", "text": "nơ"}
+      - {"id": "c", "text": "bàn"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"thỏ\" bắt đầu bằng chữ th."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-h"
+    prompt: "Tiếng nào bắt đầu bằng chữ **h**?"
+    options:
+      - {"id": "a", "text": "cờ"}
+      - {"id": "b", "text": "bé"}
+      - {"id": "c", "text": "hổ"}
+    answer: {"correct": ["c"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"hổ\" bắt đầu bằng chữ h."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-r"
+    prompt: "Tiếng nào bắt đầu bằng chữ **r**?"
+    options:
+      - {"id": "a", "text": "gà"}
+      - {"id": "b", "text": "rổ"}
+      - {"id": "c", "text": "trâu"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"rổ\" bắt đầu bằng chữ r."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "on-tap-chu-n"
+    prompt: "Tiếng nào bắt đầu bằng chữ **n**?"
+    options:
+      - {"id": "a", "text": "nơ"}
+      - {"id": "b", "text": "ca"}
+      - {"id": "c", "text": "voi"}
+    answer: {"correct": ["a"]}
+    hint: "Đọc to từng tiếng và nghe âm đầu."
+    explanation: "Tiếng \"nơ\" bắt đầu bằng chữ n."
+
+  - id: "b9"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-ph"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "phở"}
+    options:
+      - {"id": "a", "text": "bò"}
+      - {"id": "b", "text": "phở"}
+      - {"id": "c", "text": "mưa"}
+    answer: {"correct": ["b"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"phở\"."
+
+  - id: "b10"
+    type: "exercise"
+    kind: "listen_choose"
+    points: 10
+    skill: "on-tap-nghe-r"
+    prompt: "Nghe và chọn tiếng bé nghe được:"
+    listen: {"text": "rổ"}
+    options:
+      - {"id": "a", "text": "ca"}
+      - {"id": "b", "text": "sò"}
+      - {"id": "c", "text": "rổ"}
+    answer: {"correct": ["c"]}
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Bé đã nghe tiếng \"rổ\"."
+
+  - id: "b11"
+    type: "exercise"
+    kind: "match"
+    points: 10
+    skill: "on-tap-noi-hinh"
+    prompt: "Nối hình với từ:"
+    pairs:
+      - {"left": "🍜", "right": "phở"}
+      - {"left": "🧺", "right": "rổ"}
+      - {"left": "🐯", "right": "hổ"}
+    answer: {"pairs": [["🍜", "phở"], ["🧺", "rổ"], ["🐯", "hổ"]]}
+    hint: "Nhìn hình rồi đọc to từ để chọn."
+    explanation: "Bé đã nối đúng các từ."
+  - {"id": "b12", "type": "summary", "markdown": "Bé đã ôn xong các chữ cái. Giỏi lắm!", "say": null}

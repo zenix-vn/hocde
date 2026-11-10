@@ -1,0 +1,91 @@
+schema: 1
+slug: toan1-dien-so-thieu
+title: "Tìm số còn thiếu"
+summary: "Điền số còn thiếu vào phép cộng, phép trừ."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Có phép tính bị mất một số. Bé giúp mình tìm nhé!"
+
+  - id: b2
+    type: "text"
+    markdown: |
+      4 + _ = 9
+
+      Bé đếm tiếp từ 4 đến 9: năm, sáu, bảy, tám, chín. Đã đếm thêm **5** số.
+
+      Vậy số còn thiếu là **5**.
+    say: "Bốn cộng chỗ trống bằng chín. Bé đếm tiếp từ bốn đến chín: năm, sáu, bảy, tám, chín. Đã đếm thêm năm số. Vậy số còn thiếu là năm."
+
+  - id: b3
+    type: "callout"
+    variant: "tip"
+    markdown: |
+      Số còn thiếu trong phép cộng: lấy **tổng** trừ đi **số đã có**.
+
+      4 + _ = 9 thì _ = 9 − 4 = 5
+    say: "Số còn thiếu trong phép cộng: lấy tổng trừ đi số đã có."
+
+  - id: b4
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thieu-cong"
+    prompt: "3 + _ = 8"
+    answer: { accept: ["5"] }
+    hint: "Từ ba đếm tiếp đến tám."
+    explanation: "3 + 5 = 8."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thieu-cong"
+    prompt: "_ + 4 = 7"
+    answer: { accept: ["3"] }
+    hint: "Lấy bảy bớt đi bốn."
+    explanation: "3 + 4 = 7."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thieu-tru"
+    prompt: "9 − _ = 6"
+    answer: { accept: ["3"] }
+    hint: "Từ chín đếm lùi đến sáu."
+    explanation: "9 − 3 = 6."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-thieu-tru"
+    prompt: "_ − 2 = 5"
+    answer: { accept: ["7"] }
+    hint: "Số nào bớt hai còn năm? Đếm tiếp từ năm thêm hai."
+    explanation: "7 − 2 = 5."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "so-thieu-cong"
+    prompt: "Số nào điền vào 2 + _ = 10?"
+    options:
+      - { id: "a", text: "6" }
+      - { id: "b", text: "8" }
+      - { id: "c", text: "9" }
+    answer: { correct: ["b"] }
+    hint: "Từ hai đếm tiếp đến mười."
+    explanation: "2 + 8 = 10."
+
+  - id: b9
+    type: "summary"
+    markdown: "Bé đã biết **tìm số còn thiếu** trong phép cộng, phép trừ."
+    say: "Bé đã biết tìm số còn thiếu trong phép cộng, phép trừ."

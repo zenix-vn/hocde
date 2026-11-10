@@ -1,0 +1,96 @@
+schema: 1
+slug: toan1-cac-so-11-den-20
+title: "Các số từ 11 đến 20"
+summary: "Đếm, đọc và nhận biết các số từ 11 đến 20."
+est_minutes: 9
+xp_reward: 25
+status: published
+blocks:
+  - id: b1
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Bé đã đếm đến mười rồi. Giờ mình đếm đến hai mươi nhé!"
+
+  - id: b2
+    type: "interactive"
+    kind: "counters"
+    config: { count: 20, emoji: "🟡", caption: "Chạm từng chấm vàng để đếm đến 20." }
+
+  - id: b3
+    type: "text"
+    markdown: |
+      11 mười một, 12 mười hai, 13 mười ba, 14 mười bốn, 15 mười lăm.
+
+      16 mười sáu, 17 mười bảy, 18 mười tám, 19 mười chín, 20 hai mươi.
+    say: "Mười một, mười hai, mười ba, mười bốn, mười lăm. Mười sáu, mười bảy, mười tám, mười chín, hai mươi."
+
+  - id: b4
+    type: "callout"
+    variant: "remember"
+    markdown: "**10** và **3** là **13**. Số 13 đọc là **mười ba**."
+    say: "Mười và ba là mười ba."
+
+  - id: b5
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dem-den-20"
+    prompt: "Điền số còn thiếu: 11, 12, _, 14, 15"
+    answer: { accept: ["13"] }
+    hint: "Sau mười hai là số nào?"
+    explanation: "Số còn thiếu là mười ba."
+
+  - id: b6
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lien-sau-20"
+    prompt: "Số liền sau của 16 là _"
+    answer: { accept: ["17"] }
+    hint: "Đếm tiếp sau mười sáu."
+    explanation: "Sau mười sáu là mười bảy."
+
+  - id: b7
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "so-lien-truoc-20"
+    prompt: "Số liền trước của 20 là _"
+    answer: { accept: ["19"] }
+    hint: "Đếm lùi từ hai mươi."
+    explanation: "Trước hai mươi là mười chín."
+
+  - id: b8
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-so"
+    prompt: "Số mười lăm viết là:"
+    options:
+      - { id: "a", text: "14" }
+      - { id: "b", text: "15" }
+      - { id: "c", text: "51" }
+    answer: { correct: ["b"] }
+    hint: "Mười lăm: 1 chục và 5."
+    explanation: "Mười lăm viết là 15."
+
+  - id: b9
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-den-20"
+    prompt: "Bấm các số theo thứ tự từ bé đến lớn."
+    options:
+      - { id: "x18", text: "18" }
+      - { id: "x12", text: "12" }
+      - { id: "x20", text: "20" }
+      - { id: "x15", text: "15" }
+    answer: { sequence: ["x12", "x15", "x18", "x20"] }
+    hint: "Tìm số bé nhất: mười hai."
+    explanation: "Mười hai, mười lăm, mười tám, hai mươi."
+
+  - id: b10
+    type: "summary"
+    markdown: "Bé đã biết đếm, đọc các số từ **11 đến 20**."
+    say: "Bé đã biết đếm và đọc các số từ mười một đến hai mươi."

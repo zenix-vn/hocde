@@ -1,0 +1,151 @@
+schema: 1
+slug: anh1-abc-2
+title: "F, G, H, I, J"
+summary: "Chữ F–J: fish, goat, hat, ice cream, juice."
+est_minutes: 8
+xp_reward: 20
+status: published
+blocks:
+  - id: b1
+    type: mascot_say
+    mascot: fox
+    mood: happy
+    text: "Mình học tiếp năm chữ cái nữa nhé!"
+    say:
+      - { t: "Mình học tiếp năm chữ cái nữa nhé! Bé nghe và nhắc lại theo mình.", l: vi }
+
+  - id: b2
+    type: interactive
+    kind: flashcards
+    config:
+      lang: en
+      caption: "Bé chạm vào từng thẻ để nghe và nhắc lại."
+      cards:
+        - { word: "fish", emoji: "🐟", meaning: "con cá (chữ F)" }
+        - { word: "goat", emoji: "🐐", meaning: "con dê (chữ G)" }
+        - { word: "hat", emoji: "👒", meaning: "cái mũ (chữ H)" }
+        - { word: "ice cream", emoji: "🍦", meaning: "kem (chữ I)" }
+        - { word: "juice", emoji: "🧃", meaning: "nước ép (chữ J)" }
+    say:
+      - { t: "Bé chạm vào từng thẻ để nghe nhé.", l: vi }
+
+  - id: b3
+    type: callout
+    variant: remember
+    markdown: "Ghi nhớ: **fish** (con cá (chữ F)) · **goat** (con dê (chữ G)) · **hat** (cái mũ (chữ H)) · **ice cream** (kem (chữ I)) · **juice** (nước ép (chữ J))"
+    say: [{ t: "fish", l: en }, { t: "con cá (chữ F)", l: vi }, { t: "goat", l: en }, { t: "con dê (chữ G)", l: vi }, { t: "hat", l: en }, { t: "cái mũ (chữ H)", l: vi }, { t: "ice cream", l: en }, { t: "kem (chữ I)", l: vi }, { t: "juice", l: en }, { t: "nước ép (chữ J)", l: vi }]
+
+  - id: b4
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-fish
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "fish", lang: en }
+    options:
+      - { id: a, text: "🐟", say: "fish", lang: en }
+      - { id: b, text: "🐐", say: "goat", lang: en }
+      - { id: c, text: "👒", say: "hat", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là fish, nghĩa là con cá (chữ F)."
+
+  - id: b5
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-goat
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "goat", lang: en }
+    options:
+      - { id: a, text: "👒", say: "hat", lang: en }
+      - { id: b, text: "🐐", say: "goat", lang: en }
+      - { id: c, text: "🍦", say: "ice cream", lang: en }
+    answer: { correct: [b] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là goat, nghĩa là con dê (chữ G)."
+
+  - id: b6
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-hat
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "hat", lang: en }
+    options:
+      - { id: a, text: "🍦", say: "ice cream", lang: en }
+      - { id: b, text: "🧃", say: "juice", lang: en }
+      - { id: c, text: "👒", say: "hat", lang: en }
+    answer: { correct: [c] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là hat, nghĩa là cái mũ (chữ H)."
+
+  - id: b7
+    type: exercise
+    kind: listen_choose
+    points: 10
+    skill: nghe-ice-cream
+    prompt: "Nghe và chọn hình bé nghe được."
+    listen: { text: "ice cream", lang: en }
+    options:
+      - { id: a, text: "🍦", say: "ice cream", lang: en }
+      - { id: b, text: "🧃", say: "juice", lang: en }
+      - { id: c, text: "🐟", say: "fish", lang: en }
+    answer: { correct: [a] }
+    hint: "Bấm nút loa để nghe lại."
+    explanation: "Đó là ice cream, nghĩa là kem (chữ I)."
+
+  - id: b8
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-ice-cream
+    prompt: "Kem (chữ I) tiếng Anh là gì? 🍦"
+    option_lang: en
+    options:
+      - { id: a, text: "juice" }
+      - { id: b, text: "ice cream" }
+      - { id: c, text: "fish" }
+    answer: { correct: [b] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Kem (chữ I) tiếng Anh là ice cream."
+
+  - id: b9
+    type: exercise
+    kind: mcq
+    points: 10
+    skill: nghia-juice
+    prompt: "Nước ép (chữ J) tiếng Anh là gì? 🧃"
+    option_lang: en
+    options:
+      - { id: a, text: "fish" }
+      - { id: b, text: "goat" }
+      - { id: c, text: "juice" }
+    answer: { correct: [c] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại."
+    explanation: "Nước ép (chữ J) tiếng Anh là juice."
+
+  - id: b10
+    type: exercise
+    kind: match
+    points: 10
+    skill: nghia-tu
+    prompt: "Nối từ tiếng Anh với nghĩa tiếng Việt."
+    option_lang: en
+    pairs:
+      - { left: "goat", right: "con dê (chữ G)" }
+      - { left: "hat", right: "cái mũ (chữ H)" }
+      - { left: "ice cream", right: "kem (chữ I)" }
+      - { left: "juice", right: "nước ép (chữ J)" }
+    answer: { pairs: [["goat", "con dê (chữ G)"], ["hat", "cái mũ (chữ H)"], ["ice cream", "kem (chữ I)"], ["juice", "nước ép (chữ J)"]] }
+    hint: "Bé chạm vào thẻ ở trên để nghe lại từng từ."
+    explanation: "goat là con dê (chữ G); hat là cái mũ (chữ H); ice cream là kem (chữ I); juice là nước ép (chữ J)."
+
+  - id: b11
+    type: summary
+    markdown: "Bé đã biết **fish**, **goat**, **hat**, **ice cream**, **juice**. Giỏi lắm!"
+    say:
+      - { t: "Bé đã biết", l: vi }
+      - { t: "fish, goat, hat, ice cream, juice.", l: en }
+      - { t: "Giỏi lắm!", l: vi }
+

@@ -1,0 +1,106 @@
+schema: 1
+slug: "tv1-t2-03-mua-xuan"
+title: "Mùa xuân"
+summary: "Chủ đề bốn mùa: bài đọc ngắn và câu hỏi tìm hiểu bài."
+est_minutes: 8
+xp_reward: 25
+status: "published"
+blocks:
+  - id: "b1"
+    type: "mascot_say"
+    mascot: "fox"
+    mood: "happy"
+    text: "Hôm nay mình đọc bài mới! Bé đọc thật chậm, hiểu nội dung rồi trả lời câu hỏi nhé."
+
+  - id: "b2"
+    type: "text"
+    markdown: |
+      Mùa xuân đã đến.
+
+      Cây cối đâm chồi nảy lộc.
+
+      Hoa đào nở đỏ thắm.
+
+      Chim én bay về hót vang.
+
+  - id: "b3"
+    type: "interactive"
+    kind: "flashcards"
+    config:
+      lang: "vi"
+      cards:
+        - {"word": "hoa đào", "emoji": "🌸"}
+        - {"word": "chim én", "emoji": "🐦"}
+        - {"word": "cây", "emoji": "🌱"}
+        - {"word": "xuân", "emoji": "🌷"}
+      caption: "Chạm vào từng thẻ để nghe từ trong bài."
+
+  - id: "b4"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-1"
+    prompt: "Mùa nào đã đến?"
+    options:
+      - {"id": "a", "text": "Mùa đông"}
+      - {"id": "b", "text": "Mùa xuân"}
+      - {"id": "c", "text": "Mùa hè"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Mùa xuân\"."
+
+  - id: "b5"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-2"
+    prompt: "Hoa gì nở đỏ thắm?"
+    options:
+      - {"id": "a", "text": "Hoa sen"}
+      - {"id": "b", "text": "Hoa đào"}
+      - {"id": "c", "text": "Hoa cúc"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Hoa đào\"."
+
+  - id: "b6"
+    type: "exercise"
+    kind: "mcq"
+    points: 10
+    skill: "doc-hieu-3"
+    prompt: "Chim én bay về làm gì?"
+    options:
+      - {"id": "a", "text": "Ngủ"}
+      - {"id": "b", "text": "Hót vang"}
+      - {"id": "c", "text": "Bơi"}
+    answer: {"correct": ["b"]}
+    hint: "Đọc lại bài rồi tìm câu trả lời."
+    explanation: "Đáp án đúng là \"Hót vang\"."
+
+  - id: "b7"
+    type: "exercise"
+    kind: "order"
+    points: 10
+    skill: "sap-xep-cau"
+    prompt: "Sắp xếp các từ thành câu:"
+    options:
+      - {"id": "x3", "text": "bay"}
+      - {"id": "x5", "text": "hót"}
+      - {"id": "x1", "text": "Chim"}
+      - {"id": "x6", "text": "vang"}
+      - {"id": "x2", "text": "én"}
+      - {"id": "x4", "text": "về"}
+    answer: {"sequence": ["x1", "x2", "x3", "x4", "x5", "x6"]}
+    hint: "Câu bắt đầu bằng từ nào?"
+    explanation: "Chim én bay về hót vang."
+
+  - id: "b8"
+    type: "exercise"
+    kind: "fill_blank"
+    points: 10
+    skill: "dien-tu-vao-cau"
+    prompt: "Điền từ còn thiếu: Mùa xuân đã _."
+    answer: {"accept": ["đến"]}
+    hint: "Đọc lại bài để tìm từ cần điền."
+    explanation: "Mùa xuân đã đến.."
+  - {"id": "b9", "type": "summary", "markdown": "Bé đã đọc xong bài **Mùa xuân**. Bé đọc thật hay!", "say": null}
